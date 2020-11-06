@@ -1,7 +1,7 @@
 import mongoose from 'mongoose' //importing mongoose
 //connecting to mongodb
 const connectDB=async ()=>{
-    const conn=await mongoose.connect('mongodb+srv://hari:hari@cluster0.humga.mongodb.net/discordClone?retryWrites=true&w=majority',{
+    const conn=await mongoose.connect('mongodb+srv://hari:hari@bloodback.juzpj.mongodb.net/bloodbank?retryWrites=true&w=majority',{
         useNewUrlParser:true,
         useCreateIndex:true,
         useFindAndModify:false,

@@ -4,16 +4,16 @@ import cors from 'cors'
 import connectDB from './config/db.js'
 const app=express()
 import auth from './routes/auth.js'
+app.use(express.json());
 
 const PORT= process.env.PORT||5000
 app.use('/api/auth',auth)
 connectDB()
 ////////////////////////////////
- 
+
 //config
 
 //Body parser
-app.use(express.json());
 //connecting to db
 //implementing helmet
 app.use(helmet())

@@ -5,7 +5,7 @@ import connectDB from './config/db.js'
 import {errorHandler} from './middlewares/error.js'
 const app=express()
 import auth from './routes/auth.js'
-
+import blood from './routes/blood.js'
 app.use(express.json());
 
 const PORT= process.env.PORT||5000
@@ -22,6 +22,7 @@ app.use(helmet())
 app.use(cors())
 //routes
 app.use('/api/auth',auth)
+app.use('/api/help',blood)
 //error
 app.use(errorHandler)
 

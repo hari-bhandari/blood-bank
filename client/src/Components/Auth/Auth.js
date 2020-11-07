@@ -3,13 +3,16 @@ import AuthContext from "../../Context/auth/authContext"
 import { useFormik } from 'formik';
 import './Auth.css'
 const Auth = () => {
+    const authContext=useContext(AuthContext);
+
+    const {login,isAuthenticated,loadUser,error}=authContext;
     const loginFormik = useFormik({
         initialValues: {
             email: '',
             password:''
         },
         onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
+            login(values);
         },
     });
     const signupFormik = useFormik({
@@ -22,15 +25,14 @@ const Auth = () => {
             alert(JSON.stringify(values, null, 2));
         },
     });
-    const authContext=useContext(AuthContext);
-    const {getUserLoggedIn,isAuthenticated,loadUser,error}=authContext;
-    const [login,setLogin]=useState(true)
+
+    const [Login,setLogin]=useState(true)
     const onClick=()=>{
-        setLogin(!login)
+        setLogin(!Login)
     }
 
     return (
-        <div className={`container ${login?'':'sign-up-mode'}`}>
+        <div className={`container ${Login?'':'sign-up-mode'}`}>
             <div className="forms-container">
                 <div className="signin-signup">
                     <form onSubmit={loginFormik.handleSubmit} className="sign-in-form">

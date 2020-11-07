@@ -14,7 +14,7 @@ input {
 .container {
     position: relative;
     width: 100%;
-    background-color: #fff;
+    background-color: #e8c800;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -168,16 +168,16 @@ form.sign-in-form {
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background: #ED213A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transition: 1.8s ease-in-out;
+    background: #396afc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border-radius: 50%;
     z-index: 6;
 }
 
 .image {
-    width: 100%;
+    width: 70%;
     transition: transform 1.1s ease-in-out;
     transition-delay: 0.4s;
 }
@@ -213,17 +213,17 @@ form.sign-in-form {
     font-size: 1.5rem;
 }
 
-.panel p {
-    font-size: 0.95rem;
+.quote-text {
+    font-size: 2rem;
     padding: 0.7rem 0;
 }
 
 .btn.transparent {
     margin: 0;
-    background: none;
-    border: 2px solid #fff;
-    width: 130px;
-    height: 41px;
+    background: red;
+    border: 2px solid yellow;
+    width: 150px;
+    height: 55px;
     font-weight: 600;
     font-size: 0.8rem;
 }
@@ -275,7 +275,10 @@ form.sign-in-form {
 @media (max-width: 870px) {
     .container {
         min-height: 800px;
-        height: 100vh;
+        height: 80vh;
+    }
+    .quote-text{
+        font-size: 1rem !important;
     }
     .signin-signup {
         width: 100%;
@@ -326,8 +329,8 @@ form.sign-in-form {
         font-size: 1.2rem;
     }
 
-    .panel p {
-        font-size: 0.7rem;
+    .quote-text {
+        font-size: 2rem;
         padding: 0.5rem 0;
     }
 

@@ -63,7 +63,7 @@ const Auth = () => {
                 <div className="panel left-panel">
                     <div className="content">
 
-                        <p>
+                        <p className="quote-text">
                             “Donate blood and be a hero of someone’s life.”
                         </p>
                         <button className="btn transparent" onClick={onClick} id="sign-up-btn">
@@ -75,14 +75,14 @@ const Auth = () => {
                 <div className="panel right-panel">
                     <div className="content">
                         <h3>Why should i donate my precious blood?</h3>
-                        <p>
+                        <p className="quote-text">
                             “Donate your blood for a reason, let the reason to be life”
                         </p>
                         <button className="btn transparent" onClick={onClick} id="sign-in-btn">
                             Sign in
                         </button>
                     </div>
-                    <img src="img/register.svg" className="image" alt="" />
+                    <img src="https://freesvg.org/img/1533845191.png" className="image" alt="" />
                 </div>
             </div>
         </div>

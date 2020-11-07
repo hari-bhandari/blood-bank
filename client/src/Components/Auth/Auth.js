@@ -1,23 +1,47 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
+import AuthContext from "../../Context/auth/authContext"
+import { useFormik } from 'formik';
 import './Auth.css'
 const Auth = () => {
+    const loginFormik = useFormik({
+        initialValues: {
+            email: '',
+            password:''
+        },
+        onSubmit: values => {
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+    const signupFormik = useFormik({
+        initialValues: {
+            email: '',
+            password:''
+        },
+        onSubmit: values => {
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+    const authContext=useContext(AuthContext);
+    const {getUserLoggedIn,isAuthenticated,loadUser,error}=authContext;
+    const{email,password}=loginFormik.values
     const [login,setLogin]=useState(true)
     const onClick=()=>{
         setLogin(!login)
     }
+
     return (
         <div className={`container ${login?'':'sign-up-mode'}`}>
             <div className="forms-container">
                 <div className="signin-signup">
-                    <form action="#" className="sign-in-form">
+                    <form onSubmit={loginFormik.handleSubmit} className="sign-in-form">
                         <h2 className="title">Sign in</h2>
                         <div className="input-field">
                             <i className="fas fa-user"></i>
-                            <input type="text" placeholder="Username" />
+                            <input id="email" name="email" type="text" placeholder="Email" value={loginFormik.values.email} onChange={loginFormik.handleChange}/>
                         </div>
                         <div className="input-field">
                             <i className="fas fa-lock"></i>
-                            <input type="password" placeholder="Password" />
+                            <input id="password" name="password" type="password" placeholder="Password" value={loginFormik.values.password} onChange={loginFormik.handleChange}/>
                         </div>
                         <input type="submit" value="Login" className="btn solid" />
                         <p className="social-text">Or Sign in with social platforms</p>

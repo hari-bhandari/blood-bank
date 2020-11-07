@@ -15,6 +15,7 @@ import {
 } from '../types';
 
 const AuthState = props => {
+
   const initialState = {
     token: localStorage.getItem('token'),
     isAuthenticated: null,
@@ -57,7 +58,7 @@ const AuthState = props => {
         payload: res.data?.token
       });
 
-      loadUser();
+      await loadUser();
     } catch (err) {
       dispatch({
         type: REGISTER_FAIL,

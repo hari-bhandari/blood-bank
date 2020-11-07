@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+
 const BloodSchema =mongoose.Schema(
     {
         name: {
@@ -31,8 +32,12 @@ const BloodSchema =mongoose.Schema(
             type: String,
             required: [true, 'Please add an address']
         },
-        hospitalName:{
-          type:String,
+        isDonation: {
+            type: Boolean,
+            default: false
+        },
+        hospitalName: {
+            type: String,
         },
         user: {
             type: mongoose.Schema.ObjectId,

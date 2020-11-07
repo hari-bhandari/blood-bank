@@ -29,9 +29,6 @@ const UserSchema=new mongoose.Schema({
         type:Date,
         default: Date.now
     }
-
-
-
 });
 UserSchema.pre('save',async function(next) {
     if(!this.isModified('password')){
@@ -55,7 +52,6 @@ UserSchema.methods.matchPassword=async function(enteredPassword){
 UserSchema.methods.getResetPasswordToken=function(){
     //generate Token
     const resetToken=crypto.randomBytes(20).toString('hex');
-
     //Hash token and set tp reset password token field
     this.resetPasswordToken=crypto.createHash('sha256').update(resetToken).digest('hex');
     //set expire

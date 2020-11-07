@@ -5,7 +5,7 @@ import './Auth.css'
 const Auth = () => {
     const authContext=useContext(AuthContext);
 
-    const {login,isAuthenticated,loadUser,error}=authContext;
+    const {login,register,isAuthenticated,loadUser,error}=authContext;
     const loginFormik = useFormik({
         initialValues: {
             email: '',
@@ -22,7 +22,7 @@ const Auth = () => {
             password:''
         },
         onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
+           register(values)
         },
     });
 

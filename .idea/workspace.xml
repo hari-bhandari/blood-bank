@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/Context/auth/AuthState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Context/auth/authContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Context/auth/authReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/blood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/blood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,19 +24,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/Context" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bisha\WebstormProjects\blood-bank\server" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/Context" />
       <recent name="$PROJECT_DIR$/server/models" />
       <recent name="$PROJECT_DIR$/client/src/Components/Navbar" />
       <recent name="$PROJECT_DIR$/client/src/Components" />
-      <recent name="C:\Users\bisha\WebstormProjects\blood-bank\server" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bisha\WebstormProjects\blood-bank\server" />
     </key>
   </component>
@@ -51,7 +54,7 @@
       <workItem from="1604687770019" duration="1176000" />
       <workItem from="1604724179073" duration="13107000" />
       <workItem from="1604754468150" duration="5181000" />
-      <workItem from="1604760155958" duration="2343000" />
+      <workItem from="1604760155958" duration="3134000" />
     </task>
     <servers />
   </component>
@@ -59,6 +62,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="694" y="355" width="585" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604766258044">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="694" y="355" width="585" height="403" key="#com.intellij.fileTypes.FileTypeChooser/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1604766258044" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604643618799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

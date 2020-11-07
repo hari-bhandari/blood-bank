@@ -1,6 +1,6 @@
 import Blood from "../models/Blood.js";
 import asyncHandler from "../middlewares/async.js";
-import User from "../models/User";
+import User from "../models/User.js";
 import ErrorResponse from "../utils/errorResponse.js";
 
 export const requestForDonor=  asyncHandler(async (req,res,next)=>{
@@ -19,8 +19,10 @@ export const beADonor=  asyncHandler(async (req,res,next)=>{
     //add user to req.body
     req.body.user=req.user.id;
     //check for published bootcamp
-    const request=await Blood.create(req.body)
+
     req.body.isDonation=true
+
+    const request=await Blood.create(req.body)
     res.status(201).json({
         success:true,
         data:request

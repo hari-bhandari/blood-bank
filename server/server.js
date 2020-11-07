@@ -2,12 +2,13 @@ import express from 'express'
 import helmet from 'helmet'
 import cors from 'cors'
 import connectDB from './config/db.js'
+import {errorHandler} from './middlewares/error.js'
 const app=express()
 import auth from './routes/auth.js'
+
 app.use(express.json());
 
 const PORT= process.env.PORT||5000
-app.use('/api/auth',auth)
 connectDB()
 ////////////////////////////////
 
@@ -20,6 +21,9 @@ app.use(helmet())
 //cors
 app.use(cors())
 //routes
+app.use('/api/auth',auth)
+//error
+app.use(errorHandler)
 
 //implementing error handler
 const server=app.listen(PORT,()=>console.log(`server running in Production mode on port ${PORT}`))

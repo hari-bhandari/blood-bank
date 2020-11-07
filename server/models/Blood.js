@@ -1,7 +1,4 @@
 import mongoose from 'mongoose'
-import crypto from 'crypto'
-import bcrypt from 'bcryptjs'
-import jwt from 'jsonwebtoken'
 const BloodSchema =mongoose.Schema(
     {
         name: {
@@ -30,6 +27,9 @@ const BloodSchema =mongoose.Schema(
         address: {
             type: String,
             required: [true, 'Please add an address']
+        },
+        hospitalName:{
+          type:String,
         },
         user: {
             type: mongoose.Schema.ObjectId,

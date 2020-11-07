@@ -14,7 +14,8 @@ const Auth = () => {
     });
     const signupFormik = useFormik({
         initialValues: {
-            email: '',
+            number: '',
+            email:'',
             password:''
         },
         onSubmit: values => {
@@ -23,7 +24,6 @@ const Auth = () => {
     });
     const authContext=useContext(AuthContext);
     const {getUserLoggedIn,isAuthenticated,loadUser,error}=authContext;
-    const{email,password}=loginFormik.values
     const [login,setLogin]=useState(true)
     const onClick=()=>{
         setLogin(!login)
@@ -55,19 +55,19 @@ const Auth = () => {
 
                         </div>
                     </form>
-                    <form action="#" className="sign-up-form">
+                    <form  onSubmit={signupFormik.handleSubmit} className="sign-up-form">
                         <h2 className="title">Sign up</h2>
                         <div className="input-field">
                             <i className="fas fa-user"></i>
-                            <input type="text" placeholder="Username" />
+                            <input id="password" name="number" type="number" placeholder="Phone Number" value={signupFormik.values.number} onChange={signupFormik.handleChange}/>
                         </div>
                         <div className="input-field">
                             <i className="fas fa-envelope"></i>
-                            <input type="email" placeholder="Email" />
+                            <input name="email" type="email" type="email" placeholder="Email" value={signupFormik.values.email} onChange={signupFormik.handleChange} />
                         </div>
                         <div className="input-field">
                             <i className="fas fa-lock"></i>
-                            <input type="password" placeholder="Password" />
+                            <input name="password" type="password" type="password" placeholder="Password" value={signupFormik.values.password} onChange={signupFormik.handleChange}/>
                         </div>
                         <input type="submit" className="btn" value="Sign up" />
                         <p className="social-text">Or Sign up with social platforms</p>

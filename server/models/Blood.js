@@ -8,6 +8,9 @@ const BloodSchema =mongoose.Schema(
             trim: true,
             maxlength: [50, 'Name can not be more than 50 characters']
         },
+        bloodType:{
+            type:String
+        },
         description: {
             type: String,
             required: [true, 'Please add a description'],
@@ -38,4 +41,4 @@ const BloodSchema =mongoose.Schema(
         }
     });
 
-export default mongoose.model('User',BloodSchema)
+export default mongoose.model('Blood',BloodSchema)

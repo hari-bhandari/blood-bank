@@ -1,4 +1,4 @@
-const advancedResults=(model,populate)=>async (req,res,next)=>{
+export const advancedResults=(model,populate)=>async (req,res,next)=>{
     let query;
     //copy req.query
     const reqQuery={...req.query}
@@ -65,4 +65,3 @@ const advancedResults=(model,populate)=>async (req,res,next)=>{
     next();
 
 }
-module.exports=advancedResults;

@@ -1,10 +1,10 @@
-const jwt=require('jsonwebtoken');
-const asyncHandler=require('./async');
-const ErrorResponse=require('../utils/errorResponse')
-const User=require('../models/Message')
+import jwt from 'jsonwebtoken'
+import asyncHandler from "./async.js";
+import ErrorResponse from "../utils/errorResponse.js";
+import User from "../models/User.js";
 
 //protect routes
-const protect=asyncHandler(async (req,res,next)=>{
+export const protect=asyncHandler(async (req,res,next)=>{
     let token;
     if(req.headers.authorization&&req.headers.authorization.startsWith('Bearer')){
         token=req.headers.authorization.split(' ')[1];
@@ -26,7 +26,7 @@ const protect=asyncHandler(async (req,res,next)=>{
 
     }
 })
-const authorize=(...roles)=>{
+export const authorize=(...roles)=>{
     return(req,res,next)=>{
         if(!roles.includes(req.user.role)){
             return next(new ErrorResponse(`User role ${req.user.role} is unauthorized to access this page `,403))
@@ -34,4 +34,3 @@ const authorize=(...roles)=>{
         next();
     }
 }
-export default {authorize,protect}

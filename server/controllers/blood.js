@@ -1,8 +1,8 @@
-import Blood from "../models/Blood";
-import asyncHandler from "../middlewares/async";
-import ErrorResponse from "../utils/errorResponse";
+import Blood from "../models/Blood.js";
+import asyncHandler from "../middlewares/async.js";
+import ErrorResponse from "../utils/errorResponse.js";
 
-exports.requestForDonor=  asyncHandler(async (req,res,next)=>{
+export const requestForDonor=  asyncHandler(async (req,res,next)=>{
     //add user to req.body
     req.body.user=req.user.id;
     //check for published bootcamps

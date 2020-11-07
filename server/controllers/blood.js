@@ -29,9 +29,9 @@ export const beADonor=  asyncHandler(async (req,res,next)=>{
     })
 });
 
-// export const getBloodRequests=asyncHandler(async  (req,res,next)=>{
-//     res.status(200).json(res.advancedResults)
-// })
+export const getBloodRequests=asyncHandler(async  (req,res,next)=>{
+    res.status(200).json(res.advancedResults)
+})
 // //@desc Get single  bootcamp
 // //@route GET /api/v1/bootcamp:id
 // //@access Public

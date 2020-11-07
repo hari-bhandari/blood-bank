@@ -4,7 +4,6 @@
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/blood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Blood.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/blood.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
       <workItem from="1604687770019" duration="1176000" />
       <workItem from="1604724179073" duration="13107000" />
       <workItem from="1604754468150" duration="5181000" />
-      <workItem from="1604760155958" duration="1579000" />
+      <workItem from="1604760155958" duration="2343000" />
     </task>
     <servers />
   </component>

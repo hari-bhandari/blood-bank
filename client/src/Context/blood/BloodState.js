@@ -35,7 +35,21 @@ const BloodState = props => {
       });
     }
   };
+  const getBloodRequests = async () => {
+    try {
+      const res = await axios.get('/api/help/?isDonation=false');
 
+      dispatch({
+        type: GET_TOP_DONORS,
+        payload: res.data.data
+      });
+    } catch (err) {
+      dispatch({
+        type: ERROR,
+        payload: err.response.error
+      });
+    }
+  };
   // Add Contact
   const requestForBlood = async data => {
     const config = {

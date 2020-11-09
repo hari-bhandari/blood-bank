@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/Context/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/util/setAuthToken.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/DonorCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Homepage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Context/auth/AuthState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/alert/alertContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/alert/alertReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/items/ItemState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/items/itemContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/items/itemReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +60,11 @@
       <workItem from="1604687770019" duration="1176000" />
       <workItem from="1604724179073" duration="13107000" />
       <workItem from="1604754468150" duration="5181000" />
-      <workItem from="1604760155958" duration="5229000" />
+      <workItem from="1604760155958" duration="11335000" />
+      <workItem from="1604813058633" duration="558000" />
+      <workItem from="1604813633911" duration="5207000" />
+      <workItem from="1604833612086" duration="593000" />
+      <workItem from="1604881495717" duration="2723000" />
     </task>
     <servers />
   </component>
@@ -101,6 +100,14 @@
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604647415358" />
     <state width="1810" height="275" key="GridCell.Tab.0.right/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1604683661236" />
+    <state x="575" y="290" width="824" height="533" key="IDE.errors.dialog" timestamp="1604813455563">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="575" y="290" width="824" height="533" key="IDE.errors.dialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1604813455563" />
+    <state x="683" y="292" width="618" height="522" key="find.popup" timestamp="1604883209398">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="683" y="292" width="618" height="522" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1604883209398" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1604643308354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

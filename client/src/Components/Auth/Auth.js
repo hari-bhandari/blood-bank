@@ -2,9 +2,8 @@ import React, {useContext, useState} from 'react';
 import AuthContext from "../../Context/auth/authContext"
 import { useFormik } from 'formik';
 import './Auth.css'
-const Auth = () => {
+const Auth = (props) => {
     const authContext=useContext(AuthContext);
-
     const {login,register,isAuthenticated,loadUser,error}=authContext;
     const loginFormik = useFormik({
         initialValues: {
@@ -13,6 +12,7 @@ const Auth = () => {
         },
         onSubmit: values => {
             login(values);
+            props.history.push('/')
         },
     });
     const signupFormik = useFormik({
@@ -25,7 +25,6 @@ const Auth = () => {
            register(values)
         },
     });
-
     const [Login,setLogin]=useState(true)
     const onClick=()=>{
         setLogin(!Login)

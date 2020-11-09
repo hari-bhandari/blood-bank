@@ -108,7 +108,7 @@ const BloodState = props => {
         filtered: state.filtered,
         error: state.error,
         loading: state.loading,
-        getTopDonors,requestForBlood
+        getTopDonors,requestForBlood,getBloodRequests
       }}
     >
       {props.children}

@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import DonorCard from "./DonorCard";
 import './Homepage.css'
 import { Container, Row, Col } from 'react-grid-system';
@@ -8,7 +8,10 @@ import BloodContext from "../Context/blood/bloodContext";
 
 const HomePage = () => {
     const bloodContext=useContext(BloodContext)
-    const {get}
+    const {getBloodRequests,bloodRequests}=bloodContext
+    useEffect(()=>{
+        getBloodRequests()
+    },[])
     return (
         <Container >
             <Row>

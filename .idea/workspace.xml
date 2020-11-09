@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/FormNewComponent/RequestForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/FormNewComponent/RequestForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/DonorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/DonorCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Components/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/HomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,21 +27,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/Components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bisha\WebstormProjects\blood-bank\server" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/Components" />
       <recent name="$PROJECT_DIR$/client/src" />
       <recent name="$PROJECT_DIR$/client/src/Context" />
       <recent name="$PROJECT_DIR$/server/models" />
       <recent name="$PROJECT_DIR$/client/src/Components/Navbar" />
-      <recent name="$PROJECT_DIR$/client/src/Components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bisha\WebstormProjects\blood-bank\server" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -57,7 +61,7 @@
       <workItem from="1604813058633" duration="558000" />
       <workItem from="1604813633911" duration="5207000" />
       <workItem from="1604833612086" duration="593000" />
-      <workItem from="1604881495717" duration="6835000" />
+      <workItem from="1604881495717" duration="14408000" />
     </task>
     <servers />
   </component>
@@ -101,6 +105,10 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="683" y="292" width="618" height="522" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1604883209398" />
+    <state x="656" y="252" key="run.anything.popup" timestamp="1604895838607">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="656" y="252" key="run.anything.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1604895838607" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1604643308354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

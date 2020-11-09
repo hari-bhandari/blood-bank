@@ -9,12 +9,17 @@ const HomePage = () => {
         <Container >
             <Row>
                 <Col lg={9}>
-                    <h3>Request  for a blood</h3>
                     <RequestForm/>
+                    <h2>You can always donate them...</h2>
+                    <DonorCard help={true}/>
+                    <DonorCard help={true}/>
+                    <DonorCard help={true}/>
+                    <DonorCard help={true}/>
+
                 </Col>
                 <Col lg={3}>
-                    <h3>Need Action immediately</h3>
-                   <DonorCard/>
+                    <h3>Top Donors</h3>
+                   <DonorCard />
                    <DonorCard/>
                    <DonorCard/>
                     <NavBtnLink to='/help' style={{marginTop:'10px'}}>See More</NavBtnLink>

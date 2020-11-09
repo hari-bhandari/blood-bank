@@ -11,3 +11,5 @@ export const LOGOUT = 'LOGOUT';
 export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 export const REQUEST_BLOOD='REQUEST_BLOOD';
 export const ERROR='ERROR';
+export const CLEAR_BLOODS_REQUESTS='CLEAR_BLOODS_REQUESTS';
+export const CLEAR_TOP_DONORS='CLEAR_TOP_DONORS';

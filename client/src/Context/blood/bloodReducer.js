@@ -1,30 +1,15 @@
 import {
-  GET_CONTACTS,
-  ADD_CONTACT,
-  DELETE_CONTACT,
-  SET_CURRENT,
-  CLEAR_CURRENT,
-  UPDATE_CONTACT,
-  FILTER_CONTACTS,
-  CLEAR_FILTER,
-  CONTACT_ERROR,
-  CLEAR_CONTACTS
+   CLEAR_BLOODS_REQUESTS, CLEAR_TOP_DONORS
 } from '../types';
 
 export default (state, action) => {
   switch (action.type) {
-    case GET_CONTACTS:
-      return {
-        ...state,
-        contacts: action.payload,
-        loading: false
-      };
-    case ADD_CONTACT:
-      return {
-        ...state,
-        contacts: [action.payload, ...state.contacts],
-        loading: false
-      };
+    // case GET_CONTACTS:
+    //   return {
+    //     ...state,
+    //     contacts: action.payload,
+    //     loading: false
+    //   };
     case UPDATE_CONTACT:
       return {
         ...state,
@@ -33,50 +18,29 @@ export default (state, action) => {
         ),
         loading: false
       };
-    case DELETE_CONTACT:
+    // case FILTER_CONTACTS:
+    //   return {
+    //     ...state,
+    //     filtered: state.contacts.filter(contact => {
+    //       const regex = new RegExp(`${action.payload}`, 'gi');
+    //       return contact.name.match(regex) || contact.email.match(regex);
+    //     })
+    //   };
+    case CLEAR_TOP_DONORS:
       return {
         ...state,
-        contacts: state.contacts.filter(
-          contact => contact._id !== action.payload
-        ),
-        loading: false
-      };
-    case CLEAR_CONTACTS:
+        topDonors:null
+      }
+    case CLEAR_BLOODS_REQUESTS:
       return {
         ...state,
-        contacts: null,
-        filtered: null,
-        error: null,
-        current: null
+        bloodRequests: null
       };
-    case SET_CURRENT:
-      return {
-        ...state,
-        current: action.payload
-      };
-    case CLEAR_CURRENT:
-      return {
-        ...state,
-        current: null
-      };
-    case FILTER_CONTACTS:
-      return {
-        ...state,
-        filtered: state.contacts.filter(contact => {
-          const regex = new RegExp(`${action.payload}`, 'gi');
-          return contact.name.match(regex) || contact.email.match(regex);
-        })
-      };
-    case CLEAR_FILTER:
-      return {
-        ...state,
-        filtered: null
-      };
-    case CONTACT_ERROR:
-      return {
-        ...state,
-        error: action.payload
-      };
+    // case CONTACT_ERROR:
+    //   return {
+    //     ...state,
+    //     error: action.payload
+    //   };
     default:
       return state;
   }

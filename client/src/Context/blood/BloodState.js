@@ -5,13 +5,13 @@ import bloodReducer from './bloodReducer';
 import {
   SET_CURRENT,
   CLEAR_CURRENT,
-  REQUEST_BLOOD,ERROR
+  REQUEST_BLOOD, ERROR, CLEAR_TOP_DONORS, CLEAR_BLOODS_REQUESTS
 } from '../types';
 
 const BloodState = props => {
   const initialState = {
     topDonors: null,
-    needHelp: null,
+    bloodRequests: null,
     filtered: null,
     error: null,
     loading:true
@@ -58,56 +58,14 @@ const BloodState = props => {
       });
     }
   };
-  //
-  // // Delete Contact
-  // const deleteContact = async id => {
-  //   try {
-  //     await axios.delete(`/api/contacts/${id}`);
-  //
-  //     dispatch({
-  //       type: DELETE_CONTACT,
-  //       payload: id
-  //     });
-  //   } catch (err) {
-  //     dispatch({
-  //       type: CONTACT_ERROR,
-  //       payload: err.response.msg
-  //     });
-  //   }
-  // };
-
-  // Update Contact
-  const updateContact = async contact => {
-    const config = {
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    };
-
-    try {
-      const res = await axios.put(
-        `/api/contacts/${contact._id}`,
-        contact,
-        config
-      );
-
-      dispatch({
-        type: UPDATE_CONTACT,
-        payload: res.data
-      });
-    } catch (err) {
-      dispatch({
-        type: CONTACT_ERROR,
-        payload: err.response.msg
-      });
-    }
-  };
 
   // Clear Contacts
-  const clearContacts = () => {
-    dispatch({ type: CLEAR_CONTACTS });
+  const clearBloodsRequests = () => {
+    dispatch({ type: CLEAR_BLOODS_REQUESTS });
   };
-
+  const clearTopDonors = () => {
+    dispatch({ type: CLEAR_TOP_DONORS });
+  };
   // Set Current Contact
   const setCurrent = contact => {
     dispatch({ type: SET_CURRENT, payload: contact });

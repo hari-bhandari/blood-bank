@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Card.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Context/blood/BloodState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Context/blood/BloodState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Context/blood/bloodReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Context/blood/bloodReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Context/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Context/types.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
       <workItem from="1604813058633" duration="558000" />
       <workItem from="1604813633911" duration="5207000" />
       <workItem from="1604833612086" duration="593000" />
-      <workItem from="1604881495717" duration="16184000" />
+      <workItem from="1604881495717" duration="17564000" />
     </task>
     <servers />
   </component>

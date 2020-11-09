@@ -5,7 +5,7 @@ import bloodReducer from './bloodReducer';
 import {
   SET_CURRENT,
   CLEAR_CURRENT,
-  REQUEST_BLOOD, ERROR, CLEAR_TOP_DONORS, CLEAR_BLOODS_REQUESTS
+  REQUEST_BLOOD, ERROR, CLEAR_TOP_DONORS, CLEAR_BLOODS_REQUESTS,GET_BLOOD_REQUESTS,GET_TOP_DONORS
 } from '../types';
 
 const BloodState = props => {
@@ -20,21 +20,21 @@ const BloodState = props => {
   const [state, dispatch] = useReducer(bloodReducer,initialState);
 
   // Get Contacts
-  // const getTopDonors = async () => {
-  //   try {
-  //     const res = await axios.get('/api/contacts');
-  //
-  //     dispatch({
-  //       type: GET_CONTACTS,
-  //       payload: res.data
-  //     });
-  //   } catch (err) {
-  //     dispatch({
-  //       type: CONTACT_ERROR,
-  //       payload: err.response.msg
-  //     });
-  //   }
-  // };
+  const getTopDonors = async () => {
+    try {
+      const res = await axios.get('/api/help/?isDonation=true');
+
+      dispatch({
+        type: GET_TOP_DONORS,
+        payload: res.data.data
+      });
+    } catch (err) {
+      dispatch({
+        type: ERROR,
+        payload: err.response.error
+      });
+    }
+  };
 
   // Add Contact
   const requestForBlood = async data => {

@@ -27,16 +27,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/Components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/Context" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/Context" />
       <recent name="$PROJECT_DIR$/client/src/Components" />
       <recent name="$PROJECT_DIR$/client/src" />
-      <recent name="$PROJECT_DIR$/client/src/Context" />
       <recent name="$PROJECT_DIR$/server/models" />
       <recent name="$PROJECT_DIR$/client/src/Components/Navbar" />
     </key>
@@ -61,7 +61,7 @@
       <workItem from="1604813058633" duration="558000" />
       <workItem from="1604813633911" duration="5207000" />
       <workItem from="1604833612086" duration="593000" />
-      <workItem from="1604881495717" duration="14408000" />
+      <workItem from="1604881495717" duration="14894000" />
     </task>
     <servers />
   </component>

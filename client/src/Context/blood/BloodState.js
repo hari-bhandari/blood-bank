@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import axios from 'axios';
-import ContactContext from './contactContext';
-import contactReducer from './contactReducer';
+import ContactContext from './bloodContext';
+import contactReducer from './bloodReducer';
 import {
   GET_CONTACTS,
   ADD_CONTACT,
@@ -15,7 +15,7 @@ import {
   CONTACT_ERROR
 } from '../types';
 
-const ContactState = props => {
+const BloodState = props => {
   const initialState = {
     contacts: null,
     current: null,
@@ -157,4 +157,4 @@ const ContactState = props => {
   );
 };
 
-export default ContactState;
+export default BloodState;

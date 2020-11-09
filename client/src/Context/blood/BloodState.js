@@ -1,49 +1,43 @@
 import React, { useReducer } from 'react';
 import axios from 'axios';
-import ContactContext from './bloodContext';
-import contactReducer from './bloodReducer';
+import BloodContext from './bloodContext';
+import bloodReducer from './bloodReducer';
 import {
-  GET_CONTACTS,
-  ADD_CONTACT,
-  DELETE_CONTACT,
   SET_CURRENT,
   CLEAR_CURRENT,
-  UPDATE_CONTACT,
-  FILTER_CONTACTS,
-  CLEAR_CONTACTS,
-  CLEAR_FILTER,
-  CONTACT_ERROR
+  REQUEST_BLOOD,ERROR
 } from '../types';
 
 const BloodState = props => {
   const initialState = {
-    contacts: null,
-    current: null,
+    topDonors: null,
+    needHelp: null,
     filtered: null,
-    error: null
+    error: null,
+    loading:true
   };
 
-  const [state, dispatch] = useReducer(contactReducer, initialState);
+  const [state, dispatch] = useReducer(bloodReducer,initialState);
 
   // Get Contacts
-  const getContacts = async () => {
-    try {
-      const res = await axios.get('/api/contacts');
-
-      dispatch({
-        type: GET_CONTACTS,
-        payload: res.data
-      });
-    } catch (err) {
-      dispatch({
-        type: CONTACT_ERROR,
-        payload: err.response.msg
-      });
-    }
-  };
+  // const getTopDonors = async () => {
+  //   try {
+  //     const res = await axios.get('/api/contacts');
+  //
+  //     dispatch({
+  //       type: GET_CONTACTS,
+  //       payload: res.data
+  //     });
+  //   } catch (err) {
+  //     dispatch({
+  //       type: CONTACT_ERROR,
+  //       payload: err.response.msg
+  //     });
+  //   }
+  // };
 
   // Add Contact
-  const addContact = async contact => {
+  const requestForBlood = async data => {
     const config = {
       headers: {
         'Content-Type': 'application/json'
@@ -51,36 +45,36 @@ const BloodState = props => {
     };
 
     try {
-      const res = await axios.post('/api/contacts', contact, config);
+      const res = await axios.post('/api/help/req', data, config);
 
       dispatch({
-        type: ADD_CONTACT,
+        type: REQUEST_BLOOD,
         payload: res.data
       });
     } catch (err) {
       dispatch({
-        type: CONTACT_ERROR,
+        type: ERROR,
         payload: err.response.msg
       });
     }
   };
-
-  // Delete Contact
-  const deleteContact = async id => {
-    try {
-      await axios.delete(`/api/contacts/${id}`);
-
-      dispatch({
-        type: DELETE_CONTACT,
-        payload: id
-      });
-    } catch (err) {
-      dispatch({
-        type: CONTACT_ERROR,
-        payload: err.response.msg
-      });
-    }
-  };
+  //
+  // // Delete Contact
+  // const deleteContact = async id => {
+  //   try {
+  //     await axios.delete(`/api/contacts/${id}`);
+  //
+  //     dispatch({
+  //       type: DELETE_CONTACT,
+  //       payload: id
+  //     });
+  //   } catch (err) {
+  //     dispatch({
+  //       type: CONTACT_ERROR,
+  //       payload: err.response.msg
+  //     });
+  //   }
+  // };
 
   // Update Contact
   const updateContact = async contact => {
@@ -135,14 +129,12 @@ const BloodState = props => {
   };
 
   return (
-    <ContactContext.Provider
+    <BloodContext.Provider
       value={{
         contacts: state.contacts,
         current: state.current,
         filtered: state.filtered,
         error: state.error,
-        addContact,
-        deleteContact,
         setCurrent,
         clearCurrent,
         updateContact,
@@ -153,7 +145,7 @@ const BloodState = props => {
       }}
     >
       {props.children}
-    </ContactContext.Provider>
+    </BloodContext.Provider>
   );
 };
 

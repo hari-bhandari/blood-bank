@@ -8,7 +8,7 @@ import BloodContext from "../Context/blood/bloodContext";
 
 const HomePage = () => {
     const bloodContext=useContext(BloodContext)
-    const {getBloodRequests,bloodRequests}=bloodContext
+    const {getBloodRequests,bloodRequests,loading}=bloodContext
     useEffect(()=>{
         getBloodRequests()
     },[])
@@ -19,12 +19,12 @@ const HomePage = () => {
                     <RequestForm/>
                     <h2>You can always donate them...</h2>
                     {
-
+                        !loading&&bloodRequests.map((value)=>(
+                            <DonorCard help={true} name={value.name} bloodType={value.bloodType} phone={value.phone} email={value.email} address={value.address} hospitalName={value.hospitalName}/>
+                        ))
                     }
-                    <DonorCard help={true}/>
-                    <DonorCard help={true}/>
-                    <DonorCard help={true}/>
-                    <DonorCard help={true}/>
+
+                   
 
                 </Col>
                 <Col lg={3}>

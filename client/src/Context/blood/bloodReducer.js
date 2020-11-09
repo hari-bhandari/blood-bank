@@ -16,6 +16,12 @@ export default (state, action) => {
         bloodRequests: action.payload,
         loading:false
       }
+    case GET_TOP_DONORS:
+      return {
+        ...state,
+        topDonors: action.payload,
+        loading:false
+      }
     // case FILTER_CONTACTS:
     //   return {
     //     ...state,

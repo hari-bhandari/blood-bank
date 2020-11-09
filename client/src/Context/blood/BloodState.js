@@ -40,7 +40,7 @@ const BloodState = props => {
       const res = await axios.get('/api/help/?isDonation=false');
 
       dispatch({
-        type: GET_TOP_DONORS,
+        type: GET_BLOOD_REQUESTS,
         payload: res.data.data
       });
     } catch (err) {

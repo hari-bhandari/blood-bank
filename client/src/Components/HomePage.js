@@ -18,6 +18,9 @@ const HomePage = () => {
                 <Col lg={9}>
                     <RequestForm/>
                     <h2>You can always donate them...</h2>
+                    {
+
+                    }
                     <DonorCard help={true}/>
                     <DonorCard help={true}/>
                     <DonorCard help={true}/>

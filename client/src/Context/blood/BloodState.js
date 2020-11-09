@@ -59,47 +59,42 @@ const BloodState = props => {
     }
   };
 
-  // Clear Contacts
-  const clearBloodsRequests = () => {
-    dispatch({ type: CLEAR_BLOODS_REQUESTS });
-  };
-  const clearTopDonors = () => {
-    dispatch({ type: CLEAR_TOP_DONORS });
-  };
-  // Set Current Contact
-  const setCurrent = contact => {
-    dispatch({ type: SET_CURRENT, payload: contact });
-  };
-
-  // Clear Current Contact
-  const clearCurrent = () => {
-    dispatch({ type: CLEAR_CURRENT });
-  };
-
-  // Filter Contacts
-  const filterContacts = text => {
-    dispatch({ type: FILTER_CONTACTS, payload: text });
-  };
-
-  // Clear Filter
-  const clearFilter = () => {
-    dispatch({ type: CLEAR_FILTER });
-  };
+  // // Clear Contacts
+  // const clearBloodsRequests = () => {
+  //   dispatch({ type: CLEAR_BLOODS_REQUESTS });
+  // };
+  // const clearTopDonors = () => {
+  //   dispatch({ type: CLEAR_TOP_DONORS });
+  // };
+  // // Set Current Contact
+  // const setCurrent = contact => {
+  //   dispatch({ type: SET_CURRENT, payload: contact });
+  // };
+  //
+  // // Clear Current Contact
+  // const clearCurrent = () => {
+  //   dispatch({ type: CLEAR_CURRENT });
+  // };
+  //
+  // // Filter Contacts
+  // const filterContacts = text => {
+  //   dispatch({ type: FILTER_CONTACTS, payload: text });
+  // };
+  //
+  // // Clear Filter
+  // const clearFilter = () => {
+  //   dispatch({ type: CLEAR_FILTER });
+  // };
 
   return (
     <BloodContext.Provider
       value={{
-        contacts: state.contacts,
-        current: state.current,
+        topDonors: state.topDonors,
+        bloodRequests: state.bloodRequests,
         filtered: state.filtered,
         error: state.error,
-        setCurrent,
-        clearCurrent,
-        updateContact,
-        filterContacts,
-        clearFilter,
-        getContacts,
-        clearContacts
+        loading: state.loading,
+        getTopDonors,requestForBlood
       }}
     >
       {props.children}

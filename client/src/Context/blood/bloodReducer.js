@@ -1,23 +1,21 @@
 import {
-  CLEAR_BLOODS_REQUESTS, CLEAR_TOP_DONORS, ERROR
+  CLEAR_BLOODS_REQUESTS, CLEAR_TOP_DONORS, ERROR, GET_BLOOD_REQUESTS, GET_TOP_DONORS
 } from '../types';
 
 export default (state, action) => {
   switch (action.type) {
-    // case GET_CONTACTS:
-    //   return {
-    //     ...state,
-    //     contacts: action.payload,
-    //     loading: false
-    //   };
-    // case UPDATE_CONTACT:
-    //   return {
-    //     ...state,
-    //     contacts: state.contacts.map(contact =>
-    //       contact._id === action.payload._id ? action.payload : contact
-    //     ),
-    //     loading: false
-    //   };
+    case GET_TOP_DONORS:
+      return {
+        ...state,
+        topDonors: action.payload,
+        loading:false
+      }
+    case GET_BLOOD_REQUESTS:
+      return {
+        ...state,
+        bloodRequests: action.payload,
+        loading:false
+      }
     // case FILTER_CONTACTS:
     //   return {
     //     ...state,

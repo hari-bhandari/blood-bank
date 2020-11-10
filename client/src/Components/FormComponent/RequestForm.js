@@ -1,40 +1,27 @@
 import React from 'react';
 import './RequestForm.css'
-import {useFormik} from "formik";
-
+import {useForm} from "./useForm";
 const RequestForm = () => {
-    const requestFormik = useFormik({
-        initialValues: {
-            name: '',
-            bloodType: '',
-            city: '',
-            hospitalName: '',
-            email: '',
-            phone: ''
-        },
-        onSubmit: values => {
-            alert(JSON.stringify(values))
 
-        },
-    });
+    const[values,handleChange]=useForm()
     return (
         <div className="card-form">
-            <form className="signup" onSubmit={requestFormik.handleSubmit}>
+            <form className="signup" >
                 <div className="form-title">Request for a blood</div>
                 <div className="form-body">
                     <div className="row">
-                        <input type="text" placeholder="Name" required name="name" value={requestFormik.values.name}/>
-                        <input type="text" placeholder="Blood Type" name="bloodType" value={requestFormik.values.bloodType}/>
+                        <input type="text" placeholder="Name" required name="name" value={values.name}/>
+                        <input type="text" placeholder="Blood Type" name="bloodType" value={values.bloodType}/>
                     </div>
                     <div className="row">
-                        <input type="text" placeholder="City" required name="city" value={requestFormik.values.city}/>
-                        <input type="text" placeholder="Hospital Name" name="hospitalName" value={requestFormik.values.hospitalName}/>
+                        <input type="text" placeholder="City" required name="city" value={values.city}/>
+                        <input type="text" placeholder="Hospital Name" name="hospitalName" value={values.hospitalName}/>
                     </div>
                     <div className="row">
-                        <input type="text" placeholder="Email Address*" name="email" value={requestFormik.values.email}/>
+                        <input type="text" placeholder="Email Address*" name="email" value={values.email}/>
                     </div>
                     <div className="row">
-                        <input type="text" placeholder="Phone Number" name="phone" value={requestFormik.values.phone}/>
+                        <input type="text" placeholder="Phone Number" name="phone" value={values.phone}/>
                     </div>
                 </div>
                 <div className="rule"></div>

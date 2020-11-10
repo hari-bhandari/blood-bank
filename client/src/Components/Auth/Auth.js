@@ -1,7 +1,6 @@
 import React, {useContext, useState} from 'react';
 import AuthContext from "../../Context/auth/authContext"
-import { useFormik } from 'formik';
-import useForm from "../FormComponent/useForm";
+import {useForm} from "../FormComponent/useForm";
 import './Auth.css'
 const Auth = (props) => {
     const [values,handleChange]=useForm()
@@ -49,11 +48,11 @@ const Auth = (props) => {
                         </div>
                         <div className="input-field">
                             <i className="fas fa-envelope"></i>
-                            <input name="email" type="email" type="email" placeholder="Email" value={valuesForSignup.email} onChange={handleChangeForSignup} />
+                            <input name="email" type="email" placeholder="Email" value={valuesForSignup.email} onChange={handleChangeForSignup} />
                         </div>
                         <div className="input-field">
                             <i className="fas fa-lock"></i>
-                            <input name="password" type="password" type="password" placeholder="Password" name="password" value={valuesForSignup.password} onChange={handleChangeForSignup}/>
+                            <input name="password"  type="password" placeholder="Password" name="password" value={valuesForSignup.password} onChange={handleChangeForSignup}/>
                         </div>
                         <input type="submit" className="btn" value="Sign up" />
                         <p className="social-text">Or Sign up with social platforms</p>

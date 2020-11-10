@@ -59,12 +59,7 @@ const BloodState = props => {
     };
 
     try {
-      const res = await axios.post('/api/help/req', data, config);
-
-      dispatch({
-        type: REQUEST_BLOOD,
-        payload: res.data
-      });
+      await axios.post('/api/help/req', data, config);
     } catch (err) {
       dispatch({
         type: ERROR,

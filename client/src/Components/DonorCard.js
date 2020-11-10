@@ -20,13 +20,11 @@ const DonorCard = ({help,name,address,email,hospitalName,bloodType,phone}) => {
                     <p className="content">
                         Email:{email}
                     </p>
-                    <p className="content">
-                        Phone:{phone}
-                    </p>
+
                 </div>
                 <div className="content-container">
                     <button id="accept" type="button"><i className="fa fa-phone"/>{phone}</button>
-                    <button id="cancel" type="button">Info</button>
+                    <button id="cancel" type="button">More Info</button>
                 </div>
 
             </div>

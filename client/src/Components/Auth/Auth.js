@@ -60,7 +60,7 @@ const Auth = (props) => {
                         <h2 className="title">Sign up</h2>
                         <div className="input-field">
                             <i className="fas fa-user"></i>
-                            <input id="password" name="number" type="number" placeholder="Phone Number" value={signupFormik.values.number} onChange={signupFormik.handleChange}/>
+                            <input id="number" name="number" type="number" placeholder="Phone Number" value={signupFormik.values.number} onChange={signupFormik.handleChange}/>
                         </div>
                         <div className="input-field">
                             <i className="fas fa-envelope"></i>
@@ -68,7 +68,7 @@ const Auth = (props) => {
                         </div>
                         <div className="input-field">
                             <i className="fas fa-lock"></i>
-                            <input name="password" type="password" type="password" placeholder="Password" value={signupFormik.values.password} onChange={signupFormik.handleChange}/>
+                            <input name="password" type="password" type="password" placeholder="Password" name="password" value={signupFormik.values.password} onChange={signupFormik.handleChange}/>
                         </div>
                         <input type="submit" className="btn" value="Sign up" />
                         <p className="social-text">Or Sign up with social platforms</p>

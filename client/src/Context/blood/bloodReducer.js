@@ -1,5 +1,5 @@
 import {
-  CLEAR_BLOODS_REQUESTS, CLEAR_TOP_DONORS, ERROR, GET_BLOOD_REQUESTS, GET_TOP_DONORS
+  CLEAR_BLOODS_REQUESTS, CLEAR_TOP_DONORS, ERROR, GET_BLOOD_REQUESTS, GET_TOP_DONORS, REQUEST_BLOOD
 } from '../types';
 
 export default (state, action) => {
@@ -22,6 +22,7 @@ export default (state, action) => {
         topDonors: action.payload,
         loading:false
       }
+
     // case FILTER_CONTACTS:
     //   return {
     //     ...state,

@@ -61,7 +61,7 @@
       <workItem from="1604934403708" duration="6426000" />
       <workItem from="1604978116173" duration="9108000" />
       <workItem from="1604992401520" duration="6641000" />
-      <workItem from="1605078246466" duration="707000" />
+      <workItem from="1605078246466" duration="4421000" />
     </task>
     <servers />
   </component>
@@ -105,6 +105,10 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="575" y="290" width="824" height="533" key="IDE.errors.dialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1604813455563" />
+    <state x="164" y="127" width="1656" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605080161674">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="164" y="127" width="1656" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605080161674" />
     <state x="683" y="292" width="618" height="522" key="find.popup" timestamp="1604995658750">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>

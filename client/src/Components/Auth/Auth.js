@@ -7,14 +7,25 @@ const Auth = (props) => {
     const {login,register,isAuthenticated,loadUser,error}=authContext;
     const [values,handleChange]=useForm()
     const [valuesForSignup,handleChangeForSignup]=useForm()
-    const onLogin=()=>{
-        if(validate(values)){
-            login('Login')
+    const onLogin=(e)=>{
+        e.preventDefault()
+        if(!validate(values)){
+            login(values)
         }
         else{
             error('error')
         }
     }
+    const onRegister=(e)=>{
+        if(!validate(values)){
+            register(values)
+        }
+        else{
+            error('error')
+        }
+    }
+
+
 
 
 
@@ -26,7 +37,7 @@ const Auth = (props) => {
     return (
         <div className={`container ${Login?'':'sign-up-mode'}`}>
             <div className="forms-container">
-                <div className="signin-signup">
+                <div className="signin-signup" >
                     <form  className="sign-in-form" onSubmit={onLogin}>
                         <h2 className="title">Sign in</h2>
                         <div className="input-field">

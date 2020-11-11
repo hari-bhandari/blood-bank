@@ -17,6 +17,7 @@ const Auth = (props) => {
         }
     }
     const onRegister=(e)=>{
+        e.preventDefault()
         if(!validate(values)){
             register(values)
         }

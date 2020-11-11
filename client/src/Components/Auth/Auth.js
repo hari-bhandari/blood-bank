@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react';
 import AuthContext from "../../Context/auth/authContext"
 import {useForm, validate} from "../FormComponent/useForm";
+import {toast} from "react-toastify";
 import './Auth.css'
 const Auth = (props) => {
     const authContext=useContext(AuthContext);
@@ -9,11 +10,19 @@ const Auth = (props) => {
     const [valuesForSignup,handleChangeForSignup]=useForm()
     const onLogin=(e)=>{
         e.preventDefault()
-        if(!validate(values)){
+        if(validate(values)){
             login(values)
         }
         else{
-            error('error')
+            toast.error('Your username or password was not valid', {
+                position: "top-center",
+                autoClose: 8000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         }
     }
     const onRegister=(e)=>{

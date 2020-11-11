@@ -1,13 +1,22 @@
 import React, {useContext, useState} from 'react';
 import AuthContext from "../../Context/auth/authContext"
-import {useForm} from "../FormComponent/useForm";
+import {useForm, validate} from "../FormComponent/useForm";
 import './Auth.css'
 const Auth = (props) => {
-    const [values,handleChange]=useForm()
-    const [valuesForSignup,handleChangeForSignup]=useForm()
-
     const authContext=useContext(AuthContext);
     const {login,register,isAuthenticated,loadUser,error}=authContext;
+    const [values,handleChange]=useForm()
+    const [valuesForSignup,handleChangeForSignup]=useForm()
+    const onLogin=()=>{
+        if(validate(values)){
+            login('Login')
+        }
+        else{
+            error('error')
+        }
+    }
+
+
 
     const [Login,setLogin]=useState(true)
     const onClick=()=>{
@@ -18,7 +27,7 @@ const Auth = (props) => {
         <div className={`container ${Login?'':'sign-up-mode'}`}>
             <div className="forms-container">
                 <div className="signin-signup">
-                    <form  className="sign-in-form">
+                    <form  className="sign-in-form" onSubmit={onLogin}>
                         <h2 className="title">Sign in</h2>
                         <div className="input-field">
                             <i className="fas fa-user"></i>

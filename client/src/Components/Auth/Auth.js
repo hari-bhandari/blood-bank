@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import AuthContext from "../../Context/auth/authContext"
 import {useForm, validate} from "../FormComponent/useForm";
 import {toast} from "react-toastify";
@@ -8,6 +8,19 @@ const Auth = (props) => {
     const {login,register,isAuthenticated,loadUser,error}=authContext;
     const [values,handleChange]=useForm()
     const [valuesForSignup,handleChangeForSignup]=useForm()
+    useEffect(()=>{
+       if(error){
+           toast.error(error, {
+               position: "top-center",
+               autoClose: 80000,
+               hideProgressBar: false,
+               closeOnClick: true,
+               pauseOnHover: true,
+               draggable: true,
+               progress: undefined,
+           });
+       }
+    },[])
     const onLogin=(e)=>{
         e.preventDefault()
         if(validate(values)){
@@ -16,7 +29,7 @@ const Auth = (props) => {
         else{
             toast.error('Your username or password was not valid', {
                 position: "top-center",
-                autoClose: 8000,
+                autoClose: 80000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -52,11 +65,11 @@ const Auth = (props) => {
                         <h2 className="title">Sign in</h2>
                         <div className="input-field">
                             <i className="fas fa-user"/>
-                            <input id="email" name="email" type="text" placeholder="Email" value={values.email} onChange={handleChange}/>
+                            <input id="email" name="email" type="text" placeholder="Email" value={values.email} onChange={handleChange} required/>
                         </div>
                         <div className="input-field">
                             <i className="fas fa-lock"/>
-                            <input id="password" name="password" type="password" placeholder="Password" value={values.password} onChange={handleChange}/>
+                            <input id="password" name="password" type="password" placeholder="Password" value={values.password} onChange={handleChange} required/>
                         </div>
                         <input type="submit" value="Login" className="btn solid" />
                         <p className="social-text">Or Sign in with social platforms</p>

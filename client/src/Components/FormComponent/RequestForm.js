@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import './RequestForm.css'
 import {useForm} from "./useForm";
+import AuthContext from "../../Context/auth/authContext";
 const RequestForm = () => {
-
+    const authContext=useContext(AuthContext);
+    const {user}=authContext;
     const[values,handleChange]=useForm()
+    useEffect(()=>{
+    },[])
     return (
         <div className="card-form">
             <form className="signup" >

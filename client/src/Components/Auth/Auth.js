@@ -9,6 +9,11 @@ const Auth = (props) => {
     const [values,handleChange]=useForm()
     const [valuesForSignup,handleChangeForSignup]=useForm()
     useEffect(()=>{
+        if(isAuthenticated){
+            props.history.push('/')
+        }
+    })
+    useEffect(()=>{
        if(error){
            toast.error(error, {
                position: "top-center",
@@ -23,29 +28,11 @@ const Auth = (props) => {
     },[])
     const onLogin=(e)=>{
         e.preventDefault()
-        if(validate(values)){
-            login(values)
-        }
-        else{
-            toast.error('Your username or password was not valid', {
-                position: "top-center",
-                autoClose: 80000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-        }
+        login(values)
     }
     const onRegister=(e)=>{
         e.preventDefault()
-        if(!validate(valuesForSignup)){
-            register(valuesForSignup)
-        }
-        else{
-            error('error')
-        }
+        register(valuesForSignup)
     }
 
 

@@ -9,15 +9,15 @@ export const useForm=()=>{
 }
 export const validate=(obj)=>{
     for(const key in obj){
-        if(obj[key]==''||obj[key]==null,obj[key]==undefined){
+        if(obj[key]===''||obj[key]===null,obj[key]===undefined){
             return false
         }
-        if(key=='email'){
+        if(key==='email'){
             if(!validateEmail(obj[key])){
                 return false
             }
         }
-        if(key=='phone'){
+        if(key==='phone'){
             if(obj[key]<10){
                 return false
             }

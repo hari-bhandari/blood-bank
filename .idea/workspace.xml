@@ -4,6 +4,8 @@
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/useForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/useForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Navbar/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +68,7 @@
       <workItem from="1605170915542" duration="3988000" />
       <workItem from="1605204126100" duration="634000" />
       <workItem from="1605332076033" duration="732000" />
+      <workItem from="1605429518715" duration="2379000" />
     </task>
     <servers />
   </component>

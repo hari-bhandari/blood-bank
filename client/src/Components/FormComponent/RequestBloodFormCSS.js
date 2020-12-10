@@ -35,7 +35,7 @@ export const LeftContent = styled.div`
     color: #f8f8f8;
   }
   p{
-    font-size: 16px;
+    font-size: 16x;
   }
 
   @media (max-width: 1000px) {

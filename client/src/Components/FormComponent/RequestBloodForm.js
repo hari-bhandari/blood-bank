@@ -1,15 +1,17 @@
 import React, {useState} from 'react';
 import {FaHandshake,FiSend} from "react-icons/all";
-import useForm from "./useform";
-import {Container} from 'react-grid-system'
+import useForm from "./useForm";
 import {
     ContactWrapper,
     LeftContent,
     ContactBox,
     ContactForm,Recieved,Button
 } from './RequestBloodFormCSS';
+import AuthContext from "../../Context/auth/authContext";
 
 function Contact() {
+    const authContext=useContext(AuthContext);
+    const {user}=authContext;
     const [submitted, setSubmitted] = useState(false)
     const {formData, errors, handleInput, isFormValid} = useForm();
     const sendEmail = async () => {

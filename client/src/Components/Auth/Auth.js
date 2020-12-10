@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import AuthContext from "../../Context/auth/authContext"
-import {useForm, validate} from "../FormComponent/useForm";
+import {useForm, validate} from "./useForm";
 import {toast} from "react-toastify";
 import './Auth.css'
 const Auth = (props) => {

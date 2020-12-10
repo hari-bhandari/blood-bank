@@ -2,6 +2,7 @@ import express from 'express'
 import helmet from 'helmet'
 import cors from 'cors'
 import connectDB from './config/db.js'
+import fileUpload from 'express-fileupload'
 import {errorHandler} from './middlewares/error.js'
 const app=express()
 import auth from './routes/auth.js'
@@ -16,7 +17,9 @@ connectDB()
 
 //Body parser
 //connecting to db
+app.use(fileUpload())
 //implementing helmet
+
 app.use(helmet())
 //cors
 app.use(cors())

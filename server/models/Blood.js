@@ -42,7 +42,8 @@ const BloodSchema =mongoose.Schema(
             type: mongoose.Schema.ObjectId,
             ref: 'User',
             required: true
-        }
+        },
+        image:String
     });
 
 export default mongoose.model('Blood',BloodSchema)

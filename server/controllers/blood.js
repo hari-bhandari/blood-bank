@@ -45,3 +45,36 @@ export const getBloodRequests=asyncHandler(async  (req,res,next)=>{
 //         data:bootcamp
 //     })
 // })
+//@desc upload photo for item
+//@route PUT /api/v1/item/:id/photo
+//@access private
+export const patientPhoto=asyncHandler(async (req,res,next)=> {
+    const blood=await Blood.findById(req.params.id);
+    if(!blood){
+        return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
+    }
+    if(!req.files){
+        return next(new ErrorResponse(`Please upload a file`,400))
+    }
+    const file=req.files.file;
+    if(!file.mimetype.startsWith('image')){
+        return next(new ErrorResponse(`Please upload an image file`,400))
+    }
+    if(file.size>1000000){
+        return next(new ErrorResponse(`Please upload an image file less than ${process.env.MAX_FILE_UPLOAD}`,400))
+    }
+
+    //create custom file name
+    file.name=`photo_${req.params.id}${path.parse(file.name).ext}`
+    file.mv(`./public/uploads/${file.name}`, async err=>{
+        if(err){
+            console.error(err)
+            return next(new ErrorResponse(`problem with file upload `,500))
+        }
+        await Blood.findByIdAndUpdate(req.params.id,{images:file.name});
+        res.status(200).json({
+            success:true,
+            data:file.name
+        })
+    })
+})

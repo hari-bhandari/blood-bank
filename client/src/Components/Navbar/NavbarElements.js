@@ -26,6 +26,9 @@ export const NavLink = styled(Link)`
   &.active {
     color: #15cdfc;
   }
+  img{
+    width: 60px;
+  }
 `;
 
 export const Bars = styled(FaBars)`

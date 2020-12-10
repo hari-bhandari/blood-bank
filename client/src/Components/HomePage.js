@@ -5,7 +5,6 @@ import { Container, Row, Col } from 'react-grid-system';
 import {NavBtnLink} from "./Navbar/NavbarElements";
 import RequestForm from "./FormComponent/RequestForm";
 import BloodContext from "../Context/blood/bloodContext";
-
 const HomePage = () => {
     const bloodContext=useContext(BloodContext)
     const {getBloodRequests,bloodRequests,loading}=bloodContext

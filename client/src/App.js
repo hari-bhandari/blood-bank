@@ -1,6 +1,6 @@
 import './App.css';
 import Auth from "./Components/Auth/Auth";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import RequestBloodForm from "./Components/FormComponent/RequestBloodForm";
 import HomePage from "./Components/HomePage";

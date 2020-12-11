@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/models/Blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Blood.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +72,8 @@
       <workItem from="1605204126100" duration="634000" />
       <workItem from="1605332076033" duration="732000" />
       <workItem from="1605429518715" duration="2691000" />
-      <workItem from="1607633729589" duration="10122000" />
+      <workItem from="1607633729589" duration="12505000" />
+      <workItem from="1607689386993" duration="3889000" />
     </task>
     <servers />
   </component>
@@ -87,5 +90,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

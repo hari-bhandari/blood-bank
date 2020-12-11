@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Donors/DonorItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Donors/DonorItemCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Donors/Donors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Navbar/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +28,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/Components/Navbar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -73,7 +73,7 @@
       <workItem from="1605332076033" duration="732000" />
       <workItem from="1605429518715" duration="2691000" />
       <workItem from="1607633729589" duration="12505000" />
-      <workItem from="1607689386993" duration="5811000" />
+      <workItem from="1607689386993" duration="9434000" />
     </task>
     <servers />
   </component>

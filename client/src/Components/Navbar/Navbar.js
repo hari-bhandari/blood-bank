@@ -22,15 +22,16 @@ const Navbar = () => {
                     <NavLink to='/about' activeStyle>
                         About
                     </NavLink>
-                    <NavLink to='/services' activeStyle>
+                    <NavLink to='/donors' activeStyle>
                         Donors
                     </NavLink>
-                    <NavLink to='/contact-us' activeStyle>
-                        Be A Donor
-                    </NavLink>
-                    <NavLink to='/contact-us' activeStyle>
+                    <NavLink to='/request' activeStyle>
                         Request For Blood
                     </NavLink>
+                    <NavLink to='/help' activeStyle>
+                        FAQ
+                    </NavLink>
+
                     {/* Second Nav */}
                 </NavMenu>
                 <NavBtn>

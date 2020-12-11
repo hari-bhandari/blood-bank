@@ -56,7 +56,6 @@ export const Profile=styled.img`
   background: #292343;
 `
 export const Button=styled.button`
-  margin: 10px 0 40px 0;
   background: #03bfbc;
   border: 1px solid #03bfbc;
   padding: 10px 25px;
@@ -64,9 +63,11 @@ export const Button=styled.button`
   border-radius: 3px;
   font-family: Montserrat, sans-serif;
   cursor: pointer;
-  &hover {
+
+  &:hover {
     color: #231e39;
-    background: #03bfbc;
+    background: #0c40c4;
     transition: .5s;
+    outline: none;
   }
 `

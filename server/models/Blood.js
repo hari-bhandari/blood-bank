@@ -43,6 +43,9 @@ const BloodSchema =mongoose.Schema(
             ref: 'User',
             required: true
         },
+        expire:{
+            type:Date
+        },
         image:String
     });
 

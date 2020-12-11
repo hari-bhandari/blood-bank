@@ -6,6 +6,7 @@ import RequestBloodForm from "./Components/FormComponent/RequestBloodForm";
 import HomePage from "./Components/HomePage";
 import BloodState from "./Context/blood/BloodState";
 import {ToastContainer} from "react-toastify";
+import Donors from "./Components/Donors/Donors";
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path='/' exact component={HomePage} />
                 <Route path='/login' exact component={Auth} />
                 <Route path={'/request'} exact component={RequestBloodForm}/>
+                <Route path={'/donors'} exact component={Donors}/>
             </Switch>
         </Router>
         </BloodState>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const Container=styled.div`
   user-select: none;
-  margin: 100px auto;
+  margin: 20px auto;
   background: #231e39;
   color: #b3b8cd;
   border-radius: 5px;
@@ -45,10 +45,9 @@ export const Button=styled.button`
   border-radius: 3px;
   font-family: Montserrat, sans-serif;
   cursor: pointer;
-
   &hover {
     color: #231e39;
-    background: #bf038a;
+    background: #03bfbc;
     transition: .5s;
   }
 `

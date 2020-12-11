@@ -7,19 +7,38 @@ export const Container=styled.div`
   border-radius: 5px;
   width: 350px;
   text-align: center;
-  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
-  .profile-name{
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .75);
+
+  .profile-name {
     font-size: 25px;
     font-weight: bold;
     margin: 27px 0 0 120px;
   }
-  .about{
+
+  .about {
     margin-top: 35px;
     line-height: 21px;
   }
-  button{
+
+  button {
     margin: 10px 0 40px 0;
   }
+
+  .bloodType {
+    font-size: 55px;
+    font-family: "Helvetica Neue";
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    position: absolute;
+    left: 60%;
+    color: #003e02;
+  }
+;
 `
 export const CoverPhoto=styled.div`
   background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);

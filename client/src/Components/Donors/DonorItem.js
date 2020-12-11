@@ -3,8 +3,9 @@ import {Container,CoverPhoto,Profile,Button} from './DonorItemCSS'
 const DonorItem = () => {
     return (
         <Container>
+            <div className="bloodType">A+</div>
             <CoverPhoto><Profile
-                src="https://images.unsplash.com/photo-1565464027194-7957a2295fb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"/></CoverPhoto>
+                src="https://haribhandari.me/static/bbfbed4a006f12cc6ec59b3f42d010d5/b3cab/me.jpg"/></CoverPhoto>
             <div className="profile-name">Beni Smith</div>
             <p className="about">User Interface Designer and<br/>front-end developer</p>
             <Button>Hey</Button>

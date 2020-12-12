@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/Components/Auth/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/AuthGlobal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/AuthGlobal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/DonorItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Donors/DonorItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/DonorItemCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Donors/DonorItemCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +72,7 @@
       <workItem from="1605429518715" duration="2691000" />
       <workItem from="1607633729589" duration="12505000" />
       <workItem from="1607689386993" duration="21432000" />
-      <workItem from="1607779539340" duration="5527000" />
+      <workItem from="1607779539340" duration="5602000" />
     </task>
     <servers />
   </component>

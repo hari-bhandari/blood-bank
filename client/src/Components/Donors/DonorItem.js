@@ -1,9 +1,9 @@
 import React from 'react';
-import {Container,CoverPhoto,Profile,Button} from './DonorItemCSS'
+import {Container,CoverPhoto,Profile,Button,BloodType} from './DonorItemCSS'
 const DonorItem = () => {
     return (
         <Container>
-            <div className="bloodType">A+</div>
+            <BloodType>A+</BloodType>
             <CoverPhoto><Profile
                 src="https://haribhandari.me/static/bbfbed4a006f12cc6ec59b3f42d010d5/b3cab/me.jpg"/></CoverPhoto>
             <div className="profile-name">Beni Smith</div>

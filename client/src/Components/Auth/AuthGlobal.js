@@ -10,6 +10,9 @@ export const AuthGlobal=styled.div`
   input {
     font-family: "Poppins", sans-serif;
   }
+  .signup-agreement{
+    padding:0 50px;
+  }
 
   .container {
     position: relative;

@@ -24,20 +24,7 @@ export const Container=styled.div`
     margin: 10px 0 40px 0;
   }
 
-  .bloodType {
-    font-size: 55px;
-    font-family: "Helvetica Neue";
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 0, 0, 0.8);
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 90px;
-    position: absolute;
-    left: 60%;
-    color: #003e02;
-  }
+
 ;
 `
 export const CoverPhoto=styled.div`
@@ -70,4 +57,18 @@ export const Button=styled.button`
     transition: .5s;
     outline: none;
   }
+`
+export const BloodType=styled.div`
+  font-size: 55px;
+  font-family: "Helvetica Neue";
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  position: absolute;
+  left: ${props=>props.position?props.position:'60%'};
+  color: #003e02;
 `

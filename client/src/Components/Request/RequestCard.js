@@ -1,11 +1,13 @@
 import React from 'react';
 import {CardContainer} from "./RequestCardCSS";
+import {BloodType} from '../Donors/DonorItemCSS'
 
 const RequestCard = () => {
     return (
 
 
         <CardContainer>
+            <BloodType position={'10%'}>A+</BloodType>
                 <img
                     src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no"
                     alt="Person" className="card__image"/>

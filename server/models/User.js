@@ -34,7 +34,7 @@ const UserSchema=new mongoose.Schema({
     bloodType:{
         type:String,
         required: [true, 'Please specify a blood type'],
-        enum:['A+','A-','B+','B-','O+','O-','AB+','AB-']
+        enum:['A+','A-','B+','B-','C-','C+','O+','O-','AB+','AB-']
     },
     district:{
         type:String,

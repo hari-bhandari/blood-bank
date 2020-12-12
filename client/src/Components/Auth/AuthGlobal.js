@@ -11,7 +11,7 @@ export const AuthGlobal=styled.div`
     font-family: "Poppins", sans-serif;
   }
   .signup-agreement{
-    padding:0 50px;
+    max-width: 500px;
   }
 
   .container {

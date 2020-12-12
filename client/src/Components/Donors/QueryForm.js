@@ -7,7 +7,7 @@ const QueryForm = () => {
     const handleChange = selectedOption => {
         console.log(`Option selected:`, selectedOption);
     };
-    const bloodTypes=['A+','A-','B+','B-','O+','O-','AB+',]
+    const bloodTypes=['A+','A-','B+','B-','O+','O-','AB+','AB-']
     const bloodOptions=bloodTypes.map(d=>({
         "value":d,
         "label":d.charAt(0).toUpperCase() + d.slice(1)

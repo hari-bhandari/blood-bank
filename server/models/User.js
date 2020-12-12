@@ -2,6 +2,8 @@ import mongoose from 'mongoose'
 import crypto from 'crypto'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
+import {districts} from "../data/districts.js";
+
 const UserSchema=new mongoose.Schema({
     name:{
         type:String,
@@ -22,6 +24,22 @@ const UserSchema=new mongoose.Schema({
         minLength:6,
         maxLength:30,
         select:false
+    },
+    phone:{
+        type:Number,
+        required:[true,'Please add a Phone Number'],
+        minLength:8,
+        maxLength:12,
+    },
+    bloodType:{
+        type:String,
+        required: [true, 'Please specify a blood type'],
+        enum:['A+','A-','B+','B-','O+','O-','AB+','AB-']
+    },
+    district:{
+        type:String,
+        required: [true, 'Please enter your district'],
+        enum:districts
     },
     resetPasswordToken:String,
     resetPasswordExpire:Date,

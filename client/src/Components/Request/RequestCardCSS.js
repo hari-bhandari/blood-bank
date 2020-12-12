@@ -12,6 +12,7 @@ export const CardContainer=styled.div`
     margin-top: 15px;
     font-size: 1.5em;
   }
+  margin-top: 50px;
 
   .card__image {
     height: 160px;
@@ -77,7 +78,7 @@ export const CardContainer=styled.div`
     transition-delay: 0s, 0.25s, 0s;
   }
 
-  .btn {
+  .btn-request {
     background: none;
     border: none;
     cursor: pointer;
@@ -89,7 +90,7 @@ export const CardContainer=styled.div`
     width: 13rem;
   }
 
-  .btn:focus {
+  .btn-request:focus {
     outline: 2px dotted #55d7dc;
   }
 

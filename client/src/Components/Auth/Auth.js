@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from 'react';
 import AuthContext from "../../Context/auth/authContext"
 import {useForm, validate} from "./useForm";
 import {toast} from "react-toastify";
-import './Auth.css'
+import {AuthGlobal} from './AuthGlobal'
 const Auth = (props) => {
     const authContext=useContext(AuthContext);
     const {login,register,isAuthenticated,loadUser,error}=authContext;
@@ -45,6 +45,7 @@ const Auth = (props) => {
     }
 
     return (
+        <AuthGlobal>
         <div className={`container ${Login?'':'sign-up-mode'}`}>
             <div className="forms-container">
                 <div className="signin-signup" >
@@ -88,6 +89,7 @@ const Auth = (props) => {
                             <i className="fas fa-lock"/>
                             <input name="password"  type="password" placeholder="Password" name="password" value={valuesForSignup.password} onChange={handleChangeForSignup}/>
                         </div>
+                        <p className="signup-agreement">By signing up,You're accepting to show your contact information and blood group to people in need</p>
                         <input type="submit" className="btn" value="Sign up" />
                         <p className="social-text">Or Sign up with social platforms</p>
                         <div className="social-media">
@@ -129,6 +131,7 @@ const Auth = (props) => {
                 </div>
             </div>
         </div>
+        </AuthGlobal>
 
     );
 };

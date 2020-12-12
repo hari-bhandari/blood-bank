@@ -5,16 +5,13 @@ import ErrorResponse from "../utils/errorResponse.js";
 //@route POST /api/v1/auth/register
 //@access Public
 export const register=asyncHandler(async (req, res, next)=>{
-    const {name,email,password,role}=req.body;
+    const {email}=req.body;
     const isUser=User.findOne({email})
     console.log(isUser.email)
     //Create user
-    const user=await User.create({
-        name,
-        email,
-        password,
-        role
-    });
+    const user=await User.create(
+        req.body
+    );
     //Create web token and send it
     sendTokenResponse(user,200,res)
 

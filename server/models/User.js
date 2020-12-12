@@ -39,7 +39,6 @@ const UserSchema=new mongoose.Schema({
     district:{
         type:String,
         required: [true, 'Please enter your district'],
-        enum:districts
     },
     resetPasswordToken:String,
     resetPasswordExpire:Date,

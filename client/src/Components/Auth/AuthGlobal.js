@@ -82,6 +82,13 @@ export const AuthGlobal=styled.div`
     position: relative;
   }
 
+  .queryBox {
+    max-width: 500px;
+    width: calc(100% + 40px);
+    padding: 0 0.4rem;
+    position: relative;
+  }
+
   .input-field i {
     text-align: center;
     line-height: 55px;

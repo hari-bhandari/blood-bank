@@ -3,6 +3,8 @@ import AuthContext from "../../Context/auth/authContext"
 import {useForm, validate} from "./useForm";
 import {toast} from "react-toastify";
 import {AuthGlobal} from './AuthGlobal'
+import SignIn from "./SignIn";
+import Signup from "./Signup";
 const Auth = (props) => {
     const authContext=useContext(AuthContext);
     const {login,register,isAuthenticated,loadUser,error}=authContext;
@@ -44,7 +46,8 @@ const Auth = (props) => {
         <div className={`container ${Login?'':'sign-up-mode'}`}>
             <div className="forms-container">
                 <div className="signin-signup" >
-
+                <SignIn/>
+                <Signup/>
 
                 </div>
             </div>

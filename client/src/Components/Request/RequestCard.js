@@ -9,7 +9,7 @@ const RequestCard = () => {
         <CardContainer>
             <BloodType position={'10%'}>A+</BloodType>
                 <img
-                    src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no"
+                    src="https://haribhandari.me/static/bbfbed4a006f12cc6ec59b3f42d010d5/b3cab/me.jpg"
                     alt="Person" className="card__image"/>
                     <p className="card__name">Help</p>
                     <div className="grid-container">

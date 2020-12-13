@@ -8,7 +8,6 @@ import BloodState from "./Context/blood/BloodState";
 import {ToastContainer} from "react-toastify";
 import Donors from "./Components/Donors/Donors";
 import 'react-toastify/dist/ReactToastify.css';
-import { ReactQueryDevtools } from 'react-query-devtools'
 function App() {
   return (
     <div className="App">
@@ -24,7 +23,6 @@ function App() {
             </Switch>
         </Router>
         </BloodState>
-        <ReactQueryDevtools/>
 
     </div>
   );

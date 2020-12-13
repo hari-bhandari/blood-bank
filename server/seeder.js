@@ -25,8 +25,8 @@ const bloods=JSON.parse(
 // Import into DB
 const importData = async () => {
     try {
-        await User.create(users);
-        // await Blood.create(bloods);
+        // await User.create(users);
+        await Blood.create(bloods);
         console.log('Data Imported...');
         process.exit();
     } catch (err) {
@@ -37,7 +37,7 @@ const importData = async () => {
 // Delete data
 const deleteData = async () => {
     try {
-        await User.deleteMany();
+        // await User.deleteMany();
         await Blood.deleteMany();
         process.exit();
     } catch (err) {

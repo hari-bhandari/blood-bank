@@ -8,7 +8,7 @@ import {
 
 const BloodState = props => {
   const initialState = {
-    topDonors: null,
+    donors: null,
     bloodRequests: null,
     filtered: null,
     error: null,
@@ -96,7 +96,7 @@ const BloodState = props => {
   return (
     <BloodContext.Provider
       value={{
-        topDonors: state.topDonors,
+        donors: state.donors,
         bloodRequests: state.bloodRequests,
         filtered: state.filtered,
         error: state.error,

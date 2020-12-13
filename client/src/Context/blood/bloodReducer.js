@@ -4,12 +4,6 @@ import {
 
 export default (state, action) => {
   switch (action.type) {
-    case GET_DONORS:
-      return {
-        ...state,
-        topDonors: action.payload,
-        loading:false
-      }
     case GET_BLOOD_REQUESTS:
       return {
         ...state,
@@ -19,7 +13,7 @@ export default (state, action) => {
     case GET_DONORS:
       return {
         ...state,
-        topDonors: action.payload,
+        donors: action.payload,
         loading:false
       }
 
@@ -34,7 +28,7 @@ export default (state, action) => {
     case CLEAR_TOP_DONORS:
       return {
         ...state,
-        topDonors:null
+        donors:null
       }
     case CLEAR_BLOODS_REQUESTS:
       return {

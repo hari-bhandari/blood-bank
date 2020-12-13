@@ -1,14 +1,14 @@
 import React from 'react';
 import {Container,CoverPhoto,Profile,Button,BloodType} from './DonorItemCSS'
-const DonorItem = () => {
+const DonorItem = ({donor}) => {
     return (
         <Container>
-            <BloodType>A+</BloodType>
+            <BloodType>{donor.bloodType}</BloodType>
             <CoverPhoto><Profile
-                src="https://haribhandari.me/static/bbfbed4a006f12cc6ec59b3f42d010d5/b3cab/me.jpg"/></CoverPhoto>
-            <div className="profile-name">Beni Smith</div>
-            <p className="about">District:Baglung<br/>Full Address:Hatiya Baglung</p>
-            <Button>9841921783</Button>
+                src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png"/></CoverPhoto>
+            <div className="profile-name">{donor.name}</div>
+            <p className="about">District:{donor.district}<br/>Email:{donor.email}</p>
+            <Button>{donor.phone}</Button>
             <Button>More Info</Button>
         </Container>
     );

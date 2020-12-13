@@ -26,7 +26,7 @@ const bloods=JSON.parse(
 const importData = async () => {
     try {
         await User.create(users);
-        await Blood.create(bloods);
+        // await Blood.create(bloods);
         console.log('Data Imported...');
         process.exit();
     } catch (err) {

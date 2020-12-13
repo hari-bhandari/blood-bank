@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import bcrypt from "bcryptjs";
 import addSubtractDate from 'add-subtract-date'
+import districts from "../data/districts.js";
 
 const BloodSchema = mongoose.Schema(
     {
@@ -10,8 +11,10 @@ const BloodSchema = mongoose.Schema(
             trim: true,
             maxlength: [50, 'Name can not be more than 50 characters']
         },
-        bloodType: {
-            type: String
+        bloodType:{
+            type:String,
+            required: [true, 'Please specify a blood type'],
+            enum:['A+','A-','B+','B-','C-','C+','O+','O-','AB+','AB-']
         },
         message: {
             type: String,
@@ -31,13 +34,10 @@ const BloodSchema = mongoose.Schema(
                 'Please add a valid email'
             ],
         },
-        address: {
-            type: String,
-            required: [true, 'Please add an address']
-        },
-        isDonation: {
-            type: Boolean,
-            default: false
+        district:{
+            type:String,
+            required: [true, 'Please enter your district'],
+            enum:districts
         },
         hospitalName: {
             type: String,

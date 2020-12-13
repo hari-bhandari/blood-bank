@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 import crypto from 'crypto'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
-import {districts} from "../data/districts.js";
+import districts from "../data/districts.js";
 
 const UserSchema=new mongoose.Schema({
     name:{
@@ -39,6 +39,7 @@ const UserSchema=new mongoose.Schema({
     district:{
         type:String,
         required: [true, 'Please enter your district'],
+        enum:districts
     },
     resetPasswordToken:String,
     resetPasswordExpire:Date,

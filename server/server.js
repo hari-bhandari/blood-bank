@@ -7,6 +7,7 @@ import {errorHandler} from './middlewares/error.js'
 const app=express()
 import auth from './routes/auth.js'
 import blood from './routes/blood.js'
+import donors from './routes/donors.js'
 app.use(express.json());
 
 const PORT= process.env.PORT||5000
@@ -26,6 +27,7 @@ app.use(cors())
 //routes
 app.use('/api/auth',auth)
 app.use('/api/help',blood)
+app.use('/api/donors',donors)
 //error
 app.use(errorHandler)
 

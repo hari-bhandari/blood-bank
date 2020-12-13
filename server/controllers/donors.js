@@ -1,5 +1,5 @@
 import User from "../models/User.js";
-import asyncHandler from "../middlewares/async";
+import asyncHandler from "../middlewares/async.js";
 // @desc      Get all Donors
 // @route     GET /api/v1/Donors
 // @access    public

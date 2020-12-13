@@ -1,6 +1,7 @@
 import fs from 'fs'
 import mongoose from 'mongoose'
 import User from "./models/User.js";
+import Blood from "./models/Blood.js";
 import path from 'path'
 
 // Connect to DB
@@ -16,11 +17,16 @@ const __dirname = path.resolve();
 const users = JSON.parse(
     fs.readFileSync(`${__dirname}/Content/users.json`, 'utf-8')
 );
+const bloods=JSON.parse(
+    fs.readFileSync(`${__dirname}/Content/BloodRequests.json`, 'utf-8')
+
+)
 
 // Import into DB
 const importData = async () => {
     try {
         await User.create(users);
+        await Blood.create(bloods);
         console.log('Data Imported...');
         process.exit();
     } catch (err) {
@@ -32,6 +38,7 @@ const importData = async () => {
 const deleteData = async () => {
     try {
         await User.deleteMany();
+        await Blood.deleteMany();
         process.exit();
     } catch (err) {
         console.error(err);

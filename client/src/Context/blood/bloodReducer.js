@@ -1,10 +1,10 @@
 import {
-  CLEAR_BLOODS_REQUESTS, CLEAR_TOP_DONORS, ERROR, GET_BLOOD_REQUESTS, GET_TOP_DONORS, REQUEST_BLOOD
+  CLEAR_BLOODS_REQUESTS, CLEAR_TOP_DONORS, ERROR, GET_BLOOD_REQUESTS, GET_DONORS, REQUEST_BLOOD
 } from '../types';
 
 export default (state, action) => {
   switch (action.type) {
-    case GET_TOP_DONORS:
+    case GET_DONORS:
       return {
         ...state,
         topDonors: action.payload,
@@ -16,7 +16,7 @@ export default (state, action) => {
         bloodRequests: action.payload,
         loading:false
       }
-    case GET_TOP_DONORS:
+    case GET_DONORS:
       return {
         ...state,
         topDonors: action.payload,

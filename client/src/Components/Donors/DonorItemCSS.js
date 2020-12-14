@@ -21,14 +21,14 @@ export const Container=styled.div`
   }
 
   button {
-    margin: 10px 0 40px 0;
+    margin: 10px 0 40px 10px;
   }
 
 
 ;
 `
 export const CoverPhoto=styled.div`
-  background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=50);
   height: 160px;
   width: 100%;
   border-radius: 5px 5px 0 0;

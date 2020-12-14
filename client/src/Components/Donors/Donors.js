@@ -10,6 +10,7 @@ const Donors = () => {
     useEffect(()=>{
         getDonors()
     },[])
+
     return (
         <Container>
             <QueryForm/>

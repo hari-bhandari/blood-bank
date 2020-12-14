@@ -3,7 +3,6 @@ import Select from "react-select";
 
 const SelectComponent = ({options,onChange,defaultLabel,isMulti}) => {
     return (
-
         <Select
             onChange={onChange}
             options={options}

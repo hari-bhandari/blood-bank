@@ -1,11 +1,10 @@
-import React,{useEffect,useState} from 'react';
-import {QueryContainer, SelectBox} from "./QueryFormCss";
-import Select from "react-select";
-import axios from "axios";
+import React from 'react';
+import {QueryContainer} from "./QueryFormCss";
 import SelectComponent from "../query/SelectComponent";
+import {districts,bloodType} from "../utils/sharedData";
+
 const QueryForm = () => {
-    const bloodTypes=['A+','A-','B+','B-','O+','O-','AB+','AB-']
-    const bloodOptions=bloodTypes.map(d=>({
+    const bloodOptions=bloodType.map(d=>({
         "value":d,
         "label":d.charAt(0).toUpperCase() + d.slice(1)
     }))
@@ -14,15 +13,7 @@ const QueryForm = () => {
     };
     return (
         <QueryContainer>
-         <SelectComponent/>
-            <SelectBox>
-                Choose Blood Type
-                <Select
-                    onChange={handleChange}
-                    options={bloodOptions}
-                    isMulti
-                />
-            </SelectBox>
+         <SelectComponent onChange={handleChange} defaultLabel={"Blood"} isMulti={false} options={bloodOptions}/>
         </QueryContainer>
     );
 };

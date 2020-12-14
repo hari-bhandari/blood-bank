@@ -1,8 +1,6 @@
-import React, {useContext,useEffect} from 'react';
+import React, {useState} from 'react';
 import DonorItem from "./DonorItem";
 import {Container, Row, Col} from 'react-grid-system'
-import QueryForm from "./QueryForm";
-import BloodContext from "../../Context/blood/bloodContext";
 import SelectComponent from "../query/SelectComponent";
 import {bloodType,districts,turnIntoSelectFormat} from "../utils/sharedData";
 import axios from "axios";

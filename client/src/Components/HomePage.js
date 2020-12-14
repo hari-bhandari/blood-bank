@@ -7,6 +7,7 @@ import RequestCard from "./Request/RequestCard";
 const HomePage = () => {
     const bloodContext = useContext(BloodContext)
     const {getBloodRequests, bloodRequests, loading} = bloodContext
+
     useEffect(() => {
         getBloodRequests()
     }, [])

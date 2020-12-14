@@ -8,9 +8,17 @@ import BloodState from "./Context/blood/BloodState";
 import {ToastContainer} from "react-toastify";
 import Donors from "./Components/Donors/Donors";
 import 'react-toastify/dist/ReactToastify.css';
+import { ReactQueryDevtools } from 'react-query/devtools'
+import {
+    QueryClient,
+    QueryClientProvider,
+} from "react-query";
+const queryClient = new QueryClient()
 function App() {
   return (
-    <div className="App">
+      <QueryClientProvider client={queryClient}>
+
+      <div className="App">
         <BloodState>
         <Router>
             <Navbar />
@@ -22,9 +30,12 @@ function App() {
                 <Route path={'/donors'} exact component={Donors}/>
             </Switch>
         </Router>
+                <ReactQueryDevtools initialIsOpen={false} />
         </BloodState>
 
     </div>
+      </QueryClientProvider>
+
   );
 }
 

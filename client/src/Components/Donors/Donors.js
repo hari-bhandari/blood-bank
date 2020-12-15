@@ -12,7 +12,7 @@ const Donors = () => {
     const [blood,setBlood]=useState(null)
     const fetchDonors = async () => {
         let response
-        if(district===null || blood=="null"){
+        if(district===null || blood==null){
             response = await axios(
                 `/api/donors`
             );

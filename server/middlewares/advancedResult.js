@@ -4,13 +4,20 @@ export const advancedResults=(model,populate)=>async (req,res,next)=>{
     const reqQuery={...req.query}
     //fields to exclude
     const removeFields=['select','sort','page','limit'];
-
     //loop over removeFields and delete from
+
+    //loop over and remove if it has empty value
+
     // req query
     removeFields.forEach(param=>delete reqQuery[param])
-
+    for (const [key, value] of Object.entries(reqQuery)) {
+        if(value.replace(/ /g,'') ==="" || value==="null" ){
+            delete reqQuery[key]
+        }
+    }
     //create query String
     let queryStr=JSON.stringify(reqQuery);
+
 
     //Create operators ($ge,$gte etc)
     queryStr=queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g,match=>`$${match}`);

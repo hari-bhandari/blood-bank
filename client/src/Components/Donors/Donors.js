@@ -12,16 +12,27 @@ const Donors = () => {
     const [blood,setBlood]=useState(null)
     const fetchDonors = async () => {
         let response
-        if(district===null || blood==null){
+        if(district!==null && blood!==null){
+            response = await axios(
+                `/api/donors?bloodType=${blood}&district=${district}`
+            );
+        }
+        if(district===null && blood==null){
             response = await axios(
                 `/api/donors`
             );
         }
+        if(district===!null || blood==null){
+            response = await axios(
+                `/api/donors?district=${district}`
+            );
+        }
 
-         response = await axios(
-            `/api/donors?bloodType=${blood}&district=${district}`
-        );
-
+        if(district===null || blood!==null){
+            response = await axios(
+                `/api/donors?bloodType=${blood}`
+            );
+        }
         return response.data.data;
     };
     const { status, data } = useQuery([district,blood], fetchDonors, {

@@ -6,7 +6,7 @@ const SelectComponent = ({options,onChange,defaultLabel,isMulti}) => {
         <Select
             onChange={onChange}
             options={options}
-            defaultInputValue={defaultLabel}
+            placeholder={defaultLabel}
             isMulti={isMulti}
         />
     );

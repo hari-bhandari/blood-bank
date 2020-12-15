@@ -7,11 +7,9 @@ import axios from "axios";
 import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
 import {CentralizeDiv} from "../../util/CentralizeDiv";
-import {NavLink, NavMenu} from "../Navbar/NavbarElements";
 import EmptyMessageBox from "../shared/EmptyMessageBox";
 
 const Donors = () => {
-
     const [district,setDistrict]=useState(null)
     const [blood,setBlood]=useState(null)
     const fetchDonors = async () => {

@@ -8,6 +8,7 @@ import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
 import {CentralizeDiv} from "../../util/CentralizeDiv";
 import {NavLink, NavMenu} from "../Navbar/NavbarElements";
+import EmptyMessageBox from "../shared/EmptyMessageBox";
 
 const Donors = () => {
 
@@ -41,10 +42,7 @@ const Donors = () => {
                     <SelectComponent options={districtOptions} isMulti={false}  onChange={handleChangeForDistrict} defaultLabel={"Search by district..."}/>
                 </Col>
             </Row>
-            {data?.length===0 &&(<h3>We don't have any people with your criteria. Why not save a life with your blood?  <NavLink color={"blue"} to='/login'>
-                Signup
-            </NavLink>
-            </h3>)}
+            <EmptyMessageBox message={"We don't have any people with your criteria. Why not save a life with your blood?"} toBeShown={data?.length===0}/>
 
             {status==="loading"?(<CentralizeDiv>
                 <SpinnerInfinity size={286} thickness={100} speed={100} color="#36ad47" secondaryColor="rgba(0, 0, 0, 0.44)" />

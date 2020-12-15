@@ -51,7 +51,6 @@ const HomePage = () => {
                             <RequestCard donor={donor}/>
                         </Col>
                     ))}
-
                 </Row>)}
 
         </Container>

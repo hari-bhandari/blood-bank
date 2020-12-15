@@ -8,6 +8,7 @@ export const CardContainer=styled.div`
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.7);
   color: white;
+  padding: 0 20px;
   .card__name {
     margin-top: 15px;
     font-size: 1.5em;
@@ -67,7 +68,10 @@ export const CardContainer=styled.div`
     width: 100%;
     height: 100%;
   }
-
+  .card__description{
+    margin-left: 10%;
+    width: 100%;
+  }
   .draw-border:hover::before {
     -webkit-transition-delay: 0s, 0s, 0.25s;
     transition-delay: 0s, 0s, 0.25s;

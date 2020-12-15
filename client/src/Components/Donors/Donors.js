@@ -6,6 +6,7 @@ import {bloodType,districts,turnIntoSelectFormat} from "../utils/sharedData";
 import axios from "axios";
 import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
+import {CentralizeDiv} from "../../util/CentralizeDiv";
 
 const Donors = () => {
 
@@ -17,7 +18,7 @@ const Donors = () => {
         );
         return response.data.data;
     }
-    let { status, data } = useQuery([district,blood], fetchDonors, {
+    const { status, data } = useQuery([district,blood], fetchDonors, {
         refetchAllOnWindowFocus: false
     });
     const districtOptions=turnIntoSelectFormat(districts)
@@ -28,13 +29,7 @@ const Donors = () => {
     const handleChangeForBlood = selectedOption => {
         setBlood(encodeURIComponent(selectedOption.value))
     };
-    status="loading"
-    if(status==="loading"){
-        return(
 
-            <SpinnerInfinity size={90} thickness={100} speed={100} color="#36ad47" secondaryColor="rgba(0, 0, 0, 0.44)" />
-        )
-    }
     return (
         <Container>
             <Row>
@@ -44,13 +39,18 @@ const Donors = () => {
                 <Col lg={6} md={6} sm={12}>
                     <SelectComponent options={districtOptions} isMulti={false}  onChange={handleChangeForDistrict} defaultLabel={"Search by district..."}/>
                 </Col>
+            </Row>
+            {status==="loading"?(<CentralizeDiv>
+                <SpinnerInfinity size={286} thickness={100} speed={100} color="#36ad47" secondaryColor="rgba(0, 0, 0, 0.44)" />
+            </CentralizeDiv>):(<Row>
                 {data?.map(donor=>(
                     <Col lg={4} md={6} sm={12}>
                         <DonorItem donor={donor}/>
                     </Col>
                 ))}
 
-            </Row>
+            </Row>)}
+
         </Container>
     );
 };

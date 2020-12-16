@@ -32,19 +32,19 @@ export const beADonor=  asyncHandler(async (req,res,next)=>{
 export const getBloodRequests=asyncHandler(async  (req,res,next)=>{
     res.status(200).json(res.advancedResults)
 })
-// //@desc Get single  bootcamp
-// //@route GET /api/v1/bootcamp:id
-// //@access Public
-// export const getBootcamp=asyncHandler(async (req,res,next)=>{
-//     const bootcamp=await Bootcamp.findById(req.params.id)
-//     if(!bootcamp){
-//         return next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`,404))
-//     }
-//     res.status(200).json({
-//         success:true,
-//         data:bootcamp
-//     })
-// })
+//@desc Get single  bootcamp
+//@route GET /api/v1/bootcamp:id
+//@access Public
+export const getBloodRequest=asyncHandler(async (req,res,next)=>{
+    const blood=await Blood.findById(req.params.id)
+    if(!blood){
+        return next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`,404))
+    }
+    res.status(200).json({
+        success:true,
+        data:blood
+    })
+})
 //@desc upload photo for item
 //@route PUT /api/v1/item/:id/photo
 //@access private

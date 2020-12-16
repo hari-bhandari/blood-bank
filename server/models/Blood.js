@@ -2,6 +2,7 @@ import mongoose from 'mongoose'
 import addSubtractDate from 'add-subtract-date'
 import districts from "../data/districts.js";
 import slug from 'mongoose-slug-generator'
+const objectId=mongoose.Types.ObjectId
 //Initialize
 mongoose.plugin(slug);
 const BloodSchema = mongoose.Schema(
@@ -54,18 +55,11 @@ const BloodSchema = mongoose.Schema(
             type:String,
             default:'noImage.png'
         },
-        _id:{
+        id:{
             type:String,
             slug:["name","district"],
             unique: true
         },
     });
-BloodSchema.pre('save', async function (next) {
-    if (!this.isModified('expire')) {
-        next();
-    }
-    const dateNow = new Date()
-    const date = addSubtractDate.add(dateNow, 2, "days");
-    this.expire = date
-});
+
 export default mongoose.model('Blood', BloodSchema)

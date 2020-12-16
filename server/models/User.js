@@ -7,7 +7,6 @@ import slug from 'mongoose-slug-generator'
 //Initialize
 mongoose.plugin(slug);
 const UserSchema=new mongoose.Schema({
-
     name:{
         type:String,
         required:[true,'please add your name']
@@ -54,7 +53,7 @@ const UserSchema=new mongoose.Schema({
         type:Date,
         default: Date.now
     },
-    _id:{
+    id:{
         type:String,
         slug:"name",
         unique: true

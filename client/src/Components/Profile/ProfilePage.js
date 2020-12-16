@@ -3,6 +3,8 @@ import {ProfilePageCSS} from "./ProfilePageCss";
 import {useParams} from "react-router";
 import axios from "axios";
 import {useQuery} from "react-query";
+import {SpinnerInfinity} from "spinners-react";
+import {CentralizeDiv} from "../../util/CentralizeDiv";
 
 const ProfilePage = () => {
     const {id}=useParams()
@@ -15,6 +17,13 @@ const ProfilePage = () => {
     const { status, data } = useQuery(id, fetchDonors, {
         refetchAllOnWindowFocus: false
     });
+    if(status==='loading'){
+        return (
+            <CentralizeDiv>
+                <SpinnerInfinity size={286} thickness={100} speed={100} color="#36ad47" secondaryColor="rgba(0, 0, 0, 0.44)" />
+            </CentralizeDiv>
+        )
+    }
 
     return (
         <ProfilePageCSS>
@@ -27,17 +36,15 @@ const ProfilePage = () => {
                 </div>
                 <button>Follow</button>
                 <div className="user-profile-data">
-                    <h1>{data.name}</h1>
-                    <p>github.com/jofpin</p>
+                    <h1>{data?.name}</h1>
+                    <p>We really need your help. We really do!!</p>
                 </div>
-                <div className="description-profile">Front-end | Security Researcher | CSS Warrior | <a
-                    href="https://twitter.com/bullgit" title="bullgit"><strong>@bullgit</strong></a> | I love to create
-                    small things for the internet!
+                <div className="description-profile">{data.message}
                 </div>
                 <ul className="data-user">
-                    <li><a><strong>9841291783</strong><span>Phone</span></a></li>
-                    <li><a><strong>Bir Hospital</strong><span>Hospital Name</span></a></li>
-                    <li><a><strong>239</strong><span>Following</span></a></li>
+                    <li><a><strong>{data.phone}</strong><span>Phone</span></a></li>
+                    <li><a><strong>{data.hospitalName}</strong><span>Hospital Name</span></a></li>
+                    <li><a><strong>{data.bloodType}</strong><span>Blood Type</span></a></li>
                 </ul>
             </div>
         </ProfilePageCSS>

@@ -79,7 +79,7 @@ export const ProfilePageCSS=styled.div`
 
   .profile-user-page .description-profile {
     color: #75787b;
-    font-size: 0.98em;
+    font-size: 1.5em;
   }
 
   .profile-user-page .data-user {

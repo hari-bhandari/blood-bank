@@ -19,6 +19,7 @@
     "helmet": "^4.1.1",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.2",
-    "mongoose": "^5.10.9"
+    "mongoose": "^5.10.9",
+    "mongoose-slug-generator": "^1.0.4"
   }
 }

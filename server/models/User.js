@@ -3,8 +3,11 @@ import crypto from 'crypto'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import districts from "../data/districts.js";
-
+import slug from 'mongoose-slug-generator'
+//Initialize
+mongoose.plugin(slug);
 const UserSchema=new mongoose.Schema({
+
     name:{
         type:String,
         required:[true,'please add your name']
@@ -31,6 +34,10 @@ const UserSchema=new mongoose.Schema({
         minLength:8,
         maxLength:12,
     },
+    image: {
+        type:String,
+        default:'noProfile.png'
+    },
     bloodType:{
         type:String,
         required: [true, 'Please specify a blood type'],
@@ -46,7 +53,12 @@ const UserSchema=new mongoose.Schema({
     createdAt: {
         type:Date,
         default: Date.now
-    }
+    },
+    _id:{
+        type:String,
+        slug:"name",
+        unique: true
+    },
 });
 UserSchema.pre('save',async function(next) {
     if(!this.isModified('password')){

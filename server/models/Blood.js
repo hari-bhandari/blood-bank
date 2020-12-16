@@ -1,8 +1,9 @@
 import mongoose from 'mongoose'
-import bcrypt from "bcryptjs";
 import addSubtractDate from 'add-subtract-date'
 import districts from "../data/districts.js";
-
+import slug from 'mongoose-slug-generator'
+//Initialize
+mongoose.plugin(slug);
 const BloodSchema = mongoose.Schema(
     {
         name: {
@@ -49,7 +50,15 @@ const BloodSchema = mongoose.Schema(
         expire: {
             type: Date
         },
-        image: String
+        image: {
+            type:String,
+            default:'noImage.png'
+        },
+        _id:{
+            type:String,
+            slug:["name","district"],
+            unique: true
+        },
     });
 BloodSchema.pre('save', async function (next) {
     if (!this.isModified('expire')) {

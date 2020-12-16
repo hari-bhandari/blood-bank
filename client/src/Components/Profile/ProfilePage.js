@@ -34,10 +34,10 @@ const ProfilePage = () => {
                     <img className="avatar" src="http://gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=200"
                          alt="jofpin"/>
                 </div>
-                <button>Follow</button>
+                <button>{data.bloodType}</button>
                 <div className="user-profile-data">
                     <h1>{data?.name}</h1>
-                    <p>We really need your help. We really do!!</p>
+                    <p>We need your help. We really do!!</p>
                 </div>
                 <div className="description-profile">{data.message}
                 </div>

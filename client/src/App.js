@@ -3,8 +3,6 @@ import Auth from "./Components/Auth/Auth";
 import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import RequestBloodForm from "./Components/FormComponent/RequestBloodForm";
-import HomePage from "./Components/HomePage";
-import BloodState from "./Context/blood/BloodState";
 import {ToastContainer} from "react-toastify";
 import Donors from "./Components/Donors/Donors";
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,18 +12,18 @@ import {
     QueryClientProvider,
 } from "react-query";
 import ProfilePage from "./Components/Profile/ProfilePage";
+import Requests from "./Components/Request/Requests";
 const queryClient = new QueryClient()
 function App() {
   return (
       <QueryClientProvider client={queryClient}>
 
       <div className="App">
-        <BloodState>
         <Router>
             <Navbar />
             <ToastContainer/>
             <Switch>
-                <Route path='/' exact component={HomePage} />
+                <Route path='/' exact component={Requests} />
                 <Route path='/login' exact component={Auth} />
                 <Route path={'/request'} exact component={RequestBloodForm}/>
                 <Route path={'/donors'} exact component={Donors}/>
@@ -33,7 +31,6 @@ function App() {
             </Switch>
         </Router>
                 <ReactQueryDevtools initialIsOpen={false} />
-        </BloodState>
 
     </div>
       </QueryClientProvider>

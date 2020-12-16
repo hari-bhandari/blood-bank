@@ -6,12 +6,10 @@ import {Link} from "react-router-dom";
 
 const RequestCard = ({donor}) => {
     return (
-
-
         <CardContainer>
             <BloodType position={'10%'}>A+</BloodType>
                 <img
-                    src="https://haribhandari.me/static/bbfbed4a006f12cc6ec59b3f42d010d5/b3cab/me.jpg"
+                    src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png"
                     alt="Person" className="card__image"/>
                     <p className="card__name">{donor.name}</p>
                     <div className="grid-container">
@@ -33,7 +31,7 @@ const RequestCard = ({donor}) => {
                     </div>
 
                     <button className="btn-request draw-border">9841921783</button>
-                    <Link to={`/requests/${donor._id}`}>
+                    <Link to={`/help/${donor._id}`}>
                     <button className="btn-request draw-border">Learn More</button>
                     </Link>
 

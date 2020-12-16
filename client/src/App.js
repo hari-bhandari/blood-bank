@@ -13,6 +13,7 @@ import {
     QueryClient,
     QueryClientProvider,
 } from "react-query";
+import ProfilePage from "./Components/Profile/ProfilePage";
 const queryClient = new QueryClient()
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path='/login' exact component={Auth} />
                 <Route path={'/request'} exact component={RequestBloodForm}/>
                 <Route path={'/donors'} exact component={Donors}/>
+                <Route path={'/help/:id'} exact component={ProfilePage}/>
             </Switch>
         </Router>
                 <ReactQueryDevtools initialIsOpen={false} />

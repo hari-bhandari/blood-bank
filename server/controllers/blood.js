@@ -36,7 +36,7 @@ export const getBloodRequests=asyncHandler(async  (req,res,next)=>{
 //@route GET /api/v1/bootcamp:id
 //@access Public
 export const getBloodRequest=asyncHandler(async (req,res,next)=>{
-    const blood=await Blood.findById(req.params.id)
+    const blood=await Blood.findOne({id:req.params.id})
     if(!blood){
         return next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`,404))
     }

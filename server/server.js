@@ -1,13 +1,16 @@
 import express from 'express'
+import dotenv from 'dotenv'
+dotenv.config()
 import helmet from 'helmet'
 import cors from 'cors'
 import connectDB from './config/db.js'
 import fileUpload from 'express-fileupload'
 import {errorHandler} from './middlewares/error.js'
-const app=express()
 import auth from './routes/auth.js'
 import blood from './routes/blood.js'
 import donors from './routes/donors.js'
+const app=express()
+
 app.use(express.json());
 
 const PORT= process.env.PORT||5000

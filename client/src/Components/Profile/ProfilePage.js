@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import {ProfilePageCSS} from "./ProfilePageCss";
 import {useParams} from "react-router";
 import axios from "axios";
@@ -34,7 +34,7 @@ const ProfilePage = () => {
                     <img className="avatar" src="http://gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=200"
                          alt="jofpin"/>
                 </div>
-                <button>{data.bloodType}</button>
+                <button>Offer Help</button>
                 <div className="user-profile-data">
                     <h1>{data?.name}</h1>
                     <p>We need your help. We really do!!</p>

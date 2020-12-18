@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/AuthGlobal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/AuthGlobal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Context/auth/AuthState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +92,8 @@
       <workItem from="1608047656831" duration="896000" />
       <workItem from="1608051668596" duration="12176000" />
       <workItem from="1608103831298" duration="15554000" />
-      <workItem from="1608199242615" duration="6993000" />
+      <workItem from="1608199242615" duration="8367000" />
+      <workItem from="1608263059381" duration="4482000" />
     </task>
     <servers />
   </component>

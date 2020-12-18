@@ -87,6 +87,7 @@ export const AuthGlobal=styled.div`
     width: calc(100% + 40px);
     padding: 0 0.4rem;
     position: relative;
+    height: 150px;
   }
 
   .input-field i {

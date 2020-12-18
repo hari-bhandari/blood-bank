@@ -16,16 +16,7 @@ const SignIn = () => {
                 <input id="password" name="password" type="password" placeholder="Password" value={values.password} onChange={handleChange} required/>
             </div>
             <input type="submit" value="Login" className="btn solid" />
-            <p className="social-text">Or Sign in with social platforms</p>
-            <div className="social-media">
-                <a href="#" className="social-icon">
-                    <i className="fab fa-facebook-f"/>
-                </a>
-                <a href="#" className="social-icon">
-                    <i className="fab fa-google"/>
-                </a>
 
-            </div>
         </form>
     );
 };

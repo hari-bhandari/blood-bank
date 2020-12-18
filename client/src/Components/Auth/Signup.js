@@ -1,8 +1,18 @@
 import React from 'react';
 import {useForm} from "./useForm";
 import QueryForm from "../Donors/QueryForm";
+import {districts,bloodType,turnIntoSelectFormat} from "../utils/sharedData";
+import SelectComponent from "../query/SelectComponent";
+import {QueryContainer} from "../Donors/QueryFormCss";
+
 const Signup = () => {
+    const districtOptions=turnIntoSelectFormat(districts)
+    const bloodOptions=turnIntoSelectFormat(bloodType)
     const [valuesForSignup,handleChangeForSignup]=useForm()
+    const handleChangeForBlood = selectedOption => {
+        console.log('hey')
+    };
+
     return (
         <form  className="sign-up-form" >
             <h2 className="title">Sign up</h2>
@@ -23,20 +33,16 @@ const Signup = () => {
                 <i className="fas fa-lock"/>
                 <input name="password"  type="password" placeholder="Password" name="password" value={valuesForSignup.password} onChange={handleChangeForSignup}/>
             </div>
+
             <div className="queryBox">
-                <QueryForm/>
+                <QueryContainer>
+                <SelectComponent options={bloodOptions} isMulti={false}  onChange={handleChangeForBlood} defaultLabel={"Search by blood type..."}/>
+                <SelectComponent options={bloodOptions} isMulti={false}  onChange={handleChangeForBlood} defaultLabel={"Search by blood type..."}/>
+                </QueryContainer>
+
             </div>
             <p className="signup-agreement">By signing up,You're accepting to show your contact information and blood group to people in need</p>
             <input type="submit" className="btn" value="Sign up" />
-            <p className="social-text">Or Sign up with social platforms</p>
-            <div className="social-media">
-                <a href="#" className="social-icon">
-                    <i className="fab fa-facebook-f"/>
-                </a>
-                <a href="#" className="social-icon">
-                    <i className="fab fa-google"/>
-                </a>
-            </div>
         </form>
     );
 };

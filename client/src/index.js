@@ -7,9 +7,7 @@ import AuthState from "./Context/auth/AuthState";
 
 ReactDOM.render(
   <React.StrictMode>
-      <AuthState>
       <App />
-      </AuthState>
 
   </React.StrictMode>,
   document.getElementById('root')

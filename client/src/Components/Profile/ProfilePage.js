@@ -5,6 +5,7 @@ import axios from "axios";
 import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
 import {CentralizeDiv} from "../../util/CentralizeDiv";
+import {toast} from "react-toastify";
 
 const ProfilePage = () => {
     const {id}=useParams()
@@ -17,6 +18,17 @@ const ProfilePage = () => {
     const { status, data } = useQuery(id, fetchDonors, {
         refetchAllOnWindowFocus: false
     });
+    const onClick=()=>{
+        toast.warn("You must be logged in to offer help. Why not signup?", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+    }
     if(status==='loading'){
         return (
             <CentralizeDiv>
@@ -34,7 +46,7 @@ const ProfilePage = () => {
                     <img className="avatar" src="http://gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=200"
                          alt="jofpin"/>
                 </div>
-                <button>Offer Help</button>
+                <button onClick={onClick}>Offer Help</button>
                 <div className="user-profile-data">
                     <h1>{data?.name}</h1>
                     <p>We need your help. We really do!!</p>

@@ -1,11 +1,23 @@
 import {useState} from 'react';
 ///[name,address
 export const useForm=()=>{
-    const[state,setState]=useState({})
+    const[state,setState]=useState({
+        name:'',
+        number:'',
+        email:'',
+        password:'',
+        district:'',
+        blood:''
+
+    })
     const handleChange=e=>{
         setState((state)=>({...state,[e.target.name]:e.target.value}))
     }
-    return [state,handleChange]
+    const handleChangeManual=(name,value)=>{
+        setState((state)=>({...state,[name]:value}))
+    }
+
+    return [state,handleChange,handleChangeManual]
 }
 export const validate=(obj)=>{
     for(const key in obj){

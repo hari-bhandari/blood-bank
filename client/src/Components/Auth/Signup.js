@@ -1,6 +1,5 @@
 import React from 'react';
 import {useForm} from "./useForm";
-import QueryForm from "../Donors/QueryForm";
 import {districts,bloodType,turnIntoSelectFormat} from "../utils/sharedData";
 import SelectComponent from "../query/SelectComponent";
 import {QueryContainer} from "../Donors/QueryFormCss";
@@ -8,9 +7,12 @@ import {QueryContainer} from "../Donors/QueryFormCss";
 const Signup = () => {
     const districtOptions=turnIntoSelectFormat(districts)
     const bloodOptions=turnIntoSelectFormat(bloodType)
-    const [valuesForSignup,handleChangeForSignup]=useForm()
+    const [valuesForSignup,handleChangeForSignup,handleChangeManual]=useForm()
     const handleChangeForBlood = selectedOption => {
-        console.log('hey')
+        handleChangeManual("blood",selectedOption.value)
+    };
+    const handleChangeForDistrict = selectedOption => {
+        handleChangeManual("district",selectedOption.value)
     };
 
     return (
@@ -37,7 +39,7 @@ const Signup = () => {
             <div className="queryBox">
                 <QueryContainer>
                 <SelectComponent options={bloodOptions} isMulti={false}  onChange={handleChangeForBlood} defaultLabel={"Choose your district"}/>
-                <SelectComponent options={bloodOptions} isMulti={false}  onChange={handleChangeForBlood} defaultLabel={"Choose your blood type"}/>
+                <SelectComponent options={districtOptions} isMulti={false}  onChange={handleChangeForDistrict} defaultLabel={"Choose your blood type"}/>
                 </QueryContainer>
 
             </div>

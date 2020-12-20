@@ -19,13 +19,14 @@ export const AuthGlobal=styled.div`
     width: 100%;
     background-color: #e8c800;
     min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
   }
 
   .forms-container {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
   }
@@ -87,7 +88,6 @@ export const AuthGlobal=styled.div`
     width: calc(100% + 40px);
     padding: 0 0.4rem;
     position: relative;
-    height: 150px;
   }
 
   .input-field i {

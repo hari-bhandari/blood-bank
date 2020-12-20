@@ -1,26 +1,52 @@
-import React from 'react';
+import React,{useContext,useEffect} from 'react';
 import {useForm} from "./useForm";
 import {districts,bloodType,turnIntoSelectFormat} from "../utils/sharedData";
 import SelectComponent from "../query/SelectComponent";
 import {QueryContainer} from "../Donors/QueryFormCss";
+import AuthContext from "../../Context/auth/authContext";
+import {toast} from "react-toastify";
 
-const Signup = () => {
+const Signup = (props) => {
+    const authContext=useContext(AuthContext);
+    const {register,isAuthenticated,loadUser,error}=authContext;
     const districtOptions=turnIntoSelectFormat(districts)
     const bloodOptions=turnIntoSelectFormat(bloodType)
     const [valuesForSignup,handleChangeForSignup,handleChangeManual]=useForm()
+    useEffect(()=>{
+        if(isAuthenticated){
+            props.history.push('/')
+        }
+    })
+    const onRegister=(e)=>{
+        e.preventDefault()
+        register(valuesForSignup)
+    }
+    useEffect(()=>{
+        if(error){
+            toast.error(error, {
+                position: "top-center",
+                autoClose: 80000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+    },[])
     const handleChangeForBlood = selectedOption => {
-        handleChangeManual("blood",selectedOption.value)
+        handleChangeManual("bloodType",selectedOption.value)
     };
     const handleChangeForDistrict = selectedOption => {
         handleChangeManual("district",selectedOption.value)
     };
 
     return (
-        <form  className="sign-up-form" >
+        <form  className="sign-up-form" onSubmit={onRegister} >
             <h2 className="title">Sign up</h2>
             <div className="input-field">
                 <i className="fas fa-phone" style={{marginLeft:"20px"}}>+977</i>
-                <input style={{paddingLeft:"30px"}} id="number" name="number" type="number" placeholder="Phone Number" value={valuesForSignup.number} onChange={handleChangeForSignup}/>
+                <input style={{paddingLeft:"30px"}} id="phone" name="phone" type="phone" placeholder="Phone Number" value={valuesForSignup.phone} onChange={handleChangeForSignup}/>
             </div>
             <div className="input-field">
                 <i className="fas fa-user"/>

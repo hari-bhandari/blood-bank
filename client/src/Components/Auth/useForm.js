@@ -3,7 +3,7 @@ import {useState} from 'react';
 export const useForm=()=>{
     const[state,setState]=useState({
         name:'',
-        number:'',
+        phone:'',
         email:'',
         password:'',
         district:'',

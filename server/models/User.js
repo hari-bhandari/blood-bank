@@ -3,9 +3,7 @@ import crypto from 'crypto'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import districts from "../data/districts.js";
-import slug from 'mongoose-slug-generator'
 //Initialize
-mongoose.plugin(slug);
 const UserSchema=new mongoose.Schema({
     name:{
         type:String,
@@ -53,11 +51,7 @@ const UserSchema=new mongoose.Schema({
         type:Date,
         default: Date.now
     },
-    id:{
-        type:String,
-        slug:"name",
-        unique: true
-    },
+
 });
 // Encrypt passwrod using bcrypt
 UserSchema.pre('save', async function (next) {

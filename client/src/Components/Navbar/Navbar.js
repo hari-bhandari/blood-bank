@@ -5,14 +5,27 @@ import {
     Bars,
     NavMenu,
     NavBtn,
-    NavBtnLink
+    NavBtnLink, NavBtnLinkDiv
 } from './NavbarElements';
 import logo from './logo.svg'
 import AuthContext from "../../Context/auth/authContext";
+import {toast} from "react-toastify";
 
 const Navbar = () => {
     const authContext=useContext(AuthContext);
-    const {isAuthenticated}=authContext;
+    const {isAuthenticated,logout}=authContext;
+    const logMeOut=()=>{
+        toast.success("You have been logged out", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+        logout()
+    }
     return (
         <>
             <Nav>
@@ -37,7 +50,7 @@ const Navbar = () => {
                     {/* Second Nav */}
                 </NavMenu>
                 <NavBtn>
-                    {isAuthenticated ? (<NavBtnLink to='/logout'>Logout</NavBtnLink>) :
+                    {isAuthenticated ? (<NavBtnLinkDiv onClick={logMeOut}>Logout</NavBtnLinkDiv>) :
                         (<NavBtnLink to='/login'>Sign In/Signup</NavBtnLink>)}
                 </NavBtn>
             </Nav>

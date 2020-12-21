@@ -6,7 +6,7 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT,
-  CLEAR_ERRORS
+  CLEAR_ERRORS, AUTH_ERROR_GET_ME
 } from '../types';
 
 export default (state, action) => {
@@ -26,6 +26,13 @@ export default (state, action) => {
         ...action.payload,
         isAuthenticated: true,
         loading: false
+      };
+    case AUTH_ERROR_GET_ME:
+      return {
+        ...state,
+        loading: false,
+        user: null,
+        error: action.payload
       };
     case REGISTER_FAIL:
     case AUTH_ERROR:

@@ -16,7 +16,7 @@ const Signup = (props) => {
         if(isAuthenticated){
             props.history.push('/')
         }
-    })
+    },[])
     const onRegister=(e)=>{
         e.preventDefault()
         register(valuesForSignup)

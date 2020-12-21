@@ -17,7 +17,7 @@ export const protect=asyncHandler(async (req,res,next)=>{
         return next(new ErrorResponse('Not authorised to access this page'),401)
     }
     try {
-        const decoded=jwt.verify(token,'JWT_SECRET');
+        const decoded=jwt.verify(token,process.env.JWT_SECRET);
         req.user=await User.findById(decoded.id)
         next();
 

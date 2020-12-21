@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import {
     Nav,
     NavLink,
@@ -8,9 +8,11 @@ import {
     NavBtnLink
 } from './NavbarElements';
 import logo from './logo.svg'
+import AuthContext from "../../Context/auth/authContext";
 
 const Navbar = () => {
-    const isAuthenticated = false
+    const authContext=useContext(AuthContext);
+    const {isAuthenticated}=authContext;
     return (
         <>
             <Nav>
@@ -35,7 +37,7 @@ const Navbar = () => {
                     {/* Second Nav */}
                 </NavMenu>
                 <NavBtn>
-                    {isAuthenticated ? (<NavBtnLink to='/login'>Sign In/Signup</NavBtnLink>) :
+                    {isAuthenticated ? (<NavBtnLink to='/logout'>Logout</NavBtnLink>) :
                         (<NavBtnLink to='/login'>Sign In/Signup</NavBtnLink>)}
                 </NavBtn>
             </Nav>

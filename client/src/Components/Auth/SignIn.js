@@ -5,7 +5,7 @@ import AuthContext from "../../Context/auth/authContext";
 const SignIn = (props) => {
     const authContext=useContext(AuthContext);
     const {login,isAuthenticated,loadUser,error}=authContext;
-    const [values,handleChangeForLogin]=useForm()
+    const [values,handleChangeForLogin,handleChange]=useForm()
     useEffect(()=>{
         if(isAuthenticated){
             props.history.push('/')

@@ -1,6 +1,6 @@
 import React, {useState,useContext} from 'react';
 import {FaHandshake,FiSend} from "react-icons/all";
-import useForm from "./useForm";
+import {useForm} from "../Auth/useForm";
 import {
     ContactWrapper,
     LeftContent,
@@ -17,10 +17,13 @@ function Contact() {
     const authContext=useContext(AuthContext);
     const {user}=authContext;
     const [submitted, setSubmitted] = useState(false)
-    const {formData, errors, handleInput, isFormValid} = useForm();
-    const sendEmail = async () => {
-
-    }
+    const { values, handleInput,handleInputForSelect} = useForm();
+    const handleChangeForBlood = selectedOption => {
+        handleInputForSelect("bloodType",selectedOption.value)
+    };
+    const handleChangeForDistrict = selectedOption => {
+        handleInputForSelect("district",selectedOption.value)
+    };
     return (
         <ContactWrapper id="contact">
             <ContactBox>
@@ -38,9 +41,8 @@ function Contact() {
                         <label className="label__email">
                             <span>Email</span>
                             <input
-                                className={errors._replyto && 'invalid'}
                                 onChange={handleInput}
-                                value={formData.email}
+                                value={values.email}
                                 id="email"
                                 name="email"
                                 type="email"
@@ -51,9 +53,8 @@ function Contact() {
                         <label className="label__name">
                             <span>Patient Name</span>
                             <input
-                                className={errors.name && 'invalid'}
                                 onChange={handleInput}
-                                value={formData.name}
+                                value={values.name}
                                 name="name"
                                 type="text"
                                 required
@@ -63,9 +64,8 @@ function Contact() {
                         <label className="label__phone">
                             <span>Phone</span>
                             <input
-                                className={errors.name && 'invalid'}
                                 onChange={handleInput}
-                                value={formData.name}
+                                value={values.name}
                                 name="phone"
                                 type="text"
                                 required
@@ -75,9 +75,8 @@ function Contact() {
                         <label className="label__district">
                             <span>District</span>
                             <input
-                                className={errors.name && 'invalid'}
                                 onChange={handleInput}
-                                value={formData.name}
+                                value={values.name}
                                 name="district"
                                 type="text"
                                 required
@@ -86,18 +85,17 @@ function Contact() {
                         </label>
                         <label className="label__bloodType">
                             <span>Choose your blood type...</span>
-                            <SelectComponent defaultLabel={"Choose...."} options={bloodTypeOptions}  styles={customStyles}/>
+                            <SelectComponent defaultLabel={"Choose your blood type"} options={bloodTypeOptions}  styles={customStyles} onChange={handleChangeForBlood}/>
                         </label>
                         <label className="label__hospital">
                             <span>Choose your District...</span>
-                            <SelectComponent defaultLabel={"Choose...."} options={districtsOptions} styles={customStyles}/>
+                            <SelectComponent defaultLabel={"Choose your district"} options={districtsOptions} styles={customStyles} onChange={handleChangeForDistrict}/>
                         </label>
                         <label className="label__message">
                             <span>Message</span>
                             <textarea
-                                className={errors.message && 'invalid'}
                                 onChange={handleInput}
-                                value={formData.message}
+                                value={values.message}
                                 name="message"
                                 required
                                 placeholder="Describe the situation...."
@@ -105,7 +103,6 @@ function Contact() {
                         </label>
 
                         <Button
-                            disabled={!isFormValid}
                             className="submit__btn"
                             as="button"
                         >

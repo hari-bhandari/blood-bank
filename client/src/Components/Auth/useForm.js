@@ -9,7 +9,8 @@ export const useForm=()=>{
         district:'',
         blood:'',
         message:'',
-        hospital:''
+        hospital:'',
+        fullName:''
 
     })
     const handleChange=e=>{

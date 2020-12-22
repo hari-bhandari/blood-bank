@@ -17,7 +17,7 @@ function Contact() {
     const authContext=useContext(AuthContext);
     const {user}=authContext;
     const [submitted, setSubmitted] = useState(false)
-    const { values, handleInput,handleInputForSelect} = useForm();
+    const [values, handleInput,handleInputForSelect] = useForm();
     const handleChangeForBlood = selectedOption => {
         handleInputForSelect("bloodType",selectedOption.value)
     };
@@ -54,10 +54,10 @@ function Contact() {
                             <span>Patient Name</span>
                             <input
                                 onChange={handleInput}
-                                value={values.name}
                                 name="name"
                                 type="text"
                                 required
+                                value={values.name}
                                 placeholder="Hari Bhandari"
                             />
                         </label>
@@ -65,7 +65,7 @@ function Contact() {
                             <span>Phone</span>
                             <input
                                 onChange={handleInput}
-                                value={values.name}
+                                value={values.phone}
                                 name="phone"
                                 type="text"
                                 required
@@ -73,14 +73,14 @@ function Contact() {
                             />
                         </label>
                         <label className="label__district">
-                            <span>District</span>
+                            <span>Hospital Name</span>
                             <input
                                 onChange={handleInput}
-                                value={values.name}
-                                name="district"
+                                value={values.hospital}
+                                name="hospital"
                                 type="text"
                                 required
-                                placeholder="Baglung"
+                                placeholder="Bir Hospital"
                             />
                         </label>
                         <label className="label__bloodType">

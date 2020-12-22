@@ -7,7 +7,9 @@ export const useForm=()=>{
         email:'',
         password:'',
         district:'',
-        blood:''
+        blood:'',
+        message:'',
+        hospital:''
 
     })
     const handleChange=e=>{

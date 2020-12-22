@@ -1,7 +1,8 @@
 import React from 'react';
 import Select from "react-select";
 
-const SelectComponent = ({options,onChange,defaultLabel,isMulti}) => {
+const SelectComponent = ({options,onChange,defaultLabel,isMulti,styles}) => {
+
     return (
         <Select
             className="menu-outer-top"
@@ -9,7 +10,8 @@ const SelectComponent = ({options,onChange,defaultLabel,isMulti}) => {
             options={options}
             placeholder={defaultLabel}
             isMulti={isMulti}
-            style-={{position:"absolute"}}
+            styles={styles}
+            style={{position:"absolute"}}
         />
     );
 };

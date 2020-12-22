@@ -4,19 +4,28 @@ export const ContactWrapper = styled.section`
   height: 100%;
   width: 80%;
   margin: 0 auto;
+  @media (max-width: 1000px) {
+    margin-left: 10px;
+    width: 100%;
+    
+  }
+  .css-1uccc91-singleValue{
+    color: white !important;
+  }
+  
 `;
 
 export const ContactBox = styled.div`
   width: calc(100% - 30px);
   position: relative;
-  height: 400px;
+  height: 600px;
   margin-bottom: 50px;
   margin-top: 150px;
   background: #8579F9;
   padding: 20px;
   border-radius: 10px;
   @media (max-width: 1000px) {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-top: 50px;
   }
@@ -35,7 +44,7 @@ export const LeftContent = styled.div`
     color: #f8f8f8;
   }
   p{
-    font-size: 16x;
+    font-size: 16px;
   }
 
   @media (max-width: 1000px) {
@@ -54,7 +63,8 @@ export const ContactForm = styled.form`
   min-height: 400px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
   display: grid;
-  grid-gap: 10px;
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'email name'

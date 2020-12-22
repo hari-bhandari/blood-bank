@@ -7,35 +7,19 @@ import {
     ContactBox,
     ContactForm,Recieved,Button
 } from './RequestBloodFormCSS';
+import SelectComponent from "../query/SelectComponent";
+import {bloodType,districts,turnIntoSelectFormat} from "../utils/sharedData";
 import AuthContext from "../../Context/auth/authContext";
 
 function Contact() {
+    const bloodTypeOptions=turnIntoSelectFormat(bloodType)
     const authContext=useContext(AuthContext);
     const {user}=authContext;
     const [submitted, setSubmitted] = useState(false)
     const {formData, errors, handleInput, isFormValid} = useForm();
     const sendEmail = async () => {
-        const myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/json");
-        const {_replyto, name, message} = formData
-        const raw = JSON.stringify({_replyto, name, message});
 
-        const requestOptions = {
-            method: 'POST',
-            headers: myHeaders,
-            body: raw,
-            redirect: 'follow'
-        };
-
-        try {
-            await fetch("https://formspree.io/mgenrlnr", requestOptions)
-            setSubmitted(true)
-        } catch (e) {
-            setSubmitted(false)
-        }
     }
-
-
     return (
         <ContactWrapper id="contact">
             <ContactBox>
@@ -49,9 +33,7 @@ function Contact() {
 
                 </LeftContent>)}
                 {!submitted?(
-                    <ContactForm
-
-                    >
+                    <ContactForm>
                         <label className="label__email">
                             <span>Email</span>
                             <input
@@ -103,27 +85,11 @@ function Contact() {
                         </label>
                         <label className="label__bloodType">
                             <span>Blood Type</span>
-                            <input
-                                className={errors.name && 'invalid'}
-                                onChange={handleInput}
-                                value={formData.name}
-                                name="district"
-                                type="text"
-                                required
-                                placeholder="B+"
-                            />
+                            <SelectComponent defaultLabel={"choose"} options={bloodTypeOptions}  styles={customStyles}/>
                         </label>
                         <label className="label__hospital">
                             <span>Hospital Name</span>
-                            <input
-                                className={errors.name && 'invalid'}
-                                onChange={handleInput}
-                                value={formData.name}
-                                name="district"
-                                type="text"
-                                required
-                                placeholder="Bir Hospital"
-                            />
+                            <SelectComponent defaultLabel={"choose"} options={bloodTypeOptions} styles={customStyles}/>
                         </label>
                         <label className="label__message">
                             <span>Message</span>
@@ -141,9 +107,6 @@ function Contact() {
                             disabled={!isFormValid}
                             className="submit__btn"
                             as="button"
-                            onClick={(e)=>{e.preventDefault()
-                                sendEmail()
-                            }}
                         >
                             <FiSend/> Submit
                         </Button>
@@ -152,4 +115,35 @@ function Contact() {
         </ContactWrapper>
     );
 }
+const customStyles = {
+    control: (base, state) => ({
+        ...base,
+        background: "#0C1A34",
+        color: state.isSelected ? 'red' : 'blue',
+        margin: "10px 0",
+        height: "100%",
+        minHeight: 35,
+        borderColor: state.isFocused ? "#0C1A34" : "#0C1A34",
+        "&:hover": {
+            borderColor: state.isFocused ? "#0C1A34" : "#0C1A34"
+        }
+    }),
+    menu: base => ({
+        ...base,
+        borderRadius: 0,
+        marginTop: 0,
+
+    }),
+    menuList: base => ({
+        ...base,
+        padding: 0,
+
+    }),
+    input: base => ({
+        ...base,
+        color: "#ff0000"
+    }),
+
+
+};
 export default Contact;

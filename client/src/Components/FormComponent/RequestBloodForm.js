@@ -27,7 +27,8 @@ function Contact() {
     const handleChangeForDistrict = selectedOption => {
         handleInputForSelect("district",selectedOption.value)
     };
-    const requestForBlood=async ()=>{
+    const requestForBlood=async (e)=>{
+        e.preventDefault();
         const config = {
             headers: {
                 'Content-Type': 'application/json'
@@ -37,7 +38,7 @@ function Contact() {
         try {
             await axios.post('/api/help/req', values, config);
         } catch (err) {
-            toast.error(err.data.msg, {
+            toast.error(err?.data?.error, {
                 position: "top-center",
                 autoClose: 80000,
                 hideProgressBar: false,
@@ -129,6 +130,7 @@ function Contact() {
                         <Button
                             className="submit__btn"
                             as="button"
+                            onClick={requestForBlood}
                         >
                             <FiSend/> Submit
                         </Button>

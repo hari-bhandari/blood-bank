@@ -10,6 +10,9 @@ import {
 import SelectComponent from "../query/SelectComponent";
 import {bloodType,districts,turnIntoSelectFormat} from "../utils/sharedData";
 import AuthContext from "../../Context/auth/authContext";
+import axios from "axios";
+import {ERROR} from "../../Context/types";
+import {toast} from "react-toastify";
 
 function Contact() {
     const bloodTypeOptions=turnIntoSelectFormat(bloodType)
@@ -24,8 +27,29 @@ function Contact() {
     const handleChangeForDistrict = selectedOption => {
         handleInputForSelect("district",selectedOption.value)
     };
+    const requestForBlood=async ()=>{
+        const config = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        };
+
+        try {
+            await axios.post('/api/help/req', values, config);
+        } catch (err) {
+            toast.error(err.data.msg, {
+                position: "top-center",
+                autoClose: 80000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+    }
+    }
     return (
-        <ContactWrapper id="contact">
+        <ContactWrapper>
             <ContactBox>
                 {submitted&&(<Recieved><FaHandshake style={{fontSize: '7em'}}/>
                     <p>Your message has been recieved. I will try to get back to you as soon as possible. Thanks</p></Recieved>)}
@@ -141,7 +165,5 @@ const customStyles = {
         ...base,
         color: "#ff0000"
     }),
-
-
 };
 export default Contact;

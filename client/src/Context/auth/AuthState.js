@@ -11,7 +11,7 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT,
-  CLEAR_ERRORS, AUTH_ERROR_GET_ME
+  CLEAR_ERRORS, AUTH_ERROR_GET_ME, ERROR
 } from '../types';
 
 const AuthState = props => {

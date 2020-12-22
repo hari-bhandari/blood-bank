@@ -13,6 +13,7 @@ import AuthContext from "../../Context/auth/authContext";
 
 function Contact() {
     const bloodTypeOptions=turnIntoSelectFormat(bloodType)
+    const districtsOptions=turnIntoSelectFormat(districts)
     const authContext=useContext(AuthContext);
     const {user}=authContext;
     const [submitted, setSubmitted] = useState(false)
@@ -84,12 +85,12 @@ function Contact() {
                             />
                         </label>
                         <label className="label__bloodType">
-                            <span>Blood Type</span>
+                            <span>Choose your blood type...</span>
                             <SelectComponent defaultLabel={"Choose...."} options={bloodTypeOptions}  styles={customStyles}/>
                         </label>
                         <label className="label__hospital">
-                            <span>Hospital Name</span>
-                            <SelectComponent defaultLabel={"Choose...."} options={bloodTypeOptions} styles={customStyles}/>
+                            <span>Choose your District...</span>
+                            <SelectComponent defaultLabel={"Choose...."} options={districtsOptions} styles={customStyles}/>
                         </label>
                         <label className="label__message">
                             <span>Message</span>

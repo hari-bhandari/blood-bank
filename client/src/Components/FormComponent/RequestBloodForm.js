@@ -41,7 +41,7 @@ function Contact() {
                                 onChange={handleInput}
                                 value={formData.email}
                                 id="email"
-                                name="_replyto"
+                                name="email"
                                 type="email"
                                 required
                                 placeholder="example@gmail.com"
@@ -85,11 +85,11 @@ function Contact() {
                         </label>
                         <label className="label__bloodType">
                             <span>Blood Type</span>
-                            <SelectComponent defaultLabel={"choose"} options={bloodTypeOptions}  styles={customStyles}/>
+                            <SelectComponent defaultLabel={"Choose...."} options={bloodTypeOptions}  styles={customStyles}/>
                         </label>
                         <label className="label__hospital">
                             <span>Hospital Name</span>
-                            <SelectComponent defaultLabel={"choose"} options={bloodTypeOptions} styles={customStyles}/>
+                            <SelectComponent defaultLabel={"Choose...."} options={bloodTypeOptions} styles={customStyles}/>
                         </label>
                         <label className="label__message">
                             <span>Message</span>

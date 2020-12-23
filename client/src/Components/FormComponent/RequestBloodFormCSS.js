@@ -81,6 +81,7 @@ export const ContactForm = styled.form`
   input {
     color: white;
   }
+  p{color: #CFDEF3}
 
   .label__email {
     grid-area: email;
@@ -196,4 +197,12 @@ export const Button = styled.button`
   margin: 0px 0;
   padding: 12px 12px;
   border-radius: ${props => (props.round ? '50%' : '5px')};
+`
+export const ExpenseContainer=styled.div`
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-gap: 0px;
+  input{
+    margin: auto 0;
+  }
 `

@@ -5,7 +5,7 @@ import {
     ContactWrapper,
     LeftContent,
     ContactBox,
-    ContactForm,Recieved,Button
+    ContactForm,Recieved,Button,ExpenseContainer
 } from './RequestBloodFormCSS';
 import SelectComponent from "../query/SelectComponent";
 import {bloodType,districts,turnIntoSelectFormat} from "../utils/sharedData";
@@ -126,6 +126,7 @@ function Contact() {
                                 placeholder="Describe the situation...."
                             />
                         </label>
+                        <ExpenseContainer><input type="checkbox"/><p>I confirm to pay for the travel expenses</p></ExpenseContainer>
 
                         <Button
                             className="submit__btn"
@@ -134,6 +135,7 @@ function Contact() {
                         >
                             <FiSend/> Submit
                         </Button>
+
                     </ContactForm>):(<div></div>)}
             </ContactBox>
         </ContactWrapper>

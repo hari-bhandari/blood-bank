@@ -23,8 +23,8 @@ function App() {
     const authContext=useContext(AuthContext);
     const {loadUser}=authContext;
     useEffect(()=>{
-
-    })
+        loadUser()
+    },[])
     return (
         <QueryClientProvider client={queryClient}>
                 <div className="App">

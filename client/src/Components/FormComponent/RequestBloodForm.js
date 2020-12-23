@@ -17,7 +17,6 @@ function Contact() {
     const bloodTypeOptions=turnIntoSelectFormat(bloodType)
     const districtsOptions=turnIntoSelectFormat(districts)
     const authContext=useContext(AuthContext);
-    const {user}=authContext;
     const [submitted, setSubmitted] = useState(false)
     const [values, handleInput,handleInputForSelect] = useForm();
     const handleChangeForBlood = selectedOption => {
@@ -40,6 +39,7 @@ function Contact() {
 
         try {
             await axios.post('/api/help/req', values, config);
+            setSubmitted(true)
         } catch (err) {
             console.log(err.response)
             toast.error(err?.response?.data?.error, {
@@ -57,7 +57,7 @@ function Contact() {
         <ContactWrapper>
             <ContactBox>
                 {submitted&&(<Recieved><FaHandshake style={{fontSize: '7em'}}/>
-                    <p>Your message has been recieved. I will try to get back to you as soon as possible. Thanks</p></Recieved>)}
+                    <p>Your request has been accepted.</p></Recieved>)}
                 {!submitted&&( <LeftContent>
                     <FaHandshake style={{fontSize: '5em'}}/>
                     <p> “Never feel yourself weak, </p>

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/Components/About/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/About/AboutCss.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodForm.js" afterDir="false" />
     </list>
@@ -95,7 +97,7 @@
       <workItem from="1608565793128" duration="6704000" />
       <workItem from="1608584124109" duration="4148000" />
       <workItem from="1608618932752" duration="13787000" />
-      <workItem from="1608723810264" duration="7098000" />
+      <workItem from="1608723810264" duration="9433000" />
     </task>
     <servers />
   </component>

@@ -1,3 +1,4 @@
+import React,{useEffect,useContext} from 'react'
 import './App.css';
 import Auth from "./Components/Auth/Auth";
 import Navbar from "./Components/Navbar/Navbar";
@@ -13,14 +14,19 @@ import {
 } from "react-query";
 import ProfilePage from "./Components/Profile/ProfilePage";
 import Requests from "./Components/Request/Requests";
-import AuthState from "./Context/auth/AuthState";
+import AuthContext from "./Context/auth/authContext";
+
 
 const queryClient = new QueryClient()
 
 function App() {
+    const authContext=useContext(AuthContext);
+    const {loadUser}=authContext;
+    useEffect(()=>{
+
+    })
     return (
         <QueryClientProvider client={queryClient}>
-            <AuthState>
                 <div className="App">
                     <Router>
                         <Navbar/>
@@ -36,7 +42,6 @@ function App() {
                     <ReactQueryDevtools initialIsOpen={false}/>
 
                 </div>
-            </AuthState>
 
         </QueryClientProvider>
 

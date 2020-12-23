@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AuthState from "./Context/auth/AuthState";
+import {QueryClientProvider} from "react-query";
 
 ReactDOM.render(
   <React.StrictMode>
-      <App />
-
+      <AuthState><App /></AuthState>
   </React.StrictMode>,
   document.getElementById('root')
 );

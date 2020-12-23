@@ -9,10 +9,9 @@ import {
 } from './RequestBloodFormCSS';
 import SelectComponent from "../query/SelectComponent";
 import {bloodType,districts,turnIntoSelectFormat} from "../utils/sharedData";
-import AuthContext from "../../Context/auth/authContext";
 import axios from "axios";
-import {ERROR} from "../../Context/types";
 import {toast} from "react-toastify";
+import AuthContext from "../../Context/auth/authContext";
 
 function Contact() {
     const bloodTypeOptions=turnIntoSelectFormat(bloodType)
@@ -38,7 +37,8 @@ function Contact() {
         try {
             await axios.post('/api/help/req', values, config);
         } catch (err) {
-            toast.error(err?.data?.error, {
+            console.log(err.response)
+            toast.error(err?.response?.data?.error, {
                 position: "top-center",
                 autoClose: 80000,
                 hideProgressBar: false,

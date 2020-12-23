@@ -26,6 +26,9 @@ function Contact() {
     const handleChangeForDistrict = selectedOption => {
         handleInputForSelect("district",selectedOption.value)
     };
+    const handleChangeForChecked = (e) => {
+        handleInputForSelect((values)=>"expense",!values.expense)
+    };
     const requestForBlood=async (e)=>{
         e.preventDefault();
         const config = {

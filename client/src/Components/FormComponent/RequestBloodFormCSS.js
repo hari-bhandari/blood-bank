@@ -32,7 +32,7 @@ export const ContactBox = styled.div`
 `;
 export const LeftContent = styled.div`
   position: absolute;
-  top: 50%;
+  top: 100px;
   transform: translateY(-50%);
   margin-left: 6%;
   width: fit-content;
@@ -162,7 +162,7 @@ export const Recieved = styled.div`
   position: relative;
   height: 800px;
   margin-bottom: 50px;
-  margin-top: 200px;
+  margin-top: 400px;
   transform: translateY(-50%);
   text-align: center;
 

@@ -17,7 +17,7 @@ function Contact() {
     const bloodTypeOptions=turnIntoSelectFormat(bloodType)
     const districtsOptions=turnIntoSelectFormat(districts)
     const authContext=useContext(AuthContext);
-    const [submitted, setSubmitted] = useState(false)
+    const [submitted, setSubmitted] = useState(true)
     const [values, handleInput,handleInputForSelect] = useForm();
     const handleChangeForBlood = selectedOption => {
         handleInputForSelect("bloodType",selectedOption.value)

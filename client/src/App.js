@@ -24,7 +24,7 @@ function App() {
     const {loadUser}=authContext;
     useEffect(()=>{
         loadUser()
-    },[])
+    },[])//fires load user evertime the page relaods
     return (
         <QueryClientProvider client={queryClient}>
                 <div className="App">

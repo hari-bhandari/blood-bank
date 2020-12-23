@@ -27,7 +27,8 @@ function Contact() {
         handleInputForSelect("district",selectedOption.value)
     };
     const handleChangeForChecked = (e) => {
-        handleInputForSelect((values)=>"expense",!values.expense)
+        handleInputForSelect("expense",!values.expense)
+
     };
     const requestForBlood=async (e)=>{
         e.preventDefault();
@@ -129,7 +130,7 @@ function Contact() {
                                 placeholder="Describe the situation...."
                             />
                         </label>
-                        <ExpenseContainer><input type="checkbox"/><p>I confirm to pay for the travel expenses</p></ExpenseContainer>
+                        <ExpenseContainer><input type="checkbox" onChange={handleChangeForChecked}/><p>I confirm to pay for the travel expenses</p></ExpenseContainer>
 
                         <Button
                             className="submit__btn"

@@ -13,6 +13,7 @@ export const ContactWrapper = styled.section`
     color: white !important;
   }
   
+  
 `;
 
 export const ContactBox = styled.div`

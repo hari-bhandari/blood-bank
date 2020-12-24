@@ -30,7 +30,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/Components/Navbar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -95,7 +95,7 @@
       <workItem from="1608584124109" duration="4148000" />
       <workItem from="1608618932752" duration="13787000" />
       <workItem from="1608723810264" duration="11424000" />
-      <workItem from="1608830672322" duration="2846000" />
+      <workItem from="1608830672322" duration="3746000" />
     </task>
     <servers />
   </component>

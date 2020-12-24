@@ -5,7 +5,7 @@ export const ContactWrapper = styled.section`
   width: 80%;
   margin: 0 auto;
   @media (max-width: 1000px) {
-    margin-left: 10px;
+    margin-left: 20px;
     width: 100%;
     
   }

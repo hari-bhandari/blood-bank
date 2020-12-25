@@ -15,6 +15,7 @@ import {
 import ProfilePage from "./Components/Profile/ProfilePage";
 import Requests from "./Components/Request/Requests";
 import AuthContext from "./Context/auth/authContext";
+import About from "./Components/About/About";
 
 
 const queryClient = new QueryClient()
@@ -36,6 +37,7 @@ function App() {
                             <Route path='/login' exact component={Auth}/>
                             <Route path={'/request'} exact component={RequestBloodForm}/>
                             <Route path={'/donors'} exact component={Donors}/>
+                            <Route path={'/about'} exact component={About}/>
                             <Route path={'/help/:id'} exact component={ProfilePage}/>
                         </Switch>
                     </Router>

@@ -8,7 +8,6 @@ export const ContactWrapper = styled.section`
     margin-left: 20px;
     width: 100%;
     
-    
   }
   .css-1uccc91-singleValue{
     color: white !important;

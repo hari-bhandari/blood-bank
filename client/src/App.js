@@ -15,7 +15,7 @@ import {
 import ProfilePage from "./Components/Profile/ProfilePage";
 import Requests from "./Components/Request/Requests";
 import AuthContext from "./Context/auth/authContext";
-import About from "./Components/About/About";
+import FAQPage from "./Components/About/FAQPage";
 
 
 const queryClient = new QueryClient()
@@ -26,7 +26,7 @@ function App() {
 
     useEffect(()=>{
         loadUser()
-    },[])//fires load user evertime the page relaods
+    },[])//fires load user everytime the page reloads
     return (
         <QueryClientProvider client={queryClient}>
                 <div className="App">
@@ -38,7 +38,7 @@ function App() {
                             <Route path='/login' exact component={Auth}/>
                             <Route path={'/request'} exact component={RequestBloodForm}/>
                             <Route path={'/donors'} exact component={Donors}/>
-                            <Route path={'/about'} exact component={About}/>
+                            <Route path={'/faq'} exact component={FAQPage}/>
                             <Route path={'/help/:id'} exact component={ProfilePage}/>
                         </Switch>
                     </Router>

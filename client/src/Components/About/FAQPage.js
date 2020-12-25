@@ -33,15 +33,9 @@ const FAQs= [
     },
 
 ]
-const About = () => {
-    const [faqs, setFaqs] = useState([]);
-    const [loading, setLoading] = useState(false);
-    useEffect(() => {
-        fetchFaqs();
-    }, []);
-    const fetchFaqs =  () => {
-            setFaqs(FAQs);
-    };
+const FAQPage = () => {
+    const [faqs, setFaqs] = useState(FAQs);
+
     const toggleFAQ = (index) => {
         setFaqs(faqs.map((faq, i) => {
             if (i === index) {
@@ -66,4 +60,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default FAQPage;

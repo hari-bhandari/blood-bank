@@ -6,5 +6,5 @@ const router=express.Router();
 router.route('/register').post(register);
 router.route('/login').post(login);
 router.route('/me').get(protect,getMe)
-router.route('/offer/:id').get(protect,offerHelp)
+router.route('/offer/:id').post(protect,offerHelp)
 export default router

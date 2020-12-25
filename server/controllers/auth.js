@@ -1,7 +1,7 @@
 import User from '../models/User.js'
 import asyncHandler from "../middlewares/async.js";
 import ErrorResponse from "../utils/errorResponse.js";
-import Blood from "../models/Blood";
+import Blood from "../models/Blood.js";
 //@desc register a user
 //@route POST /api/v1/auth/register
 //@access Public
@@ -61,11 +61,18 @@ export const offerHelp=asyncHandler(async (req, res, next)=>{
     if(!user){
         return next(new ErrorResponse(`You must be logged in to offer help`,400))
     }
-    let blood=Blood.findById(req.params.id)
+    let blood=await Blood.findById(req.params.id)
     if(!blood){
         return next(new ErrorResponse(`Please make sure you are offering help to a valid request.`,400))
-
     }
+    blood.helpers.forEach(value=>{
+
+        if(value._id==user._id.toHexString()){
+            return next(new ErrorResponse(`You have already offered your help.`,400))
+        }
+
+    })
+
     blood=await Blood.findByIdAndUpdate(req.params.id,{ $push: { helpers: user } },{
         new:true,
         runValidators:true
@@ -74,6 +81,7 @@ export const offerHelp=asyncHandler(async (req, res, next)=>{
         success:true,
         data:blood
     })
+
 })
 
 //get token from model,create cookie and send

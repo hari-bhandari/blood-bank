@@ -1,13 +1,13 @@
 import User from '../models/User.js'
 import asyncHandler from "../middlewares/async.js";
 import ErrorResponse from "../utils/errorResponse.js";
+import Blood from "../models/Blood";
 //@desc register a user
 //@route POST /api/v1/auth/register
 //@access Public
 export const register=asyncHandler(async (req, res, next)=>{
     const {email}=req.body;
     const isUser=User.findOne({email})
-    console.log(isUser.email)
     //Create user
     const user=await User.create(
         req.body
@@ -21,6 +21,9 @@ export const register=asyncHandler(async (req, res, next)=>{
 //@access Private
 export const getMe=asyncHandler(async (req, res, next)=>{
     const user=await User.findById(req.user.id);
+    if(!user){
+        return next(new ErrorResponse(`User not found`,400))
+    }
 
     res.status(200).json({
         success:true,
@@ -50,6 +53,31 @@ export const login=asyncHandler(async (req, res, next)=>{
 
 })
 
+//@desc offer to help
+//@route post
+//@access Public
+export const offerHelp=asyncHandler(async (req, res, next)=>{
+    const user=await User.findById(req.user.id);
+    if(!user){
+        return next(new ErrorResponse(`You must be logged in to offer help`,400))
+    }
+    let blood=Blood.findById(req.params.id)
+    if(!blood){
+        return next(new ErrorResponse(`Please make sure you are offering help to a valid request.`,400))
+
+    }
+    blood=await Blood.findByIdAndUpdate(req.params.id,{ $push: { helpers: user } },{
+        new:true,
+        runValidators:true
+    })
+    res.status(200).json({
+        success:true,
+        data:blood
+    })
+
+
+
+})
 
 //get token from model,create cookie and send
 // response

@@ -61,6 +61,10 @@ const BloodSchema = mongoose.Schema(
         travel:{
             type:Boolean,
             default: false
+        },
+        helpers:{//lists those people who offer to help
+            type:Array,
+            default:[]
         }
     });
 

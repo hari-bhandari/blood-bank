@@ -74,9 +74,6 @@ export const offerHelp=asyncHandler(async (req, res, next)=>{
         success:true,
         data:blood
     })
-
-
-
 })
 
 //get token from model,create cookie and send

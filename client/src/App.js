@@ -23,6 +23,7 @@ const queryClient = new QueryClient()
 function App() {
     const authContext=useContext(AuthContext);
     const {loadUser}=authContext;
+
     useEffect(()=>{
         loadUser()
     },[])//fires load user evertime the page relaods

@@ -1,8 +1,6 @@
 import mongoose from 'mongoose'
-import addSubtractDate from 'add-subtract-date'
 import districts from "../data/districts.js";
 import slug from 'mongoose-slug-generator'
-const objectId=mongoose.Types.ObjectId
 //Initialize
 mongoose.plugin(slug);
 const BloodSchema = mongoose.Schema(
@@ -60,6 +58,10 @@ const BloodSchema = mongoose.Schema(
             slug:["name","district"],
             unique: true
         },
+        travel:{
+            type:Boolean,
+            default: false
+        }
     });
 
 export default mongoose.model('Blood', BloodSchema)

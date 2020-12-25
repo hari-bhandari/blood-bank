@@ -11,7 +11,7 @@ export const useForm=()=>{
         message:'',
         hospital:'',
         fullName:'',
-        expense:false
+        travel:false
 
     })
     const handleChange=e=>{

@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 const RequestCard = ({donor}) => {
     return (
         <CardContainer>
-            <BloodType position={'10%'}>A+</BloodType>
+            <BloodType position={'10%'}>{donor?.bloodType}</BloodType>
                 <img
                     src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png"
                     alt="Person" className="card__image"/>

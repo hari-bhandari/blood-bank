@@ -40,6 +40,9 @@ const Signup = (props) => {
     const handleChangeForDistrict = selectedOption => {
         handleChangeManual("district",selectedOption.value)
     };
+    const handleChangeForExpense = (e) => {
+        // handleChangeManual("travel",e.value)
+    };
 
     return (
         <form  className="sign-up-form" onSubmit={onRegister} >
@@ -70,7 +73,7 @@ const Signup = (props) => {
 
             </div>
             <p className="signup-agreement">By signing up,You're accepting to show your contact information and blood group to people in need</p>
-            <input type="submit" className="btn" value="Sign up" />
+            <input type="submit" className="btn" value="Sign up"  />
         </form>
     );
 };

@@ -26,7 +26,7 @@ function Contact() {
         handleInputForSelect("district",selectedOption.value)
     };
     const handleChangeForChecked = (e) => {
-        handleInputForSelect("expense",!values.expense)
+        handleInputForSelect("travel",!values.travel)
 
     };
     const requestForBlood=async (e)=>{

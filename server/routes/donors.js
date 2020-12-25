@@ -4,7 +4,6 @@ import User from "../models/User.js";
 import {advancedResults} from '../middlewares/advancedResult.js'
 const router = express.Router({ mergeParams: true });
 
-
 router
     .route('/')
     .get(advancedResults(User), getDonors)

@@ -13,53 +13,25 @@ const Container = styled.div`
 
 const FAQs= [
     {
-        question: "What is a novel coronavirus?",
-        answer: `A novel coronavirus is a new coronavirus that has not been previously identified.
-       The virus causing coronavirus disease 2019 (COVID-19), is not the same as the coronaviruses that commonly circulate among humans and cause mild illness, like the common cold.`,
-        category: "basics",
+        question: "How does this blood bank work?",
+        answer: `One blood donation can potentially save three lives. Perhaps, You could be the one to give them second life. The main motive 
+        behind this project is to minify the process to potentially find a donor. You can request for a blood , or even be the donor. At the moment, By the time you register, You info will be automatically shown to other people and they can call you for the required help.`,
+        category: "Help",
         isOpen: false
     },
     {
-        question: "Why is the disease being called coronavirus disease 2019, COVID-19?",
-        answer: `On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV" 
-       \nThere are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans.`,
-        category: "basics",
+        question: "How do i request for a blood donation?",
+        answer: `To request for a blood, simply open the navigation and click on the "REQUEST FOR BLOOD" tab. Fill out the necessary details.To help donor, you can pay for their expenses such as : travel costs and food `,
+        category: "Request",
         isOpen: false
     },
     {
-        question: "Will warm weather stop the outbreak of COVID-19?",
-        answer: `It is not yet known whether weather and temperature affect the spread of COVID-19. Some other viruses, like those that cause the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months.  
-      There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing.`,
-        category: "spread",
+        question: "Who created this and why?",
+        answer: `This site is maintained by Hari Bhandari (https://haribhandari.me). However, I am actively looking for someone to collaborate with me to make this site even more convenient and functional.`,
+        category: "Request",
         isOpen: false
     },
-    {
-        question: "Can mosquitoes or ticks spread the virus that causes COVID-19?",
-        answer: `At this time, CDC has no data to suggest that this new coronavirus or other similar coronaviruses are spread by mosquitoes or ticks. The main way that COVID-19 spreads is from person to person.`,
-        category: "spread",
-        isOpen: false
-    },
-    {
-        question: "Should children wear masks?",
-        answer: `In general, children 2 years and older should wear a mask. However, CDC recognizes that wearing masks may not be possible in every situation or for some people. 
-      Appropriate and consistent use of masks may be challenging for some children, such as children with certain disabilities, including cognitive, intellectual, developmental, sensory and behavioral disorders.`,
-        category: "children",
-        isOpen: false
-    },
-    {
-        question: "Should I get a face mask?",
-        answer: `Yes, you should wear a mask whenever you are in a public place where you will encounter other people. 
-     The coronavirus that causes COVID-19 can spread between people interacting in close proximity — for example, speaking, coughing, sneezing, or singing— even if those people do not symptoms.`,
-        category: "basics",
-        isOpen: false
-    },
-    {
-        question: "Can I make my own hand sanitizer?",
-        answer: `There are no studies supporting the effectiveness of homemade hand sanitizer blend in killing the new coronavirus on people’s hands. 
-     Experts agree that the best method for cleaning hands is washing for at least 20 seconds with soap and water`,
-        category: "basics",
-        isOpen: false
-    }
+
 ]
 const About = () => {
     const [faqs, setFaqs] = useState([]);

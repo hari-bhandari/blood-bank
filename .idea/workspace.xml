@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/useForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/useForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/donors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodFormCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodFormCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,8 @@
       <workItem from="1608830672322" duration="4413000" />
       <workItem from="1608847816896" duration="6453000" />
       <workItem from="1608900814967" duration="1688000" />
-      <workItem from="1608917416109" duration="10225000" />
+      <workItem from="1608917416109" duration="11413000" />
+      <workItem from="1608973952935" duration="813000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -140,13 +138,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/Components/About/AboutCss.js</url>
           <line>11</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/Components/About/FAQPage.js</url>
           <line>23</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -63,15 +63,13 @@ export const offerHelp=asyncHandler(async (req, res, next)=>{
     if(!blood){
         return next(new ErrorResponse(`Please make sure you are offering help to a valid request.`,400))
     }
-    blood.helpers.forEach(value=>{
-
-        if(value._id==user._id.toHexString()){
+    const {helpers}=blood
+    for(const value of helpers){
+        if(value==user._id.toHexString()){
             return next(new ErrorResponse(`You have already offered your help.`,400))
         }
-
-    })
-
-    blood=await Blood.findByIdAndUpdate(req.params.id,{ $push: { helpers: user } },{
+    }
+    blood=await Blood.findByIdAndUpdate(req.params.id,{ $push: { helpers: user._id } },{
         new:true,
         runValidators:true
     })

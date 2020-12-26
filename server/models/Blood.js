@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import districts from "../data/districts.js";
 import slug from 'mongoose-slug-generator'
+
 //Initialize
 mongoose.plugin(slug);
 const BloodSchema = mongoose.Schema(
@@ -64,6 +65,7 @@ const BloodSchema = mongoose.Schema(
         },
         helpers:{//lists those people who offer to help
             type:Array,
+            items: { type: mongoose.Schema.ObjectId, uniqueItems: true },
             default:[]
         }
     });

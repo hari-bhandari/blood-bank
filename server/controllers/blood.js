@@ -87,16 +87,15 @@ export const getBunchOfDonors=asyncHandler(async (req, res, next)=> {
     if(!blood){
         return next(new ErrorResponse(`Request not found`,400))
     }
-    console.log(blood.user.toHexString()==req.user.id)
     if(blood.user.toHexString()!=req.user.id){
         return next(new ErrorResponse(`You don't own this request`,400))
     }
-    const listOfUsers=blood.helpers.map(user=>{
-        return mongoose.Types.ObjectId(user._id)
-    })
-    const users=await User.find({'_id':{$in:listOfUsers}})
+    const users=await User.find({'_id':{$in:blood.helpers}})
 
-    console.log(users)
+    res.status(200).json({
+        success:true,
+        data:users
+    })
 
 
 

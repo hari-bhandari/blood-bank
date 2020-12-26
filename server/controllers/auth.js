@@ -7,7 +7,6 @@ import Blood from "../models/Blood.js";
 //@access Public
 export const register=asyncHandler(async (req, res, next)=>{
     const {email}=req.body;
-    const isUser=User.findOne({email})
     //Create user
     const user=await User.create(
         req.body
@@ -24,7 +23,6 @@ export const getMe=asyncHandler(async (req, res, next)=>{
     if(!user){
         return next(new ErrorResponse(`User not found`,400))
     }
-
     res.status(200).json({
         success:true,
         data:user

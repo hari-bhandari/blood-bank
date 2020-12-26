@@ -2,6 +2,7 @@ import Blood from "../models/Blood.js";
 import asyncHandler from "../middlewares/async.js";
 import User from "../models/User.js";
 import ErrorResponse from "../utils/errorResponse.js";
+import mongoose from 'mongoose'
 import path from 'path'
 export const requestForDonor=  asyncHandler(async (req,res,next)=>{
     //add user to req.body
@@ -10,6 +11,7 @@ export const requestForDonor=  asyncHandler(async (req,res,next)=>{
     if(!user){
         return next(new ErrorResponse(`You have to be logged in to make a request.`,401))
     }
+
     const request=await Blood.create(req.body)
     res.status(201).json({
         success:true,
@@ -78,4 +80,24 @@ export const patientPhoto=asyncHandler(async (req,res,next)=> {
             data:file.name
         })
     })
+})
+
+export const getBunchOfDonors=asyncHandler(async (req, res, next)=> {
+    const blood=await Blood.findById(req.params.id);
+    if(!blood){
+        return next(new ErrorResponse(`Request not found`,400))
+    }
+    console.log(blood.user.toHexString()==req.user.id)
+    if(blood.user.toHexString()!=req.user.id){
+        return next(new ErrorResponse(`You don't own this request`,400))
+    }
+    const listOfUsers=blood.helpers.map(user=>{
+        return mongoose.Types.ObjectId(user._id)
+    })
+    const users=await User.find({'_id':{$in:listOfUsers}})
+
+    console.log(users)
+
+
+
 })

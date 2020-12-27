@@ -85,7 +85,7 @@ const ProfilePage = () => {
                         </div>
                     </div>
 
-                    <div className="social_media">
+                    <div className="offer-help">
                         <ul>
                             <li><FaHandsHelping/></li>
                         </ul>

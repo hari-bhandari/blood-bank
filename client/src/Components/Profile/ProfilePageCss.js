@@ -17,6 +17,11 @@ export const ProfilePageCSS=styled.div`
     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
     @media (max-width: 1000px) {
       width: 95%;
+      top: 70%;
+    }
+    @media (max-width: 400px) {
+      width: 95%;
+      top: 90%;
     }
   }
 
@@ -77,6 +82,9 @@ export const ProfilePageCSS=styled.div`
   .wrapper .right .projects_data {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
 
   .wrapper .right .info_data .data,
@@ -98,12 +106,12 @@ export const ProfilePageCSS=styled.div`
 
   }
 
-  .wrapper .social_media ul {
+  .wrapper .offer-help ul {
     display: flex;
   }
 
-  .wrapper .social_media ul li {
-    width: 45px;
+  .wrapper .offer-help ul li {
+    width: 100%;
     height: 45px;
     background: linear-gradient(to right, #01a9ac, #01dbdf);
     margin-right: 10px;
@@ -112,12 +120,18 @@ export const ProfilePageCSS=styled.div`
     line-height: 45px;
   }
 
-  .wrapper .social_media ul li a {
+  .wrapper .offer-help ul li a {
     color: #fff;
     display: block;
     font-size: 18px;
+    svg{
+      height: 50px;
+    }
     @media (max-width: 1000px) {
       font-size: 13px;
     }
+  }
+  svg{
+    
   }
 `

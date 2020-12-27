@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/DonorItemCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Donors/DonorItemCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodFormCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodFormCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Request/RequestCardCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Request/RequestCardCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/useForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/useForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePageCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePageCss.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,8 @@
       <workItem from="1608973952935" duration="3032000" />
       <workItem from="1609002256167" duration="1209000" />
       <workItem from="1609011994706" duration="10135000" />
-      <workItem from="1609060607066" duration="3348000" />
+      <workItem from="1609060607066" duration="5662000" />
+      <workItem from="1609096879162" duration="3235000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

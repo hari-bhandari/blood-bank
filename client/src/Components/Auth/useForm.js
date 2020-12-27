@@ -10,7 +10,6 @@ export const useForm=()=>{
         blood:'',
         message:'',
         hospital:'',
-        fullName:'',
         travel:false
 
     })

@@ -6,6 +6,7 @@ import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
 import {CentralizeDiv} from "../../util/CentralizeDiv";
 import {toast} from "react-toastify";
+import {FaHandsHelping} from "react-icons/all";
 
 const ProfilePage = () => {
     const {id}=useParams()
@@ -39,25 +40,57 @@ const ProfilePage = () => {
 
     return (
         <ProfilePageCSS>
-            <div className="profile-user-page card">
-                <div className="img-user-profile">
-                    <div className="profile-bgHome"
-                         />
-                    <img className="avatar" src="http://gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=200"
-                         alt="jofpin"/>
+            <div className="wrapper">
+                <div className="left">
+                    <img src="http://www.pngall.com/wp-content/uploads/5/Profile-Male-PNG.png"
+                         alt="user" width="100"/>
+                        <h4>{data.name}
+                        </h4>
+                        <p>{data.bloodType}</p>
                 </div>
-                <button onClick={onClick}>Offer Help</button>
-                <div className="user-profile-data">
-                    <h1>{data?.name}</h1>
-                    <p>We need your help. We really do!!</p>
+                <div className="right">
+                    <div className="info">
+                        <h3>Information</h3>
+                        <div className="info_data">
+                            <div className="data">
+                                <h4>Email</h4>
+                                <p>{data.email}</p>
+                            </div>
+                            <div className="data">
+                                <h4>Phone</h4>
+                                <p>{data.phone}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="More details">
+                        <h3>Message</h3>
+                        <div className="data">
+                            <p>{data.message}</p>
+                        </div>
+                        <div className="projects_data">
+
+                        </div>
+                    </div>
+                    <div className="More Info">
+                        <h3>Projects</h3>
+                        <div className="projects_data">
+                            <div className="data">
+                                <h4>Hospital Name</h4>
+                                <p>{data.hospitalName}</p>
+                            </div>
+                            <div className="data">
+                                <h4>Travel Cost</h4>
+                                <p>{data.travel?'Travel costs will be paid by requester':'Travel costs will not be paid by requester'}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="social_media">
+                        <ul>
+                            <li><FaHandsHelping/></li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="description-profile">{data.message}
-                </div>
-                <ul className="data-user">
-                    <li><a><strong>{data.phone}</strong><span>Phone</span></a></li>
-                    <li><a><strong>{data.hospitalName}</strong><span>Hospital Name</span></a></li>
-                    <li><a><strong>{data.bloodType}</strong><span>Blood Type</span></a></li>
-                </ul>
             </div>
         </ProfilePageCSS>
 

@@ -97,14 +97,18 @@ export const CardContainer=styled.div`
   .btn-request:focus {
     outline: 2px dotted #55d7dc;
   }
-
-
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    font-size: 1.2em;
-  }
+  
 
 `
+export const Flex = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap: ${props => (props.nowrap ? 'no-wrap' : 'wrap')};
+  div{
+    flex: 0.5;
+  }
+`;
+
+

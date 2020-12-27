@@ -2,8 +2,12 @@ import styled from 'styled-components';
 
 export const ContactWrapper = styled.section`
   height: 100%;
-  width: 80%;
-  margin: 0 auto;
+  width: 85%;
+  margin: 0 auto ;
+  @media (max-width: 1000px) {
+    margin-left: 0;    
+  }
+  
 `;
 
 export const ContactBox = styled.div`
@@ -24,6 +28,7 @@ export const ContactBox = styled.div`
 export const LeftContent = styled.div`
   position: absolute;
   top: 100px;
+  height: 100px;
   transform: translateY(-50%);
   margin-left: 6%;
   width: fit-content;

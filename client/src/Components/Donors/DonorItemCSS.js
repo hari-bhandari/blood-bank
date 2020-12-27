@@ -60,15 +60,23 @@ export const Button=styled.button`
 `
 export const BloodType=styled.div`
   font-size: 55px;
-  font-family: "Helvetica Neue";
   width: 100px;
   height: 100px;
-  background-color: rgba(255, 0, 0, 0.8);
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
   line-height: 90px;
   position: absolute;
-  left: ${props=>props.position?props.position:'60%'};
+  left: ${props => props.position ? props.position : '60%'};
   color: #003e02;
+  border-radius: 50%;
+  background: linear-gradient(to bottom,
+  rgb(255, 0, 7),
+  rgb(184, 47, 150));
+  border: 5px solid #ffab00;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans Bold';
+
 `

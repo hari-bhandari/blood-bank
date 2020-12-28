@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext,useState} from 'react';
 import {ProfilePageCSS} from "./ProfilePageCss";
 import {useParams} from "react-router";
 import axios from "axios";
@@ -11,7 +11,9 @@ import AuthContext from "../../Context/auth/authContext";
 
 const ProfilePage = () => {
     const authContext=useContext(AuthContext);
-    const {login,isAuthenticated,loadUser,error}=authContext;
+    const {login,isAuthenticated,loadUser}=authContext;
+    const[error,setError]=useState()
+
     const {id}=useParams()
     const fetchDonors = async () => {
         const response = await axios(
@@ -22,17 +24,39 @@ const ProfilePage = () => {
     const { status, data } = useQuery(id, fetchDonors, {
         refetchAllOnWindowFocus: false
     });
-    const onClick=()=>{
+    const offerHelp=async ()=>{
+        try {
+            const res = await axios.post(`/api/auth/offer/${data._id}`);
+        }catch (e){
+            setError(e.response.data.error)
+        }
+    }
+    const onClick=async ()=>{
         if(isAuthenticated){
-            toast.success("You have offered the help from your part!Thank You!", {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
+            await offerHelp()
+            if(!error){
+                toast.success("You have offered the help from your part!Thank You!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            }
+            else {
+                toast.warn(error, {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            }
+
         }
         else {
             toast.warn("You must be logged in to offer help. Why not signup?", {

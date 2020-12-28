@@ -105,15 +105,7 @@ const sendTokenResponse=(user,statusCode,res)=>{
 //@access Private
 export const getMyRequests=asyncHandler(async (req, res, next)=>{
     const id=req.user._id
-    console.log(id)
     const requests=await Blood.find({user:id})
-    // if(!user){
-    //     return next(new ErrorResponse(`User not found`,400))
-    // }
-    // res.status(200).json({
-    //     success:true,
-    //     data:user
-    // })
     res.status(200).json({
         success:true,
         data:requests

@@ -105,33 +105,29 @@ export const ProfilePageCSS=styled.div`
     color: #919aa3;
 
   }
-
-  .wrapper .offer-help ul {
-    display: flex;
-  }
-
-  .wrapper .offer-help ul li {
+  
+  .offer-help-container{
     width: 100%;
     height: 45px;
+    display: flex;
+    justify-content: center;
     background: linear-gradient(to right, #01a9ac, #01dbdf);
     margin-right: 10px;
     border-radius: 5px;
     text-align: center;
     line-height: 45px;
-  }
-
-  .wrapper .offer-help ul li a {
-    color: #fff;
-    display: block;
-    font-size: 18px;
+    color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    &:hover{
+      cursor:pointer ;
+    }
     svg{
-      height: 50px;
+      //margin-left: 30%;
+      color: #D40871;
     }
-    @media (max-width: 1000px) {
-      font-size: 13px;
-    }
-  }
-  svg{
     
   }
+
+
 `

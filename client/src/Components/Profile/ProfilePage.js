@@ -85,11 +85,8 @@ const ProfilePage = () => {
                         </div>
                     </div>
 
-                    <div className="offer-help">
-                        <ul>
-                            <li><FaHandsHelping/></li>
-                        </ul>
-                    </div>
+                        <div className={"offer-help-container"}><FaHandsHelping size={"3em"}></FaHandsHelping> Offer A Help</div>
+
                 </div>
             </div>
         </ProfilePageCSS>

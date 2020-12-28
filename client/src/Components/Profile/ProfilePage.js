@@ -26,7 +26,7 @@ const ProfilePage = () => {
     });
     const offerHelp=async ()=>{
         try {
-            const res = await axios.post(`/api/auth/offer/${data._id}`);
+             await axios.post(`/api/auth/offer/${data._id}`);
         }catch (e){
             setError(e.response.data.error)
         }

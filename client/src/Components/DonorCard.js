@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css'
 
-const DonorCard = ({help,name,address,email,hospitalName,bloodType,phone}) => {
+const DonorCard = ({help,name,district,email,hospitalName,bloodType,phone}) => {
 
     return (
         <div className="card">
@@ -9,7 +9,7 @@ const DonorCard = ({help,name,address,email,hospitalName,bloodType,phone}) => {
             <div className="content-container">
                 <p className="donor__title">{name}</p>
                 <p className="content">
-                    Address: {address}
+                    District: {district}
                 </p>
                 <p className="content">
                     Hospital Name:{hospitalName}

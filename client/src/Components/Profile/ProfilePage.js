@@ -112,7 +112,6 @@ const ProfilePage = () => {
                         </div>
                     </div>
                     <div className="More Info">
-                        <h3>Projects</h3>
                         <div className="projects_data">
                             <div className="data">
                                 <h4>Hospital Name</h4>
@@ -124,7 +123,18 @@ const ProfilePage = () => {
                             </div>
                         </div>
                     </div>
-
+                    <div className="More Info">
+                        <div className="projects_data">
+                            <div className="data">
+                                <h4>District Name</h4>
+                                <p>{data.district}</p>
+                            </div>
+                            <div className="data">
+                                <h4>Date Requested</h4>
+                                <p>{data.date}</p>
+                            </div>
+                        </div>
+                    </div>
                         <div className={"offer-help-container"} onClick={onClick}><FaHandsHelping size={"3em"}></FaHandsHelping> Offer A Help</div>
 
                 </div>

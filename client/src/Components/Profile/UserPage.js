@@ -5,8 +5,6 @@ import axios from "axios";
 import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
 import {CentralizeDiv} from "../../util/CentralizeDiv";
-import {toast} from "react-toastify";
-import {FaHandsHelping} from "react-icons/all";
 import AuthContext from "../../Context/auth/authContext";
 
 const UserPage = () => {
@@ -57,25 +55,16 @@ const UserPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="More details">
-                        <h3>Message</h3>
-                        <div className="data">
-                            <p>{data.message}</p>
-                        </div>
-                        <div className="projects_data">
 
-                        </div>
-                    </div>
                     <div className="More Info">
-                        <h3>Projects</h3>
                         <div className="projects_data">
                             <div className="data">
-                                <h4>Hospital Name</h4>
-                                <p>{data.hospitalName}</p>
+                                <h4>District Name</h4>
+                                <p>{data.district}</p>
                             </div>
                             <div className="data">
-                                <h4>Travel Cost</h4>
-                                <p>{data.travel?'Travel costs will be paid by requester':'Travel costs will not be paid by requester'}</p>
+                                <h4>User creation Date</h4>
+                                <p>{data.createdAt.slice(0,10)}</p>
                             </div>
                         </div>
                     </div>

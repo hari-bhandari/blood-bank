@@ -16,6 +16,7 @@ import ProfilePage from "./Components/Profile/ProfilePage";
 import Requests from "./Components/Request/Requests";
 import AuthContext from "./Context/auth/authContext";
 import FAQPage from "./Components/About/FAQPage";
+import UserPage from "./Components/Profile/UserPage";
 
 
 const queryClient = new QueryClient()
@@ -40,6 +41,7 @@ function App() {
                             <Route path={'/donors'} exact component={Donors}/>
                             <Route path={'/faq'} exact component={FAQPage}/>
                             <Route path={'/help/:id'} exact component={ProfilePage}/>
+                            <Route path={'/user/:id'} exact component={UserPage}/>
                         </Switch>
                     </Router>
                     <ReactQueryDevtools initialIsOpen={false}/>

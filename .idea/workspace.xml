@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Profile/UserPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Context/auth/AuthState.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cards" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/Components/Profile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
@@ -38,11 +37,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/Components/Profile" />
       <recent name="$PROJECT_DIR$/client/src/Components/Navbar" />
       <recent name="$PROJECT_DIR$/client/src/Context" />
       <recent name="$PROJECT_DIR$/client/src/Components" />
       <recent name="$PROJECT_DIR$/client/src" />
-      <recent name="$PROJECT_DIR$/server/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -107,7 +106,7 @@
       <workItem from="1609060607066" duration="5662000" />
       <workItem from="1609096879162" duration="5535000" />
       <workItem from="1609143590412" duration="2510000" />
-      <workItem from="1609161000042" duration="1968000" />
+      <workItem from="1609161000042" duration="3495000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

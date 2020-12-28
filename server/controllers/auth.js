@@ -2,8 +2,11 @@ import User from '../models/User.js'
 import asyncHandler from "../middlewares/async.js";
 import ErrorResponse from "../utils/errorResponse.js";
 import Blood from "../models/Blood.js";
+import mongoose from 'mongoose'
+const ObjectId=mongoose.ObjectId
+
 //@desc register a user
-//@route POST /api/v1/auth/register
+//@route POST /api/auth/register
 //@access Public
 export const register=asyncHandler(async (req, res, next)=>{
     const {email}=req.body;
@@ -97,3 +100,22 @@ const sendTokenResponse=(user,statusCode,res)=>{
         token
     })
 }
+//@desc get current logged in user
+//@route GET /api/auth/me
+//@access Private
+export const getMyRequests=asyncHandler(async (req, res, next)=>{
+    const id=req.user._id
+    console.log(id)
+    const requests=await Blood.find({user:id})
+    // if(!user){
+    //     return next(new ErrorResponse(`User not found`,400))
+    // }
+    // res.status(200).json({
+    //     success:true,
+    //     data:user
+    // })
+    res.status(200).json({
+        success:true,
+        data:requests
+    })
+})

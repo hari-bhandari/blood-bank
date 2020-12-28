@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {ProfilePageCSS} from "./ProfilePageCss";
 import {useParams} from "react-router";
 import axios from "axios";
@@ -7,8 +7,11 @@ import {SpinnerInfinity} from "spinners-react";
 import {CentralizeDiv} from "../../util/CentralizeDiv";
 import {toast} from "react-toastify";
 import {FaHandsHelping} from "react-icons/all";
+import AuthContext from "../../Context/auth/authContext";
 
 const ProfilePage = () => {
+    const authContext=useContext(AuthContext);
+    const {login,isAuthenticated,loadUser,error}=authContext;
     const {id}=useParams()
     const fetchDonors = async () => {
         const response = await axios(
@@ -20,15 +23,28 @@ const ProfilePage = () => {
         refetchAllOnWindowFocus: false
     });
     const onClick=()=>{
-        toast.warn("You must be logged in to offer help. Why not signup?", {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-        });
+        if(isAuthenticated){
+            toast.success("You have offered the help from your part!Thank You!", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+        else {
+            toast.warn("You must be logged in to offer help. Why not signup?", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
     }
     if(status==='loading'){
         return (
@@ -85,7 +101,7 @@ const ProfilePage = () => {
                         </div>
                     </div>
 
-                        <div className={"offer-help-container"}><FaHandsHelping size={"3em"}></FaHandsHelping> Offer A Help</div>
+                        <div className={"offer-help-container"} onClick={onClick}><FaHandsHelping size={"3em"}></FaHandsHelping> Offer A Help</div>
 
                 </div>
             </div>

@@ -25,6 +25,7 @@ const DonorCard = ({help,name,district,email,hospitalName,bloodType,phone}) => {
             <div className="content-container">
                 <button id="accept" type="button">Available Donors</button>
                 <button id="cancel" type="button">More Info</button>
+
             </div>
 
         </div>

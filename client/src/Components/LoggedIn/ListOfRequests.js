@@ -25,7 +25,7 @@ const ListOfRequests = () => {
     return (
         <div>
             {data.map(request=>(
-                <DonorCard phone={request.phone} bloodType={request.bloodType} email={request.email} name={request.name} district={request.district} hospitalName={request.hospitalName} id={request.id}/>
+                <DonorCard request={request}/>
                 )
             )}
 

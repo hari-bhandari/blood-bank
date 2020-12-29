@@ -50,7 +50,7 @@ export const deleteRequest=asyncHandler(async (req,res,next)=> {
     blood.remove();
     res.status(200).json({
         success:true,
-        data: "removed"
+        data:`Succesfully removed request with the patient name of ${blood.name}`
     });
 })
 

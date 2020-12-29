@@ -6,6 +6,15 @@
     margin-bottom: 3px;
     justify-content: space-between;
 }
+.X{
+    position: absolute;
+    color: blue;
+    font-weight: bold;
+    background-color: #f10a0a;
+    font-size: 22px;
+    border-radius: 33%;
+    margin-left: 5px;
+}
 .card-c {
     display: flex;
     background: #0087ff;

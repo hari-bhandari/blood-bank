@@ -106,7 +106,7 @@ function Contact() {
                             <input
                                 onChange={handleInput}
                                 value={values.hospital}
-                                name="hospital"
+                                name="hospitalName"
                                 type="text"
                                 required
                                 placeholder="Bir Hospital"

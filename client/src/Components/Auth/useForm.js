@@ -9,7 +9,7 @@ export const useForm=()=>{
         district:'',
         blood:'',
         message:'',
-        hospital:'',
+        hospitalName:'',
         travel:false
 
     })

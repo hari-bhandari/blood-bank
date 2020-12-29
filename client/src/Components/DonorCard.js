@@ -1,14 +1,13 @@
 import React from 'react';
 import './Card.css'
 import {Link} from "react-router-dom";
-import axios from "axios";
-import {toast} from "react-toastify";
 
-const DonorCard = ({request:{name,district,email,hospitalName,bloodType,id},deleteRequest}) => {
+
+const DonorCard = ({request:{name,district,email,hospitalName,bloodType,id},deleteRequest,donor}) => {
 
     return (
         <div className="card">
-            <span className={"X"} onClick={()=>{deleteRequest(id)}}>X</span>
+            {!donor&&(<span className={"X"} onClick={()=>{deleteRequest(id)}}>X</span>)}
 
             <div className="content-container">
                 <p className="donor__title">{name}</p>

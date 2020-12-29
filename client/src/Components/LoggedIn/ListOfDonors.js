@@ -4,11 +4,11 @@ import axios from "axios";
 import {useQuery} from "react-query";
 import {CentralizeDiv} from "../../util/CentralizeDiv";
 import {SpinnerInfinity} from "spinners-react";
-import {toast} from "react-toastify";
 import {useParams} from "react-router";
 import PageHeader from "../_shared/PageHeader";
+import BackButton from "../shared/BackButton";
 
-const ListOfDonors = () => {
+const ListOfDonors = (props) => {
     const {id}=useParams()
     const fetchRequests = async () => {
         const response = await axios(
@@ -33,11 +33,15 @@ const ListOfDonors = () => {
     }
     return (
         <div>
+            <BackButton goBack={props.history.goBack}/>
+
             <PageHeader>List of Donors</PageHeader>
+            <div style={{marginTop:"20px"}}>
             {data.map(request=>(
                     <DonorCard request={request} donor={true}/>
                 )
             )}
+            </div>
         </div>
     );
 };

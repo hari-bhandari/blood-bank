@@ -4,11 +4,9 @@ import {Link} from "react-router-dom";
 
 
 const DonorCard = ({request,deleteRequest,donor}) => {
-
     return (
         <div className="card">
             {!donor&&(<span className={"X"} onClick={()=>{deleteRequest(request.id)}}>X</span>)}
-
             <div className="content-container">
                 <p className="donor__title">{request.name}</p>
                 <p className="content">

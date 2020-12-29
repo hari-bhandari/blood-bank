@@ -18,6 +18,7 @@ import AuthContext from "./Context/auth/authContext";
 import FAQPage from "./Components/About/FAQPage";
 import UserPage from "./Components/Profile/UserPage";
 import ListOfRequests from "./Components/LoggedIn/ListOfRequests";
+import ListOfDonors from "./Components/LoggedIn/ListOfDonors";
 
 
 const queryClient = new QueryClient()
@@ -44,6 +45,7 @@ function App() {
                             <Route path={'/help/:id'} exact component={ProfilePage}/>
                             <Route path={'/user/:id'} exact component={UserPage}/>
                             <Route path={'/requests'} exact component={ListOfRequests}/>
+                            <Route path={'/requests/:id'} exact component={ListOfDonors}/>
                         </Switch>
                     </Router>
                     <ReactQueryDevtools initialIsOpen={false}/>

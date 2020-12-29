@@ -35,6 +35,25 @@ export const beADonor=  asyncHandler(async (req,res,next)=>{
 export const getBloodRequests=asyncHandler(async  (req,res,next)=>{
     res.status(200).json(res.advancedResults)
 })
+//@desc delete
+//@route GET
+//@access Public
+export const deleteRequest=asyncHandler(async (req,res,next)=> {
+    const blood=await Blood.findOne({id:req.params.id})
+    if(!blood){
+        return next(new ErrorResponse(`Request not found with id of ${req.params.id}`,404))
+    }
+    console.log(blood.user.toString(),req.user.id)
+    if(blood.user.toString()!==req.user.id){
+        return next(new ErrorResponse(`User ${req.params.id} is not authorized to delete this bootcamp`,401));
+    }
+    blood.remove();
+    res.status(200).json({
+        success:true,
+        data: "removed"
+    });
+})
+
 //@desc Get single request
 //@route GET
 //@access Public

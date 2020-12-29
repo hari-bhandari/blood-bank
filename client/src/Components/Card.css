@@ -15,6 +15,9 @@
     border-radius: 33%;
     margin-left: 5px;
 }
+.X:hover{
+    cursor: pointer;
+}
 .card-c {
     display: flex;
     background: #0087ff;

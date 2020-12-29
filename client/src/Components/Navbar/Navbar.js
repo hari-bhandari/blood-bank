@@ -34,8 +34,8 @@ const Navbar = () => {
                 </NavLink>
                 <Bars/>
                 <NavMenu>
-                    <NavLink to='/faq' activeStyle>
-                        FAQ
+                    <NavLink to='/' activeStyle>
+                        Requests
                     </NavLink>
                     <NavLink to='/donors' activeStyle>
                         Donors
@@ -43,15 +43,15 @@ const Navbar = () => {
                     <NavLink to='/request' activeStyle>
                         Request For Blood
                     </NavLink>
-                    <NavLink to='/help' activeStyle>
+                    <NavLink to='faq' activeStyle>
                         FAQ
                     </NavLink>
-
                     {/* Second Nav */}
                 </NavMenu>
                 <NavBtn>
                     {isAuthenticated ? (<NavBtnLinkDiv onClick={logMeOut}>Logout</NavBtnLinkDiv>) :
                         (<NavBtnLink to='/login'>Sign In/Signup</NavBtnLink>)}
+                    {isAuthenticated&&<NavBtnLink to='/requests'>My Requests</NavBtnLink>}
                 </NavBtn>
             </Nav>
         </>

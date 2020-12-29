@@ -5,6 +5,7 @@ import {useQuery} from "react-query";
 import {CentralizeDiv} from "../../util/CentralizeDiv";
 import {SpinnerInfinity} from "spinners-react";
 import {toast} from "react-toastify";
+import PageHeader from "../_shared/PageHeader";
 
 const ListOfRequests = () => {
     const fetchRequests = async () => {
@@ -52,8 +53,15 @@ const ListOfRequests = () => {
             </CentralizeDiv>
         )
     }
+    if(data.length==0){
+        return (
+            <h1>You don't have any requests yet!</h1>
+        )
+    }
     return (
         <div>
+            <PageHeader>My Requests</PageHeader>
+
             {data.map(request=>(
                 <DonorCard request={request} deleteRequest={deleteRequest}/>
                 )

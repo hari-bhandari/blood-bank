@@ -6,6 +6,7 @@ import {CentralizeDiv} from "../../util/CentralizeDiv";
 import {SpinnerInfinity} from "spinners-react";
 import {toast} from "react-toastify";
 import {useParams} from "react-router";
+import PageHeader from "../_shared/PageHeader";
 
 const ListOfDonors = () => {
     const {id}=useParams()
@@ -25,8 +26,14 @@ const ListOfDonors = () => {
             </CentralizeDiv>
         )
     }
+    if(data.length==0){
+        return (
+            <h1>Nobody has accepted you request?Why not share the link?</h1>
+        )
+    }
     return (
         <div>
+            <PageHeader>List of Donors</PageHeader>
             {data.map(request=>(
                     <DonorCard request={request} donor={true}/>
                 )

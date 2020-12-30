@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
-      <change afterPath="$PROJECT_DIR$/client/src/Components/Donors/UseDonorQuery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Components/shared/useIntersectionObserver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/shared/UseInfiniteQuery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Components/Request/Requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Request/Requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/shared/useIntersectionObserver.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +114,8 @@
       <workItem from="1609161000042" duration="5249000" />
       <workItem from="1609179307024" duration="8992000" />
       <workItem from="1609233140976" duration="18072000" />
-      <workItem from="1609266426767" duration="10105000" />
+      <workItem from="1609266426767" duration="10840000" />
+      <workItem from="1609317690843" duration="10081000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

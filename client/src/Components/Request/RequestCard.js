@@ -4,9 +4,9 @@ import {BloodType} from '../Donors/DonorItemCSS'
 import {FaHospital,FaLocationArrow,FaMoneyBill,FaMailBulk} from "react-icons/all";
 import {Link} from "react-router-dom";
 
-const RequestCard = ({donor}) => {
+const RequestCard = ({donor,ref}) => {
     return (
-        <CardContainer>
+        <CardContainer ref={ref}>
             <BloodType position={'10%'}>{donor?.bloodType}</BloodType>
                 <img
                     src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png"

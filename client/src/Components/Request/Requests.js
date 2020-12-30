@@ -22,7 +22,7 @@ const Requests = () => {
         hasMore,
         loading,
         error
-    } = useInfiniteQuery( pageNumber,district,blood)
+    } = useInfiniteQuery( pageNumber,district,blood,"help")
     useEffect(()=>{
         if(isVisible && hasMore){
             setPageNumber(pageNumber=>pageNumber+1)
@@ -31,9 +31,11 @@ const Requests = () => {
     const districtOptions=turnIntoSelectFormat(districts)
     const bloodOptions=turnIntoSelectFormat(bloodType)
     const handleChangeForDistrict = selectedOption => {
+        setPageNumber(1)
         setDistrict(selectedOption.value)
     };
     const handleChangeForBlood = selectedOption => {
+        setPageNumber(1)
         setBlood(encodeURIComponent(selectedOption.value))
     };
     return (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-export default function useInfiniteQuery(pageNumber,district,bloodType) {
+export default function useInfiniteQuery(pageNumber,district,bloodType,type) {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false)
     const [data, setData] = useState(null)
@@ -16,7 +16,7 @@ export default function useInfiniteQuery(pageNumber,district,bloodType) {
         let cancel
         axios({
             method: 'GET',
-            url: `/api/help?limit=6&page=${pageNumber}&bloodType=${bloodType}&district=${district}`,
+            url: `/api/${type}?limit=6&page=${pageNumber}&bloodType=${bloodType}&district=${district}`,
             cancelToken: new axios.CancelToken(c => cancel = c)
         }).then(res => {
             setData(data => {

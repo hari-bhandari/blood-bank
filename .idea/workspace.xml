@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/Donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Donors/Donors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Components/Request/Requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Request/Requests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Components/shared/UseInfiniteQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/shared/UseInfiniteQuery.js" afterDir="false" />
     </list>
@@ -112,7 +113,7 @@
       <workItem from="1609233140976" duration="18072000" />
       <workItem from="1609266426767" duration="10840000" />
       <workItem from="1609317690843" duration="11028000" />
-      <workItem from="1609336643592" duration="596000" />
+      <workItem from="1609336643592" duration="3219000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

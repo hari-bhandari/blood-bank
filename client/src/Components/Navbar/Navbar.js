@@ -11,7 +11,7 @@ import logo from './logo.svg'
 import AuthContext from "../../Context/auth/authContext";
 import {toast} from "react-toastify";
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     const authContext=useContext(AuthContext);
     const {isAuthenticated,logout}=authContext;
     const logMeOut=()=>{
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <NavLink to='/'>
                     <img src={logo} alt='logo'/>
                 </NavLink>
-                <Bars/>
+                <Bars onClick={toggle}/>
                 <NavMenu>
                     <NavLink to='/' activeStyle>
                         Requests

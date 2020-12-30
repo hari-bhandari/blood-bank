@@ -1,4 +1,4 @@
-import React,{useEffect,useContext} from 'react'
+import React,{useEffect,useContext,useState} from 'react'
 import './App.css';
 import Auth from "./Components/Auth/Auth";
 import Navbar from "./Components/Navbar/Navbar";
@@ -19,6 +19,7 @@ import FAQPage from "./Components/About/FAQPage";
 import UserPage from "./Components/Profile/UserPage";
 import ListOfRequests from "./Components/LoggedIn/ListOfRequests";
 import ListOfDonors from "./Components/LoggedIn/ListOfDonors";
+import Sidebar from "./Components/Navbar/Sidebar/Sidebar";
 
 
 const queryClient = new QueryClient()
@@ -26,7 +27,10 @@ const queryClient = new QueryClient()
 function App() {
     const authContext=useContext(AuthContext);
     const {loadUser}=authContext;
-
+    const[isOpen,setIsOpen]=useState(false)
+    const toggle=()=>{
+        setIsOpen(isOpen=>!isOpen)
+    }
     useEffect(()=>{
         loadUser()
     },[])//fires load user everytime the page reloads
@@ -34,7 +38,8 @@ function App() {
         <QueryClientProvider client={queryClient}>
                 <div className="App">
                     <Router>
-                        <Navbar/>
+                        <Sidebar isOpen={isOpen} toggle={toggle}/>
+                        <Navbar toggle={toggle} />
                         <ToastContainer/>
                         <Switch>
                             <Route path='/' exact component={Requests}/>

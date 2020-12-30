@@ -43,7 +43,7 @@ function App() {
                         <Navbar toggle={toggle} />
                         <ToastContainer/>
                         <Switch>
-                            <Route path='/' exact component={Requests}/>
+                            <Route exact path='/'  component={Requests}/>
                             <Route path='/login' exact component={Auth}/>
                             <Route path={'/request'} exact component={RequestBloodForm}/>
                             <Route path={'/donors'} exact component={Donors}/>

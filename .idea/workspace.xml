@@ -4,9 +4,9 @@
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/NavbarElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Navbar/NavbarElements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/SidebarCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/SidebarCss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <workItem from="1609233140976" duration="18072000" />
       <workItem from="1609266426767" duration="10840000" />
       <workItem from="1609317690843" duration="11028000" />
-      <workItem from="1609336643592" duration="12059000" />
+      <workItem from="1609336643592" duration="13795000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

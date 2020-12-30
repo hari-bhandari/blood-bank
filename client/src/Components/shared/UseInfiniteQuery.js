@@ -16,7 +16,7 @@ export default function useInfiniteQuery(pageNumber,district,bloodType) {
         let cancel
         axios({
             method: 'GET',
-            url: `/api/help?limit=8&page=${pageNumber}&bloodType=${bloodType}&district=${district}`,
+            url: `/api/help?limit=6&page=${pageNumber}&bloodType=${bloodType}&district=${district}`,
             cancelToken: new axios.CancelToken(c => cancel = c)
         }).then(res => {
             setData(data => {

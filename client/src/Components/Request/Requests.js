@@ -47,10 +47,6 @@ const Requests = () => {
                 </Col>
             </Row>
             <EmptyMessageBox message={"We don't have any people with your criteria. Why not save a life with your blood?"} toBeShown={data?.length===0}/>
-
-            {loading?(<CentralizeDiv>
-                <SpinnerInfinity size={286} thickness={100} speed={100} color="#36ad47" secondaryColor="rgba(0, 0, 0, 0.44)" />
-            </CentralizeDiv>):(
                 <Row>
                     {data?.map((donor,index)=> {
                         if (data.length === index + 1) {
@@ -59,10 +55,11 @@ const Requests = () => {
                         else {
                             return <Col lg={4} md={6} sm={12}><RequestCard donor={donor}/></Col>
                         }
-
-
                     })}
-                </Row>)}
+                </Row>
+            {loading&&(<CentralizeDiv>
+                <SpinnerInfinity size={286} thickness={100} speed={100} color="#36ad47" secondaryColor="rgba(0, 0, 0, 0.44)" />
+            </CentralizeDiv>)}
 
         </Container>
     );

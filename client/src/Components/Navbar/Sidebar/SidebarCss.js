@@ -51,8 +51,10 @@ export const SidebarLink = styled(Link)`
 export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
 `
 export const SidebarRoute=styled(Link)`
+  margin-top: 10px;
   border-radius: 50px;
   background: #01bf71;
   white-space: nowrap;

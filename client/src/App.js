@@ -4,7 +4,7 @@ import Auth from "./Components/Auth/Auth";
 import Navbar from "./Components/Navbar/Navbar";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import RequestBloodForm from "./Components/FormComponent/RequestBloodForm";
-import {ToastContainer} from "react-toastify";
+import {toast, ToastContainer} from "react-toastify";
 import Donors from "./Components/Donors/Donors";
 import 'react-toastify/dist/ReactToastify.css';
 import {ReactQueryDevtools} from 'react-query/devtools'
@@ -26,11 +26,12 @@ const queryClient = new QueryClient()
 
 function App() {
     const authContext=useContext(AuthContext);
-    const {loadUser}=authContext;
+    const {loadUser,logout}=authContext;
     const[isOpen,setIsOpen]=useState(false)
     const toggle=()=>{
         setIsOpen(isOpen=>!isOpen)
     }
+
     useEffect(()=>{
         loadUser()
     },[])//fires load user everytime the page reloads

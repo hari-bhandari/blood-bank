@@ -1,12 +1,13 @@
 import React from 'react';
-import './Card.css'
+import './CardCSS'
 import {Link} from "react-router-dom";
-
+import {CardContainer} from "./CardCSS";
+import {FaTimesCircle} from "react-icons/all";
 
 const DonorCard = ({request,deleteRequest,donor}) => {
     return (
-        <div className="card">
-            {!donor&&(<span className={"X"} onClick={()=>{deleteRequest(request.id)}}>X</span>)}
+        <CardContainer>
+            {!donor&&(<FaTimesCircle  onClick={()=>{deleteRequest(request.id)}} className={"X"}/>)}
             <div className="content-container">
                 <p className="donor__title">{request.name}</p>
                 <p className="content">
@@ -30,7 +31,7 @@ const DonorCard = ({request,deleteRequest,donor}) => {
 
             </div>
 
-        </div>
+        </CardContainer>
     );
 };
 

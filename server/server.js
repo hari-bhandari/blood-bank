@@ -37,6 +37,17 @@ app.use(errorHandler)
 const __dirname = path.resolve()
 app.use(express.static(path.join(__dirname,'../public')))
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '/client/build')))
+
+    app.get('*', (req, res) =>
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    )
+} else {
+    app.get('/', (req, res) => {
+        res.send('API is running....')
+    })
+}
 
 //implementing error handler
 const server=app.listen(PORT,()=>console.log(`server running in Production mode on port ${PORT}`))

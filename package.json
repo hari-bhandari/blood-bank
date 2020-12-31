@@ -7,10 +7,10 @@
   "scripts": {
     "start": "node server/server.js",
     "server": "nodemon server/server",
-    "client": "npm start --prefix frontend",
+    "client": "npm start --prefix server",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d",
+    "data:import": "node server/seeder -i",
+    "data:destroy": "node server/seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],

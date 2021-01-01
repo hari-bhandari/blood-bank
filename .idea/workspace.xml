@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added ." />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-infinity-scroll - FINISHED" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
@@ -34,11 +36,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/public" />
       <recent name="$PROJECT_DIR$/client/src/Components/Profile" />
       <recent name="$PROJECT_DIR$/client/src/Components/Navbar" />
       <recent name="$PROJECT_DIR$/client/src/Context" />
       <recent name="$PROJECT_DIR$/client/src/Components" />
-      <recent name="$PROJECT_DIR$/client/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -109,7 +111,7 @@
       <workItem from="1609266426767" duration="10840000" />
       <workItem from="1609317690843" duration="11028000" />
       <workItem from="1609336643592" duration="13795000" />
-      <workItem from="1609434816331" duration="8587000" />
+      <workItem from="1609434816331" duration="9634000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

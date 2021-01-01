@@ -1,12 +1,12 @@
 import React, {useState,useEffect} from 'react';
 import {Container, Row, Col} from 'react-grid-system';
 import DonorItem from "./DonorItem";
-import {bloodType, districts, turnIntoSelectFormat} from "../utils/sharedData";
-import SelectComponent from "../query/SelectComponent";
-import EmptyMessageBox from "../shared/EmptyMessageBox";
-import {CentralizeDiv} from "../../util/CentralizeDiv";
+import {bloodType, districts, turnIntoSelectFormat} from "../../sharedUtils/sharedData";
+import SelectComponent from "../../_shared/Query/SelectComponent";
+import EmptyMessageBox from "../../_shared/EmptyMessageBox";
+import {CentralizeDiv} from "../../_shared/CentralizeDiv";
 import {SpinnerInfinity} from "spinners-react";
-import useInfiniteQuery from '../shared/UseInfiniteQuery'
+import useInfiniteQuery from '../../sharedUtils/UseInfiniteQuery'
 import {useInView} from "react-hook-inview";
 const Donors = () => {
     const [district,setDistrict]=useState(null)

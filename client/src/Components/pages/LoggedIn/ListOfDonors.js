@@ -1,12 +1,12 @@
 import React from 'react';
-import DonorCard from "../DonorCard";
+import DonorCard from "../../DonorCard";
 import axios from "axios";
 import {useQuery} from "react-query";
-import {CentralizeDiv} from "../../util/CentralizeDiv";
+import {CentralizeDiv} from "../../_shared/CentralizeDiv";
 import {SpinnerInfinity} from "spinners-react";
 import {useParams} from "react-router";
-import PageHeader from "../_shared/PageHeader";
-import BackButton from "../shared/BackButton";
+import PageHeader from "../../_shared/PageHeader";
+import BackButton from "../../_shared/BackButton";
 
 const ListOfDonors = (props) => {
     const {id}=useParams()

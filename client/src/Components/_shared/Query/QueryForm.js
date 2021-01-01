@@ -1,7 +1,7 @@
 import React from 'react';
 import {QueryContainer} from "./QueryFormCss";
-import SelectComponent from "../query/SelectComponent";
-import {districts,bloodType} from "../utils/sharedData";
+import SelectComponent from "./SelectComponent";
+import {districts,bloodType} from "../../sharedUtils/sharedData";
 
 const QueryForm = () => {
 

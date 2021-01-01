@@ -1,6 +1,6 @@
 import React from 'react';
 import {CardContainer,Flex} from "./RequestCardCSS";
-import {BloodType} from '../Donors/DonorItemCSS'
+import {BloodType} from '../donors/DonorItemCSS'
 import {FaHospital,FaLocationArrow,FaMoneyBill,FaMailBulk} from "react-icons/all";
 import {Link} from "react-router-dom";
 

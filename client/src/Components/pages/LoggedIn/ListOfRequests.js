@@ -1,12 +1,12 @@
-import React, {useEffect} from 'react';
-import DonorCard from "../DonorCard";
+import React from 'react';
+import DonorCard from "../../DonorCard";
 import axios from "axios";
 import {useQuery} from "react-query";
-import {CentralizeDiv} from "../../util/CentralizeDiv";
+import {CentralizeDiv} from "../../_shared/CentralizeDiv";
 import {SpinnerInfinity} from "spinners-react";
 import {toast} from "react-toastify";
-import PageHeader from "../_shared/PageHeader";
-import BackButton from "../shared/BackButton";
+import PageHeader from "../../_shared/PageHeader";
+import BackButton from "../../_shared/BackButton";
 
 const ListOfRequests = (props) => {
     const fetchRequests = async () => {

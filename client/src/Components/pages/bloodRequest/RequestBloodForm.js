@@ -1,17 +1,17 @@
 import React, {useState,useContext} from 'react';
 import {FaHandshake,FiSend} from "react-icons/all";
-import {useForm} from "../Auth/useForm";
+import {useForm} from "../../Auth/useForm";
 import {
     ContactWrapper,
     LeftContent,
     ContactBox,
     ContactForm,Recieved,Button,ExpenseContainer
 } from './RequestBloodFormCSS';
-import SelectComponent from "../query/SelectComponent";
-import {bloodType,districts,turnIntoSelectFormat} from "../utils/sharedData";
+import SelectComponent from "../../_shared/Query/SelectComponent";
+import {bloodType,districts,turnIntoSelectFormat} from "../../sharedUtils/sharedData";
 import axios from "axios";
 import {toast} from "react-toastify";
-import AuthContext from "../../Context/auth/authContext";
+import AuthContext from "../../../Context/auth/authContext";
 
 function Contact() {
     const bloodTypeOptions=turnIntoSelectFormat(bloodType)

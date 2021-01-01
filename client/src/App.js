@@ -3,22 +3,22 @@ import './App.css';
 import Auth from "./Components/Auth/Auth";
 import Navbar from "./Components/Navbar/Navbar";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import RequestBloodForm from "./Components/FormComponent/RequestBloodForm";
+import RequestBloodForm from "./Components/pages/bloodRequest/RequestBloodForm";
 import {toast, ToastContainer} from "react-toastify";
-import Donors from "./Components/Donors/Donors";
+import Donors from "./Components/pages/donors/Donors";
 import 'react-toastify/dist/ReactToastify.css';
 import {ReactQueryDevtools} from 'react-query/devtools'
 import {
     QueryClient,
     QueryClientProvider,
 } from "react-query";
-import ProfilePage from "./Components/Profile/ProfilePage";
-import Requests from "./Components/Request/Requests";
+import ProfilePage from "./Components/pages/Profile/ProfilePage";
+import Requests from "./Components/pages/requests/Requests";
 import AuthContext from "./Context/auth/authContext";
-import FAQPage from "./Components/About/FAQPage";
-import UserPage from "./Components/Profile/UserPage";
-import ListOfRequests from "./Components/LoggedIn/ListOfRequests";
-import ListOfDonors from "./Components/LoggedIn/ListOfDonors";
+import FAQPage from "./Components/pages/FAQ/FAQPage";
+import UserPage from "./Components/pages/Profile/UserPage";
+import ListOfRequests from "./Components/pages/LoggedIn/ListOfRequests";
+import ListOfDonors from "./Components/pages/LoggedIn/ListOfDonors";
 import Sidebar from "./Components/Navbar/Sidebar/Sidebar";
 
 

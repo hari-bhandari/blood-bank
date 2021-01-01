@@ -1,8 +1,8 @@
 import React,{useContext,useEffect} from 'react';
 import {useForm} from "./useForm";
-import {districts,bloodType,turnIntoSelectFormat} from "../utils/sharedData";
-import SelectComponent from "../query/SelectComponent";
-import {QueryContainer} from "../Donors/QueryFormCss";
+import {districts,bloodType,turnIntoSelectFormat} from "../sharedUtils/sharedData";
+import SelectComponent from "../_shared/Query/SelectComponent";
+import {QueryContainer} from "../_shared/Query/QueryFormCss";
 import AuthContext from "../../Context/auth/authContext";
 import {toast} from "react-toastify";
 

@@ -4,8 +4,8 @@ import {useParams} from "react-router";
 import axios from "axios";
 import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
-import {CentralizeDiv} from "../../util/CentralizeDiv";
-import AuthContext from "../../Context/auth/authContext";
+import {CentralizeDiv} from "../../_shared/CentralizeDiv";
+import AuthContext from "../../../Context/auth/authContext";
 
 const UserPage = () => {
     const authContext=useContext(AuthContext);

@@ -8,8 +8,8 @@ import {
     CloseIcon,
     FAQCategory,
     Flex
-} from "./AboutCss";
-import PageHeader from "../_shared/PageHeader";
+} from "./FAQCss";
+import PageHeader from "../../_shared/PageHeader";
 const FAQ = ({faq,toggleFAQ,index}) => {
     const { question, category, answer, isOpen } = faq;
     const icon = isOpen ? <CloseIcon /> : <SpanIcon />;

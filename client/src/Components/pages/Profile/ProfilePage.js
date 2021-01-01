@@ -4,10 +4,10 @@ import {useParams} from "react-router";
 import axios from "axios";
 import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
-import {CentralizeDiv} from "../../util/CentralizeDiv";
+import {CentralizeDiv} from "../../_shared/CentralizeDiv";
 import {toast} from "react-toastify";
 import {FaHandsHelping} from "react-icons/all";
-import AuthContext from "../../Context/auth/authContext";
+import AuthContext from "../../../Context/auth/authContext";
 
 const ProfilePage = () => {
     const authContext=useContext(AuthContext);

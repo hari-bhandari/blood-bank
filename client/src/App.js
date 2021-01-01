@@ -8,10 +8,6 @@ import {toast, ToastContainer} from "react-toastify";
 import Donors from "./Components/pages/donors/Donors";
 import 'react-toastify/dist/ReactToastify.css';
 import {ReactQueryDevtools} from 'react-query/devtools'
-import {
-    QueryClient,
-    QueryClientProvider,
-} from "react-query";
 import ProfilePage from "./Components/pages/Profile/ProfilePage";
 import Requests from "./Components/pages/requests/Requests";
 import AuthContext from "./Context/auth/authContext";
@@ -22,7 +18,6 @@ import ListOfDonors from "./Components/pages/LoggedIn/ListOfDonors";
 import Sidebar from "./Components/Navbar/Sidebar/Sidebar";
 
 
-const queryClient = new QueryClient()
 
 function App() {
     const authContext=useContext(AuthContext);
@@ -36,7 +31,6 @@ function App() {
         loadUser()
     },[])//fires load user everytime the page reloads
     return (
-        <QueryClientProvider client={queryClient}>
                 <div className="App">
                     <Router>
                         <Sidebar isOpen={isOpen} toggle={toggle}/>
@@ -58,7 +52,6 @@ function App() {
 
                 </div>
 
-        </QueryClientProvider>
 
     );
 }

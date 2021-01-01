@@ -2,38 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
+      <change afterPath="$PROJECT_DIR$/client/src/Components/sharedUtils/useQuery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/About/AboutCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/FAQ/FAQCss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/About/FAQ.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/FAQ/FAQ.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/About/FAQPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/FAQ/FAQPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/useForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/useForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/DonorItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/donors/DonorItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/DonorItemCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/donors/DonorItemCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/Donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/donors/Donors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/QueryForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/_shared/Query/QueryForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/QueryFormCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/_shared/Query/QueryFormCss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Donors/UseDonorQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/_shared/Query/UseDonorQuery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/RequestBloodFormCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodFormCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/FormComponent/useForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/LoggedIn/ListOfDonors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/LoggedIn/ListOfDonors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/LoggedIn/ListOfRequests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/LoggedIn/ListOfRequests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Profile/ProfilePageCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePageCss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Profile/UserPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/Profile/UserPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Request/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/requests/RequestCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Request/RequestCardCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/requests/RequestCardCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Request/Requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/requests/Requests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/query/SelectComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/_shared/Query/SelectComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/shared/BackButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/_shared/BackButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/shared/EmptyMessageBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/_shared/EmptyMessageBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/shared/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/_shared/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/shared/UseInfiniteQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/sharedUtils/UseInfiniteQuery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/utils/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/sharedUtils/queries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/utils/sharedData.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/sharedUtils/sharedData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/util/CentralizeDiv.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/_shared/CentralizeDiv.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +117,7 @@
       <workItem from="1609317690843" duration="11028000" />
       <workItem from="1609336643592" duration="13795000" />
       <workItem from="1609434816331" duration="9634000" />
-      <workItem from="1609489613782" duration="1707000" />
+      <workItem from="1609489613782" duration="3147000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

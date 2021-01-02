@@ -20,6 +20,7 @@ import UserPage from "./Components/pages/Profile/UserPage";
 import ListOfRequests from "./Components/pages/LoggedIn/ListOfRequests";
 import ListOfDonors from "./Components/pages/LoggedIn/ListOfDonors";
 import Sidebar from "./Components/Navbar/Sidebar/Sidebar";
+import UploadPhoto from "./Components/pages/UploadPhoto";
 
 
 const queryClient = new QueryClient()
@@ -52,6 +53,7 @@ function App() {
                         <Route path={'/user/:id'} exact component={UserPage}/>
                         <Route path={'/requests'} exact component={ListOfRequests}/>
                         <Route path={'/requests/:id'} exact component={ListOfDonors}/>
+                        <Route path={'/uploadImage'} exact component={UploadPhoto}/>
                     </Switch>
                 </Router>
                 <ReactQueryDevtools initialIsOpen={false}/>

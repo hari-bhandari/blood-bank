@@ -8,6 +8,10 @@ import {toast, ToastContainer} from "react-toastify";
 import Donors from "./Components/pages/donors/Donors";
 import 'react-toastify/dist/ReactToastify.css';
 import {ReactQueryDevtools} from 'react-query/devtools'
+import {
+    QueryClient,
+    QueryClientProvider,
+} from "react-query";
 import ProfilePage from "./Components/pages/Profile/ProfilePage";
 import Requests from "./Components/pages/requests/Requests";
 import AuthContext from "./Context/auth/authContext";
@@ -18,6 +22,7 @@ import ListOfDonors from "./Components/pages/LoggedIn/ListOfDonors";
 import Sidebar from "./Components/Navbar/Sidebar/Sidebar";
 
 
+const queryClient = new QueryClient()
 
 function App() {
     const authContext=useContext(AuthContext);
@@ -31,27 +36,29 @@ function App() {
         loadUser()
     },[])//fires load user everytime the page reloads
     return (
-                <div className="App">
-                    <Router>
-                        <Sidebar isOpen={isOpen} toggle={toggle}/>
-                        <Navbar toggle={toggle} />
-                        <ToastContainer/>
-                        <Switch>
-                            <Route exact path='/'  component={Requests}/>
-                            <Route path='/login' exact component={Auth}/>
-                            <Route path={'/request'} exact component={RequestBloodForm}/>
-                            <Route path={'/donors'} exact component={Donors}/>
-                            <Route path={'/faq'} exact component={FAQPage}/>
-                            <Route path={'/help/:id'} exact component={ProfilePage}/>
-                            <Route path={'/user/:id'} exact component={UserPage}/>
-                            <Route path={'/requests'} exact component={ListOfRequests}/>
-                            <Route path={'/requests/:id'} exact component={ListOfDonors}/>
-                        </Switch>
-                    </Router>
-                    <ReactQueryDevtools initialIsOpen={false}/>
+        <QueryClientProvider client={queryClient}>
+            <div className="App">
+                <Router>
+                    <Sidebar isOpen={isOpen} toggle={toggle}/>
+                    <Navbar toggle={toggle} />
+                    <ToastContainer/>
+                    <Switch>
+                        <Route exact path='/'  component={Requests}/>
+                        <Route path='/login' exact component={Auth}/>
+                        <Route path={'/request'} exact component={RequestBloodForm}/>
+                        <Route path={'/donors'} exact component={Donors}/>
+                        <Route path={'/faq'} exact component={FAQPage}/>
+                        <Route path={'/help/:id'} exact component={ProfilePage}/>
+                        <Route path={'/user/:id'} exact component={UserPage}/>
+                        <Route path={'/requests'} exact component={ListOfRequests}/>
+                        <Route path={'/requests/:id'} exact component={ListOfDonors}/>
+                    </Switch>
+                </Router>
+                <ReactQueryDevtools initialIsOpen={false}/>
 
-                </div>
+            </div>
 
+        </QueryClientProvider>
 
     );
 }

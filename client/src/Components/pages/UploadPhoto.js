@@ -1,28 +1,26 @@
-import React from 'react';
-import ImageUploader from 'react-images-upload';
-import {useState} from "react";
-import { FilePond, registerPlugin } from "react-filepond";
+import 'react-dropzone-uploader/dist/styles.css'
+import Dropzone from 'react-dropzone-uploader'
 
-// Import FilePond styles
-import "filepond/dist/filepond.min.css";
+const UploadPhoto = () => {
+    // specify upload params and url for your files
+    const getUploadParams = ({ meta }) => { return { url: 'https://httpbin.org/post' } }
 
-import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation'
-import FilePondPluginImagePreview from 'filepond-plugin-image-preview'
-import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css'
-registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview)
-const UploadPhoto = props => {
-    const [files, setFiles] = useState([])
+    // called every time a file's `status` changes
+    const handleChangeStatus = ({ meta, file }, status) => { console.log(status, meta, file) }
+
+    // receives array of files that are done uploading when submit button is clicked
+    const handleSubmit = (files, allFiles) => {
+        console.log(files.map(f => f.meta))
+        allFiles.forEach(f => f.remove())
+    }
+
     return (
-        <FilePond
-            files={files}
-            onupdatefiles={setFiles}
-            allowMultiple={true}
-            maxFiles={3}
-            server="/api"
-            name="files"
-            labelIdle='Drag & Drop your files or <span class="filepond--label-action">Browse</span>'
+        <Dropzone
+            getUploadParams={getUploadParams}
+            onChangeStatus={handleChangeStatus}
+            onSubmit={handleSubmit}
+            accept="image/*"
         />
-    );
-};
-
-export default UploadPhoto;
+    )
+}
+export default UploadPhoto

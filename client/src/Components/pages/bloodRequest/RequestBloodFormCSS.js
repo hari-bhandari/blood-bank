@@ -11,9 +11,12 @@ export const ContactWrapper = styled.section`
 `;
 
 export const ContactBox = styled.div`
+  .dzu-dropzone{
+    overflow: hidden;
+  }
   width: calc(100% - 30px);
   position: relative;
-  height: 400px;
+  height: ${props=>props.sent?"600px":"400px"};
   margin-bottom: 50px;
   margin-top: 150px;
   background: #8579F9;

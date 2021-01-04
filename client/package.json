@@ -12,6 +12,7 @@
     "filepond-plugin-image-preview": "^4.6.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-dropzone-uploader": "^2.11.0",
     "react-filepond": "^7.1.0",
     "react-grid-system": "^7.1.1",
     "react-hook-inview": "^4.3.7",

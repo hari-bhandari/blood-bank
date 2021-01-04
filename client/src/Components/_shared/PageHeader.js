@@ -8,7 +8,7 @@ const PageHeader = styled.h2`
   width: 100%;
   font-size: clamp(26px, 5vw, 40px);
   white-space: nowrap;
-  color: #0087ff;
+  color: ${props=>props.color?'#0087ff':''};
   justify-content: center;
   //
   //&:before {

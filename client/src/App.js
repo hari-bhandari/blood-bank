@@ -44,7 +44,7 @@ function App() {
                     <Navbar toggle={toggle} />
                     <ToastContainer/>
                     <Switch>
-                        <Route exact path='/'  component={Requests}/>
+                     0   <Route exact path='/'  component={Requests}/>
                         <Route path='/login' exact component={Auth}/>
                         <Route path={'/request'} exact component={RequestBloodForm}/>
                         <Route path={'/donors'} exact component={Donors}/>
@@ -53,7 +53,6 @@ function App() {
                         <Route path={'/user/:id'} exact component={UserPage}/>
                         <Route path={'/requests'} exact component={ListOfRequests}/>
                         <Route path={'/requests/:id'} exact component={ListOfDonors}/>
-                        <Route path={'/uploadImage'} exact component={UploadPhoto}/>
                     </Switch>
                 </Router>
                 <ReactQueryDevtools initialIsOpen={false}/>

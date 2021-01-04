@@ -12,12 +12,15 @@ import {bloodType,districts,turnIntoSelectFormat} from "../../sharedUtils/shared
 import axios from "axios";
 import {toast} from "react-toastify";
 import AuthContext from "../../../Context/auth/authContext";
+import UploadPhoto from "../UploadPhoto";
+import PageHeader from "../../_shared/PageHeader";
 
 function Contact() {
     const bloodTypeOptions=turnIntoSelectFormat(bloodType)
     const districtsOptions=turnIntoSelectFormat(districts)
     const authContext=useContext(AuthContext);
-    const [submitted, setSubmitted] = useState(false)
+    const [submitted, setSubmitted] = useState(true)
+    const [submittedImage, setSubmittedImage] = useState(false)
     const [values, handleInput,handleInputForSelect] = useForm();
     const handleChangeForBlood = selectedOption => {
         handleInputForSelect("bloodType",selectedOption.value)
@@ -55,10 +58,11 @@ function Contact() {
     }
     return (
         <ContactWrapper>
-            <ContactBox>
-                {submitted&&(<Recieved><FaHandshake style={{fontSize: '7em'}}/>
-                    <p>Your request has been accepted.</p></Recieved>)}
-                {!submitted&&( <LeftContent>
+            <ContactBox sent={submitted}>
+                {submitted&&(<Recieved>
+                    <PageHeader>Add an image for your request</PageHeader>
+                    <UploadPhoto/></Recieved>)}
+                {submittedImage&&( <LeftContent>
                     <FaHandshake style={{fontSize: '5em'}}/>
                     <p> “Never feel yourself weak, </p>
                     <p> you have the ability to save a life. </p>

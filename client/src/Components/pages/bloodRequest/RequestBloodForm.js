@@ -15,7 +15,7 @@ import AuthContext from "../../../Context/auth/authContext";
 import UploadPhoto from "../UploadPhoto";
 import PageHeader from "../../_shared/PageHeader";
 import {NavBtnLink} from "../../Navbar/NavbarElements";
-import {SidebarRoute} from "../../Navbar/Sidebar/SidebarCss";
+import {SidebarRoute, Skip} from "../../Navbar/Sidebar/SidebarCss";
 
 function Contact() {
     const bloodTypeOptions=turnIntoSelectFormat(bloodType)
@@ -65,7 +65,7 @@ function Contact() {
             <ContactBox sent={submitted}>
                 {submitted&&(<Recieved>
                     <PageHeader>Add an image for your request</PageHeader>
-                    <UploadPhoto setSubmitted={setSubmitted} id={id} /> <SidebarRoute color={true}>Skip adding image</SidebarRoute></Recieved>)}
+                    <UploadPhoto setSubmitted={setSubmitted} id={id} /> <Skip color={true}>Skip adding image</Skip></Recieved>)}
                 {!submitted&&(<LeftContent>
                         <FaHandshake style={{fontSize: '5em'}}/>
                         <p> “Never feel yourself weak, </p>

@@ -54,7 +54,8 @@ export const SideBtnWrap = styled.div`
   flex-direction: column;
 `
 export const SidebarRoute=styled(Link)`
-  margin-top: 10px;
+  margin-top: 500px;
+  margin-left: 70%;
   border-radius: 50px;
   background: ${(props)=>props.color?'#4436d4':'#01bf71'};
   white-space: nowrap;
@@ -69,6 +70,25 @@ export const SidebarRoute=styled(Link)`
   &:hover{
     transition: all 0.2s ease-in-out;
     background: #ffffff;
+    color: #010606;
+  }
+`
+export const Skip=styled.div`
+  margin-top: 35px;
+  background: #574BCF;
+  white-space: nowrap;
+  padding: 15px 64px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #00e7e2;
     color: #010606;
   }
 `

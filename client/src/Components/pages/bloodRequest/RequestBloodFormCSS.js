@@ -156,10 +156,10 @@ export const Recieved=styled.div`
   width: calc(100% - 30px);
   position: relative;
   height: 400px;
-  margin-bottom: 50px;
-  margin-top: 200px;
+  margin: 200px auto 50px;
   transform: translateY(-50%);
   text-align: center;
+
   &,
   p,
   h3 {

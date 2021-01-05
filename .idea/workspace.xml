@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/SidebarCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/SidebarCss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/UploadPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/UploadPhoto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/requests/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/requests/RequestCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -39,11 +38,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\blood-bank\public\uploads" />
       <recent name="$PROJECT_DIR$/client/public" />
       <recent name="$PROJECT_DIR$/client/src/Components/Profile" />
       <recent name="$PROJECT_DIR$/client/src/Components/Navbar" />
       <recent name="$PROJECT_DIR$/client/src/Context" />
-      <recent name="$PROJECT_DIR$/client/src/Components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/Components/pages" />
@@ -123,7 +122,7 @@
       <workItem from="1609606471390" duration="2420000" />
       <workItem from="1609610521027" duration="4067000" />
       <workItem from="1609760904609" duration="13949000" />
-      <workItem from="1609822621136" duration="7204000" />
+      <workItem from="1609822621136" duration="8208000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

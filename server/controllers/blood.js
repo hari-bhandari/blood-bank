@@ -94,7 +94,7 @@ export const patientPhoto=asyncHandler(async (req,res,next)=> {
             console.error(err)
             return next(new ErrorResponse(`problem with file upload `,500))
         }
-        await Blood.findByIdAndUpdate(req.params.id,{images:file.name});
+        await Blood.findByIdAndUpdate(req.params.id,{image:file.name});
         res.status(200).json({
             success:true,
             data:file.name

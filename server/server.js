@@ -35,7 +35,7 @@ app.use('/api/donors',donors)
 //error
 app.use(errorHandler)
 const __dirname = path.resolve()
-app.use(express.static(path.join(__dirname,'../public')))
+app.use(express.static(path.join(__dirname,'./public')))
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '/client/build')))

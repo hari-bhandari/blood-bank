@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/Profile/UserPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/Profile/UserPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +122,7 @@
       <workItem from="1609606471390" duration="2420000" />
       <workItem from="1609610521027" duration="4067000" />
       <workItem from="1609760904609" duration="13949000" />
-      <workItem from="1609822621136" duration="14483000" />
+      <workItem from="1609822621136" duration="16136000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

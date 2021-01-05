@@ -82,7 +82,7 @@ const ProfilePage = () => {
         <ProfilePageCSS>
             <div className="wrapper">
                 <div className="left">
-                    <img src="http://www.pngall.com/wp-content/uploads/5/Profile-Male-PNG.png"
+                    <img src={`/uploads/${data?.image}`}
                          alt="user" width="100"/>
                         <h4>{data.name}
                         </h4>

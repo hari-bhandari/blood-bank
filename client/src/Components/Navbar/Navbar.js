@@ -34,7 +34,7 @@ const Navbar = ({toggle}) => {
                 </NavLink>
                 <Bars onClick={toggle}/>
                 <NavMenu>
-                    <NavLink to='/' activeStyle>
+                    <NavLink to='/' >
                         Requests
                     </NavLink>
                     <NavLink to='/donors' activeStyle>

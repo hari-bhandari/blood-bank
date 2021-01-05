@@ -22,10 +22,6 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
-  &.active {
-    color: #15cdfc;
-  }
   img{
     width: 60px;
   }

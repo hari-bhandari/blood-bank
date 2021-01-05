@@ -79,6 +79,7 @@ export const patientPhoto=asyncHandler(async (req,res,next)=> {
         return next(new ErrorResponse(`Please upload a file`,400))
     }
     const file=req.files.file;
+    console.log(file)
     if(!file.mimetype.startsWith('image')){
         return next(new ErrorResponse(`Please upload an image file`,400))
     }

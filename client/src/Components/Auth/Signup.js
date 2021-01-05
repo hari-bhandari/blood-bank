@@ -33,7 +33,7 @@ const Signup = (props) => {
                 progress: undefined,
             });
         }
-    },[])
+    },[error])
     const handleChangeForBlood = selectedOption => {
         handleChangeManual("bloodType",selectedOption.value)
     };

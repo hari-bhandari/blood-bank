@@ -6,3 +6,7 @@ body{
 .fileContainer{
   background: #574bcf !important;
 }
+.deleteImage{
+  display: none;
+
+}

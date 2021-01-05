@@ -14,13 +14,15 @@ import {toast} from "react-toastify";
 import AuthContext from "../../../Context/auth/authContext";
 import UploadPhoto from "../UploadPhoto";
 import PageHeader from "../../_shared/PageHeader";
+import {NavBtnLink} from "../../Navbar/NavbarElements";
+import {SidebarRoute} from "../../Navbar/Sidebar/SidebarCss";
 
 function Contact() {
     const bloodTypeOptions=turnIntoSelectFormat(bloodType)
     const districtsOptions=turnIntoSelectFormat(districts)
     const authContext=useContext(AuthContext);
     const [submitted, setSubmitted] = useState(true)
-    const [submittedImage, setSubmittedImage] = useState(false)
+    const [id,setId]=useState(null)
     const [values, handleInput,handleInputForSelect] = useForm();
     const handleChangeForBlood = selectedOption => {
         handleInputForSelect("bloodType",selectedOption.value)
@@ -32,6 +34,7 @@ function Contact() {
         handleInputForSelect("travel",!values.travel)
 
     };
+
     const requestForBlood=async (e)=>{
         e.preventDefault();
         const config = {
@@ -40,11 +43,12 @@ function Contact() {
             }
         };
 
+
         try {
-            await axios.post('/api/help/req', values, config);
+            const res=await axios.post('/api/help/req', values, config);
             setSubmitted(true)
+            setId(res.data.data._id)
         } catch (err) {
-            console.log(err.response)
             toast.error(err?.response?.data?.error, {
                 position: "top-center",
                 autoClose: 80000,
@@ -61,14 +65,14 @@ function Contact() {
             <ContactBox sent={submitted}>
                 {submitted&&(<Recieved>
                     <PageHeader>Add an image for your request</PageHeader>
-                    <UploadPhoto/></Recieved>)}
-                {submittedImage&&( <LeftContent>
-                    <FaHandshake style={{fontSize: '5em'}}/>
-                    <p> “Never feel yourself weak, </p>
-                    <p> you have the ability to save a life. </p>
-                    <p> Just donate blood.”</p>
+                    <UploadPhoto setSubmitted={setSubmitted} id={id} /> <SidebarRoute color={true}>Skip adding image</SidebarRoute></Recieved>)}
+                {!submitted&&(<LeftContent>
+                        <FaHandshake style={{fontSize: '5em'}}/>
+                        <p> “Never feel yourself weak, </p>
+                        <p> you have the ability to save a life. </p>
+                        <p> Just donate blood.”</p>
 
-                </LeftContent>)}
+                    </LeftContent>)}
                 {!submitted?(
                     <ContactForm>
                         <label className="label__email">

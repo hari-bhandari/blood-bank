@@ -3,7 +3,7 @@ import ImageUploader from 'react-images-upload'
 import axios from "axios";
 import {toast} from "react-toastify";
 const UploadPhoto = (props) => {
-    const {id}=props
+    const {id,setSubmitted}=props
     const onDrop=async (picture)=>{
         const formData = new FormData();
         const imageFile =picture[0];
@@ -14,7 +14,8 @@ const UploadPhoto = (props) => {
                     'Content-Type': 'multipart/form-data'
                 }
             })
-                toast.success(`Image ${res.data.data} successfully created`, {
+            setSubmitted(false)
+                toast.success(`Request has been created with Image ${res.data.data}`, {
                     position: "top-center",
                     autoClose: 80000,
                     hideProgressBar: false,

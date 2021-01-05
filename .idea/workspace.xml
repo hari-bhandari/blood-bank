@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
-      <change afterPath="$PROJECT_DIR$/server/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/SidebarCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/SidebarCss.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Components/pages/UploadPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/UploadPhoto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo_5d7a514b5d2c12c7449be046.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/photo_5d7a514b5d2c12c7449be046.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/blood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +123,7 @@
       <workItem from="1609606471390" duration="2420000" />
       <workItem from="1609610521027" duration="4067000" />
       <workItem from="1609760904609" duration="13949000" />
-      <workItem from="1609822621136" duration="4767000" />
+      <workItem from="1609822621136" duration="7204000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

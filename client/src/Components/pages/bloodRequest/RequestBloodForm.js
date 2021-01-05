@@ -1,14 +1,14 @@
-import React, {useState,useContext} from 'react';
-import {FaHandshake,FiSend} from "react-icons/all";
+import React, {useState, useContext} from 'react';
+import {FaHandshake, FiSend} from "react-icons/all";
 import {useForm} from "../../Auth/useForm";
 import {
     ContactWrapper,
     LeftContent,
     ContactBox,
-    ContactForm,Recieved,Button,ExpenseContainer
+    ContactForm, Recieved, Button, ExpenseContainer
 } from './RequestBloodFormCSS';
 import SelectComponent from "../../_shared/Query/SelectComponent";
-import {bloodType,districts,turnIntoSelectFormat} from "../../sharedUtils/sharedData";
+import {bloodType, districts, turnIntoSelectFormat} from "../../sharedUtils/sharedData";
 import axios from "axios";
 import {toast} from "react-toastify";
 import AuthContext from "../../../Context/auth/authContext";
@@ -18,24 +18,29 @@ import {NavBtnLink} from "../../Navbar/NavbarElements";
 import {SidebarRoute, Skip} from "../../Navbar/Sidebar/SidebarCss";
 
 function Contact() {
-    const bloodTypeOptions=turnIntoSelectFormat(bloodType)
-    const districtsOptions=turnIntoSelectFormat(districts)
-    const authContext=useContext(AuthContext);
-    const [submitted, setSubmitted] = useState(true)
-    const [id,setId]=useState(null)
-    const [values, handleInput,handleInputForSelect] = useForm();
+    const bloodTypeOptions = turnIntoSelectFormat(bloodType)
+    const districtsOptions = turnIntoSelectFormat(districts)
+    const authContext = useContext(AuthContext);
+    const [submitted, setSubmitted] = useState(false)
+    const [id, setId] = useState(null)
+    const [imageUploadStep, setImageUploadStep] = useState(false)
+    const [values, handleInput, handleInputForSelect] = useForm();
     const handleChangeForBlood = selectedOption => {
-        handleInputForSelect("bloodType",selectedOption.value)
+        handleInputForSelect("bloodType", selectedOption.value)
     };
     const handleChangeForDistrict = selectedOption => {
-        handleInputForSelect("district",selectedOption.value)
+        handleInputForSelect("district", selectedOption.value)
     };
     const handleChangeForChecked = (e) => {
-        handleInputForSelect("travel",!values.travel)
+        handleInputForSelect("travel", !values.travel)
 
     };
-
-    const requestForBlood=async (e)=>{
+    const fullyDone = () => {
+        if (submitted && imageUploadStep) {
+            return true
+        }
+    }
+    const requestForBlood = async (e) => {
         e.preventDefault();
         const config = {
             headers: {
@@ -45,7 +50,7 @@ function Contact() {
 
 
         try {
-            const res=await axios.post('/api/help/req', values, config);
+            const res = await axios.post('/api/help/req', values, config);
             setSubmitted(true)
             setId(res.data.data._id)
         } catch (err) {
@@ -58,22 +63,30 @@ function Contact() {
                 draggable: true,
                 progress: undefined,
             });
+        }
     }
+    if (imageUploadStep) {
+        return (
+            <ContactWrapper>
+            <ContactBox sent={submitted}><Recieved><FaHandshake style={{fontSize: '7em'}}/>
+                <p>Your request has been accepted.</p></Recieved></ContactBox>
+            </ContactWrapper>)
     }
     return (
         <ContactWrapper>
-            <ContactBox sent={submitted}>
-                {submitted&&(<Recieved>
+            <ContactBox>
+                {submitted && (<Recieved>
                     <PageHeader>Add an image for your request</PageHeader>
-                    <UploadPhoto setSubmitted={setSubmitted} id={id} /> <Skip color={true}>Skip adding image</Skip></Recieved>)}
-                {!submitted&&(<LeftContent>
-                        <FaHandshake style={{fontSize: '5em'}}/>
-                        <p> “Never feel yourself weak, </p>
-                        <p> you have the ability to save a life. </p>
-                        <p> Just donate blood.”</p>
+                    <UploadPhoto setSubmittedImage={setImageUploadStep} setSubmitted={setSubmitted} id={id}/> <Skip
+                    color={true}>Skip adding image</Skip></Recieved>)}
+                {!submitted && (<LeftContent>
+                    <FaHandshake style={{fontSize: '5em'}}/>
+                    <p> “Never feel yourself weak, </p>
+                    <p> you have the ability to save a life. </p>
+                    <p> Just donate blood.”</p>
+                </LeftContent>)}
 
-                    </LeftContent>)}
-                {!submitted?(
+                {!submitted ? (
                     <ContactForm>
                         <label className="label__email">
                             <span>Email</span>
@@ -122,11 +135,13 @@ function Contact() {
                         </label>
                         <label className="label__bloodType">
                             <span>Choose your blood type...</span>
-                            <SelectComponent defaultLabel={"Choose your blood type"} options={bloodTypeOptions}  styles={customStyles} onChange={handleChangeForBlood}/>
+                            <SelectComponent defaultLabel={"Choose your blood type"} options={bloodTypeOptions}
+                                             styles={customStyles} onChange={handleChangeForBlood}/>
                         </label>
                         <label className="label__hospital">
                             <span>Choose your District...</span>
-                            <SelectComponent defaultLabel={"Choose your district"} options={districtsOptions} styles={customStyles} onChange={handleChangeForDistrict}/>
+                            <SelectComponent defaultLabel={"Choose your district"} options={districtsOptions}
+                                             styles={customStyles} onChange={handleChangeForDistrict}/>
                         </label>
                         <label className="label__message">
                             <span>Message</span>
@@ -138,7 +153,8 @@ function Contact() {
                                 placeholder="Describe the situation...."
                             />
                         </label>
-                        <ExpenseContainer><input type="checkbox" onChange={handleChangeForChecked}/><p>I confirm to pay for the travel expenses</p></ExpenseContainer>
+                        <ExpenseContainer><input type="checkbox" onChange={handleChangeForChecked}/><p>I confirm to pay
+                            for the travel expenses</p></ExpenseContainer>
 
                         <Button
                             className="submit__btn"
@@ -148,11 +164,12 @@ function Contact() {
                             <FiSend/> Submit
                         </Button>
 
-                    </ContactForm>):(<div></div>)}
+                    </ContactForm>) : (<div></div>)}
             </ContactBox>
         </ContactWrapper>
     );
 }
+
 const customStyles = {
     control: (base, state) => ({
         ...base,

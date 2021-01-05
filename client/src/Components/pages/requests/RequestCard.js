@@ -9,7 +9,7 @@ const RequestCard = ({donor,ref}) => {
         <CardContainer ref={ref}>
             <BloodType position={'10%'}>{donor?.bloodType}</BloodType>
                 <img
-                    src={`http://localhost:5000/uploads/${donor?.image}`}
+                    src={`/uploads/${donor?.image}`}
                     alt="Person" className="card__image"/>
                     <p className="card__name">{donor.name}</p>
                     <Flex justify={"space-between"}>

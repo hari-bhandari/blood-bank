@@ -67,6 +67,10 @@ const BloodSchema = mongoose.Schema(
             type:Array,
             items: { type: mongoose.Schema.ObjectId, uniqueItems: true },
             default:[]
+        },
+        createdAt: {
+            type: Date,
+            default: Date.now
         }
     });
 

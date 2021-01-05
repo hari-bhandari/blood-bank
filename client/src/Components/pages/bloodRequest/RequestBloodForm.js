@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState} from 'react';
 import {FaHandshake, FiSend} from "react-icons/all";
 import {useForm} from "../../Auth/useForm";
 import {
@@ -11,16 +11,13 @@ import SelectComponent from "../../_shared/Query/SelectComponent";
 import {bloodType, districts, turnIntoSelectFormat} from "../../sharedUtils/sharedData";
 import axios from "axios";
 import {toast} from "react-toastify";
-import AuthContext from "../../../Context/auth/authContext";
 import UploadPhoto from "../UploadPhoto";
 import PageHeader from "../../_shared/PageHeader";
-import {NavBtnLink} from "../../Navbar/NavbarElements";
-import {SidebarRoute, Skip} from "../../Navbar/Sidebar/SidebarCss";
+import {Skip} from "../../Navbar/Sidebar/SidebarCss";
 
 function Contact() {
     const bloodTypeOptions = turnIntoSelectFormat(bloodType)
     const districtsOptions = turnIntoSelectFormat(districts)
-    const authContext = useContext(AuthContext);
     const [submitted, setSubmitted] = useState(false)
     const [id, setId] = useState(null)
     const [imageUploadStep, setImageUploadStep] = useState(false)
@@ -35,11 +32,6 @@ function Contact() {
         handleInputForSelect("travel", !values.travel)
 
     };
-    const fullyDone = () => {
-        if (submitted && imageUploadStep) {
-            return true
-        }
-    }
     const requestForBlood = async (e) => {
         e.preventDefault();
         const config = {
@@ -78,7 +70,7 @@ function Contact() {
                 {submitted && (<Recieved>
                     <PageHeader>Add an image for your request</PageHeader>
                     <UploadPhoto setSubmittedImage={setImageUploadStep} setSubmitted={setSubmitted} id={id}/> <Skip
-                    color={true}>Skip adding image</Skip></Recieved>)}
+                    color={true} onClick={()=>{setImageUploadStep(true)}}>Skip adding image</Skip></Recieved>)}
                 {!submitted && (<LeftContent>
                     <FaHandshake style={{fontSize: '5em'}}/>
                     <p> “Never feel yourself weak, </p>

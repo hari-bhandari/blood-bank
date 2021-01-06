@@ -1,6 +1,8 @@
 import React,{useEffect,useContext} from 'react';
 import {useForm} from "./useForm";
 import AuthContext from "../../Context/auth/authContext";
+import {FaUser} from "react-icons/all";
+import {FaLock} from "react-icons/all";
 
 const SignIn = (props) => {
     const authContext=useContext(AuthContext);

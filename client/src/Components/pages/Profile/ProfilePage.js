@@ -131,7 +131,7 @@ const ProfilePage = () => {
                             </div>
                             <div className="data">
                                 <h4>Date Requested</h4>
-                                <p>{data.date}</p>
+                                <p>{data.createdAt.slice(0,10)}</p>
                             </div>
                         </div>
                     </div>

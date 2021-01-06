@@ -14,8 +14,12 @@ const UploadPhoto = (props) => {
                     'Content-Type': 'multipart/form-data'
                 }
             })
-            setSubmitted(false)
-            setSubmittedImage(true)
+            if(setSubmittedImage !==undefined && setSubmitted!==undefined){
+                setSubmitted(false)
+                setSubmittedImage(true)
+                setSubmittedImage(true)
+            }
+
                 toast.success(`Request has been created with Image ${res.data.data}`, {
                     position: "top-center",
                     autoClose: 80000,

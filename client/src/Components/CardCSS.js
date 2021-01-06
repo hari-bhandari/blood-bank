@@ -66,7 +66,7 @@ export const CardContainer = styled.div`
     font-size: larger;
   }
 
-  #cancel, #accept {
+  #cancel, #accept, #changePhoto {
     margin: 5px;
     width: 5em;
     height: 3em;
@@ -85,6 +85,11 @@ export const CardContainer = styled.div`
 
   #accept {
     background-color: rgb(0, 0, 200);
+    color: white;
+  }
+
+  #changePhoto {
+    background-color: rgb(20, 200, 0);
     color: white;
   }
 

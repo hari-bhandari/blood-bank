@@ -55,7 +55,7 @@ const ListOfRequests = (props) => {
             </CentralizeDiv>
         )
     }
-    if (data.length == 0) {
+    if (data?.length == 0) {
         return (
             <h1>You don't have any requests yet!</h1>
         )

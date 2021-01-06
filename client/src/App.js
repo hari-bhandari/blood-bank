@@ -21,6 +21,7 @@ import ListOfRequests from "./Components/pages/LoggedIn/ListOfRequests";
 import ListOfDonors from "./Components/pages/LoggedIn/ListOfDonors";
 import Sidebar from "./Components/Navbar/Sidebar/Sidebar";
 import UploadPhoto from "./Components/pages/UploadPhoto";
+import ChangeImage from "./Components/pages/ChangeImage/ChangeImage";
 
 
 const queryClient = new QueryClient()
@@ -44,7 +45,7 @@ function App() {
                     <Navbar toggle={toggle} />
                     <ToastContainer/>
                     <Switch>
-                     0   <Route exact path='/'  component={Requests}/>
+                      <Route exact path='/'  component={Requests}/>
                         <Route path='/login' exact component={Auth}/>
                         <Route path={'/request'} exact component={RequestBloodForm}/>
                         <Route path={'/donors'} exact component={Donors}/>
@@ -53,6 +54,7 @@ function App() {
                         <Route path={'/user/:id'} exact component={UserPage}/>
                         <Route path={'/requests'} exact component={ListOfRequests}/>
                         <Route path={'/requests/:id'} exact component={ListOfDonors}/>
+                        <Route path={'/ChangePhoto/:id'} exact component={ChangeImage}/>
                     </Switch>
                 </Router>
                 <ReactQueryDevtools initialIsOpen={false}/>

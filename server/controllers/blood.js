@@ -3,6 +3,7 @@ import asyncHandler from "../middlewares/async.js";
 import User from "../models/User.js";
 import ErrorResponse from "../utils/errorResponse.js";
 import mongoose from 'mongoose'
+import {Buffer} from 'buffer'
 import path from 'path'
 export const requestForDonor=  asyncHandler(async (req,res,next)=>{
     //add user to req.body
@@ -79,14 +80,15 @@ export const patientPhoto=asyncHandler(async (req,res,next)=> {
         return next(new ErrorResponse(`Please upload a file`,400))
     }
     const file=req.files.file;
-    console.log(file)
     if(!file.mimetype.startsWith('image')){
         return next(new ErrorResponse(`Please upload an image file`,400))
     }
     if(file.size>1000000){
         return next(new ErrorResponse(`Please upload an image file less than 2MB`,400))
     }
-
+    console.log(file)
+    const buffer=Buffer.from(file.data,'ascii')
+    console.log(typeof file.data)
     //create custom file name
     file.name=`photo_${req.params.id}${path.parse(file.name).ext}`
     file.mv(`./public/uploads/${file.name}`, async err=>{

@@ -4,14 +4,12 @@ dotenv.config()
 import helmet from 'helmet'
 import cors from 'cors'
 import connectDB from './config/db.js'
-import fileUpload from 'express-fileupload'
 import {errorHandler} from './middlewares/error.js'
 import auth from './routes/auth.js'
 import blood from './routes/blood.js'
 import donors from './routes/donors.js'
 import Path from 'path'
-import mime from 'mime-types'
-import sharp from 'sharp'
+import {resizingMiddleware} from "./middlewares/resizeImage.js";
 const app=express()
 
 app.use(express.json());
@@ -37,54 +35,6 @@ app.use(errorHandler)
 const __dirname = Path.resolve()
 app.use(express.static(Path.join(__dirname,'./public/uploads')))
 app.use('/(*_\\d+x\\d+.(jpe?g|png))', resizingMiddleware);
-function resizingMiddleware(req, res, next)  {
-    const data = parseResizingURI(req.baseUrl); // Extract data from the URI
-
-    if (!data) { return next(); } // Could not parse the URI
-
-    // Get full file path in public directory
-    const path = Path.join(__dirname, 'public/uploads', data.path);
-
-    resizeImage(path, data.width, data.height)
-        .then(buffer => {
-            // Success. Send the image
-            res.set('Content-type', mime.lookup(path)); // using 'mime-types' package
-            res.send(buffer);
-        })
-        .catch(next); // File not found or resizing failed
-}
-
-function resizeImage(path, width, height) {
-    console.log(path)
-    return sharp(path).resize({
-        width,
-        height,
-        // Preserve aspect ratio, while ensuring dimensions are <= to those specified
-        fit: sharp.fit.inside,
-    }).toBuffer();
-}
-
-function limitNumberToRange(num, min, max) {
-    return Math.min(Math.max(num, min), max);
-}
-
-function parseResizingURI(uri) {
-    // Attempt to extract some variables using Regex
-    const matches = uri.match(
-        /(?<path>.*\/)(?<name>[^\/]+)_(?<width>\d+)x(?<height>\d+)(?<extension>\.[a-z\d]+)$/i
-    );
-
-    if (matches) {
-        const { path, name, width, height, extension } = matches.groups;
-        return {
-            path: path + name + extension, // Original file path
-            width: limitNumberToRange(+width, 16, 2000),   // Ensure the size is in a range
-            height: limitNumberToRange(+height, 16, 2000), // so people don't try 999999999
-            extension: extension
-        };
-    }
-    return false;
-}
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(Path.join(__dirname, '/client/build')))

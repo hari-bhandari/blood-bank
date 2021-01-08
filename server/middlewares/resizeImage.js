@@ -39,7 +39,7 @@ function parseResizingURI(uri) {
     );
 
     if (matches) {
-        const { path, name, width, height, extension } = matches.groups;
+        const { name, width, height, extension } = matches.groups;
         return {
             path: '/' + name + extension, // Original file path
             width: limitNumberToRange(+width, 16, 2000),   // Ensure the size is in a range

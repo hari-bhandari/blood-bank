@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
-      <change afterPath="$PROJECT_DIR$/server/middlewares/resizeImage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middlewares/resizeImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middlewares/resizeImage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +126,7 @@
       <workItem from="1609822621136" duration="16593000" />
       <workItem from="1609871061842" duration="322000" />
       <workItem from="1609921321754" duration="2722000" />
-      <workItem from="1610125853804" duration="2013000" />
+      <workItem from="1610125853804" duration="2972000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

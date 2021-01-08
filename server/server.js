@@ -33,7 +33,7 @@ app.use('/api/donors',donors)
 //error
 app.use(errorHandler)
 const __dirname = Path.resolve()
-app.use(express.static(Path.join(__dirname,'./public/uploads')))
+app.use(express.static(Path.join(__dirname,'./public')))
 app.use('/(*_\\d+x\\d+.(jpe?g|png))', resizingMiddleware);
 
 if (process.env.NODE_ENV === 'production') {

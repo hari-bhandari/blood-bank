@@ -7,7 +7,6 @@ export function resizingMiddleware(req, res, next)  {
     const data = parseResizingURI(req.baseUrl); // Extract data from the URI
 
     if (!data) { return next(); } // Could not parse the URI
-
     // Get full file path in public directory
     const path = Path.join(__dirname, 'public/uploads', data.path);
 
@@ -21,7 +20,6 @@ export function resizingMiddleware(req, res, next)  {
 }
 
 function resizeImage(path, width, height) {
-    console.log(path)
     return sharp(path).resize({
         width,
         height,
@@ -43,7 +41,7 @@ function parseResizingURI(uri) {
     if (matches) {
         const { path, name, width, height, extension } = matches.groups;
         return {
-            path: path + name + extension, // Original file path
+            path: '/' + name + extension, // Original file path
             width: limitNumberToRange(+width, 16, 2000),   // Ensure the size is in a range
             height: limitNumberToRange(+height, 16, 2000), // so people don't try 999999999
             extension: extension

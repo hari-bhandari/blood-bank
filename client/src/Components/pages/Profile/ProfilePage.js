@@ -1,4 +1,4 @@
-import React, {useContext,useState} from 'react';
+import React, {useContext,useState,useEffect} from 'react';
 import {ProfilePageCSS} from "./ProfilePageCss";
 import {useParams} from "react-router";
 import axios from "axios";
@@ -13,6 +13,10 @@ const ProfilePage = () => {
     const authContext=useContext(AuthContext);
     const {login,isAuthenticated,loadUser}=authContext;
     const[error,setError]=useState()
+
+    useEffect(()=>{
+
+    },[])
 
     const {id}=useParams()
     const fetchDonors = async () => {

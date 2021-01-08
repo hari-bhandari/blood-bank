@@ -87,7 +87,6 @@ export const patientPhoto=asyncHandler(async (req,res,next)=> {
     if(file.size>1000000){
         return next(new ErrorResponse(`Please upload an image file less than 2MB`,400))
     }
-
     //create custom file name
     file.name=`photo_${req.params.id}${path.parse(file.name).ext}`
     const data=await sharp(file.tempFilePath).grayscale().toBuffer()

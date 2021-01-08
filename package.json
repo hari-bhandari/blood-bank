@@ -22,10 +22,6 @@
   },
   "dependencies": {
     "add-subtract-date": "^1.0.15",
-    "react-icons": "^4.1.0",
-    "react-query": "^3.2.0",
-    "react-router-dom": "^5.2.0",
-    "styled-components": "^5.2.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
@@ -34,8 +30,14 @@
     "express-fileupload": "^1.2.0",
     "helmet": "^4.1.1",
     "jsonwebtoken": "^8.5.1",
+    "mime-types": "^2.1.28",
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.9",
-    "mongoose-slug-generator": "^1.0.4"
+    "mongoose-slug-generator": "^1.0.4",
+    "react-icons": "^4.1.0",
+    "react-query": "^3.2.0",
+    "react-router-dom": "^5.2.0",
+    "sharp": "^0.27.0",
+    "styled-components": "^5.2.1"
   }
 }

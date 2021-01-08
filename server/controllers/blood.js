@@ -5,6 +5,7 @@ import ErrorResponse from "../utils/errorResponse.js";
 import mongoose from 'mongoose'
 import {Buffer} from 'buffer'
 import path from 'path'
+import sharp from "sharp";
 export const requestForDonor=  asyncHandler(async (req,res,next)=>{
     //add user to req.body
     req.body.user=req.user.id;
@@ -86,20 +87,23 @@ export const patientPhoto=asyncHandler(async (req,res,next)=> {
     if(file.size>1000000){
         return next(new ErrorResponse(`Please upload an image file less than 2MB`,400))
     }
-    console.log(file)
-    const buffer=Buffer.from(file.data,'ascii')
-    console.log(typeof file.data)
+
     //create custom file name
     file.name=`photo_${req.params.id}${path.parse(file.name).ext}`
-    file.mv(`./public/uploads/${file.name}`, async err=>{
-        if(err){
+    const data=await sharp(file.tempFilePath).grayscale().toBuffer()
+    console.log(file)
+    console.log(data)
+    file.data=data
+
+    await file.mv(`./public/uploads/${file.name}`, async err => {
+        if (err) {
             console.error(err)
-            return next(new ErrorResponse(`problem with file upload `,500))
+            return next(new ErrorResponse(`problem with file upload `, 500))
         }
-        await Blood.findByIdAndUpdate(req.params.id,{image:file.name});
+        await Blood.findByIdAndUpdate(req.params.id, {image: file.name});
         res.status(200).json({
-            success:true,
-            data:file.name
+            success: true,
+            data: file.name
         })
     })
 })

@@ -26,7 +26,8 @@
     "react-select-me": "^1.2.1",
     "react-toastify": "^6.1.0",
     "spinners-react": "^1.0.4",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

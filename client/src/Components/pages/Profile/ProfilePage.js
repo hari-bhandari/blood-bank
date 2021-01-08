@@ -1,4 +1,4 @@
-import React, {useContext,useState,useEffect} from 'react';
+import React, {useContext,useState} from 'react';
 import {ProfilePageCSS} from "./ProfilePageCss";
 import {useParams} from "react-router";
 import axios from "axios";
@@ -8,16 +8,12 @@ import {CentralizeDiv} from "../../_shared/CentralizeDiv";
 import {toast} from "react-toastify";
 import {FaHandsHelping} from "react-icons/all";
 import AuthContext from "../../../Context/auth/authContext";
+import {getSizedImageURL} from "../../sharedUtils/utils";
 
 const ProfilePage = () => {
     const authContext=useContext(AuthContext);
     const {login,isAuthenticated,loadUser}=authContext;
     const[error,setError]=useState()
-
-    useEffect(()=>{
-
-    },[])
-
     const {id}=useParams()
     const fetchDonors = async () => {
         const response = await axios(
@@ -86,7 +82,7 @@ const ProfilePage = () => {
         <ProfilePageCSS>
             <div className="wrapper">
                 <div className="left">
-                    <img src={`/uploads/${data?.image}`}
+                    <img src={getSizedImageURL(data?.image,200,200)}
                          alt="user" width="100"/>
                         <h4>{data.name}
                         </h4>

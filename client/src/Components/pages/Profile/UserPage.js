@@ -6,6 +6,7 @@ import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
 import {CentralizeDiv} from "../../_shared/CentralizeDiv";
 import AuthContext from "../../../Context/auth/authContext";
+import {getSizedImageURL} from "../../sharedUtils/utils";
 
 const UserPage = () => {
     const authContext=useContext(AuthContext);
@@ -35,7 +36,7 @@ const UserPage = () => {
         <ProfilePageCSS>
             <div className="wrapper">
                 <div className="left">
-                    <img src={`/uploads/${data.image}`}
+                    <img src={getSizedImageURL(data?.image,200,200)}
                          alt="user" width="100"/>
                         <h4>{data.name}
                         </h4>

@@ -1,28 +1,27 @@
-import React,{useEffect,useContext,useState} from 'react'
+import React,{useEffect,useContext,useState,Suspense,lazy} from 'react'
 import './App.css';
-import Auth from "./Components/Auth/Auth";
 import Navbar from "./Components/Navbar/Navbar";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import RequestBloodForm from "./Components/pages/bloodRequest/RequestBloodForm";
-import {toast, ToastContainer} from "react-toastify";
-import Donors from "./Components/pages/donors/Donors";
+
+import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import {ReactQueryDevtools} from 'react-query/devtools'
 import {
     QueryClient,
     QueryClientProvider,
 } from "react-query";
-import ProfilePage from "./Components/pages/Profile/ProfilePage";
-import Requests from "./Components/pages/requests/Requests";
 import AuthContext from "./Context/auth/authContext";
-import FAQPage from "./Components/pages/FAQ/FAQPage";
-import UserPage from "./Components/pages/Profile/UserPage";
-import ListOfRequests from "./Components/pages/LoggedIn/ListOfRequests";
-import ListOfDonors from "./Components/pages/LoggedIn/ListOfDonors";
 import Sidebar from "./Components/Navbar/Sidebar/Sidebar";
-import UploadPhoto from "./Components/pages/UploadPhoto";
-import ChangeImage from "./Components/pages/ChangeImage/ChangeImage";
-
+const ProfilePage=lazy(()=>import('./Components/pages/Profile/ProfilePage'))
+const Requests=lazy(()=>import('./Components/pages/requests/Requests'))
+const FAQPage=lazy(()=>import('./Components/pages/FAQ/FAQPage'))
+const UserPage=lazy(()=>import('./Components/pages/Profile/UserPage'))
+const ListOfRequests=lazy(()=>import('./Components/pages/LoggedIn/ListOfRequests'))
+const Donors=lazy(()=>import('./Components/pages/donors/Donors'))
+const ChangeImage=lazy(()=>import('./Components/pages/ChangeImage/ChangeImage'))
+const RequestBloodForm=lazy(()=>import('./Components/pages/bloodRequest/RequestBloodForm'))
+const ListOfDonors=lazy(()=>import('./Components/pages/LoggedIn/ListOfDonors'))
+const Auth=lazy(()=>import('./Components/Auth/Auth'))
 
 const queryClient = new QueryClient()
 
@@ -45,16 +44,34 @@ function App() {
                     <Navbar toggle={toggle} />
                     <ToastContainer/>
                     <Switch>
+                        <Suspense fallback={<div>. </div>}>
                       <Route exact path='/'  component={Requests}/>
+                        </Suspense>
+                        <Suspense fallback={<div>. </div>}>
                         <Route path='/login' exact component={Auth}/>
+                        </Suspense>
+                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/request'} exact component={RequestBloodForm}/>
+                        </Suspense>
+                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/donors'} exact component={Donors}/>
+                        </Suspense>
+                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/faq'} exact component={FAQPage}/>
+                        </Suspense>
+                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/help/:id'} exact component={ProfilePage}/>
+                        </Suspense>
+                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/user/:id'} exact component={UserPage}/>
+                        </Suspense>
+                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/requests'} exact component={ListOfRequests}/>
                         <Route path={'/requests/:id'} exact component={ListOfDonors}/>
+                        </Suspense>
+                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/ChangePhoto/:id'} exact component={ChangeImage}/>
+                        </Suspense>
                     </Switch>
                 </Router>
                 <ReactQueryDevtools initialIsOpen={false}/>

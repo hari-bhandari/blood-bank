@@ -46,30 +46,14 @@ function App() {
                     <Switch>
                         <Suspense fallback={<div>. </div>}>
                       <Route exact path='/'  component={Requests}/>
-                        </Suspense>
-                        <Suspense fallback={<div>. </div>}>
                         <Route path='/login' exact component={Auth}/>
-                        </Suspense>
-                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/request'} exact component={RequestBloodForm}/>
-                        </Suspense>
-                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/donors'} exact component={Donors}/>
-                        </Suspense>
-                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/faq'} exact component={FAQPage}/>
-                        </Suspense>
-                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/help/:id'} exact component={ProfilePage}/>
-                        </Suspense>
-                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/user/:id'} exact component={UserPage}/>
-                        </Suspense>
-                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/requests'} exact component={ListOfRequests}/>
                         <Route path={'/requests/:id'} exact component={ListOfDonors}/>
-                        </Suspense>
-                        <Suspense fallback={<div>. </div>}>
                         <Route path={'/ChangePhoto/:id'} exact component={ChangeImage}/>
                         </Suspense>
                     </Switch>

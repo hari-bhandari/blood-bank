@@ -39,6 +39,7 @@ export const ProfilePageCSS=styled.div`
   }
 
   .wrapper .left img {
+    width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
   }

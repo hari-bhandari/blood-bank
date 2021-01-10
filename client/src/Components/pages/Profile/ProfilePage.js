@@ -82,7 +82,7 @@ const ProfilePage = () => {
         <ProfilePageCSS>
             <div className="wrapper">
                 <div className="left">
-                    <img src={getSizedImageURL(data?.image,200,200)}
+                    <img src={getSizedImageURL(data?.image)}
                          alt="user" width="100"/>
                         <h4>{data.name}
                         </h4>

@@ -24,19 +24,7 @@ const Signup = (props) => {
         e.preventDefault()
         register(valuesForSignup)
     }
-    useEffect(()=>{
-        if(error){
-            toast.error(error, {
-                position: "top-center",
-                autoClose: 80000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-        }
-    },[error])
+
     const handleChangeForBlood = selectedOption => {
         handleChangeManual("bloodType",selectedOption.value)
     };

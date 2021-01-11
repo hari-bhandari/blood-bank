@@ -1,31 +1,30 @@
 import React, {useContext, useEffect, useState} from 'react';
 import AuthContext from "../../Context/auth/authContext"
-import {useForm, validate} from "./useForm";
 import {toast} from "react-toastify";
 import {AuthGlobal} from './AuthGlobal'
 import SignIn from "./SignIn";
 import Signup from "./Signup";
 const Auth = (props) => {
     const authContext=useContext(AuthContext);
-    const {isAuthenticated,error}=authContext;
+    const {isAuthenticated,error,clearErrors}=authContext;
     useEffect(()=>{
         if(isAuthenticated){
             props.history.push('/')
         }
     })
     useEffect(()=>{
-       if(error){
-           toast.error(error, {
-               position: "top-center",
-               autoClose: 80000,
-               hideProgressBar: false,
-               closeOnClick: true,
-               pauseOnHover: true,
-               draggable: true,
-               progress: undefined,
-           });
-       }
-    },[])
+        if(error){
+            toast.error(error, {
+                position: "top-center",
+                autoClose: 80000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            })
+            clearErrors()}
+    },[error])
 
     const [Login,setLogin]=useState(true)
     const onClick=()=>{

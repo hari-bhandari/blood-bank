@@ -6,13 +6,14 @@ import {FaLock} from "react-icons/all";
 
 const SignIn = (props) => {
     const authContext=useContext(AuthContext);
-    const {login,isAuthenticated,loadUser,error}=authContext;
-    const [values,handleChangeForLogin,handleChange]=useForm()
+    const {login,isAuthenticated}=authContext;
+    const [values,handleChangeForLogin]=useForm()
     useEffect(()=>{
         if(isAuthenticated){
             props.history.push('/')
         }
     },[])
+
     const onLogin=(e)=>{
         e.preventDefault()
         login(values)

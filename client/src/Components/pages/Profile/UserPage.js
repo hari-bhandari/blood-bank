@@ -5,13 +5,9 @@ import axios from "axios";
 import {useQuery} from "react-query";
 import {SpinnerInfinity} from "spinners-react";
 import {CentralizeDiv} from "../../_shared/CentralizeDiv";
-import AuthContext from "../../../Context/auth/authContext";
 import {getSizedImageURL} from "../../sharedUtils/utils";
 
 const UserPage = () => {
-    const authContext=useContext(AuthContext);
-    const {login,isAuthenticated,loadUser}=authContext;
-    const[error,setError]=useState()
 
     const {id}=useParams()
     const fetchDonors = async () => {

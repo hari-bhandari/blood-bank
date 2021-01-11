@@ -11,7 +11,7 @@ import {FaUser} from "react-icons/all";
 import {FaEnvelope} from "react-icons/all";
 const Signup = (props) => {
     const authContext=useContext(AuthContext);
-    const {register,isAuthenticated,loadUser,error}=authContext;
+    const {register,isAuthenticated}=authContext;
     const districtOptions=turnIntoSelectFormat(districts)
     const bloodOptions=turnIntoSelectFormat(bloodType)
     const [valuesForSignup,handleChangeForSignup,handleChangeManual]=useForm()

@@ -35,10 +35,10 @@ const Navbar = ({toggle}) => {
                 <Bars onClick={toggle}/>
                 <NavMenu>
                     <NavLink to='/' >
-                        Requests
+                        Find Requests
                     </NavLink>
                     <NavLink to='/donors' activeStyle>
-                        Donors
+                        Find donors
                     </NavLink>
                     <NavLink to='/request' activeStyle>
                         Request For Blood

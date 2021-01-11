@@ -7,9 +7,7 @@ import SignIn from "./SignIn";
 import Signup from "./Signup";
 const Auth = (props) => {
     const authContext=useContext(AuthContext);
-    const {login,register,isAuthenticated,loadUser,error}=authContext;
-    const [values,handleChange]=useForm()
-    const [valuesForSignup,handleChangeForSignup]=useForm()
+    const {isAuthenticated,error}=authContext;
     useEffect(()=>{
         if(isAuthenticated){
             props.history.push('/')
@@ -28,14 +26,7 @@ const Auth = (props) => {
            });
        }
     },[])
-    const onLogin=(e)=>{
-        e.preventDefault()
-        login(values)
-    }
-    const onRegister=(e)=>{
-        e.preventDefault()
-        register(valuesForSignup)
-    }
+
     const [Login,setLogin]=useState(true)
     const onClick=()=>{
         setLogin(!Login)

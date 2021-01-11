@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
-      <change afterPath="$PROJECT_DIR$/client/src/Components/_shared/ImageModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePageCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePageCss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Auth/SignIn.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +127,8 @@
       <workItem from="1609921321754" duration="2722000" />
       <workItem from="1610125853804" duration="7908000" />
       <workItem from="1610290772430" duration="7031000" />
-      <workItem from="1610345648780" duration="3547000" />
+      <workItem from="1610345648780" duration="4342000" />
+      <workItem from="1610353015196" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

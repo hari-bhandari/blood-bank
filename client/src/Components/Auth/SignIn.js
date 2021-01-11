@@ -22,11 +22,11 @@ const SignIn = (props) => {
         <form  className="sign-in-form" onSubmit={onLogin}>
             <h2 className="title">Sign in</h2>
             <div className="input-field">
-                <i className="fas fa-user"/>
+                <i><FaUser/></i>
                 <input id="email" name="email" type="text" placeholder="Email" value={values.email} onChange={handleChangeForLogin} required/>
             </div>
             <div className="input-field">
-                <i className="fas fa-lock"/>
+                <i><FaLock/></i>
                 <input id="password" name="password" type="password" placeholder="Password" value={values.password} onChange={handleChangeForLogin} required/>
             </div>
             <input type="submit" value="Login" className="btn solid" />

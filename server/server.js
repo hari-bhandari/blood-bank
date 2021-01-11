@@ -9,6 +9,7 @@ import auth from './routes/auth.js'
 import blood from './routes/blood.js'
 import donors from './routes/donors.js'
 import Path from 'path'
+import fileUpload from 'express-fileupload'
 import {resizingMiddleware} from "./middlewares/resizeImage.js";
 const app=express()
 
@@ -20,7 +21,9 @@ connectDB()
 
 //config
 
-//Body parser
+//Body parser//fileupload
+app.use(fileUpload())
+
 //implementing helmet
 
 app.use(helmet())

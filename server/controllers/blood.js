@@ -69,7 +69,7 @@ export const getBloodRequest=asyncHandler(async (req,res,next)=>{
         data:blood
     })
 })
-//@desc upload photo for item
+//@desc upload photo for blood
 //@route PUT /api/v1/item/:id/photo
 //@access private
 export const patientPhoto=asyncHandler(async (req,res,next)=> {
@@ -87,26 +87,21 @@ export const patientPhoto=asyncHandler(async (req,res,next)=> {
     if(file.size>1000000){
         return next(new ErrorResponse(`Please upload an image file less than 2MB`,400))
     }
+
     //create custom file name
     file.name=`photo_${req.params.id}${path.parse(file.name).ext}`
-    const data=await sharp(file.tempFilePath).grayscale().toBuffer()
-    console.log(file)
-    console.log(data)
-    file.data=data
-
-    await file.mv(`./public/uploads/${file.name}`, async err => {
-        if (err) {
+    file.mv(`./public/uploads/${file.name}`, async err=>{
+        if(err){
             console.error(err)
-            return next(new ErrorResponse(`problem with file upload `, 500))
+            return next(new ErrorResponse(`problem with file upload `,500))
         }
-        await Blood.findByIdAndUpdate(req.params.id, {image: file.name});
+        await Blood.findByIdAndUpdate(req.params.id,{images:file.name});
         res.status(200).json({
-            success: true,
-            data: file.name
+            success:true,
+            data:file.name
         })
     })
 })
-
 export const getBunchOfDonors=asyncHandler(async (req, res, next)=> {
     const blood=await Blood.findById(req.params.id);
     if(!blood){

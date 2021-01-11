@@ -5,7 +5,10 @@ import SelectComponent from "../_shared/Query/SelectComponent";
 import {QueryContainer} from "../_shared/Query/QueryFormCss";
 import AuthContext from "../../Context/auth/authContext";
 import {toast} from "react-toastify";
-
+import {FaLock} from "react-icons/all";
+import {FaPhone} from "react-icons/all";
+import {FaUser} from "react-icons/all";
+import {FaEnvelope} from "react-icons/all";
 const Signup = (props) => {
     const authContext=useContext(AuthContext);
     const {register,isAuthenticated,loadUser,error}=authContext;
@@ -40,28 +43,25 @@ const Signup = (props) => {
     const handleChangeForDistrict = selectedOption => {
         handleChangeManual("district",selectedOption.value)
     };
-    const handleChangeForExpense = (e) => {
-        // handleChangeManual("travel",e.value)
-    };
 
     return (
         <form  className="sign-up-form" onSubmit={onRegister} >
             <h2 className="title">Sign up</h2>
             <div className="input-field">
-                <i className="fas fa-phone" style={{marginLeft:"20px"}}>+977</i>
-                <input style={{paddingLeft:"30px"}} id="phone" name="phone" type="phone" placeholder="Phone Number" value={valuesForSignup.phone} onChange={handleChangeForSignup}/>
+                <i><FaPhone/></i>
+                <input id="phone" name="phone" type="phone" placeholder="Phone Number" value={valuesForSignup.phone} onChange={handleChangeForSignup}/>
             </div>
             <div className="input-field">
-                <i className="fas fa-user"/>
+                <i><FaUser/></i>
                 <input id="name" name="name" type="text" placeholder="Full Name" value={valuesForSignup.name} onChange={handleChangeForSignup}/>
             </div>
             <div className="input-field">
-                <i className="fas fa-envelope"/>
+                <i><FaEnvelope/></i>
                 <input name="email" type="email" placeholder="Email" value={valuesForSignup.email} onChange={handleChangeForSignup} />
             </div>
 
             <div className="input-field">
-                <i className="fas fa-lock"/>
+                <i><FaLock/></i>
                 <input name="password"  type="password" placeholder="Password" name="password" value={valuesForSignup.password} onChange={handleChangeForSignup}/>
             </div>
 

@@ -8,21 +8,23 @@ export const ProfilePageCSS=styled.div`
   }
 
   .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 20px auto;
     width: 80%;
     display: flex;
+    overflow: hidden;
     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
     @media (max-width: 1000px) {
+      margin: 0;
       width: 95%;
-      top: 70%;
+    }
+    @media (max-width: 751px) {
+      flex-direction: column;
     }
     @media (max-width: 400px) {
-      width: 95%;
-      top: 90%;
+      margin: 0;
+      width: 100%;
     }
+
   }
 
   .wrapper .left {
@@ -33,15 +35,19 @@ export const ProfilePageCSS=styled.div`
     border-bottom-left-radius: 5px;
     text-align: center;
     color: #fff;
-    @media (max-width: 500px) {
-      width: 15%;
+
+    @media (max-width: 751px) {
+      width: 100%;
     }
   }
 
   .wrapper .left img {
     width: 100%;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 0 auto;
+    @media (max-width: 751px) {
+      width: 60%;
+    }
   }
 
   .wrapper .left h4 {
@@ -58,6 +64,9 @@ export const ProfilePageCSS=styled.div`
     padding: 30px 25px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    @media (max-width: 751px) {
+      width: 100%;
+    }
   }
 
   .wrapper .right .info,
@@ -65,8 +74,6 @@ export const ProfilePageCSS=styled.div`
     margin-bottom: 25px;
     font-size: 20px;
   }
-
-
 
 
   .wrapper .right .info h3,
@@ -90,7 +97,7 @@ export const ProfilePageCSS=styled.div`
 
   .wrapper .right .info_data .data,
   .wrapper .right .projects_data .data {
-    width: 45%;
+    width: 100%;
   }
 
   .wrapper .right .info_data .data h4,
@@ -106,8 +113,8 @@ export const ProfilePageCSS=styled.div`
     color: #919aa3;
 
   }
-  
-  .offer-help-container{
+
+  .offer-help-container {
     width: 100%;
     height: 45px;
     display: flex;
@@ -120,14 +127,16 @@ export const ProfilePageCSS=styled.div`
     color: #353c4e;
     text-transform: uppercase;
     letter-spacing: 5px;
-    &:hover{
-      cursor:pointer ;
+
+    &:hover {
+      cursor: pointer;
     }
-    svg{
+
+    svg {
       //margin-left: 30%;
       color: #D40871;
     }
-    
+
   }
 
 

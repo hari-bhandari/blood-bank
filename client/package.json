@@ -17,8 +17,11 @@
     "react-grid-system": "^7.1.1",
     "react-hook-inview": "^4.3.7",
     "react-icons": "^3.11.0",
+    "react-image-lightbox": "^5.1.1",
     "react-images-upload": "^1.2.8",
+    "react-medium-image-zoom": "^4.3.1",
     "react-query": "^3.2.0",
+    "react-responsive-modal": "^6.0.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
@@ -26,8 +29,8 @@
     "react-select-me": "^1.2.1",
     "react-toastify": "^6.1.0",
     "spinners-react": "^1.0.4",
-    "web-vitals": "^0.2.4",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",

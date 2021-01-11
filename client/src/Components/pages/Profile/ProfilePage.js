@@ -9,8 +9,12 @@ import {toast} from "react-toastify";
 import {FaHandsHelping} from "react-icons/all";
 import AuthContext from "../../../Context/auth/authContext";
 import {getSizedImageURL} from "../../sharedUtils/utils";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+import ImageModal from "../../_shared/ImageModal";
 
 const ProfilePage = () => {
+    const [open,setOpen]=useState(false)
     const authContext=useContext(AuthContext);
     const {login,isAuthenticated,loadUser}=authContext;
     const[error,setError]=useState()
@@ -80,9 +84,10 @@ const ProfilePage = () => {
 
     return (
         <ProfilePageCSS>
-            <div className="wrapper">
+            <ImageModal open={open} imageLink={getSizedImageURL(data?.image)} setOpen={setOpen}/>
+            <div className="wrapper" >
                 <div className="left">
-                    <img src={getSizedImageURL(data?.image)}
+                    <img onClick={()=>{setOpen(true)}} src={getSizedImageURL(data?.image)}
                          alt="user" width="100"/>
                         <h4>{data.name}
                         </h4>

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {FaHandshake, FiSend} from "react-icons/all";
+import {FaSyringe, FiSend,FaHandshake} from "react-icons/all";
 import {useForm} from "../../Auth/useForm";
 import {
     ContactWrapper,
@@ -72,7 +72,7 @@ function Contact() {
                     <UploadPhoto setSubmittedImage={setImageUploadStep} setSubmitted={setSubmitted} id={id}/> <Skip
                     color={true} onClick={()=>{setImageUploadStep(true)}}>Skip adding image</Skip></Recieved>)}
                 {!submitted && (<LeftContent>
-                    <FaHandshake style={{fontSize: '5em'}}/>
+                    <FaSyringe style={{fontSize: '5em'}}/>
                     <p> “Never feel yourself weak, </p>
                     <p> you have the ability to save a life. </p>
                     <p> Just donate blood.”</p>

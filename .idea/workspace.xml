@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/blood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodFormCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodFormCSS.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +13,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -129,7 +137,7 @@
       <workItem from="1610290772430" duration="7031000" />
       <workItem from="1610345648780" duration="4342000" />
       <workItem from="1610353015196" duration="6501000" />
-      <workItem from="1610380569220" duration="5423000" />
+      <workItem from="1610380569220" duration="5822000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

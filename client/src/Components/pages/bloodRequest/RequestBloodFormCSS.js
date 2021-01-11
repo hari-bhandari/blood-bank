@@ -76,7 +76,7 @@ export const ContactForm = styled.form`
     color: white;
   }
 
-  input {
+  input ,textarea {
     color: white;
   }
   p{color: #CFDEF3}

@@ -1,6 +1,5 @@
 # Note :This project is still under developement
 
-This is just a concept and it is in making.
 This app allows you to request blood for someone donate or request blood for yourslef. 
 Please contribute!!
 ## :v: Contributing

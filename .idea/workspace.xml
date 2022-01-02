@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added ." />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/next-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/_app.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/api/hello.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/styles/Home.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/styles/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +42,9 @@
     <bower-package value="" />
     <bower.json value="" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1ju9V3zxTLgTiGAW4Gkqyy8zmZm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,27 +55,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/navbar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/navbar" />
+      <recent name="$PROJECT_DIR$/client-new/components" />
+      <recent name="$PROJECT_DIR$/client-new/components/Header/Navbar" />
       <recent name="C:\Users\2012b\WebstormProjects\blood-bank\public\uploads" />
       <recent name="$PROJECT_DIR$/client/public" />
-      <recent name="$PROJECT_DIR$/client/src/Components/Profile" />
-      <recent name="$PROJECT_DIR$/client/src/Components/Navbar" />
-      <recent name="$PROJECT_DIR$/client/src/Context" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/navbar/Ride" />
       <recent name="$PROJECT_DIR$/client/src/Components/pages" />
       <recent name="$PROJECT_DIR$/client/src/Components/_shared" />
       <recent name="$PROJECT_DIR$/client/src/Components/_shared/Query" />
       <recent name="$PROJECT_DIR$/client/src/Components/sharedUtils" />
-      <recent name="$PROJECT_DIR$/client/src/Components/pages/FAQ" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -134,7 +156,8 @@
       <workItem from="1610345648780" duration="4342000" />
       <workItem from="1610353015196" duration="6501000" />
       <workItem from="1610380569220" duration="5822000" />
-      <workItem from="1641138614933" duration="309000" />
+      <workItem from="1641138614933" duration="5424000" />
+      <workItem from="1641145738349" duration="1261000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -143,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608844313894</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added new client (improved)">
+      <created>1641139170452</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641139170452</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +192,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added ." />
-    <option name="LAST_COMMIT_MESSAGE" value="added ." />
+    <MESSAGE value="added new client (improved)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new client (improved)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

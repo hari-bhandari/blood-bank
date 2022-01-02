@@ -33,6 +33,7 @@
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.9",
     "mongoose-slug-generator": "^1.0.4",
+    "reactstrap": "^9.0.1",
     "sharp": "^0.27.0"
   }
 }

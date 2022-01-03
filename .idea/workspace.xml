@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Navbar/Ride/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Navbar/Ride/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/PortfolioShowcase/portfolioShowcase.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Portfolio/PortfolioShowcase/portfolioShowcase.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/portfolio.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Portfolio/portfolio.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/ride.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Ride/ride.style.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +145,7 @@
       <workItem from="1610380569220" duration="5822000" />
       <workItem from="1641138614933" duration="5424000" />
       <workItem from="1641145738349" duration="3668000" />
-      <workItem from="1641198512177" duration="4749000" />
+      <workItem from="1641198512177" duration="5540000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -172,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641202235217</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added new client (improved)">
+      <created>1641203387303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641203387303</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

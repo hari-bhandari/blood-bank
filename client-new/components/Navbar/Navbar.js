@@ -6,9 +6,6 @@ import Logo from '../elements/UI/Logo';
 import Box from '../elements/Box';
 import HamburgerMenu from '../HamburgMenu';
 import Container from '../UI/Container';
-// import {MENU_ITEMS} from './Ride';
-// import {MENU_LEFT_ITEMS} from './Ride';
-// import {MENU_RIGHT_ITEMS} from './Ride';
 import ScrollSpyMenu from '../ScrollSpyMenu';
 import LogoImage from './Ride/logo.svg';
 import {MENU_LEFT_ITEMS} from "./Ride";
@@ -93,7 +90,7 @@ Navbar.defaultProps = {
         width: '100%',
     },
     logoStyle: {
-        maxWidth: ['120px', '130px'],
+        maxWidth: ['150px', '160px'],
     },
     button: {
         type: 'button',

@@ -67,7 +67,7 @@ export const GlobalStyle = createGlobalStyle`
               position: absolute;
               width: calc(100% - 8px);
               height: 11px;
-              background: #c2c7fb;
+              background: #af111c;
               bottom: 2px;
               left: -4px;
               z-index: -1;

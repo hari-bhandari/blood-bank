@@ -1,24 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import NavbarWrapper from '../elements/Navbar';
 import Drawer from '../elements/Drawer';
 import Logo from '../elements/UI/Logo';
 import Box from '../elements/Box';
-import HamburgMenu from '../HamburgMenu';
+import HamburgerMenu from '../HamburgMenu';
 import Container from '../UI/Container';
-import {MENU_ITEMS} from './Ride';
-import {MENU_LEFT_ITEMS} from './Ride';
-import {MENU_RIGHT_ITEMS} from './Ride';
+// import {MENU_ITEMS} from './Ride';
+// import {MENU_LEFT_ITEMS} from './Ride';
+// import {MENU_RIGHT_ITEMS} from './Ride';
 import ScrollSpyMenu from '../ScrollSpyMenu';
 import LogoImage from './Ride/logo.svg';
+import {MENU_LEFT_ITEMS} from "./Ride";
+import {MENU_ITEMS, MENU_RIGHT_ITEMS} from "../data/Ride";
 
 const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
-
+    const[isOpen,setIsOpen]=useState(false)
     // Toggle drawer
     const toggleHandler = () => {
-        // dispatch({
-        //     type: 'TOGGLE',
-        // });
+        setIsOpen(!isOpen)
     };
 
     return (
@@ -54,8 +54,8 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
                         <Drawer
                             width="420px"
                             placement="right"
-                            drawerHandler={<HamburgMenu barColor="#3444f1"/>}
-                            open={state.isOpen}
+                            drawerHandler={<HamburgerMenu barColor="#3444f1"/>}
+                            open={isOpen}
                             toggleHandler={toggleHandler}
                         >
                             <ScrollSpyMenu

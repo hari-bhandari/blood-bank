@@ -109,8 +109,10 @@ const BannerWrapper = styled.section`
   }
 
   .contentArea {
+    margin-top: 100px;
     @media (max-width: 990px) {
       width: 100%;
+      margin: 0;
     }
   }
 

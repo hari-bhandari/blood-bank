@@ -15,7 +15,6 @@ import BannerPlay from '../../assets/image/bannerPlay.png'
 const BannerSection = ({
                            row,
                            contentArea,
-                           imageArea,
                            greetingStyle,
                            aboutStyle,
                            greetingStyleTwo,

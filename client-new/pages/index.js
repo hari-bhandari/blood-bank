@@ -11,6 +11,7 @@ import {
 import Hero from "../components/Layout/Hero/Hero";
 import WhatWeDo from "../components/Layout/What we do/WhatWeDo";
 import Quotes from "../components/Layout/quotes/Quotes";
+import WorksDone from "../components/Layout/WorksDone/WorksDone";
 
 export default function Home() {
     return (
@@ -29,6 +30,7 @@ export default function Home() {
                 <Hero/>
                 <WhatWeDo/>
                 <Quotes/>
+                <WorksDone/>
             </ContentWrapper>
         </div>
     )

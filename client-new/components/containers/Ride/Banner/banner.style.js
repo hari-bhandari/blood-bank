@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Background from '../../../assets/image/blood/background.png';
+import Background from '../../../assets/image/background.png';
 
 const BannerWrapper = styled.section`
   background-image: url(${Background});

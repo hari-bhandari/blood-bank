@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import FooterIamge from '../../../assets/image/blood/footer.svg';
+import FooterIamge from '../../../assets/image/footer.svg';
 
 const FooterWrapper = styled.section`
 	padding: 120px 0;

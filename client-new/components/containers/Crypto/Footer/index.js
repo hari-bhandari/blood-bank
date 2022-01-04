@@ -10,8 +10,8 @@ import Container from '../../../components/UI/Container';
 import ContactSections from 'common/src/containers/Crypto/Contact';
 import FooterWrapper, { List, ListItem, BgImageWrapper } from './footer.style';
 import { menuWidget, Language_NAMES } from '../../../data/Crypto';
-import AppImage from '../../../assets/image/blood/footerapp.svg';
-import PlaystoreImage from '../../../assets/image/blood/footerplay.svg';
+import AppImage from '../../../assets/image/footerapp.svg';
+import PlaystoreImage from '../../../assets/image/footerplay.svg';
 import FooterBG from '../../../assets/image/crypto/footer-bg.svg';
 
 const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {

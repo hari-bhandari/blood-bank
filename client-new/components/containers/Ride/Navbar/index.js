@@ -11,7 +11,7 @@ import { MENU_ITEMS } from '../../../data/Ride';
 import { MENU_LEFT_ITEMS } from '../../../data/Ride';
 import { MENU_RIGHT_ITEMS } from '../../../data/Ride';
 import ScrollSpyMenu from '../../../components/ScrollSpyMenu';
-import LogoImage from '../../../assets/image/blood/logo.svg';
+import LogoImage from '../../../assets/image/logo.svg';
 
 const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);

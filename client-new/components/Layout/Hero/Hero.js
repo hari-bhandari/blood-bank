@@ -10,9 +10,8 @@ import Fade from 'react-reveal/Fade';
 import Container from '../../../components/UI/Container';
 import {BannerWrapper, EmailInputWrapper} from './hero.style';
 import Image from "../../elements/Image";
-import BloodImage from '../../assets/image/blood/donate_blood.png'
-import BannerApp from '../../assets/image/blood/bannerApp.png'
-import BannerPlay from '../../assets/image/blood/bannerPlay.png'
+import BannerApp from '../../assets/image/bannerApp.png'
+import BannerPlay from '../../assets/image/bannerPlay.png'
 const BannerSection = ({
                            row,
                            contentArea,

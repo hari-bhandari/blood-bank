@@ -2,295 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client-new/components/FAQ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/Hero/Hero.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/Hero/hero.style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/donate_blood.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/pages/faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/What we do/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/quotes/Myles_Munroe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/quotes/Quotes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/quotes/Quotes.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/quotes/Winston-Churchill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/quotes/anon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/quotes/avatar_for_now.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/quotes/avatar_for_now.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Layout/quotes/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Accordion/accordion.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Accordion/accordion.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Navbar/Ride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Ride/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Navbar/Ride/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Ride/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/ScrollSpyMenu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/ScrollSpyMenu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/agency-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/blog/blog-img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/blog/blog-img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/blog/blog-img3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/client/denny.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/client/menny.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/footer-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/google-icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/group/group-image1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/group/group-image2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/group/group-image3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/login-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/logo@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/particles/particle-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/particles/particle-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/particles/particle-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/particles/particle-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/particles/particle-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/preview-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/surface-studio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/team/member-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/team/member-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/agency/team/member-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/Feature-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/Feature-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/Feature-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/Feature-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/Feature-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/Feature-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/apple.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/credit-card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/dribbble.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/google-icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/google.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-7.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/img-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/info1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/info2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/iphone-mockup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/left-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/login-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/mail.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/mailchimp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/man.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/man.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/mobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/mockup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/partner-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/pattern.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/right-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/slide-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/slide-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/slide-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/slide-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/slide-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/substract-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/substract.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/testi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/testi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/app/thumb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/app.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/author-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/author-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/author-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/author-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/banner-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/beta-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/beta-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/beta-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/control.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/footer-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/footer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/jackpot.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/main_bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/playstore.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/proof1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/proof2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/proof3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/proof4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/proof5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/proof6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/scalable.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/slider-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/slider-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/slider-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/tf1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/tf2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/tf3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/tf4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/white_bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/crypto/white_bg1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/author-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/author-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/author-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/badge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/banner-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/footer-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/icon1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/icon2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/icon3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/icon4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/icon5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/icon6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/info1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/info2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/particles/particle-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/particles/particle-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/particles/particle-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/particles/particle-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/particles/particle-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/particles/particle-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/particles/particle-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/particles/particle-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/pay-card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/pay-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/shape-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/shape-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/shape-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/shape-4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hosting/shape-5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/award-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/award-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/award-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/award-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/awardee-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/awardee-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/awardee-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/awardee-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/client-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/client-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/client-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/client-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/client-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/client-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/client-avatar-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/client-avatar-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/client-avatar-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/dotted-line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/logo-alt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/person.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/portfolio-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/portfolio-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/skill-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/skill-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/skill-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/skill-4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/step-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/step-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/portfolio/step-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/background.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/background.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/bannerApp.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/bannerApp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/bannerPlay.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/bannerPlay.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/blog-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/blog-1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/blog-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/blog-2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/car.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/car.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/car.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/driver-side.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/driver-side.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/estimate.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/estimate.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/feature-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/feature-1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/feature-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/feature-2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/feature-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/feature-3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/footer-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/footer-img-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/footer-img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/footer-img-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/footer-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/footer-logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/footer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/footer.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/footerapp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/footerapp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/footerplay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/footerplay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/hero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/hero.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/how-work.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/how-work.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/how_it.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/how_it.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/man.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mask-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mask-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mask-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mask_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mask_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mask_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mobile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mobile1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mobile1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mockup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mockup.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/mockup_bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/mockup_bg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/quote.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/quote.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/ride-share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/ride-share.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/rider side.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/rider side.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/riding-share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/riding-share.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride/vejpa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blood/vejpa.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/banner/bannerObject1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/banner/bannerObject2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/illustration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/particles/particle-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/particles/particle-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/particles/particle-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/particles/particle-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/particles/particle-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/particles/particle-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/partner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/saas-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/saasvisitor1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/saasvisitor2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/testimonial/client-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/vendor-logos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saas/visitor_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/author-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/author-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/author-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/banner-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/logo-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/partner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/screen-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasThree/vendor-logos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/author-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/author-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/author-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/banner-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/banner-texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/dash-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/dash-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/dash-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/dash-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/dash-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/icon-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/icon-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/icon-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/icon-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/icon-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/icon-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/logo-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/partner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/process-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/process-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/process-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/saasTwo/vendor-logos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/Hero/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/background.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/background.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/bannerApp.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/bannerApp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/bannerPlay.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/bannerPlay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/blog-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blog-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/blog-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/blog-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/car.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/car.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/car.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/donate_blood.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/donate_blood.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/driver-side.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/driver-side.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/estimate.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/estimate.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/feature-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/feature-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/feature-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/feature-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/feature-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/feature-3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/footer-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/footer-img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/footer-img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/footer-img-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/footer-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/footer-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/footer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/footer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/footerapp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/footerapp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/footerplay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/footerplay.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/hero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/hero.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/how-work.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/how-work.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/how_it.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/how_it.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mask-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mask-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mask-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mask_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mask_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mask_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mask_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mobile1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mobile1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mockup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mockup.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/mockup_bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/mockup_bg.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/quote.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/quote.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/ride-share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/ride-share.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/rider side.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/rider side.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/riding-share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/riding-share.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blood/vejpa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/image/vejpa.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Crypto/Footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/hosting.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Hosting/hosting.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Banner/banner.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Ride/Banner/banner.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Banner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Ride/Banner/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/FeatureSlider/featureSlider.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Ride/FeatureSlider/featureSlider.style.js" afterDir="false" />
@@ -302,35 +70,22 @@
       <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Ride/Navbar/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/RideOption/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Ride/RideOption/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/TestimonialSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Ride/TestimonialSection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/ride.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/Ride/ride.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/agency/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/agency/customeVariant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/agency/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/app/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/app/customVariant.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/theme/customVariant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/app/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/crypto/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/crypto/customVariant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/crypto/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/global/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/global/customVariant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/global/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/hosting/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/hosting/customVariant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/hosting/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/portfolio/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/portfolio/customVariant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/portfolio/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/saas/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/saas/customVariant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/saas/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/saasThree/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/saasThree/customVariant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/saasThree/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/saasTwo/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/saasTwo/customVariant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/saasTwo/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/contexts/DrawerContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/Agency/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/App/FeatureSection/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/App/FeatureSliderTwo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/App/Footer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/App/MenuItems/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/App/TestimonialSlider/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/Crypto/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/Hosting/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/Hosting/images.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/Portfolio/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/Saas/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/SaasThree/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/SaasTwo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -367,7 +122,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/assets/image/blood" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/Layout/quotes" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -376,18 +131,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/Layout/quotes" />
+      <recent name="$PROJECT_DIR$/client-new/components" />
       <recent name="$PROJECT_DIR$/client-new/components/assets/image/blood" />
       <recent name="$PROJECT_DIR$/client-new/components/theme" />
       <recent name="$PROJECT_DIR$/client-new/components/Layout/Hero" />
-      <recent name="$PROJECT_DIR$/client-new/components" />
-      <recent name="$PROJECT_DIR$/client-new" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/assets/image" />
       <recent name="$PROJECT_DIR$/client-new/components/Layout" />
       <recent name="$PROJECT_DIR$/client-new/components/navbar/Ride" />
       <recent name="$PROJECT_DIR$/client/src/Components/pages" />
       <recent name="$PROJECT_DIR$/client/src/Components/_shared" />
-      <recent name="$PROJECT_DIR$/client/src/Components/_shared/Query" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -471,7 +226,7 @@
       <workItem from="1641138614933" duration="5424000" />
       <workItem from="1641145738349" duration="3668000" />
       <workItem from="1641198512177" duration="8677000" />
-      <workItem from="1641279855109" duration="6621000" />
+      <workItem from="1641279855109" duration="11087000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -515,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641204083738</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding FAQ page">
+      <created>1641288273228</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641288273228</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +298,8 @@
     <MESSAGE value="added ." />
     <MESSAGE value="added new client (improved)" />
     <MESSAGE value="added navbar to the new client" />
-    <option name="LAST_COMMIT_MESSAGE" value="added navbar to the new client" />
+    <MESSAGE value="adding FAQ page" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding FAQ page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -550,6 +313,12 @@
           <url>file://$PROJECT_DIR$/client/src/Components/pages/FAQ/FAQPage.js</url>
           <line>22</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/components/Layout/quotes/data.js</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -9,6 +9,8 @@ import {
     ContentWrapper,
 } from '../components/containers/Ride/ride.style';
 import Hero from "../components/Layout/Hero/Hero";
+import WhatWeDo from "../components/Layout/What we do/WhatWeDo";
+import Quotes from "../components/Layout/quotes/Quotes";
 
 export default function Home() {
     return (
@@ -25,6 +27,8 @@ export default function Home() {
                     <Navbar/>
                 </Sticky>
                 <Hero/>
+                <WhatWeDo/>
+                <Quotes/>
             </ContentWrapper>
         </div>
     )

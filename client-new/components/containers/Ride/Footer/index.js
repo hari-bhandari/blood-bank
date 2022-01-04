@@ -11,8 +11,8 @@ import SocialProfile from '../SocialProfile';
 import FooterWrapper, { List, ListItem } from './footer.style';
 import { menuWidget, Language_NAMES } from '../../../data/Ride';
 import { SOCIAL_PROFILES } from '../../../data/Portfolio/data';
-import AppImage from '../../../assets/image/ride/footerapp.svg';
-import PlaystoreImage from '../../../assets/image/ride/footerplay.svg';
+import AppImage from '../../../assets/image/blood/footerapp.svg';
+import PlaystoreImage from '../../../assets/image/blood/footerplay.svg';
 
 const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
   return (

@@ -236,7 +236,7 @@ export const ContentWrapper = styled.div`
 
         a {
           padding: 5px 0;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 500;
           font-family: 'Poppins', sans-serif;
           color: #15172c;

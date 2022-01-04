@@ -9,7 +9,7 @@ import { Testimonial } from '../../../data/Ride';
 import Container from '../../../components/UI/Container';
 import GlideCarousel from '../../../components/GlideCarousel';
 import GlideSlide from '../../../components/GlideCarousel/glideSlide';
-import QuoteImage from '../../../assets/image/ride/quote.svg';
+import QuoteImage from '../../../assets/image/blood/quote.svg';
 import TestimonialSectionWrapper, {
   TextWrapper,
   ImageWrapper,

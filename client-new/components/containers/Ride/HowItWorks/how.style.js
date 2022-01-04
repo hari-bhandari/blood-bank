@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Background from '../../../assets/image/ride/how_it.svg';
+import Background from '../../../assets/image/blood/how_it.svg';
 
 const HowWrapper = styled.section`
   padding: 120px 0;

@@ -3,7 +3,7 @@ const withOptimizedImages = require('next-optimized-images');
 
 const nextConfig = {
     images: {
-        domains: ['res.cloudinary.com'],
+        disableStaticImages: true
     },
 }
 // next.js configuration

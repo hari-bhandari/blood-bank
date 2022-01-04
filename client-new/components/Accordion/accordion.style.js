@@ -26,6 +26,7 @@ export const CloseIcon = styled.div`
 `;
 
 export const AccordionTitleWrapper = styled(AccordionItemHeading)`
+  margin-bottom: 20px;
   > div {
     display: flex;
     align-items: center;
@@ -49,9 +50,11 @@ export const AccordionTitleWrapper = styled(AccordionItemHeading)`
     flex-grow: 1;
   }
 `;
-export const AccordionItemButtonWrapper = styled(AccordionItemButton)``;
+export const AccordionItemButtonWrapper = styled(AccordionItemButton)`
+`;
 export const AccordionBodyWrapper = styled(AccordionItemPanel)`
   animation: 0.35s ${fadeIn} ease-in;
+  margin-bottom: 10px;
   &.accordion__body--hidden {
     animation: 0.35s ${fadeIn} ease-in;
   }

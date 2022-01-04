@@ -155,7 +155,7 @@ export const ContentWrapper = styled.div`
         }
         a {
           padding: 5px;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 400;
           color: #343d48;
           transition: 0.15s ease-in-out;

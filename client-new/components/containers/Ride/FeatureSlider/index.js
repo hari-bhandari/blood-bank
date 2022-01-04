@@ -8,11 +8,11 @@ import Heading from 'reusecore/src/elements/Heading';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import Container from '../../../components/UI/Container';
 import FeatureSliderWrapper from './featureSlider.style';
-import Image1 from '../../../assets/image/ride/mask-1.png';
-import Image2 from '../../../assets/image/ride/mask-2.png';
-import Image3 from '../../../assets/image/ride/mask-3.png';
-import Image4 from '../../../assets/image/ride/mask-1.png';
-import Image5 from '../../../assets/image/ride/mask-3.png';
+import Image1 from '../../../assets/image/blood/mask-1.png';
+import Image2 from '../../../assets/image/blood/mask-2.png';
+import Image3 from '../../../assets/image/blood/mask-3.png';
+import Image4 from '../../../assets/image/blood/mask-1.png';
+import Image5 from '../../../assets/image/blood/mask-3.png';
 
 // import DomainSection from '../container/Hosting/Domain';
 const images = [

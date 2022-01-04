@@ -12,9 +12,9 @@ import { iosNavigate } from 'react-icons-kit/ionicons/iosNavigate';
 import FeatureBlock from '../../../components/FeatureBlock';
 import Container from '../../../components/UI/Container';
 import { LocationSelectorWrap } from './locationSelection.style';
-import ImageOne from '../../../assets/image/ride/estimate.svg';
-import CarImage from '../../../assets/image/ride/car.svg';
-import VejpaImage from '../../../assets/image/ride/vejpa.svg';
+import ImageOne from '../../../assets/image/blood/estimate.svg';
+import CarImage from '../../../assets/image/blood/car.svg';
+import VejpaImage from '../../../assets/image/blood/vejpa.svg';
 
 const LocationSection = ({
   sectionWrapper,

@@ -8,8 +8,8 @@ import Image from 'reusecore/src/elements/Image';
 import Container from '../../../components/UI/Container';
 import Button from 'reusecore/src/elements/Button';
 import { OptionWrapper } from './rideOption.style';
-import DriverImage from '../../../assets/image/ride/driver-side.svg';
-import RiderImage from '../../../assets/image/ride/riding-share.svg';
+import DriverImage from '../../../assets/image/blood/driver-side.svg';
+import RiderImage from '../../../assets/image/blood/riding-share.svg';
 
 const SkillSection = ({
   sectionWrapper,

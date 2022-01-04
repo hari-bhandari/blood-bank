@@ -10,10 +10,10 @@ import Input from 'reusecore/src/elements/Input';
 import Fade from 'react-reveal/Fade';
 import Container from '../../../components/UI/Container';
 import { BannerWrapper, EmailInputWrapper } from './banner.style';
-import CarImage from '../../../assets/image/ride/car.png';
-import ManImage from '../../../assets/image/ride/man.png';
-import bannerApp from '../../../assets/image/ride/bannerApp.png';
-import bannerPlay from '../../../assets/image/ride/bannerPlay.png';
+import CarImage from '../../../assets/image/blood/car.png';
+import ManImage from '../../../assets/image/blood/man.png';
+import bannerApp from '../../../assets/image/blood/bannerApp.png';
+import bannerPlay from '../../../assets/image/blood/bannerPlay.png';
 
 const BannerSection = ({
   row,

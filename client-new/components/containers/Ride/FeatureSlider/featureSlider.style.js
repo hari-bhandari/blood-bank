@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Mockup from '../../../assets/image/ride/mobile1.png';
-import Background from '../../../assets/image/ride/mockup_bg.svg';
+import Mockup from '../../../assets/image/blood/mobile1.png';
+import Background from '../../../assets/image/blood/mockup_bg.svg';
 
 const FeatureSliderWrapper = styled.div`
   position: relative;

@@ -2,81 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client-new/components/Accordion/accordion.style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Accordion/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Context/auth/AuthState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Context/auth/authContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Context/auth/authReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Context/auth/setAuthToken.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Context/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/QueryFormCss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SignIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/useForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/pages/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Accordion/accordion.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Accordion/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/Hero/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Ride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Ride/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/WorksDone/WorksDone.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/WorksDone/WorksDone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/quotes/Quotes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/quotes/Quotes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/ScrollSpyMenu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/ScrollSpyMenu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Container/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Container/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Container/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/background.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blog-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/blog-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/car.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/car.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/driver-side.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/estimate.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/feature-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/feature-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/feature-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/footer-img-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/footer-img-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/footer-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/footer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/footerapp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/footerplay.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/hero.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/how-work.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/how_it.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mask-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mask-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mask-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mask_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mask_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mask_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mobile1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mockup.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/mockup_bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/quote.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/ride-share.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/rider side.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/riding-share.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/image/vejpa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/Accordion/accordion.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/Accordion/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/Dropdown/dropdown.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/Dropdown/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/FeatureBlock/featureBlock.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/FeatureBlock/featureBlock.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/FeatureBlock/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/GlideCarousel/glide.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/GlideCarousel/glideSlide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/GlideCarousel/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/HamburgMenu/hamburgMenu.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/HamburgMenu/hamburgMenu.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/HamburgMenu/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/List/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/List/list.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/ScrollSpyMenu/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/Tabs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/Tabs/tabs.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/UI/Container/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/components/UI/Container/style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/data/Ride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/data/Ride/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Hero/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Hero/hero.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Hero/hero.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Ride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Ride/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Ride/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Ride/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/What we do/WhatWeDo.css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/What we do/WhatWeDo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/What we do/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/What we do/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/WorksDone/WorksDone.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/WorksDone/WorksDone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/WorksDone/WorksDone.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/WorksDone/WorksDone.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/quotes/Myles_Munroe.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/Myles_Munroe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/quotes/Quotes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/quotes/Quotes.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/quotes/Winston-Churchill.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/Winston-Churchill.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/quotes/anon.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/anon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/quotes/avatar_for_now.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/avatar_for_now.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/quotes/avatar_for_now.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/avatar_for_now.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/quotes/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/pages/faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +79,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/Layout/quotes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/UI/Auth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -121,11 +88,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client-new/components/Layout/quotes" />
+      <recent name="$PROJECT_DIR$/client-new/components/UI/Auth" />
+      <recent name="$PROJECT_DIR$/client-new/components/Context/auth" />
       <recent name="$PROJECT_DIR$/client-new/components" />
-      <recent name="$PROJECT_DIR$/client-new/components/assets/image/blood" />
-      <recent name="$PROJECT_DIR$/client-new/components/theme" />
-      <recent name="$PROJECT_DIR$/client-new/components/Layout/Hero" />
+      <recent name="$PROJECT_DIR$/client-new/components/UI" />
+      <recent name="$PROJECT_DIR$/client-new/components/Layout/quotes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/components" />
@@ -217,7 +184,7 @@
       <workItem from="1641145738349" duration="3668000" />
       <workItem from="1641198512177" duration="8677000" />
       <workItem from="1641279855109" duration="12207000" />
-      <workItem from="1641326217747" duration="10826000" />
+      <workItem from="1641326217747" duration="16259000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -303,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641374836336</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="changed few styling">
+      <created>1641379858613</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641379858613</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +303,8 @@
     <MESSAGE value="added works done" />
     <MESSAGE value="fixed building error" />
     <MESSAGE value="removed svg" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed svg" />
+    <MESSAGE value="changed few styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed few styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -345,12 +320,12 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/components/Layout/quotes/data.js</url>
+          <url>file://$PROJECT_DIR$/client-new/components/UI/quotes/data.js</url>
           <line>2</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js</url>
+          <url>file://$PROJECT_DIR$/client-new/components/UI/What we do/WhatWeDo.js</url>
           <line>44</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />

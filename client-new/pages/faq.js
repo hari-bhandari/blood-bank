@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
 import Box from '../components/elements/Box';
 import Text from '../components/elements/Text';
 import Heading from '../components/elements/Heading';
-import Button from '../components/elements/Button';
 import {
     Accordion,
     AccordionItem,
@@ -18,35 +16,20 @@ import Container from '../components/Container';
 import {Icon} from 'react-icons-kit';
 import {plus} from 'react-icons-kit/entypo/plus';
 import {minus} from 'react-icons-kit/entypo/minus';
-import {ContentWrapper, GlobalStyle} from "../components/containers/ride.style";
-import {ResetCSS} from "../components/assets/css/style";
-import Sticky from "react-stickynode";
-import Navbar from "../components/Layout/Navbar/Navbar";
+
 import {FAQ_DATA} from "../components/FAQ";
+import Layout from "../components/UI/layout";
 const FaqSection = ({
                         sectionWrapper,
                         row,
                         col,
                         secTitleWrapper,
                         secHeading,
-                        secText,
                         title,
                         description,
-                        buttonWrapper,
-                        button,
                     }) => {
     return (
-        <div>
-            <link
-                href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Lato:300,400,700"
-                rel="stylesheet"
-            />
-            <GlobalStyle/>
-            <ResetCSS/>
-            <ContentWrapper>
-                <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-                    <Navbar/>
-                </Sticky>
+       <Layout>
                 <Box {...sectionWrapper}>
                     <Container>
                         <Box {...secTitleWrapper}>
@@ -91,8 +74,7 @@ const FaqSection = ({
                         </Box>
                     </Container>
                 </Box>
-            </ContentWrapper>
-        </div>
+       </Layout>
     );
 };
 

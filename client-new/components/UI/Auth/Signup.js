@@ -46,11 +46,11 @@ const Signup = () => {
             </div>
             <div className="input-field">
                 <i><FaMale/></i>
-                <input name="age" type="number" placeholder="Age" name="age" value={inputs.age} onChange={(e) => handleInputChange(e)}/>
+                <input  type="number" placeholder="Age" name="age" value={inputs.age} onChange={(e) => handleInputChange(e)}/>
             </div>
             <div className="input-field">
                 <i><FaLock/></i>
-                <input name="password" type="password" placeholder="Password" name="password" value={inputs.password} onChange={(e) => handleInputChange(e)}/>
+                <input name="password" type="password" placeholder="Password"  value={inputs.password} onChange={(e) => handleInputChange(e)}/>
             </div>
 
             <div className="queryBox">

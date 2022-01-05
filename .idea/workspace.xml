@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client-new/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +144,7 @@
       <workItem from="1641145738349" duration="3668000" />
       <workItem from="1641198512177" duration="8677000" />
       <workItem from="1641279855109" duration="12207000" />
-      <workItem from="1641326217747" duration="25138000" />
+      <workItem from="1641326217747" duration="25529000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -252,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641411597492</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added babel">
+      <created>1641411697830</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1641411697830</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +287,8 @@
     <MESSAGE value="changed few styling" />
     <MESSAGE value="added login and signup forms" />
     <MESSAGE value="added few more fields to signup form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added few more fields to signup form" />
+    <MESSAGE value="added babel" />
+    <option name="LAST_COMMIT_MESSAGE" value="added babel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

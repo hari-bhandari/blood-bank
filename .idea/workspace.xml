@@ -2,225 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/AboutUsSection/aboutUsSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/AboutUsSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/BannerSection/bannerSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/BannerSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/BlogSection/blogSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/BlogSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/CopyrightsSection/copyrightSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/CopyrightsSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/FaqSection/faqSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/FaqSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/FeatureSection/featureSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/FeatureSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/Footer/footer.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/Footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/LoginModal/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/LoginModal/loginModal.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/Navbar/navbar.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/NewsletterSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/NewsletterSection/newsletterSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/Particle/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/QualitySection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/QualitySection/qualitySection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/SearchPanel/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/SearchPanel/searchPanel.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/TeamSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/TeamSection/teamSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/TestimonialSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/TestimonialSection/testimonialSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/VideoSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/VideoSection/videoSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/WorkHistory/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/WorkHistory/workHistory.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Agency/agency.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/Banner/banner.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/Banner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/Control/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/FeatureSection/featureSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/FeatureSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/FeatureSlider/featureSlider.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/FeatureSlider/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/FeatureSliderTwo/featureSliderTwo.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/FeatureSliderTwo/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/Footer/footer.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/Footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/LoginModal/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/LoginModal/loginModal.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/Navbar/navbar.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/PartnerHistory/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/PartnerHistory/partnerHistory.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/PaymentSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/PaymentSection/paymentSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/SearchPanel/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/SearchPanel/searchPanel.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/Testimonial/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/app.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/particles/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/App/sliderDescription/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/BannerSection/bannerSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/BannerSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/BannerSlider/bannerSlider.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/BannerSlider/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/BetaSection/betaSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/BetaSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/Contact/contact.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/Contact/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/ControlSection/controlSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/ControlSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/CryptoSlides/cryptoSlides.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/CryptoSlides/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/Footer/footer.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/Footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/ScalableSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/ScalableSection/scalable.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/Transaction/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/Transaction/transaction.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/TrustedProof/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/TrustedProof/trustedProof.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Crypto/crypto.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Banner/banner.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Banner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Contact/contact.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Contact/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Domain/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Faq/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Features/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Footer/footer.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Guarantee/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Info/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Particle/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Payment/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Pricing/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Pricing/pricing.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Services/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Testimonials/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/Testimonials/testimonials.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Hosting/hosting.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Awards/awards.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Awards/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Banner/banner.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Banner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/CallToAction/callToAction.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/CallToAction/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Clients/clients.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Clients/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Contact/contact.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Contact/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Footer/footer.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/PortfolioShowcase/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/PortfolioShowcase/portfolioShowcase.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Process/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Process/process.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Skill/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Skill/skill.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/SocialProfile/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/SocialProfile/socialProfile.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Testimonial/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/Testimonial/testimonial.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Portfolio/portfolio.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Banner/banner.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Banner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Feature/feature.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Feature/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/FeatureSlider/featureSlider.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/FeatureSlider/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Footer/footer.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/HowItWorks/how.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/HowItWorks/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/LatestNews/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/LatestNews/latest.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/LocationSelection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/LocationSelection/locationSelection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/RideOption/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/RideOption/rideOption.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/SocialProfile/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/SocialProfile/socialProfile.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/TestimonialSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/TestimonialSection/testimonialSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Ride/ride.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/BannerSection/bannerSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/BannerSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/FaqSection/faqSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/FaqSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/FeatureSection/featureSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/FeatureSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/Footer/footer.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/Footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/Particle/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/PartnerSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/PartnerSection/partner.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/PricingSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/PricingSection/pricing.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/ServiceSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/ServiceSection/service.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/TestimonialSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/TestimonialSection/testimonialSection.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/TimelineSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/TimelineSection/timeline.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/TrialSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/VisitorSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/VisitorSection/visitor.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/Saas/saas.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Banner/banner.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Banner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Feature/feature.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Feature/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Footer/footer.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Newsletter/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Newsletter/newsletter.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Partner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Partner/partner.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Pricing/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Pricing/pricing.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Service/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Service/service.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Testimonial/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Testimonial/testimonial.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/TiltShape/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/TiltShape/tiltShape.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Trial/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/Trial/trial.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/UpdateScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/UpdateScreen/updateScreen.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasThree/saasThree.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Banner/banner.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Banner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Faq/faq.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Faq/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Feature/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Footer/footer.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Info/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Info/info.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Partner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Partner/partner.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Pricing/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Pricing/pricing.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Testimonial/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Testimonial/testimonial.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/TiltShape/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/TiltShape/tiltShape.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/Trial/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/UpdateScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/UpdateScreen/updateScreen.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/WorkingProcess/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/WorkingProcess/workingProcess.style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/SaasTwo/sassTwo.style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/What we do/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/What we do/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/public/vercel.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,11 +61,11 @@
       <recent name="$PROJECT_DIR$/client-new/components/Layout/Hero" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/containers" />
+      <recent name="$PROJECT_DIR$/client-new/components/containers/Ride" />
       <recent name="$PROJECT_DIR$/client-new/components/assets/image" />
       <recent name="$PROJECT_DIR$/client-new/components/Layout" />
       <recent name="$PROJECT_DIR$/client-new/components/navbar/Ride" />
-      <recent name="$PROJECT_DIR$/client/src/Components/pages" />
-      <recent name="$PROJECT_DIR$/client/src/Components/_shared" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -361,7 +150,7 @@
       <workItem from="1641145738349" duration="3668000" />
       <workItem from="1641198512177" duration="8677000" />
       <workItem from="1641279855109" duration="12207000" />
-      <workItem from="1641326217747" duration="2782000" />
+      <workItem from="1641326217747" duration="6969000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -426,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641328821244</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixed building error">
+      <created>1641368397856</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641368397856</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +246,8 @@
     <MESSAGE value="adding FAQ page" />
     <MESSAGE value="added quotes" />
     <MESSAGE value="added works done" />
-    <option name="LAST_COMMIT_MESSAGE" value="added works done" />
+    <MESSAGE value="fixed building error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed building error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -469,6 +266,12 @@
           <url>file://$PROJECT_DIR$/client-new/components/Layout/quotes/data.js</url>
           <line>2</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js</url>
+          <line>44</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

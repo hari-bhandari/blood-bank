@@ -7,6 +7,7 @@ import Image from '../../elements/Image';
 import Container from '../../../components/UI/Container';
 import ProcessItem, {ProcessIndex} from './WhatWeDo.css';
 import {PROCESS_ITEMS} from './data'
+
 const WorkingProcessSection = ({
                                    sectionWrapper,
                                    secTitleWrapper,
@@ -30,21 +31,25 @@ const WorkingProcessSection = ({
                 </Box>
 
                 <Box {...processRow}>
-                    {PROCESS_ITEMS.map((item, index) => (
+                    {PROCESS_ITEMS.map(({Icon, title, description}, index) => (
                         <Box
                             {...processCol}
                             key={`process-item-${index}`}
                             className="process_item_col"
                         >
                             <ProcessItem className="process_item">
-                                <ProcessIndex>{item.index || index + 1}</ProcessIndex>
-                                <Image
-                                    src={item.image}
-                                    alt={`process-image-${index + 1}`}
-                                    {...processImageStyle}
-                                />
-                                <Heading as="h3" content={item.title} {...processTitleStyle} />
-                                <Text content={item.description} {...processDescriptionStyle} />
+                                <ProcessIndex>{index + 1}</ProcessIndex>
+
+                                {index == 0 && <Icon size={100} color={"#FD979C"}/>}
+                                {index == 1 && <Icon size={100} color={"#118489"}/>}
+                                {index == 2 && <Icon size={100} color={"#1c68c7"}/>}
+                                {/*<Image*/}
+                                {/*    src={item.image}*/}
+                                {/*    alt={`process-image-${index + 1}`}*/}
+                                {/*    {...processImageStyle}*/}
+                                {/*/>*/}
+                                <Heading as="h3" content={title} {...processTitleStyle} />
+                                <Text content={description} {...processDescriptionStyle} />
                             </ProcessItem>
                         </Box>
                     ))}

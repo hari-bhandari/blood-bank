@@ -2,85 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client-new/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/useForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/useForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/AuthGlobal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/SignIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/Signup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Auth/useForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/CardCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/DonorCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/NavbarElements.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/Sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/Sidebar/SidebarCss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Navbar/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/BackButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/CentralizeDiv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/EmptyMessageBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/ImageModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/Loading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/PageHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/ProfilePicture.js/ProfilePicture.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/Query/QueryForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/Query/QueryFormCss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/Query/SelectComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/_shared/Query/UseDonorQuery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/ChangeImage/ChangeImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/FAQ/FAQ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/FAQ/FAQCss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/FAQ/FAQPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/LoggedIn/ListOfDonors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/LoggedIn/ListOfRequests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/Profile/ProfilePageCss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/Profile/UserPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/UploadPhoto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/bloodRequest/RequestBloodFormCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/donors/DonorItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/donors/DonorItemCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/donors/Donors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/requests/RequestCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/requests/RequestCardCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/pages/requests/Requests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/sharedUtils/UseInfiniteQuery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/sharedUtils/queries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/sharedUtils/sharedData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/sharedUtils/useQuery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/sharedUtils/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Context/auth/AuthState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Context/auth/authContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Context/auth/authReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Context/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/util/setAuthToken.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/babel.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +145,7 @@
       <workItem from="1641145738349" duration="3668000" />
       <workItem from="1641198512177" duration="8677000" />
       <workItem from="1641279855109" duration="12207000" />
-      <workItem from="1641326217747" duration="24816000" />
+      <workItem from="1641326217747" duration="25138000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -321,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641397488439</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added few more fields to signup form">
+      <created>1641411597492</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641411597492</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +280,8 @@
     <MESSAGE value="removed svg" />
     <MESSAGE value="changed few styling" />
     <MESSAGE value="added login and signup forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="added login and signup forms" />
+    <MESSAGE value="added few more fields to signup form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added few more fields to signup form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

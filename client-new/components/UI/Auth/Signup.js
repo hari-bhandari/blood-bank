@@ -1,36 +1,36 @@
-import React,{useContext,useEffect} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {useLoginForm} from "./useForm";
-import {districts,bloodType,turnIntoSelectFormat} from "./data";
+import {districts, bloodType, turnIntoSelectFormat} from "./data";
 import SelectComponent from "./SelectComponent";
 import {QueryContainer} from "./QueryFormCss";
 import AuthContext from "../../Context/auth/authContext";
-import {FaLock,FaPhone,FaUser,FaEnvelope} from "react-icons/fa";
+import {FaLock, FaPhone, FaUser, FaEnvelope,FaMale} from "react-icons/fa";
 
 const Signup = () => {
-    const authContext=useContext(AuthContext);
-    const {register,isAuthenticated}=authContext;
-    const districtOptions=turnIntoSelectFormat(districts)
-    const bloodOptions=turnIntoSelectFormat(bloodType)
-    const {inputs,handleInputChange}=useLoginForm()
-    useEffect(()=>{
-        if(isAuthenticated){
+    const authContext = useContext(AuthContext);
+    const {register, isAuthenticated} = authContext;
+    const districtOptions = turnIntoSelectFormat(districts)
+    const bloodOptions = turnIntoSelectFormat(bloodType)
+    const {inputs, handleInputChange, handleInputChangeManually,handleInputForCheckbox} = useLoginForm()
+    useEffect(() => {
+        if (isAuthenticated) {
             // props.history.push('/')
         }
-    },[])
-    const onRegister=(e)=>{
+    }, [])
+    const onRegister = (e) => {
         e.preventDefault()
         register(inputs)
     }
 
     const handleChangeForBlood = selectedOption => {
-        // handleChangeManual("bloodType",selectedOption.value)
+        handleInputChangeManually("bloodType", selectedOption.value)
     };
     const handleChangeForDistrict = selectedOption => {
-        // handleChangeManual("district",selectedOption.value)
+        handleInputChangeManually("district", selectedOption.value)
     };
 
     return (
-        <form  className="sign-up-form" onSubmit={onRegister} >
+        <form className="sign-up-form" onSubmit={onRegister}>
             <h2 className="title">Sign up</h2>
             <div className="input-field">
                 <i><FaPhone/></i>
@@ -42,23 +42,27 @@ const Signup = () => {
             </div>
             <div className="input-field">
                 <i><FaEnvelope/></i>
-                <input name="email" type="email" placeholder="Email" value={inputs.email} onChange={handleInputChange} />
+                <input name="email" type="email" placeholder="Email" value={inputs.email} onChange={handleInputChange}/>
             </div>
-
+            <div className="input-field">
+                <i><FaMale/></i>
+                <input name="age" type="number" placeholder="Age" name="age" value={inputs.age} onChange={(e) => handleInputChange(e)}/>
+            </div>
             <div className="input-field">
                 <i><FaLock/></i>
-                <input name="password"  type="password" placeholder="Password" name="password" value={inputs.password} onChange={(e)=>handleInputChange(e)}/>
+                <input name="password" type="password" placeholder="Password" name="password" value={inputs.password} onChange={(e) => handleInputChange(e)}/>
             </div>
 
             <div className="queryBox">
                 <QueryContainer>
-                <SelectComponent  options={bloodOptions} isMulti={false}  onChange={handleChangeForBlood} defaultLabel={"Choose your district"}/>
-                <SelectComponent options={districtOptions} isMulti={false}  onChange={handleChangeForDistrict} defaultLabel={"Choose your blood type"}/>
+                    <SelectComponent options={bloodOptions} isMulti={false} onChange={handleChangeForBlood} width={130} defaultLabel={"Blood Type"}/>
+                    <SelectComponent options={districtOptions} isMulti={false} onChange={handleChangeForDistrict} width={200} defaultLabel={"District"}/>
                 </QueryContainer>
 
             </div>
-            <p className="signup-agreement">By signing up,You're accepting to show your contact information and blood group to people in need</p>
-            <input type="submit" className="btn" value="Sign up"  />
+            
+            <p className="signup-agreement"><input type="checkbox" value={inputs.shareInformation} name={'shareInformation'} onChange={handleInputForCheckbox}/>Please tick this box if you want to share your information publicly with other users within this site! </p>
+            <input type="submit" className="btn" value="Sign up"/>
         </form>
     );
 };

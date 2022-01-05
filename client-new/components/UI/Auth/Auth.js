@@ -38,7 +38,6 @@ const Auth = () => {
                 <div className="signin-signup" >
                 <SignIn/>
                 <Signup/>
-
                 </div>
             </div>
 

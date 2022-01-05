@@ -141,7 +141,7 @@
       <workItem from="1641145738349" duration="3668000" />
       <workItem from="1641198512177" duration="8677000" />
       <workItem from="1641279855109" duration="12207000" />
-      <workItem from="1641326217747" duration="25955000" />
+      <workItem from="1641326217747" duration="26174000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641412114863</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added _document.js">
+      <created>1641412686797</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1641412686797</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +300,8 @@
     <MESSAGE value="added few more fields to signup form" />
     <MESSAGE value="added babel" />
     <MESSAGE value="fixed props error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed props error" />
+    <MESSAGE value="added _document.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="added _document.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

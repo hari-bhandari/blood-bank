@@ -7,7 +7,7 @@ import Heading from '../../elements/Heading';
 import Button from '../../elements/Button';
 import Input from '../../elements/Input';
 import Fade from 'react-reveal/Fade';
-import Container from '../../../components/UI/Container';
+import Container from '../../Container';
 import {BannerWrapper, EmailInputWrapper} from './hero.style';
 import Image from "../../elements/Image";
 import BannerApp from '../../assets/image/bannerApp.png'

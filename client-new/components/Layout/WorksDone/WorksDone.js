@@ -8,7 +8,7 @@ import Text from '../../elements/Text';
 import Heading from '../../elements/Heading';
 import Button from '../../elements/Button';
 import FeatureBlock from '../../../components/FeatureBlock';
-import Container from '../../../components/UI/Container';
+import Container from '../../Container';
 import WorkHistoryWrapper, { CounterUpArea } from './WorksDone.style';
 
 const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {

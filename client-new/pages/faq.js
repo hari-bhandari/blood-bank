@@ -14,7 +14,7 @@ import {
     OpenIcon,
     CloseIcon,
 } from '../components/Accordion';
-import Container from '../components/UI/Container';
+import Container from '../components/Container';
 import {Icon} from 'react-icons-kit';
 import {plus} from 'react-icons-kit/entypo/plus';
 import {minus} from 'react-icons-kit/entypo/minus';

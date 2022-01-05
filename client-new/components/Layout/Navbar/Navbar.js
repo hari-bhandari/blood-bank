@@ -5,11 +5,10 @@ import Drawer from '../../elements/Drawer';
 import Logo from '../../elements/UI/Logo';
 import Box from '../../elements/Box';
 import HamburgerMenu from '../../HamburgMenu';
-import Container from '../../UI/Container';
+import Container from '../../Container';
 import ScrollSpyMenu from '../../ScrollSpyMenu';
 import LogoImage from './Ride/logo.svg';
-import {MENU_LEFT_ITEMS} from "./Ride";
-import {MENU_ITEMS, MENU_RIGHT_ITEMS} from "../../data/Ride";
+import {MENU_ITEMS, MENU_RIGHT_ITEMS,MENU_LEFT_ITEMS} from "../../data/Ride";
 
 const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
     const[isOpen,setIsOpen]=useState(false)
@@ -23,14 +22,14 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
             <Container noGutter mobileGutter width="1200px">
                 <Box {...row}>
                     <Logo
-                        href="#"
+                        href="/"
                         logoSrc={LogoImage}
                         title="Portfolio"
                         logoStyle={logoStyle}
                         className="main-logo"
                     />
                     <Logo
-                        href="#"
+                        href="/"
                         logoSrc={LogoImage}
                         title="Portfolio"
                         logoStyle={logoStyle}

@@ -5,7 +5,7 @@ import Heading from '../../elements/Heading';
 import Button from '../../elements/Button';
 import Image from '../../elements/Image';
 import { Testimonial } from './data';
-import Container from '../../../components/UI/Container';
+import Container from '../../Container';
 import GlideCarousel from '../../../components/GlideCarousel';
 import GlideSlide from '../../../components/GlideCarousel/glideSlide';
 import TestimonialSectionWrapper, {

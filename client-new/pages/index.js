@@ -7,7 +7,7 @@ import {ResetCSS} from '../components/assets/css/style';
 import {
     GlobalStyle,
     ContentWrapper,
-} from '../components/containers/Ride/ride.style';
+} from '../components/containers/ride.style';
 import Hero from "../components/Layout/Hero/Hero";
 import WhatWeDo from "../components/Layout/What we do/WhatWeDo";
 import Quotes from "../components/Layout/quotes/Quotes";

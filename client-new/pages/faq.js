@@ -18,7 +18,7 @@ import Container from '../components/UI/Container';
 import {Icon} from 'react-icons-kit';
 import {plus} from 'react-icons-kit/entypo/plus';
 import {minus} from 'react-icons-kit/entypo/minus';
-import {ContentWrapper, GlobalStyle} from "../components/containers/Ride/ride.style";
+import {ContentWrapper, GlobalStyle} from "../components/containers/ride.style";
 import {ResetCSS} from "../components/assets/css/style";
 import Sticky from "react-stickynode";
 import Navbar from "../components/Layout/Navbar/Navbar";

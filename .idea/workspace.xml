@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/What we do/WhatWeDo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/What we do/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/What we do/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Ride/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Layout/Navbar/Ride/logo.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +145,7 @@
       <workItem from="1641145738349" duration="3668000" />
       <workItem from="1641198512177" duration="8677000" />
       <workItem from="1641279855109" duration="12207000" />
-      <workItem from="1641326217747" duration="6969000" />
+      <workItem from="1641326217747" duration="8401000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -222,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641368397856</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="removed svg">
+      <created>1641373416273</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641373416273</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +249,8 @@
     <MESSAGE value="added quotes" />
     <MESSAGE value="added works done" />
     <MESSAGE value="fixed building error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed building error" />
+    <MESSAGE value="removed svg" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed svg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

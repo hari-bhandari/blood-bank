@@ -36,8 +36,6 @@ const DonateSection = ({ row, col }) => {
 
     const handleDonation = e => {
         e.preventDefault();
-        console.log('Donation form data: ', state);
-
         setState({
             ...state,
             price: '',

@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client-new/components/InputGroup/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/InputGroup/inputGroup.style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/RadioGroup/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/RadioGroup/radioGroup.style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Donate/Donate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Donate/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Donate/donate.style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/hooks/useOnClickOutside.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/donate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Donate/Donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Donate/Donate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +145,7 @@
       <workItem from="1641198512177" duration="8677000" />
       <workItem from="1641279855109" duration="12207000" />
       <workItem from="1641326217747" duration="26174000" />
-      <workItem from="1641451424352" duration="3571000" />
+      <workItem from="1641451424352" duration="4115000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -283,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641412686797</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added donation page">
+      <created>1641455149781</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1641455149781</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +312,8 @@
     <MESSAGE value="added babel" />
     <MESSAGE value="fixed props error" />
     <MESSAGE value="added _document.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="added _document.js" />
+    <MESSAGE value="added donation page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added donation page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

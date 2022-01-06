@@ -1,6 +1,6 @@
 import React, {useContext, useEffect} from 'react';
 import {useLoginForm} from "./useForm";
-import {districts, bloodType, turnIntoSelectFormat} from "./data";
+import {districts, bloodType, turnIntoSelectFormat} from "../data";
 import SelectComponent from "./SelectComponent";
 import {QueryContainer} from "./QueryFormCss";
 import AuthContext from "../../Context/auth/authContext";

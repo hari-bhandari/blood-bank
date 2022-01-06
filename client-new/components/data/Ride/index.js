@@ -62,7 +62,7 @@ export const MENU_RIGHT_ITEMS = [
   },
   {
     label: 'Sign Up',
-    path: '/register',
+    path: '/login',
     offset: '70',
   },
 ];

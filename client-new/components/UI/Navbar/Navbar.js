@@ -50,13 +50,20 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
                         <Drawer
                             width="420px"
                             placement="right"
-                            drawerHandler={<HamburgerMenu barColor="#3444f1"/>}
+                            drawerHandler={<HamburgerMenu barColor="white"/>}
                             open={isOpen}
                             toggleHandler={toggleHandler}
                         >
                             <ScrollSpyMenu
                                 className="mobile_menu"
                                 menuItems={MENU_ITEMS}
+                                drawerClose={true}
+                                offset={-100}
+                            />
+
+                            <ScrollSpyMenu
+                                className="mobile_menu"
+                                menuItems={MENU_RIGHT_ITEMS}
                                 drawerClose={true}
                                 offset={-100}
                             />

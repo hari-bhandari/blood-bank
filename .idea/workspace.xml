@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/EmptyMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/useInfinityQuery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Donate/Donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Donate/Donate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/Ride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/data/Ride/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +65,11 @@
       <recent name="$PROJECT_DIR$/client-new/components/Context/auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/UI" />
       <recent name="$PROJECT_DIR$/client-new/components" />
       <recent name="$PROJECT_DIR$/client-new/components/components" />
       <recent name="$PROJECT_DIR$/client-new/components/containers" />
       <recent name="$PROJECT_DIR$/client-new/components/containers/Ride" />
-      <recent name="$PROJECT_DIR$/client-new/components/assets/image" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -145,7 +155,7 @@
       <workItem from="1641198512177" duration="8677000" />
       <workItem from="1641279855109" duration="12207000" />
       <workItem from="1641326217747" duration="26174000" />
-      <workItem from="1641451424352" duration="4115000" />
+      <workItem from="1641451424352" duration="6292000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -280,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641455149781</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added donation page">
+      <created>1641455543409</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1641455543409</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

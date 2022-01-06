@@ -32,7 +32,7 @@ app.use(cors())
 //routes
 app.use('/api/auth',auth)
 app.use('/api/help',blood)
-app.use('/api/donors.js',donors)
+app.use('/api/donors',donors)
 //error
 app.use(errorHandler)
 const __dirname = Path.resolve()

@@ -13,45 +13,6 @@ export const RequestsContainer = styled.div`
   //background-attachment: fixed;
   position: relative;
 
-  @media (max-width: 1750px) {
-    background-size: 900px;
-  }
-  @media (max-width: 1600px) {
-    background-position: 102% center;
-    background-size: 800px;
-    height: 94vh;
-  }
-  @media (max-width: 1440px) {
-    background-position: 106% center;
-    height: 93vh;
-    background-size: contain;
-    margin-top: 0;
-  }
-  @media (max-width: 1280px) {
-    background-position: 102% center;
-    background-size: contain;
-    height: 100%;
-    margin-bottom: 60px;
-    margin-top: 0;
-  }
-  @media (max-width: 1024px) {
-    background-position: 135% center;
-    background-size: contain;
-    height: 100%;
-    margin-bottom: 60px;
-    overflow: hidden;
-  }
-  @media (max-width: 990px) {
-    background-size: contain;
-    height: 100%;
-    margin-bottom: 0px;
-    overflow: hidden;
-    background: #FF8D87 none 100% center;
-    padding-bottom: 100px;
-  }
-  @media (max-width: 480px) {
-    padding-bottom: 70px;
-  }
 `
 export const InsiderContainer = styled.div`
   width: 100%;

@@ -2,10 +2,7 @@ import Blood from "../models/Blood.js";
 import asyncHandler from "../middlewares/async.js";
 import User from "../models/User.js";
 import ErrorResponse from "../utils/errorResponse.js";
-import mongoose from 'mongoose'
-import {Buffer} from 'buffer'
 import path from 'path'
-import sharp from "sharp";
 export const requestForDonor=  asyncHandler(async (req,res,next)=>{
     //add user to req.body
     req.body.user=req.user.id;

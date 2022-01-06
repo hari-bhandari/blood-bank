@@ -4,51 +4,56 @@ import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import districts from "../data/districts.js";
 //Initialize
-const UserSchema=new mongoose.Schema({
-    name:{
-        type:String,
-        required:[true,'please add your name']
+const UserSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: [true, 'please add your name']
     },
     email: {
         type: String,
-        required: [true,'please add an email'],
+        required: [true, 'please add an email'],
         match: [
             /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
             'Please add a valid email'
         ],
-        unique:true
+        unique: true
     },
-    password:{
-        type:String,
-        required:[true,'Please add a password'],
-        minLength:6,
-        maxLength:30,
-        select:false
+    age: {
+        type: Number,
+        min: [17,'You must be at least 17 years old to donate blood '],
+        max: [66,'You can\'t donate blood if you are over 65 years old ']
     },
-    phone:{
-        type:Number,
-        required:[true,'Please add a Phone Number'],
-        minLength:8,
-        maxLength:12,
+    password: {
+        type: String,
+        required: [true, 'Please add a password'],
+        minLength: 6,
+        maxLength: 30,
+        select: false
+    },
+    phone: {
+        type: Number,
+        required: [true, 'Please add a Phone Number'],
+        minLength: 8,
+        maxLength: 12,
     },
     image: {
-        type:String,
-        default:'noProfile.png'
+        type: String,
+        default: 'noProfile.png'
     },
-    bloodType:{
-        type:String,
+    bloodType: {
+        type: String,
         required: [true, 'Please specify a blood type'],
-        enum:['A+','A-','B+','B-','C-','C+','O+','O-','AB+','AB-']
+        enum: ['A+', 'A-', 'B+', 'B-', 'C-', 'C+', 'O+', 'O-', 'AB+', 'AB-']
     },
-    district:{
-        type:String,
+    district: {
+        type: String,
         required: [true, 'Please enter your district'],
-        enum:districts
+        enum: districts
     },
-    resetPasswordToken:String,
-    resetPasswordExpire:Date,
+    resetPasswordToken: String,
+    resetPasswordExpire: Date,
     createdAt: {
-        type:Date,
+        type: Date,
         default: Date.now
     },
 
@@ -65,7 +70,7 @@ UserSchema.pre('save', async function (next) {
 
 // Sign JWT and return
 UserSchema.methods.getSignedJwtToken = function () {
-    return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
+    return jwt.sign({id: this._id}, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRE,
     });
 };
@@ -92,4 +97,4 @@ UserSchema.methods.getResetPasswordToken = function () {
     return resetToken;
 };
 
-export default mongoose.model('User',UserSchema)
+export default mongoose.model('User', UserSchema)

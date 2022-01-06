@@ -136,6 +136,9 @@ export const ContentWrapper = styled.div`
   .sticky-inner-wrapper {
     transform: none !important;
   }
+  sticky-nav-active{
+    
+  }
 
   .sticky-nav-active {
     .hosting_navbar {

@@ -18,7 +18,7 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
     };
 
     return (
-        <NavbarWrapper {...navbarStyle}>
+        <NavbarWrapper {...navbarStyle} >
             <Container noGutter mobileGutter width="1200px">
                 <Box {...row}>
                     <Logo
@@ -88,6 +88,7 @@ Navbar.defaultProps = {
         className: 'hosting_navbar',
         minHeight: '70px',
         display: 'block',
+
     },
     row: {
         flexBox: true,

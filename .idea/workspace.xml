@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client-new/components/UploadComponent/PhotoUpload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UploadComponent/ReactUpload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/cloudinary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/dURIFormatter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/pages/signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Content/BloodRequests.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/Content/BloodRequests.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Content/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/Content/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Blood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UploadComponent/ReactUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UploadComponent/ReactUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/data/Ride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/data/Ride/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/upload.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/UI/Donate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -64,11 +58,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/pages" />
       <recent name="$PROJECT_DIR$/client-new/components/UI/Donate" />
       <recent name="$PROJECT_DIR$/client-new" />
       <recent name="$PROJECT_DIR$/client-new/components" />
       <recent name="$PROJECT_DIR$/client-new/components/UI/Auth" />
-      <recent name="$PROJECT_DIR$/client-new/components/Context/auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/components/UI" />
@@ -162,7 +156,7 @@
       <workItem from="1641279855109" duration="12207000" />
       <workItem from="1641326217747" duration="26174000" />
       <workItem from="1641451424352" duration="21148000" />
-      <workItem from="1641541126230" duration="12623000" />
+      <workItem from="1641541126230" duration="15921000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -346,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641545630676</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added route to upload images">
+      <created>1641555245283</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1641555245283</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +384,8 @@
     <MESSAGE value="added blank donors page" />
     <MESSAGE value="added donors card" />
     <MESSAGE value="added donors page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added donors page" />
+    <MESSAGE value="added route to upload images" />
+    <option name="LAST_COMMIT_MESSAGE" value="added route to upload images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

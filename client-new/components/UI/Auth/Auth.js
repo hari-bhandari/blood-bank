@@ -4,7 +4,7 @@ import {toast} from "react-toastify";
 import {AuthGlobal} from './AuthGlobal'
 import SignIn from "./SignIn";
 import Signup from "./Signup";
-const Auth = () => {
+const Auth = ({login}) => {
     const authContext=useContext(AuthContext);
     const {isAuthenticated,error,clearErrors}=authContext;
     useEffect(()=>{
@@ -26,7 +26,7 @@ const Auth = () => {
             clearErrors()}
     },[error])
 
-    const [Login,setLogin]=useState(false)
+    const [Login,setLogin]=useState(login)
     const onClick=()=>{
         setLogin(!Login)
     }

@@ -4,7 +4,7 @@ import Auth from "../components/UI/Auth/Auth";
 const Login = () => {
     return (
         <Layout>
-            <Auth/>
+            <Auth login={true}/>
         </Layout>
     );
 };

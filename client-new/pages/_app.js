@@ -1,4 +1,5 @@
 import '../components/assets/css/flaticon.css';
+import '../styles/globals.css';
 import AuthState from "../components/Context/auth/AuthState";
 
 function MyApp({Component, pageProps}) {

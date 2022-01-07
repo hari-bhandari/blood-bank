@@ -10,7 +10,8 @@ export const AuthGlobal=styled.div`
   input {
     font-family: "Poppins", sans-serif;
   }
-  .signup-agreement{
+
+  .signup-agreement {
     max-width: 500px;
   }
 
@@ -86,7 +87,7 @@ export const AuthGlobal=styled.div`
   .queryBox {
     max-width: 380px;
     width: 100%;
-    margin: 0 0 2px 0;
+    margin: 10px 0;
     grid-template-columns: 15% 85%;
     padding: 0 0.4rem;
     position: relative;
@@ -94,7 +95,7 @@ export const AuthGlobal=styled.div`
 
   .input-field i {
     text-align: center;
-    line-height: 53px;
+    line-height: 55px;
     color: #acacac;
     transition: 0.5s;
     font-size: 1.1rem;
@@ -147,7 +148,7 @@ export const AuthGlobal=styled.div`
 
   .btn {
     width: 150px;
-    background-color: #5995fd;
+    background-color: #2765d2;
     border: none;
     outline: none;
     height: 49px;
@@ -163,6 +164,7 @@ export const AuthGlobal=styled.div`
   .btn:hover {
     background-color: #4d84e2;
   }
+
   .panels-container {
     position: absolute;
     height: 100%;
@@ -181,8 +183,8 @@ export const AuthGlobal=styled.div`
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background: #FA867B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FA867B, #FA867B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #FA867B; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FA867B, #FA867B); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FA867B, #FA867B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     border-radius: 50%;
@@ -236,7 +238,7 @@ export const AuthGlobal=styled.div`
     background: red;
     border: 2px solid yellow;
     width: 150px;
-    height: 53px;
+    height: 55px;
     font-weight: 600;
     font-size: 0.8rem;
   }
@@ -291,9 +293,11 @@ export const AuthGlobal=styled.div`
       min-height: 800px;
       height: 80vh;
     }
-    .quote-text{
+
+    .quote-text {
       font-size: 1rem !important;
     }
+
     .signin-signup {
       width: 100%;
       top: 95%;
@@ -400,9 +404,11 @@ export const AuthGlobal=styled.div`
     .image {
       display: none;
     }
+
     .panel .content {
       padding: 0.5rem 1rem;
     }
+
     .container {
       padding: 1.5rem;
     }
@@ -417,9 +423,138 @@ export const AuthGlobal=styled.div`
       left: 50%;
     }
   }
-  .signup-input{
-      margin:0px 0px 2px 0px;
+
+  .signup-input {
+    margin: 5px 0px;
   }
 
+  //for file uplaod react
+  .fileContainer {
+    font-family: 'Poppins', serif;
+    background: rgba(255, 176, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+    transition: all 0.3s ease-in;
+  }
+
+  .fileContainer input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .fileContainer p {
+    font-size: 18px;
+    margin: 8px 0 4px;
+  }
+
+  .fileContainer .errorsContainer {
+    max-width: 300px;
+    font-size: 12px;
+    color: red;
+    text-align: left;
+  }
+
+  .fileContainer .chooseFileButton {
+    padding: 6px 23px;
+    background: #036fec;
+
+    border-radius: 30px;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+
+  .fileContainer .chooseFileButton:hover {
+    background: #bd2626;
+  }
+
+  .fileContainer .uploadFilesButton {
+    padding: 5px 43px;
+    background: transparent;
+    border-radius: 30px;
+    color: #3f4257;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #3f4257;
+  }
+
+  .fileContainer .uploadFilesButton:hover {
+    background: #bd2626;
+    color: #fff;
+  }
+
+  .fileContainer .uploadIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .fileContainer .uploadPicturesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .fileContainer .uploadPictureContainer {
+    width: 25%;
+    margin: 5%;
+    padding: 10px;
+    background: #edf2f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d0dbe4;
+    position: relative;
+  }
+
+  .fileContainer .uploadPictureContainer img.uploadPicture {
+    width: 100%;
+  }
+
+  .fileContainer .deleteImage {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    color: #fff;
+    background: #ff4081;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .flipMove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 `
 

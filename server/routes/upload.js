@@ -5,7 +5,6 @@ import asyncHandler from '../middlewares/async.js'
 // @route   GET /api/products/top
 // @access  Public
 const uploadImage = asyncHandler(async (req, res) => {
-    console.log(req.files)
     if(req.files){
         let links=[]
         const files = req.files;

@@ -87,7 +87,7 @@ export const AuthGlobal=styled.div`
   .queryBox {
     max-width: 380px;
     width: 100%;
-    margin: 10px 0;
+    margin: 5px 0;
     grid-template-columns: 15% 85%;
     padding: 0 0.4rem;
     position: relative;

@@ -1,10 +1,12 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {useLoginForm} from "./useForm";
 import {districts, bloodType, turnIntoSelectFormat} from "../data";
-import SelectComponent from "./SelectComponent";
+import SelectComponent, {UploadImagesToCloud} from "./SelectComponent";
 import AuthContext from "../../Context/auth/authContext";
 import {FaLock, FaPhone, FaUser, FaEnvelope, FaMale} from "react-icons/fa";
 import PhotoUpload from "../../UploadComponent/PhotoUpload";
+import {emptyValue} from "./helper";
+import Toast from "light-toast";
 
 const Signup = () => {
     const authContext = useContext(AuthContext);
@@ -14,23 +16,47 @@ const Signup = () => {
     const {inputs, handleInputChange, handleInputChangeManually, handleInputForCheckbox} = useLoginForm()
     const [step, setStep] = useState(0)
     const [profile, setProfilePicture] = useState([])
-    const onClick = () => {
-        if (step === 0) {
-            setStep(1)
-        } else {
-
-        }
-    }
     useEffect(() => {
         if (isAuthenticated) {
             // props.history.push('/')
         }
     }, [])
-    const onRegister = (e) => {
+    const onRegister = async (e) => {
         e.preventDefault()
-        register(inputs)
-    }
+        if (step === 0) {
+            if (!emptyValue(inputs.name)) {
+                return Toast.fail('Please re-check your value for Name')
+            }
+            if (!emptyValue(inputs.phone.replace('+977', ''))) {
+                return Toast.fail('Please re-check your value for Phone')
+            }
+            if (!emptyValue(inputs.age)) {
+                return Toast.fail('Please re-check your value for Age')
+            }
+            if (!emptyValue(inputs.password)) {
+                return Toast.fail('Please re-check your value for Password')
+            }
+            setStep(1)
 
+        } else {
+            const imageLink = await UploadImagesToCloud(profile)
+            if (imageLink.success === false) {
+                return Toast.fail('Profile Picture uploading failed, Try again')
+            }
+            if (!emptyValue(inputs.district)) {
+                return Toast.fail('Please re-check your value for Password')
+            }
+            if (!emptyValue(inputs.bloodType)) {
+                return Toast.fail('Please re-check your value for Password')
+            }
+            const {name, email, district, bloodType, phone,password, shareInformation} = inputs
+            console.log(imageLink.images)
+            register({
+                name, email, district, bloodType, phone,password,
+                image: imageLink.images.length > 0 ? imageLink.images[0] : null, shareInformation
+            })
+        }
+    }
     const handleChangeForBlood = selectedOption => {
         handleInputChangeManually("bloodType", selectedOption.value)
     };
@@ -77,12 +103,12 @@ const Signup = () => {
                         <SelectComponent options={bloodOptions} height={55} borderRadius={'15px'} isMulti={false} onChange={handleChangeForBlood} defaultLabel={"Blood Type"}/>
                     </div>
                     <div className="queryBox">
-                        <SelectComponent options={districtOptions} height={55} borderRadius={'15px'}   isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"District"}/>
+                        <SelectComponent options={districtOptions} height={55} borderRadius={'15px'} isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"District"}/>
                     </div>
                     <p className="signup-agreement"><input type="checkbox" value={inputs.shareInformation} name={'shareInformation'} onChange={handleInputForCheckbox}/>Please tick this box if you want to publicly share your number and help patients find you easily </p>
 
                 </>}
-            <input type="submit" className="btn" onClick={onClick} value={step == 1 ? 'Sign Up' : 'Next'}/>
+            <input type="submit" className="btn" value={step == 1 ? 'Sign Up' : 'Next'}/>
         </form>
     );
 };

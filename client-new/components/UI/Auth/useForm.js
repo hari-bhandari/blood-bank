@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 const useLoginForm = () => {
-    const [inputs, setInputs] = useState({phone:'+977'});
+    const [inputs, setInputs] = useState({phone:'+977',shareInformation:false});
     const handleInputChange = (event) => {
         event.persist();
         setInputs((inputs) => ({...inputs, [event.target.name]: event.target.value}));

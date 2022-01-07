@@ -32,33 +32,32 @@ const Signup = () => {
     return (
         <form className="sign-up-form" onSubmit={onRegister}>
             <h2 className="title">Sign up</h2>
-            <div className="input-field">
+            <div className="input-field signup-input">
                 <i><FaPhone/></i>
                 <input id="phone" name="phone" type="phone" placeholder="Phone Number" value={inputs.phone} onChange={handleInputChange}/>
             </div>
-            <div className="input-field">
+            <div className="input-field signup-input">
                 <i><FaUser/></i>
                 <input id="name" name="name" type="text" placeholder="Full Name" value={inputs.name} onChange={handleInputChange}/>
             </div>
-            <div className="input-field">
+            <div className="input-field signup-input">
                 <i><FaEnvelope/></i>
                 <input name="email" type="email" placeholder="Email" value={inputs.email} onChange={handleInputChange}/>
             </div>
-            <div className="input-field">
+            <div className="input-field signup-input">
                 <i><FaMale/></i>
                 <input  type="number" placeholder="Age" name="age" value={inputs.age} onChange={(e) => handleInputChange(e)}/>
             </div>
-            <div className="input-field">
+            <div className="input-field signup-input">
                 <i><FaLock/></i>
                 <input name="password" type="password" placeholder="Password"  value={inputs.password} onChange={(e) => handleInputChange(e)}/>
             </div>
 
             <div className="queryBox">
-                <QueryContainer>
-                    <SelectComponent options={bloodOptions} isMulti={false} onChange={handleChangeForBlood} width={130} defaultLabel={"Blood Type"}/>
-                    <SelectComponent options={districtOptions} isMulti={false} onChange={handleChangeForDistrict} width={200} defaultLabel={"District"}/>
-                </QueryContainer>
-
+                    <SelectComponent options={bloodOptions} isMulti={false} onChange={handleChangeForBlood} defaultLabel={"Blood Type"}/>
+            </div>
+            <div className="queryBox">
+                <SelectComponent options={districtOptions} isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"District"}/>
             </div>
             
             <p className="signup-agreement"><input type="checkbox" value={inputs.shareInformation} name={'shareInformation'} onChange={handleInputForCheckbox}/>Please tick this box if you want to share your information publicly with other users within this site! </p>

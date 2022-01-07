@@ -74,7 +74,7 @@ export const AuthGlobal=styled.div`
     max-width: 380px;
     width: 100%;
     background-color: #f0f0f0;
-    margin: 10px 0;
+    margin: 5px 0;
     height: 55px;
     border-radius: 55px;
     display: grid;
@@ -84,15 +84,17 @@ export const AuthGlobal=styled.div`
   }
 
   .queryBox {
-    max-width: 500px;
-    width: calc(100% + 40px);
+    max-width: 380px;
+    width: 100%;
+    margin: 0 0 2px 0;
+    grid-template-columns: 15% 85%;
     padding: 0 0.4rem;
     position: relative;
   }
 
   .input-field i {
     text-align: center;
-    line-height: 55px;
+    line-height: 53px;
     color: #acacac;
     transition: 0.5s;
     font-size: 1.1rem;
@@ -179,9 +181,9 @@ export const AuthGlobal=styled.div`
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background: #396afc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FA867B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FA867B, #FA867B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FA867B, #FA867B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     border-radius: 50%;
     z-index: 6;
@@ -234,10 +236,11 @@ export const AuthGlobal=styled.div`
     background: red;
     border: 2px solid yellow;
     width: 150px;
-    height: 55px;
+    height: 53px;
     font-weight: 600;
     font-size: 0.8rem;
   }
+
 
   .right-panel .image,
   .right-panel .content {
@@ -414,5 +417,9 @@ export const AuthGlobal=styled.div`
       left: 50%;
     }
   }
+  .signup-input{
+      margin:0px 0px 2px 0px;
+  }
+
 `
 

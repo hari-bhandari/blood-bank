@@ -6,7 +6,7 @@ export const MENU_ITEMS = [
     offset: '70',
   },
   {
-    label: 'Find Donors',
+    label: 'Public Donors',
     path: '/donors',
     offset: '70',
   },
@@ -33,7 +33,7 @@ export const MENU_LEFT_ITEMS = [
     offset: '70',
   },
   {
-    label: 'Find Donors',
+    label: 'Public Donors',
     path: '/donors',
     offset: '70',
   },

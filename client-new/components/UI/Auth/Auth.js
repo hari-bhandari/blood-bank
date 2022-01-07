@@ -26,7 +26,7 @@ const Auth = () => {
             clearErrors()}
     },[error])
 
-    const [Login,setLogin]=useState(true)
+    const [Login,setLogin]=useState(false)
     const onClick=()=>{
         setLogin(!Login)
     }

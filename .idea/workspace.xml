@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added donors page">
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client-new/components/UploadComponent/PhotoUpload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UploadComponent/ReactUpload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config/cloudinary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config/dURIFormatter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/data/Ride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/data/Ride/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Content/BloodRequests.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/Content/BloodRequests.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Content/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/Content/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Blood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +162,7 @@
       <workItem from="1641279855109" duration="12207000" />
       <workItem from="1641326217747" duration="26174000" />
       <workItem from="1641451424352" duration="21148000" />
-      <workItem from="1641541126230" duration="3673000" />
+      <workItem from="1641541126230" duration="12623000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -329,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641493093425</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added donors page">
+      <created>1641545630676</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1641545630676</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

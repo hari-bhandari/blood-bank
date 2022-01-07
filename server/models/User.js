@@ -2,6 +2,8 @@ import mongoose from 'mongoose'
 import crypto from 'crypto'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
+import Cryptr from 'cryptr'
+
 import districts from "../data/districts.js";
 //Initialize
 const UserSchema = new mongoose.Schema({
@@ -20,8 +22,8 @@ const UserSchema = new mongoose.Schema({
     },
     age: {
         type: Number,
-        min: [17,'You must be at least 17 years old to donate blood '],
-        max: [66,'You can\'t donate blood if you are over 65 years old ']
+        min: [17, 'You must be at least 17 years old to donate blood '],
+        max: [66, 'You can\'t donate blood if you are over 65 years old ']
     },
     password: {
         type: String,
@@ -31,7 +33,7 @@ const UserSchema = new mongoose.Schema({
         select: false
     },
     phone: {
-        type: Number,
+        type: String,
         required: [true, 'Please add a Phone Number'],
         minLength: 8,
         maxLength: 12,
@@ -50,6 +52,10 @@ const UserSchema = new mongoose.Schema({
         required: [true, 'Please enter your district'],
         enum: districts
     },
+    shareInformation: {
+        type: Boolean,
+        required: true
+    },
     resetPasswordToken: String,
     resetPasswordExpire: Date,
     createdAt: {
@@ -58,7 +64,8 @@ const UserSchema = new mongoose.Schema({
     },
 
 });
-// Encrypt passwrod using bcrypt
+
+// Encrypt password using bcrypt
 UserSchema.pre('save', async function (next) {
     if (!this.isModified('password')) {
         next();
@@ -66,6 +73,19 @@ UserSchema.pre('save', async function (next) {
 
     const salt = await bcrypt.genSalt(10);
     this.password = await bcrypt.hash(this.password, salt);
+});
+const cryptr = new Cryptr('myTotallySecretKey');
+// Encrypt password using bcrypt
+UserSchema.pre('save', async function (next) {
+    if (!this.isModified('shareInformation')) {
+        next();
+    }
+
+    if (!this.shareInformation) {
+        const encryptedNumber = cryptr.encrypt(this.phone)
+        this.phone = encryptedNumber
+    }
+
 });
 
 // Sign JWT and return

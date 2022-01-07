@@ -9,20 +9,18 @@ import auth from './routes/auth.js'
 import blood from './routes/blood.js'
 import donors from './routes/donors.js'
 import Path from 'path'
-import fileUpload from 'express-fileupload'
 import {resizingMiddleware} from "./middlewares/resizeImage.js";
 const app=express()
-
+import {cloudinaryConfig} from "./config/cloudinary.js";
+import {multerUploads} from "./config/dURIFormatter.js";
+import uploadRoute from './routes/upload.js'
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: true }));
 const PORT= process.env.PORT||5000
 connectDB()
 ////////////////////////////////
-
 //config
-
-//Body parser//fileupload
-app.use(fileUpload())
+app.use('*', cloudinaryConfig);
 
 //implementing helmet
 
@@ -33,6 +31,7 @@ app.use(cors())
 app.use('/api/auth',auth)
 app.use('/api/help',blood)
 app.use('/api/donors',donors)
+app.use('/upload',multerUploads,uploadRoute)
 //error
 app.use(errorHandler)
 const __dirname = Path.resolve()

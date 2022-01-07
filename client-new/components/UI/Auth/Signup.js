@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {useLoginForm} from "./useForm";
 import {districts, bloodType, turnIntoSelectFormat} from "../data";
 import SelectComponent from "./SelectComponent";
@@ -12,6 +12,7 @@ const Signup = () => {
     const districtOptions = turnIntoSelectFormat(districts)
     const bloodOptions = turnIntoSelectFormat(bloodType)
     const {inputs, handleInputChange, handleInputChangeManually,handleInputForCheckbox} = useLoginForm()
+    const [active,setActive]=useState(0)
     useEffect(() => {
         if (isAuthenticated) {
             // props.history.push('/')
@@ -32,6 +33,8 @@ const Signup = () => {
     return (
         <form className="sign-up-form" onSubmit={onRegister}>
             <h2 className="title">Sign up</h2>
+            {active==0?
+            <>
             <div className="input-field signup-input">
                 <i><FaPhone/></i>
                 <input id="phone" name="phone" type="phone" placeholder="Phone Number" value={inputs.phone} onChange={handleInputChange}/>
@@ -59,8 +62,10 @@ const Signup = () => {
             <div className="queryBox">
                 <SelectComponent options={districtOptions} isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"District"}/>
             </div>
-            
-            <p className="signup-agreement"><input type="checkbox" value={inputs.shareInformation} name={'shareInformation'} onChange={handleInputForCheckbox}/>Please tick this box if you want to share your information publicly with other users within this site! </p>
+            <p className="signup-agreement"><input type="checkbox" value={inputs.shareInformation} name={'shareInformation'} onChange={handleInputForCheckbox}/>Please tick this box if you want to publicly share your number and help patients find you easily </p>
+            </>:<div>
+
+                </div>}
             <input type="submit" className="btn" value="Sign up"/>
         </form>
     );

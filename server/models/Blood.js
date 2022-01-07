@@ -17,14 +17,14 @@ const BloodSchema = mongoose.Schema(
             required: [true, 'Please specify a blood type'],
             enum:['A+','A-','B+','B-','C-','C+','O+','O-','AB+','AB-']
         },
-        message: {
+        requestMessage: {
             type: String,
             required: [true, 'Please add a description'],
             maxlength: [500, 'Description can not be more than 500 characters']
         },
         phone: {
             type: String,
-            maxlength: [12, 'Phone number can not be longer than 10 characters']
+            maxlength: [15, 'Phone number can not be longer than 15 characters']
         },
         email: {
             type: String,
@@ -59,7 +59,7 @@ const BloodSchema = mongoose.Schema(
             slug:["name","district"],
             unique: true
         },
-        travel:{
+        expenses:{
             type:Boolean,
             default: false
         },

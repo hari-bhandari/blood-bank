@@ -24,6 +24,7 @@
     "prop-types": "^15.6.2",
     "rc-drawer": "^1.8.0",
     "rc-progress": "^2.3.0",
+    "rc-steps": "^4.1.4",
     "rc-tabs": "^9.6.3",
     "react": "^16.8.6",
     "react-accessible-accordion": "^3.0.0",

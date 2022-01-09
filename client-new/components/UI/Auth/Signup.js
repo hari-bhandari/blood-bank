@@ -50,7 +50,6 @@ const Signup = () => {
                 return Toast.fail('Please re-check your value for Password')
             }
             const {name, email, district, bloodType, phone,password, shareInformation} = inputs
-            console.log(imageLink.images)
             register({
                 name, email, district, bloodType, phone,password,
                 image: imageLink.images.length > 0 ? imageLink.images[0] : null, shareInformation

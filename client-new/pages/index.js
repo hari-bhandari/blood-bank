@@ -6,7 +6,7 @@ import Layout from "../components/UI/layout";
 
 export default function Home() {
     return (
-        <Layout>
+        <Layout title={'Blood Bank- Donate blood and save people'} description={"You don\'t have to be a doctor to save lives!"}>
             <Hero/>
             <WhatWeDo/>
             <Quotes/>

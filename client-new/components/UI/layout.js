@@ -3,12 +3,14 @@ import Sticky from 'react-stickynode';
 import {ContentWrapper, GlobalStyle} from "../containers/ride.style";
 import {ResetCSS} from "../assets/css/style";
 import Navbar from "./Navbar/Navbar";
+import SEO from "../SEO";
 
 
 
-const Layout = ({children}) => {
+const Layout = ({children,title,description}) => {
     return (
         <div>
+            <SEO title={title} description={description} />
             <link
                 href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Lato:300,400,700"
                 rel="stylesheet"

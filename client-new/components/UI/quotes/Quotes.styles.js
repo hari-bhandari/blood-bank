@@ -17,7 +17,7 @@ const TestimonialSectionWrapper = styled.section`
     .glide__slide {
       display: flex;
       margin-bottom: 40px;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: 990px) {
         padding-top: 30px;
       }
       @media only screen and (max-width: 680px) {

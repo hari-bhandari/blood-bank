@@ -5,7 +5,7 @@ import {
   DropdownMenuItemWrapper,
 } from './dropdown.style';
 
-const DropdownMenu = props => {
+const DropdownMenu = ({ content, dropdownItems, dropdownDirection, className }) => {
   const [menuState, setMenuState] = useState({
     show: false,
   });
@@ -29,10 +29,9 @@ const DropdownMenu = props => {
     }
   };
 
-  const { content, dropdownItems, dropdownDirection, className } = props;
   return (
     <DropdownMenuWrapper onClick={e => e.stopPropagation()}>
-      <span onClick={handleToggle}>{content}</span>
+      <span  className={className} onClick={handleToggle}>{content}</span>
       {menuState.show && (
         <DropdownMenuItemsWrapper
           className={className}

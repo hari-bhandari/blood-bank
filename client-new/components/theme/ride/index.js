@@ -1,7 +1,7 @@
 import colors from './colors';
 
 export const rideTheme = {
-  breakpoints: [575, 768, 990, 1440],
+  breakpoints: [575, 768, 991, 1440],
   space: [0, 5, 8, 10, 15, 20, 25, 30, 33, 35, 40, 50, 60, 70, 80, 85, 90, 100],
   fontSizes: [10, 12, 14, 15, 16, 18, 20, 22, 24, 36, 48, 80, 96],
   fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900],

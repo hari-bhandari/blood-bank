@@ -5,12 +5,12 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Link from 'next/link';
 
 
-const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
+const ScrollSpyMenu = ({ className, menuItems, drawerClose, children,...props }) => {
   // empty array for scrollspy items
   const scrollItems = [];
 
   // convert menu path to scrollspy items
-  menuItems.forEach(item => {
+  menuItems?.forEach(item => {
     scrollItems.push(item.path.slice(1));
   });
   const[open,setOpen]=useState(false)
@@ -27,6 +27,19 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   const toggleDrawer = () => {
     setOpen(!open)
   };
+  if(children){
+    return (
+        <Scrollspy
+            items={scrollItems}
+            className={addAllClasses.join(' ')}
+            drawerClose={drawerClose}
+            {...props}
+        >
+          {children}
+        </Scrollspy>
+    )
+  }
+
 
   return (
     <Scrollspy

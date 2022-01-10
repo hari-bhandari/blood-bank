@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import PropTypes from 'prop-types';
 import NavbarWrapper from '../../elements/Navbar';
 import Drawer from '../../elements/Drawer';
@@ -8,14 +8,36 @@ import HamburgerMenu from '../../HamburgMenu';
 import Container from '../../Container';
 import ScrollSpyMenu from '../../ScrollSpyMenu';
 import LogoImage from './Ride/logo.svg';
-import {MENU_ITEMS, MENU_RIGHT_ITEMS,MENU_LEFT_ITEMS} from "../../data/Ride";
+import {MENU_ITEMS, MENU_RIGHT_ITEMS, MENU_LEFT_ITEMS} from "../../data/Ride";
+import Dropdown from "../../Dropdown";
+import Link from "next/link";
+import {AiFillCaretDown} from "react-icons/ai";
+import styled from "styled-components";
+import authContext from "../../Context/auth/authContext";
 
+const MyProfileComponent = styled.div`
+  display: flex;
+`
 const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
-    const[isOpen,setIsOpen]=useState(false)
+    const [isOpen, setIsOpen] = useState(false)
+    const auth = useContext(authContext);
+    const {isAuthenticated} = auth;
     // Toggle drawer
     const toggleHandler = () => {
         setIsOpen(!isOpen)
     };
+    const AuthedMenu =
+        [
+            <Link href={'/profile'}>
+                <a>Profile</a>
+            </Link>,
+            <Link href={'/request'}>
+                <a>Request For Blood</a>
+            </Link>,
+            <Link href={'/profile/requests'}>
+                <a>My Requests</a>
+            </Link>
+        ]
 
     return (
         <NavbarWrapper {...navbarStyle} >
@@ -41,34 +63,50 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
                             menuItems={MENU_LEFT_ITEMS}
                             offset={-70}
                         />
+                        {!isAuthenticated ?
+                            <ScrollSpyMenu
+                                className="main_menu menuRight"
+                                menuItems={MENU_RIGHT_ITEMS}
+                                offset={-70}
+                            /> : <ScrollSpyMenu
+                                className=" menuRight"
+                                offset={-70}
+                            ><Dropdown className={"menuRight scrollspy__menu myProfile-larger"} dropdownDirection={'right'}
+                                       content={<MyProfileComponent>My Profile <AiFillCaretDown/> </MyProfileComponent>} dropdownItems={AuthedMenu}/>
+                            </ScrollSpyMenu>
+                        }
+                    </Box>
+
+                    <Drawer
+                        width="420px"
+                        placement="right"
+                        drawerHandler={<HamburgerMenu barColor="blue"/>}
+                        open={isOpen}
+                        toggleHandler={toggleHandler}
+                    >
                         <ScrollSpyMenu
-                            className="main_menu menuRight"
-                            menuItems={MENU_RIGHT_ITEMS}
-                            offset={-70}
+                            className="mobile_menu"
+                            menuItems={MENU_ITEMS}
+                            drawerClose={true}
+                            offset={-100}
                         />
 
-                        <Drawer
-                            width="420px"
-                            placement="right"
-                            drawerHandler={<HamburgerMenu barColor="white"/>}
-                            open={isOpen}
-                            toggleHandler={toggleHandler}
-                        >
-                            <ScrollSpyMenu
-                                className="mobile_menu"
-                                menuItems={MENU_ITEMS}
-                                drawerClose={true}
-                                offset={-100}
-                            />
 
-                            <ScrollSpyMenu
-                                className="mobile_menu"
-                                menuItems={MENU_RIGHT_ITEMS}
-                                drawerClose={true}
-                                offset={-100}
-                            />
-                        </Drawer>
-                    </Box>
+                        {!isAuthenticated ? <ScrollSpyMenu
+                            className="mobile_menu"
+                            menuItems={MENU_RIGHT_ITEMS}
+                            drawerClose={true}
+                            offset={-100}
+                        /> : <ScrollSpyMenu
+                            className="mobile_menu"
+                            offset={-70}
+                        ><Dropdown className={""} dropdownDirection={'right'}
+                                   content={<MyProfileComponent>My Profile <AiFillCaretDown/> </MyProfileComponent>} dropdownItems={AuthedMenu}/>
+                        </ScrollSpyMenu>
+                        }
+
+                    </Drawer>
+
                 </Box>
             </Container>
         </NavbarWrapper>

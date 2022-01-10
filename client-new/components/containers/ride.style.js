@@ -289,7 +289,7 @@ export const ContentWrapper = styled.div`
     }
 
     .reusecore-drawer__handler {
-      @media (min-width: 991px) {
+      @media (min-width: 990px) {
         display: none !important;
       }
 

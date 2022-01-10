@@ -427,8 +427,6 @@ export const AuthGlobal=styled.div`
   .signup-input {
     margin: 5px 0px;
   }
-
-  //for file uplaod react
  
 `
 

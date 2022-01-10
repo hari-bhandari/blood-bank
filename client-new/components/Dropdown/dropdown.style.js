@@ -4,6 +4,7 @@ export const DropdownMenuWrapper = styled.div`
   position: relative;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  
 `;
 
 export const DropdownMenuItemsWrapper = styled.ul`
@@ -13,8 +14,6 @@ export const DropdownMenuItemsWrapper = styled.ul`
   background-color: #ffffff;
   position: absolute;
   top: 0;
-  left: ${props => (props.dropdownDirection === 'left' ? '0' : 'auto')};
-  right: ${props => (props.dropdownDirection === 'right' ? '0' : 'auto')};
   z-index: 15;
   min-width: 190px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);

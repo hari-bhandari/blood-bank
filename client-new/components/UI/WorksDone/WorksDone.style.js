@@ -12,7 +12,7 @@ const WorkHistoryWrapper = styled.section`
     @media only screen and (max-width: 1200px) {
       padding-right: 32px;
     }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 990px) {
       padding-right: 0;
       margin-bottom: 0;
     }
@@ -37,7 +37,7 @@ const CounterUpArea = styled.div`
   @media only screen and (max-width: 1200px) {
     padding-left: 0;
   }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 990px) {
     padding-right: 0;
     margin-left: -25px;
   }

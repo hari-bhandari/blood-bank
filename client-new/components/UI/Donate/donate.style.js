@@ -27,7 +27,7 @@ const SectionWrapper = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 990px) {
     padding: 80px 0 50px;
   }
   @media only screen and (max-width: 667px) {
@@ -60,7 +60,7 @@ export const ContentArea = styled.div`
     @media only screen and (max-width: 1360px) {
       font-size: 15px;
     }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 990px) {
       line-height: 30px;
     }
   }
@@ -82,7 +82,7 @@ export const Heading = styled.h2`
     line-height: 52px;
     margin-bottom: 25px;
   }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 990px) {
     font-size: 30px;
     line-height: 46px;
     margin-bottom: 20px;
@@ -104,7 +104,7 @@ export const ButtonGroup = styled.div`
   @media only screen and (max-width: 1360px) {
     margin-top: 50px;
   }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 990px) {
     margin-top: 40px;
     align-items: flex-start;
     flex-direction: column;
@@ -161,7 +161,7 @@ export const ButtonGroup = styled.div`
     font-size: 14px;
     font-weight: 700;
     padding: 0 22px;
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 990px) {
       padding: 7.5px 0;
       opacity: 0;
     }
@@ -182,7 +182,7 @@ export const DonationForm = styled.form`
   @media only screen and (max-width: 1360px) {
     padding: 40px 35px;
   }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 990px) {
     padding: 30px 20px;
   }
   @media only screen and (max-width: 667px) {
@@ -200,7 +200,7 @@ export const DonationForm = styled.form`
         font-size: 15px;
         height: 56px;
       }
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: 990px) {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
       }
@@ -220,7 +220,7 @@ export const DonationForm = styled.form`
         @media only screen and (max-width: 1360px) {
           height: 56px;
         }
-        @media only screen and (max-width: 991px) {
+        @media only screen and (max-width: 990px) {
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
         }
@@ -241,7 +241,7 @@ export const DonationForm = styled.form`
         @media only screen and (max-width: 1360px) {
           top: 56px;
         }
-        @media only screen and (max-width: 991px) {
+        @media only screen and (max-width: 990px) {
           border-radius: 5px;
         }
       }
@@ -256,7 +256,7 @@ export const DonationForm = styled.form`
     @media only screen and (max-width: 1360px) {
       margin-top: 35px;
     }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 990px) {
       margin-top: 25px;
     }
     @media only screen and (max-width: 480px) {
@@ -328,7 +328,7 @@ export const DonateButton = styled.button`
     margin-top: 35px;
     height: 56px;
   }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 990px) {
     font-size: 14px;
     margin-top: 25px;
     height: 54px;

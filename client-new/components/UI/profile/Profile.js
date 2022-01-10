@@ -7,7 +7,7 @@ import OrdersIcon from "./UserIcon";
 import ReviewsIcon from "./UserIcon";
 import ProfileSetting from "../profile/ProfileSetting";
 import MyReviews from "./MyReviews";
-import MyOrders from "./Orders/MyOrders";
+// import MyOrders from "./Orders/MyOrders";
 
 const TabListHeader=styled.p`
   font-size: 18px;
@@ -15,19 +15,19 @@ const TabListHeader=styled.p`
   line-height: 1.2em;
   font-family: Lato,sans-serif;
 `
-const Profile:React.FC<{index:number}> = ({index}) => {
-    const [tabIndex, setTabIndex] = useState<number>(index);
+const Profile = ({index}) => {
+    const [tabIndex, setTabIndex] = useState(index);
 
     return (
         <ProfileContainer>
-            <Tabs selectedIndex={tabIndex} onSelect={(index: number) => setTabIndex(index)}>
+            <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
                     <Tab><TabListHeader><OrdersIcon/> {' '} My Orders</TabListHeader></Tab>
                     <Tab><TabListHeader><UserIcon/> {' '}My Profile</TabListHeader></Tab>
                     <Tab><TabListHeader><ReviewsIcon/> {' '}My Reviews</TabListHeader></Tab>
                 </TabList>
                 <TabPanel>
-                    <MyOrders/>
+                    {/*<MyOrders/>*/}
                 </TabPanel>
                 <TabPanel>
                     <ProfileSetting/>

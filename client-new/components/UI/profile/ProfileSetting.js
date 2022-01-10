@@ -1,38 +1,32 @@
-import React, {useContext, useEffect} from 'react';
-import {Label} from "@/components/Others/forms/label";
-import {Input} from "@/components/Others/forms/input";
+import React, {useContext, useEffect, useState} from 'react';
+import {Label,Button} from "./forms/label";
+import {Input} from "./forms/input";
 import {
     FormContainer,
     HeadingSection,
-    InputContainer,
+    InputContainer, PhotoUploadContainer,
     SettingsForm,
     SettingsFormContent,
     Title
 } from './ProfileSetting.css';
-import {Button} from "@/components/Others/button/button";
 import {useLoginForm} from "../Auth/useForm";
 import axios from "axios";
 import {PUBLIC_URL_API,JSONConfig} from "../../config";
 import Toast from "light-toast";
 import authContext from "../../Context/auth/authContext";
+import PhotoUpload from "../../UploadComponent/PhotoUpload";
 
-type SettingsContentProps = {
-    deviceType?: {
-        mobile: boolean;
-        tablet: boolean;
-        desktop: boolean;
-    };
-};
 
-const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
+const SettingsContent= ( ) => {
     const auth = useContext(authContext);
     const { loadUser,user} = auth;
     const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
+    const[profile,setProfile]=useState(user?.avatar)
     useEffect(()=>{
         if(user){
             setDefaultValues({
-                firstName: user?.firstName,
-                lastName: user?.lastName,
+                name: user?.name,
+                phone: user?.phone,
                 email: user?.email
             })
         }
@@ -42,7 +36,7 @@ const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
         e.preventDefault()
         try {
              await axios.put(
-                `${PUBLIC_URL_API}/api/auth/`,
+                `${PUBLIC_URL_API}/api/auth/updatedetails`,
                 {email:inputs.email, firstName:inputs.firstName,lastName:inputs.lastName},
                 JSONConfig
             )
@@ -64,15 +58,25 @@ const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
                     </Title>
                 </HeadingSection>
                 <FormContainer>
+                    <PhotoUploadContainer background={'white'}>
+                    <PhotoUpload withIcon={false}
+                                 withPreview={true}
+                                 setImages={setProfile}
+                                 defaultImages={[profile]}
+                                 singleImage={true}
+                                 label={"Please select your profile picture (note:This is an optional step) "}
+                                 buttonText={"Choose your profile picture"}
+                                 maxFiles={1}/>
+                    </PhotoUploadContainer>
                     <InputContainer>
                         <Label>
                             Your First Name
                         </Label>
                         <Input
                             type='text'
-                            label='First Name'
-                            name='firstName'
-                            value={inputs.firstName}
+                            label='Full Name'
+                            name='name'
+                            value={inputs.name}
                             onChange={handleInputChange}
                             backgroundColor='#F7F7F7'
                             height='48px'
@@ -81,13 +85,13 @@ const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
                     </InputContainer>
                     <InputContainer>
                         <Label>
-                            Your Last Name
+                            Your phone Number
                         </Label>
                         <Input
                             type='text'
-                            label='Last Name'
-                            name='lastName'
-                            value={inputs.lastName}
+                            label='Phone Number'
+                            name='phone'
+                            value={inputs.phone}
                             onChange={handleInputChange}
                             backgroundColor='#F7F7F7'
                             height='48px'

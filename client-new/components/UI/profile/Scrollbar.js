@@ -11,7 +11,6 @@ export const Scrollbar = ({
                           }) => {
     return (
         <Scrollbars
-
             style={style}
             {...props}
         >

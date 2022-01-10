@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {Scrollbar} from "@/components/Scrollbar";
+import React, {useState} from 'react';
+import {Scrollbar} from "../Scrollbar";
 import dateFormat from 'dateformat'
 import {
     DesktopView,

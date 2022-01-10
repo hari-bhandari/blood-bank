@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="signing up working now">
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/MyReviews.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card-mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card.style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/order-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/order-details.style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Scrollbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/UserIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/hooks/AuthenticatedFetch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/hooks/httpInstance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/hooks/httpInstanceAuthed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/hooks/useComponentSize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/hooks/useFetch.js" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="on progress to add user panel">
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/forms/input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/forms/label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/pages/profile/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Context/auth/AuthState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Context/auth/setAuthToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Context/auth/setAuthToken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/MyReviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/MyReviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Scrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Scrollbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220110_0001" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220110_0002" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/UI/profile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -180,7 +170,8 @@
       <workItem from="1641754074264" duration="2962000" />
       <workItem from="1641760204763" duration="653000" />
       <workItem from="1641799178864" duration="1411000" />
-      <workItem from="1641805091631" duration="2423000" />
+      <workItem from="1641805091631" duration="5790000" />
+      <workItem from="1641813549498" duration="3932000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -392,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641727660647</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="on progress to add user panel">
+      <created>1641807701955</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1641807701955</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +431,8 @@
     <MESSAGE value="added route to upload images" />
     <MESSAGE value="multiple steps while signing up" />
     <MESSAGE value="signing up working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="signing up working now" />
+    <MESSAGE value="on progress to add user panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="on progress to add user panel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

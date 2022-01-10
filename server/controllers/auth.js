@@ -9,7 +9,6 @@ const ObjectId=mongoose.ObjectId
 //@route POST /api/auth/register
 //@access Public
 export const register=asyncHandler(async (req, res, next)=>{
-    const {email}=req.body;
     //Create user
     const user=await User.create(
         req.body
@@ -53,7 +52,29 @@ export const login=asyncHandler(async (req, res, next)=>{
     sendTokenResponse(user,200,res)
 
 })
+// @desc      Update user details
+// @route     PUT /api/auth/updatedetails
+// @access    Private
+export const updateDetails = asyncHandler(async (req, res, next) => {
+    const fieldsToUpdate = {
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        bloodType:req.body.bloodType,
+        phoneNumber:req.body.phoneNumber,
+        district:req.body.district,
+    };
 
+    const user = await User.findByIdAndUpdate(req.user.id, fieldsToUpdate, {
+        new: true,
+        runValidators: true,
+    });
+
+    return res.status(200).json({
+        success: true,
+        data: user,
+    });
+});
 //@desc offer to help
 //@route post
 //@access Public

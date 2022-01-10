@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyReviews:React.FC<{data:any,isLoading:boolean}> = ({data,isLoading}) => {
+const MyReviews= ({data,isLoading}) => {
     if(isLoading||!data){
         return <h3>Loading...</h3>
     }

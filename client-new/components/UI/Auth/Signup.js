@@ -8,6 +8,7 @@ import PhotoUpload from "../../UploadComponent/PhotoUpload";
 import {emptyValue} from "./helper";
 import Toast from "light-toast";
 import {useRouter} from "next/router";
+import {PhotoUploadContainer} from "../profile/ProfileSetting.css";
 
 const Signup = () => {
     const authContext = useContext(AuthContext);
@@ -98,13 +99,15 @@ const Signup = () => {
 
 
                 </> : <>
-                    <PhotoUpload withIcon={false}
-                                 withPreview={true}
-                                 setImages={setProfilePicture}
-                                 singleImage={true}
-                                 label={"Please select your profile picture (note:This is an optional step) "}
-                                 buttonText={"Choose your profile picture"}
-                                 maxFiles={1}/>
+                    <PhotoUploadContainer background={'rgba(255, 176, 0, 0.3)'}>
+                        <PhotoUpload withIcon={false}
+                                     withPreview={true}
+                                     setImages={setProfilePicture}
+                                     singleImage={true}
+                                     label={"Please select your profile picture (note:This is an optional step) "}
+                                     buttonText={"Choose your profile picture"}
+                                     maxFiles={1}/>
+                    </PhotoUploadContainer>
                     <div className="queryBox">
                         <SelectComponent options={bloodOptions} height={55} borderRadius={'15px'} isMulti={false} onChange={handleChangeForBlood} defaultLabel={"Blood Type"}/>
                     </div>

@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import Sticky from 'react-stickynode';
 import {ContentWrapper, GlobalStyle} from "../containers/ride.style";
 import {ResetCSS} from "../assets/css/style";
 import Navbar from "./Navbar/Navbar";
 import SEO from "../SEO";
-
+import authContext from "../Context/auth/authContext";
 
 
 const Layout = ({children,title,description}) => {
+    const auth = useContext(authContext);
+    const {loadUser} = auth;
+    useEffect(() => {
+        loadUser()
+    }, [])
     return (
         <div>
             <SEO title={title} description={description} />

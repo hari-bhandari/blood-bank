@@ -27,15 +27,23 @@ const AuthState = props => {
 
     // Load User
     const loadUser = async () => {
-        setAuthToken(localStorage.getItem('token'));
-        try {
-            const res = await axios.get(`${PUBLIC_URL_API}/api/auth/me`);
-            dispatch({
-                type: USER_LOADED,
-                payload: res.data.data
-            });
-        } catch (err) {
-            dispatch({type: AUTH_ERROR_GET_ME});
+        if (localStorage.token) {
+            const token=localStorage.token.replaceAll('"','')
+            //sending token to headers
+            setAuthToken(token)
+            try {
+                const res = await axios.get(`${PUBLIC_URL_API}/api/auth/me`);
+                dispatch({
+                    type: USER_LOADED,
+                    payload: {...res.data.data,token}
+                })
+
+            } catch (err) {
+                dispatch({
+                    type: AUTH_ERROR_GET_ME,
+                    payload: err.response.data.error
+                })
+            }
         }
     };
 
@@ -71,7 +79,6 @@ const AuthState = props => {
                 'Content-Type': 'application/json'
             }
         };
-
         try {
             const res = await axios.post(`${PUBLIC_URL_API}/api/auth/login`, formData, config);
 

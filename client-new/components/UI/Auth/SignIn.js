@@ -4,26 +4,32 @@ import AuthContext from "../../Context/auth/authContext";
 import {FaUser,FaLock} from "react-icons/fa";
 import {emptyValue} from "./helper";
 import Toast from "light-toast";
+import {useRouter} from "next/router";
 const SignIn = () => {
+    const router = useRouter()
+
     const authContext=useContext(AuthContext);
     const {login,isAuthenticated}=authContext;
-    const {inputs,handleChangeForLogin}=useLoginForm()
+    const {inputs,handleInputChange}=useLoginForm()
     useEffect(()=>{
         if(isAuthenticated){
-
+            router.push('/').then(r => null)
             // props.history.push('/')
         }
     },[])
 
-    const onLogin=(e)=>{
+    const onLogin=async (e)=>{
+        Toast.loading()
         e.preventDefault()
         if (!emptyValue(inputs.email)) {
-            return Toast.fail('Please re-check your value for Name')
+            return Toast.fail('Please re-check your value for email')
         }
         if (!emptyValue(inputs.password)) {
             return Toast.fail('Please re-check your value for password')
         }
-        login(inputs)
+        await login(inputs)
+        Toast.hide()
+        router.push('/').then(r => null)
     }
 
     return (
@@ -31,11 +37,11 @@ const SignIn = () => {
             <h2 className="title">Sign in</h2>
             <div className="input-field">
                 <i><FaUser/></i>
-                <input id="email" name="email" type="text" placeholder="Email" value={inputs.email} onChange={handleChangeForLogin} required/>
+                <input id="email" name="email" type="text" placeholder="Email" value={inputs.email} onChange={handleInputChange} required/>
             </div>
             <div className="input-field">
                 <i><FaLock/></i>
-                <input id="password" name="password" type="password" placeholder="Password" value={inputs.password} onChange={handleChangeForLogin} required/>
+                <input id="password" name="password" type="password" placeholder="Password" value={inputs.password} onChange={handleInputChange} required/>
             </div>
             <input type="submit" value="Login" className="btn solid" />
 

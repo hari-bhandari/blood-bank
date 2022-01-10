@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="signing up working now">
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/MyReviews.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card.style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/order-details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/order-details.style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Scrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/UserIcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/hooks/AuthenticatedFetch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/hooks/httpInstance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/hooks/httpInstanceAuthed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/hooks/useComponentSize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/hooks/useFetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/donate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/donors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/requests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Context/auth/AuthState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Context/auth/setAuthToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Context/auth/setAuthToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +45,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/client-new/node_modules/axios/index.d.ts" root0="SKIP_INSPECTION" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -46,20 +67,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/pages" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220110_0001" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/UI/profile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/UI/profile" />
+      <recent name="$PROJECT_DIR$/client-new/hooks" />
+      <recent name="$PROJECT_DIR$/client-new/components/UI" />
       <recent name="$PROJECT_DIR$/client-new/pages" />
       <recent name="$PROJECT_DIR$/client-new/components/UI/Donate" />
-      <recent name="$PROJECT_DIR$/client-new" />
-      <recent name="$PROJECT_DIR$/client-new/components" />
-      <recent name="$PROJECT_DIR$/client-new/components/UI/Auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/components/UI" />
@@ -155,6 +177,10 @@
       <workItem from="1641451424352" duration="21148000" />
       <workItem from="1641541126230" duration="25256000" />
       <workItem from="1641712936700" duration="4343000" />
+      <workItem from="1641754074264" duration="2962000" />
+      <workItem from="1641760204763" duration="653000" />
+      <workItem from="1641799178864" duration="1411000" />
+      <workItem from="1641805091631" duration="2423000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

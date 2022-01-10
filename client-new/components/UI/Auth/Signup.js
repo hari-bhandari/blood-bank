@@ -7,6 +7,7 @@ import {FaLock, FaPhone, FaUser, FaEnvelope, FaMale} from "react-icons/fa";
 import PhotoUpload from "../../UploadComponent/PhotoUpload";
 import {emptyValue} from "./helper";
 import Toast from "light-toast";
+import {useRouter} from "next/router";
 
 const Signup = () => {
     const authContext = useContext(AuthContext);
@@ -16,9 +17,11 @@ const Signup = () => {
     const {inputs, handleInputChange, handleInputChangeManually, handleInputForCheckbox} = useLoginForm()
     const [step, setStep] = useState(0)
     const [profile, setProfilePicture] = useState([])
+    const router = useRouter()
+
     useEffect(() => {
         if (isAuthenticated) {
-            // props.history.push('/')
+            router.push('/').then(r => null)
         }
     }, [])
     const onRegister = async (e) => {
@@ -49,11 +52,15 @@ const Signup = () => {
             if (!emptyValue(inputs.bloodType)) {
                 return Toast.fail('Please re-check your value for Password')
             }
-            const {name, email, district, bloodType, phone,password, shareInformation} = inputs
-            register({
-                name, email, district, bloodType, phone,password,
+            const {name, email, district, bloodType, phone, password, shareInformation} = inputs
+            Toast.loading()
+            await register({
+                name, email, district, bloodType, phone, password,
                 image: imageLink.images.length > 0 ? imageLink.images[0] : null, shareInformation
             })
+            Toast.hide()
+            router.push('/').then(r => null)
+
         }
     }
     const handleChangeForBlood = selectedOption => {

@@ -1,0 +1,124 @@
+import React, {useContext, useEffect} from 'react';
+import {Label} from "@/components/Others/forms/label";
+import {Input} from "@/components/Others/forms/input";
+import {
+    FormContainer,
+    HeadingSection,
+    InputContainer,
+    SettingsForm,
+    SettingsFormContent,
+    Title
+} from './ProfileSetting.css';
+import {Button} from "@/components/Others/button/button";
+import {useLoginForm} from "../Auth/useForm";
+import axios from "axios";
+import {PUBLIC_URL_API,JSONConfig} from "../../config";
+import Toast from "light-toast";
+import authContext from "../../Context/auth/authContext";
+
+type SettingsContentProps = {
+    deviceType?: {
+        mobile: boolean;
+        tablet: boolean;
+        desktop: boolean;
+    };
+};
+
+const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
+    const auth = useContext(authContext);
+    const { loadUser,user} = auth;
+    const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
+    useEffect(()=>{
+        if(user){
+            setDefaultValues({
+                firstName: user?.firstName,
+                lastName: user?.lastName,
+                email: user?.email
+            })
+        }
+
+    },[user])
+    const OnSave=async (e)=>{
+        e.preventDefault()
+        try {
+             await axios.put(
+                `${PUBLIC_URL_API}/api/auth/`,
+                {email:inputs.email, firstName:inputs.firstName,lastName:inputs.lastName},
+                JSONConfig
+            )
+            Toast.success('Successfully changed user data')
+            await loadUser()
+
+
+        } catch (error) {
+            Toast.fail(error.response.data.error +', Please try again')
+        }
+    }
+
+    return (
+        <SettingsForm>
+            <SettingsFormContent>
+                <HeadingSection>
+                    <Title>
+                        Your Profile
+                    </Title>
+                </HeadingSection>
+                <FormContainer>
+                    <InputContainer>
+                        <Label>
+                            Your First Name
+                        </Label>
+                        <Input
+                            type='text'
+                            label='First Name'
+                            name='firstName'
+                            value={inputs.firstName}
+                            onChange={handleInputChange}
+                            backgroundColor='#F7F7F7'
+                            height='48px'
+                            // intlInputLabelId="profileNameField"
+                        />
+                    </InputContainer>
+                    <InputContainer>
+                        <Label>
+                            Your Last Name
+                        </Label>
+                        <Input
+                            type='text'
+                            label='Last Name'
+                            name='lastName'
+                            value={inputs.lastName}
+                            onChange={handleInputChange}
+                            backgroundColor='#F7F7F7'
+                            height='48px'
+                            // intlInputLabelId="profileNameField"
+                        />
+                    </InputContainer>
+                    <InputContainer>
+                        <Label>
+                            Your Email
+                        </Label>
+                        <Input
+                            type='email'
+                            name='email'
+                            label='Email Address'
+                            value={inputs.email}
+                            onChange={handleInputChange}
+                            backgroundColor='#F7F7F7'
+                            // intlInputLabelId="profileEmailField"
+                        />
+                    </InputContainer>
+
+                    <InputContainer>
+                        <Button size='big' style={{ width: '100%' }} onClick={OnSave}>
+                            Update details
+                        </Button>
+                    </InputContainer>
+                </FormContainer>
+
+            </SettingsFormContent>
+        </SettingsForm>
+    );
+};
+
+export default SettingsContent;

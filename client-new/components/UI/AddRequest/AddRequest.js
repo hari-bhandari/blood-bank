@@ -3,6 +3,7 @@ import {MultiStepForm, Step} from '@haribhandari/react-step'
 import styled from "styled-components";
 import BasicInformation from "./BasicInformation";
 import AdditionalDetails from "./AdditionalDetails";
+import {useLoginForm} from "../Auth/useForm";
 
 const ButtonContainer=styled.div`
   display: flex;
@@ -29,17 +30,18 @@ const MultiStepFormComponent = () => {
     }
 
 
-
-
+    const {inputs, handleInputChange, setDefaultValues,handleInputChangeManually} = useLoginForm();
     return (
         <Container>
             <MultiStepForm activeStep={active} >
                 <Step label={'Personal Information'}>
-                    <BasicInformation next={next} />
+                    <BasicInformation next={next} inputs={inputs} handleInputChange={handleInputChange}
+                                      setDefaultValues={setDefaultValues} handleInputChangeManually={handleInputChangeManually}  />
                 </Step>
 
                 <Step label={'Additional Details'}>
-                    <AdditionalDetails prev={prev}/>
+                    <AdditionalDetails prev={prev} inputs={inputs} handleInputChange={handleInputChange}
+                                       setDefaultValues={setDefaultValues} handleInputChangeManually={handleInputChangeManually}/>
                 </Step >
 
             </MultiStepForm>

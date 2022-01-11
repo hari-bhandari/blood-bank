@@ -106,7 +106,7 @@ const OrdersContent = () => {
                                 })
                             ) : (
                                 <NoRequestFound>
-                                    No order found
+                                    No Requests found
                                 </NoRequestFound>
                             )}
                         </OrderList>

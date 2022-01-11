@@ -7,6 +7,8 @@ import {Input} from "../profile/forms/input";
 import SelectComponent from "../Auth/SelectComponent";
 import {bloodType, districts, turnIntoSelectFormat} from "../data";
 import authContext from "../../Context/auth/authContext";
+import {emptyValue} from "../Auth/helper";
+import Toast from "light-toast";
 export const Container=styled.div`
   background-color: rgb(255, 255, 255);
   padding: 30px 30px 20px;
@@ -25,8 +27,7 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
 `
-const BasicInformation = ({next}) => {
-    const {inputs, handleInputChange, setDefaultValues, handleInputChangeManually} = useLoginForm();
+const BasicInformation = ({next,inputs, handleInputChange, setDefaultValues, handleInputChangeManually}) => {
     const districtOptions = turnIntoSelectFormat(districts)
     const bloodOptions = turnIntoSelectFormat(bloodType)
     const auth = useContext(authContext);
@@ -37,6 +38,30 @@ const BasicInformation = ({next}) => {
     const handleChangeForDistrict = selectedOption => {
         handleInputChangeManually("district", selectedOption.value)
     };
+    const nextStep=()=>{
+        if (!emptyValue(inputs.name)) {
+            return Toast.fail('Please re-check your value for Name')
+        }
+        if (!emptyValue(inputs.phone.replace('+977', ''))) {
+            return Toast.fail('Please re-check your value for Phone')
+        }
+        if (!emptyValue(inputs.age)) {
+            return Toast.fail('Please re-check your value for Age')
+        }
+        if (!emptyValue(inputs.email)) {
+            return Toast.fail('Please re-check your value for email')
+        }
+        if (!emptyValue(inputs.volume)) {
+            return Toast.fail('Please re-check your value for Volume')
+        }
+        if (!emptyValue(inputs.district)) {
+            return Toast.fail('Please re-check your value for District')
+        }
+        if (!emptyValue(inputs.bloodType)) {
+            return Toast.fail('Please re-check your value for BloodType')
+        }
+        next()
+    }
     return (
         <Container>
             <Heading>Basic Info</Heading>
@@ -91,13 +116,28 @@ const BasicInformation = ({next}) => {
             </InputContainer>
             <InputContainer>
                 <Label>
+                    Patient's age
+                </Label>
+                <Input
+                    type='number'
+                    name='age'
+                    label="Patient's age"
+                    placeholder="Patient's age"
+                    value={inputs.age}
+                    onChange={handleInputChange}
+                    backgroundColor='#F7F7F7'
+                    // intlInputLabelId="profileEmailField"
+                />
+            </InputContainer>
+            <InputContainer>
+                <Label>
                     Blood Volume Needed (in ML)
                 </Label>
                 <Input
                     type='number'
                     label='Blood Volume Needed (in ML)'
-                    name='name'
-                    value={inputs.name}
+                    name='volume'
+                    value={inputs.volume}
                     onChange={handleInputChange}
                     backgroundColor='#F7F7F7'
                     height='48px'
@@ -108,18 +148,17 @@ const BasicInformation = ({next}) => {
                 <Label>
                     Your District
                 </Label>
-                <SelectComponent options={districtOptions} height={55}  isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"District"} value={inputs.district}/>
+                <SelectComponent options={districtOptions} height={55}  isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"District"} />
             </InputContainer>
             <InputContainer>
                 <Label>
                     Your Blood Type
                 </Label>
-                <SelectComponent options={bloodOptions}  height={55}  isMulti={false} onChange={handleChangeForBlood} defaultLabel={"BloodType"} value={inputs.bloodType}/>
+                <SelectComponent options={bloodOptions}  height={55}  isMulti={false} onChange={handleChangeForBlood} defaultLabel={"BloodType"} />
             </InputContainer>
             <ButtonContainer>
-                <Button size='big' style={{width: '40%'}} onClick={
-                    next
-                } >
+                <Button size='big' style={{width: '40%'}} onClick={nextStep}
+                 >
                     Next
                 </Button>
             </ButtonContainer>

@@ -7,7 +7,8 @@ import OrdersIcon from "./UserIcon";
 import ReviewsIcon from "./UserIcon";
 import ProfileSetting from "../profile/ProfileSetting";
 import MyReviews from "./MyReviews";
-// import MyOrders from "./Orders/MyOrders";
+import MyOrders from "./Orders/MyOrders";
+import { FcViewDetails } from "react-icons/fc";
 
 const TabListHeader=styled.p`
   font-size: 18px;
@@ -22,20 +23,16 @@ const Profile = ({index}) => {
         <ProfileContainer>
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
-                    <Tab><TabListHeader><OrdersIcon/> {' '} My Orders</TabListHeader></Tab>
+                    <Tab><TabListHeader><FcViewDetails size={24}/> {' '} My Requests</TabListHeader></Tab>
                     <Tab><TabListHeader><UserIcon/> {' '}My Profile</TabListHeader></Tab>
-                    <Tab><TabListHeader><ReviewsIcon/> {' '}My Reviews</TabListHeader></Tab>
                 </TabList>
                 <TabPanel>
-                    {/*<MyOrders/>*/}
+                    <MyOrders/>
                 </TabPanel>
                 <TabPanel>
                     <ProfileSetting/>
             </TabPanel>
 
-            <TabPanel>
-                {true?<div>Loading...</div>:<MyReviews data={null} isLoading={true} />}
-            </TabPanel>
         </Tabs>
         </ProfileContainer>
     );

@@ -3,10 +3,7 @@ import http from './httpInstance';
 import httpAuth from './httpInstanceAuthed'
 import axios from 'axios';
 
-interface memStoreTypes {
-    [x: string]: string;
-}
-const memStore: memStoreTypes = {};
+const memStore = {};
 
 
 

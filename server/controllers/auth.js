@@ -89,11 +89,11 @@ export const offerHelp=asyncHandler(async (req, res, next)=>{
     }
     const {helpers}=blood
     for(const value of helpers){
-        if(value==user._id.toHexString()){
+        if(value._id==user._id.toHexString()){
             return next(new ErrorResponse(`You have already offered your help.`,400))
         }
     }
-    blood=await Blood.findByIdAndUpdate(req.params.id,{ $push: { helpers: user._id } },{
+    blood=await Blood.findByIdAndUpdate(req.params.id,{ $push: { helpers: user } },{
         new:true,
         runValidators:true
     })
@@ -122,12 +122,27 @@ const sendTokenResponse=(user,statusCode,res)=>{
         user
     })
 }
-//@desc get current logged in user
-//@route GET /api/auth/me
+//@desc get all my requests
+//@route GET /api/auth/myrequests
 //@access Private
 export const getMyRequests=asyncHandler(async (req, res, next)=>{
     const id=req.user._id
     const requests=await Blood.find({user:id})
+    const reviews = await Blood.aggregate([
+        {
+            "$match":{
+                user:req.user._id
+            }
+        },
+        {
+            "$lookup": {
+                "from": "products", // collection name
+                "localField": "product",
+                "foreignField": "_id",
+                "as": "product",
+            }
+        }
+    ])
     res.status(200).json({
         success:true,
         data:requests

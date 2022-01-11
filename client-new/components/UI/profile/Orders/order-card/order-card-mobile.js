@@ -22,31 +22,12 @@ import {
 import dateFormat from 'dateformat'
 
 
-type MobileOrderCardProps = {
-  orderId?: any;
-  onClick?: (e: any) => void;
-  className?: any;
-  status?: any;
-  date?: any;
-  deliveryTime?: any;
-  amount?: number;
-  tableData?: any;
-  columns?: any;
-  progressData?: any;
-  progressStatus?: any;
-  address?: string;
-  subtotal?: number;
-  discount?: number;
-  deliveryFee?: number;
-  grandTotal?: number;
-  orders?: any;
-};
 
 const components = {
   table: OrderTable,
 };
 
-const OrderCard: React.FC<MobileOrderCardProps> = ({
+const OrderCard= ({
                                                      onClick,
                                                      className,
                                                      columns,
@@ -64,8 +45,8 @@ const OrderCard: React.FC<MobileOrderCardProps> = ({
             className={`accordion ${className}`}
             defaultActiveKey="active"
         >
-          {orders.map((order: any) => {
-            const created=new Date(order.created)
+          {orders.map((order) => {
+            const created=new Date(order.createdAt)
             const createdTime=dateFormat(created,"HH:MM")
             const createdDate=dateFormat(created,"dddd, mmmm dS, yyyy")
                 return (
@@ -74,23 +55,22 @@ const OrderCard: React.FC<MobileOrderCardProps> = ({
                             <CardWrapper onClick={() => onClick?.(order)}>
                                 <OrderListHeader>
                                     <TrackID>
-                                        Order <span>#{order._id}</span>
+                                        Request <span>#{order._id.slice(0,8)}</span>
                                     </TrackID>
-                                    <Status>{order?.isPaid ? '✅' : '❌'}</Status>
+                                    <Status>{order?.active ? '✅' : '❌'}</Status>
                                 </OrderListHeader>
 
                                 <OrderMeta>
                                     <Meta>
-                                        Order Date: <span>{createdDate}</span>
+                                        Date: <span>{createdDate}</span>
                               </Meta>
                               <Meta>
-                                Order Time: <span>{createdTime}</span>
+                                Requested Time: <span>{createdTime}</span>
                               </Meta>
                               <Meta className="price">
-                                Total Price:
+                                Volume Needed:
                                 <span>
-                      £
-                                  {order.totalPrice}
+                                  {order.volume} L
                     </span>
                               </Meta>
                             </OrderMeta>
@@ -102,42 +82,42 @@ const OrderCard: React.FC<MobileOrderCardProps> = ({
                       <OrderDetail>
                         <DeliveryInfo>
                           <DeliveryAddress>
-                            <h3>Delivery Address</h3>
-                            <Address>{order.shippingAddress.address1}</Address>
-                            <Address>{order.shippingAddress.address2}</Address>
-                            <Address><b>{order.shippingAddress.postcode}</b></Address>
+                            <h3>Request Message</h3>
+                            <Address>{order?.message}</Address>
+                            {/*<Address>{order.shippingAddress.address2}</Address>*/}
+                            {/*<Address><b>{order.shippingAddress.postcode}</b></Address>*/}
                           </DeliveryAddress>
 
-                          <CostCalculation>
-                            <PriceRow>
-                              Subtotal
-                              <Price>
-                                £
-                                {order.totalPrice}
-                              </Price>
-                            </PriceRow>
-                            <PriceRow>
-                              Discount
-                              <Price>
-                                £
-                                {0}
-                              </Price>
-                            </PriceRow>
-                            <PriceRow>
-                              Delivery Fee
-                              <Price>
-                                £
-                                {order.shippingPrice}
-                              </Price>
-                            </PriceRow>
-                            <PriceRow className="grandTotal">
-                              Total
-                              <Price>
-                                £
-                                {order.totalPrice}
-                              </Price>
-                            </PriceRow>
-                          </CostCalculation>
+                          {/*<CostCalculation>*/}
+                          {/*  <PriceRow>*/}
+                          {/*    Subtotal*/}
+                          {/*    <Price>*/}
+                          {/*      £*/}
+                          {/*      {order.totalPrice}*/}
+                          {/*    </Price>*/}
+                          {/*  </PriceRow>*/}
+                          {/*  <PriceRow>*/}
+                          {/*    Discount*/}
+                          {/*    <Price>*/}
+                          {/*      £*/}
+                          {/*      {0}*/}
+                          {/*    </Price>*/}
+                          {/*  </PriceRow>*/}
+                          {/*  <PriceRow>*/}
+                          {/*    Delivery Fee*/}
+                          {/*    <Price>*/}
+                          {/*      £*/}
+                          {/*      {order.shippingPrice}*/}
+                          {/*    </Price>*/}
+                          {/*  </PriceRow>*/}
+                          {/*  <PriceRow className="grandTotal">*/}
+                          {/*    Total*/}
+                          {/*    <Price>*/}
+                          {/*      £*/}
+                          {/*      {order.totalPrice}*/}
+                          {/*    </Price>*/}
+                          {/*  </PriceRow>*/}
+                          {/*</CostCalculation>*/}
                         </DeliveryInfo>
 
 

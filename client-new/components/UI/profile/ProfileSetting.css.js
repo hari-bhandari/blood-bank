@@ -42,7 +42,7 @@ export const FormContainer=styled.form`
     flex-direction: column;
 `
 export const InputContainer=styled.div`
-  
+  margin-top: 10px;
 `
 const Row = styled(Rows)`
   margin-bottom: 40px;

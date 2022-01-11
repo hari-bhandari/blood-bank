@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="profile page added">
-      <change afterPath="$PROJECT_DIR$/client-new/pages/profile/requests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/pages/request.js" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added few more pages and">
+      <change afterPath="$PROJECT_DIR$/client-new/hooks/debounce.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Dropdown/dropdown.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Dropdown/dropdown.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Dropdown/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Dropdown/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/ScrollSpyMenu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/ScrollSpyMenu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Donate/donate.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Donate/donate.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/WorksDone/WorksDone.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/WorksDone/WorksDone.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/ride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/theme/ride/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card-mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card-mobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/order-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/order-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UploadComponent/ReactUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UploadComponent/ReactUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/hooks/httpInstance.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/hooks/httpInstance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/hooks/httpInstanceAuthed.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/hooks/httpInstanceAuthed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/hooks/useFetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/hooks/useFetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/blood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Blood.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220110_0002" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220111_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/UI/profile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -168,7 +173,8 @@
       <workItem from="1641760204763" duration="653000" />
       <workItem from="1641799178864" duration="1411000" />
       <workItem from="1641805091631" duration="5790000" />
-      <workItem from="1641813549498" duration="10560000" />
+      <workItem from="1641813549498" duration="18143000" />
+      <workItem from="1641885420698" duration="5717000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -394,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641823953280</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added few more pages and">
+      <created>1641835870635</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1641835870635</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +450,8 @@
     <MESSAGE value="signing up working now" />
     <MESSAGE value="on progress to add user panel" />
     <MESSAGE value="profile page added" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile page added" />
+    <MESSAGE value="added few more pages and" />
+    <option name="LAST_COMMIT_MESSAGE" value="added few more pages and" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -471,6 +485,12 @@
           <url>file://$PROJECT_DIR$/client-new/components/UI/Auth/helper.js</url>
           <line>7</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card-mobile.js</url>
+          <line>90</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

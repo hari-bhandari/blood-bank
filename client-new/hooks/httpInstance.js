@@ -1,7 +1,7 @@
-import axios, { AxiosInstance} from 'axios';
+import axios from 'axios';
 
 
-const instance: AxiosInstance = axios.create({
+const instance = axios.create({
     baseURL: '/',
 });
 
@@ -15,7 +15,6 @@ instance.interceptors.request.use(requestHandler);
 instance.interceptors.response.use(undefined, (error) => {
     // handle error
     if (axios.isCancel(error)) {
-        console.log(`request cancelled`);
     }
     return Promise.reject(error.response?.data?.error);
 });

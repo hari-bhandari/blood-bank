@@ -13,23 +13,12 @@ import {
 } from './order-details.style';
 
 
-type OrderDetailsProps = {
-  tableData?: any;
-  columns?: any;
-  progressData?: any;
-  progressStatus?: any;
-  address?: any;
-  subtotal?: number;
-  discount?: number;
-  deliveryFee?: number;
-  grandTotal?: number;
-};
 
 const components = {
   table: OrderTable,
 };
 
-const OrderDetails: React.FC<OrderDetailsProps> = ({
+const OrderDetails = ({
   tableData,
   columns,
   address,
@@ -41,59 +30,59 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({
   const CURRENCY='£'
   return (
     <>
-      <DeliveryInfo>
-        <DeliveryAddress>
-          <h3>
-            Delivery Address
-          </h3>
-          <Address>{address.address1}</Address>
-          <Address>{address.address2}</Address>
-          <Address>{address.county}</Address>
-          <Address><b>{address.postcode}</b></Address>
-        </DeliveryAddress>
+      {/*<DeliveryInfo>*/}
+      {/*  <DeliveryAddress>*/}
+      {/*    <h3>*/}
+      {/*      Delivery Address*/}
+      {/*    </h3>*/}
+      {/*    <Address>{address.address1}</Address>*/}
+      {/*    <Address>{address.address2}</Address>*/}
+      {/*    <Address>{address.county}</Address>*/}
+      {/*    <Address><b>{address.postcode}</b></Address>*/}
+      {/*  </DeliveryAddress>*/}
 
-        <CostCalculation>
-          <PriceRow>
-            Sub total
-            <Price>
-              {CURRENCY}
-              {subtotal}
-            </Price>
-          </PriceRow>
-          <PriceRow>
-            Discount
-            <Price>
-              {CURRENCY}
-              {discount}
-            </Price>
-          </PriceRow>
-          <PriceRow>
-            Delivery Fee
-            <Price>
-              {CURRENCY}
-              {deliveryFee}
-            </Price>
-          </PriceRow>
-          <PriceRow className="grandTotal">
-            Total
-            <Price>
-              {CURRENCY}
-              {grandTotal}
-            </Price>
-          </PriceRow>
-        </CostCalculation>
-      </DeliveryInfo>
+      {/*  <CostCalculation>*/}
+      {/*    <PriceRow>*/}
+      {/*      Sub total*/}
+      {/*      <Price>*/}
+      {/*        {CURRENCY}*/}
+      {/*        {subtotal}*/}
+      {/*      </Price>*/}
+      {/*    </PriceRow>*/}
+      {/*    <PriceRow>*/}
+      {/*      Discount*/}
+      {/*      <Price>*/}
+      {/*        {CURRENCY}*/}
+      {/*        {discount}*/}
+      {/*      </Price>*/}
+      {/*    </PriceRow>*/}
+      {/*    <PriceRow>*/}
+      {/*      Delivery Fee*/}
+      {/*      <Price>*/}
+      {/*        {CURRENCY}*/}
+      {/*        {deliveryFee}*/}
+      {/*      </Price>*/}
+      {/*    </PriceRow>*/}
+      {/*    <PriceRow className="grandTotal">*/}
+      {/*      Total*/}
+      {/*      <Price>*/}
+      {/*        {CURRENCY}*/}
+      {/*        {grandTotal}*/}
+      {/*      </Price>*/}
+      {/*    </PriceRow>*/}
+      {/*  </CostCalculation>*/}
+      {/*</DeliveryInfo>*/}
 
 
       <OrderTableWrapper>
-        <Table
-          columns={columns}
-          data={tableData}
-          rowKey={(record) => record._id}
-          components={components}
-          className="orderDetailsTable"
-          // scroll={{ y: 350 }}
-        />
+        {/*<Table*/}
+        {/*  columns={columns}*/}
+        {/*  data={tableData}*/}
+        {/*  rowKey={(record) => record._id}*/}
+        {/*  components={components}*/}
+        {/*  className="orderDetailsTable"*/}
+        {/*  // scroll={{ y: 350 }}*/}
+        {/*/>*/}
       </OrderTableWrapper>
     </>
   );

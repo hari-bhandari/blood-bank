@@ -17,27 +17,27 @@ const OrderCard= ({
             <SingleOrderList onClick={onClick} className={className}>
                 <OrderListHeader>
                     <TrackID>
-                        Order
-                        <span>#{orderId}</span>
+                        Request
+                        <span> #{orderId.slice(0,8)}</span>
                     </TrackID>
                     <Status>{succeeded?'✅':'❌'} </Status>
                 </OrderListHeader>
 
                 <OrderMeta>
                     <Meta>
-                        Order Date
-                        : <span>{date}</span>
+                        Date
+                        :
+                        <span>{date}</span>
                     </Meta>
                     <Meta>
-                        Created Time
+                        Request Time
                         : <span>{createdTime}</span>
                     </Meta>
                     <Meta className="price">
-                        Total Price
+                        Volume Needed
                         :
                         <span>
-              {'£'}
-                            {amount}
+                            {amount}L
             </span>
                     </Meta>
                 </OrderMeta>

@@ -20,6 +20,8 @@ import OrderDetails from './order-details/order-details';
 import OrderCard from './order-card/order-card';
 import OrderCardMobile from './order-card/order-card-mobile';
 import useComponentSize from '../../../../hooks/useComponentSize';
+import {PUBLIC_URL_API} from "../../../config";
+import useFetch from "../../../../hooks/useFetch";
 
 
 const progressData = ['Order Received', 'Order On The Way', 'Order Delivered'];
@@ -69,12 +71,10 @@ const orderTableColumns = [
     },
 ];
 
-const OrdersContent: React.FC<{}> = () => {
+const OrdersContent = () => {
     const [targetRef, size] = useComponentSize();
-    // const [data, isLoading] = useFetch(`${API_BASE_URL}/api/v1/order/myorders`, true)
-    const [selection, setSelection] = useState<any>(null);
-
-    const data=[]
+    const [data, isLoading] = useFetch(`${PUBLIC_URL_API}/api/auth/getMyRequests`, true)
+    const [selection, setSelection] = useState(null);
     if (!data || isLoading) return <h3>loading...</h3>;
 
     return (
@@ -82,14 +82,14 @@ const OrdersContent: React.FC<{}> = () => {
             <DesktopView>
                 <OrderListWrapper style={{height: size?.height}}>
                     <Title style={{padding: '0 20px'}}>
-                        My Order
+                        My Requests
                     </Title>
 
                     <Scrollbar className='order-scrollbar'>
                         <OrderList>
-                            {data.length !== 0 ? (
-                                data.map((current: any) => {
-                                    const created = new Date(current.created)
+                            {data.data.length !== 0 ? (
+                                data.data.map((current) => {
+                                    const created = new Date(current.createdAt)
                                     const createdTime = dateFormat(created, "HH:MM")
                                     const createdDate=dateFormat(created,"dddd, mmmm dS, yyyy")
                                     return (
@@ -97,10 +97,10 @@ const OrdersContent: React.FC<{}> = () => {
                                         key={current._id}
                                         orderId={current._id}
                                         className={current._id === selection?._id ? 'active' : ''}
-                                        succeeded={current?.isPaid}
+                                        succeeded={current?.isActive}
                                         date={createdDate}
                                         createdTime={createdTime}
-                                        amount={current.totalPrice}
+                                        amount={current.volume}
                                         onClick={() => setSelection(current)}
                                     />
                                     )
@@ -117,7 +117,7 @@ const OrdersContent: React.FC<{}> = () => {
                     // @ts-ignore
                     <OrderDetailsWrapper ref={targetRef}>
                         <Title style={{padding: '0 20px'}}>
-                            Order Details
+                            View Donors
                         </Title>
                         {selection && (
                             <OrderDetails
@@ -139,7 +139,7 @@ const OrdersContent: React.FC<{}> = () => {
             <MobileView>
                 <OrderList>
                     <OrderCardMobile
-                        orders={null}
+                        orders={data.data}
                         // className={order && order.id === active ? 'active' : ''}
                         progressData={progressData}
                         columns={orderTableColumns}

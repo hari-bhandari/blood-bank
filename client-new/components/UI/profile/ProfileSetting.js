@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
-import {Label,Button} from "./forms/label";
+import {Label, Button} from "./forms/label";
 import {Input} from "./forms/input";
 import {
     FormContainer,
@@ -11,33 +11,47 @@ import {
 } from './ProfileSetting.css';
 import {useLoginForm} from "../Auth/useForm";
 import axios from "axios";
-import {PUBLIC_URL_API,JSONConfig} from "../../config";
+import {PUBLIC_URL_API, JSONConfig} from "../../config";
 import Toast from "light-toast";
 import authContext from "../../Context/auth/authContext";
 import PhotoUpload from "../../UploadComponent/PhotoUpload";
+import SelectComponent from "../Auth/SelectComponent";
+import {bloodType, districts, turnIntoSelectFormat} from "../data";
 
 
-const SettingsContent= ( ) => {
+const SettingsContent = () => {
+    const districtOptions = turnIntoSelectFormat(districts)
+    const bloodOptions = turnIntoSelectFormat(bloodType)
     const auth = useContext(authContext);
-    const { loadUser,user} = auth;
-    const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
-    const[profile,setProfile]=useState(user?.avatar)
-    useEffect(()=>{
-        if(user){
+    const {loadUser, user} = auth;
+    const {inputs, handleInputChange, setDefaultValues, handleInputChangeManually} = useLoginForm();
+    const handleChangeForBlood = selectedOption => {
+        handleInputChangeManually("bloodType", selectedOption.value)
+    };
+    const handleChangeForDistrict = selectedOption => {
+        handleInputChangeManually("district", selectedOption.value)
+    };
+
+    const [profile, setProfile] = useState(user?.image ? [user.image] : [])
+    useEffect(() => {
+        if (user) {
             setDefaultValues({
                 name: user?.name,
                 phone: user?.phone,
-                email: user?.email
+                email: user?.email,
+                district:districtOptions.filter(option=>option.value==user?.district),
+                bloodType:bloodOptions.filter(option=>option.value==user?.bloodType)
             })
+            setProfile([user.image])
         }
 
-    },[user])
-    const OnSave=async (e)=>{
+    }, [user])
+    const OnSave = async (e) => {
         e.preventDefault()
         try {
-             await axios.put(
+            await axios.put(
                 `${PUBLIC_URL_API}/api/auth/updatedetails`,
-                {email:inputs.email, firstName:inputs.firstName,lastName:inputs.lastName},
+                {email: inputs.email, firstName: inputs.firstName, lastName: inputs.lastName},
                 JSONConfig
             )
             Toast.success('Successfully changed user data')
@@ -45,7 +59,7 @@ const SettingsContent= ( ) => {
 
 
         } catch (error) {
-            Toast.fail(error.response.data.error +', Please try again')
+            Toast.fail(error.response.data.error + ', Please try again')
         }
     }
 
@@ -59,14 +73,14 @@ const SettingsContent= ( ) => {
                 </HeadingSection>
                 <FormContainer>
                     <PhotoUploadContainer background={'white'}>
-                    <PhotoUpload withIcon={false}
-                                 withPreview={true}
-                                 setImages={setProfile}
-                                 defaultImages={[profile]}
-                                 singleImage={true}
-                                 label={"Please select your profile picture (note:This is an optional step) "}
-                                 buttonText={"Choose your profile picture"}
-                                 maxFiles={1}/>
+                        <PhotoUpload withIcon={false}
+                                     withPreview={true}
+                                     setImages={setProfile}
+                                     defaultImages={profile}
+                                     singleImage={true}
+                                     label={"Update your profile picture "}
+                                     buttonText={"Update your profile picture"}
+                                     maxFiles={1}/>
                     </PhotoUploadContainer>
                     <InputContainer>
                         <Label>
@@ -112,12 +126,24 @@ const SettingsContent= ( ) => {
                             // intlInputLabelId="profileEmailField"
                         />
                     </InputContainer>
-
                     <InputContainer>
-                        <Button size='big' style={{ width: '100%' }} onClick={OnSave}>
+                        <Label>
+                            Your District
+                        </Label>
+                        <SelectComponent options={districtOptions} height={55}  isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"District"} value={inputs.district}/>
+                    </InputContainer>
+                    <InputContainer>
+                        <Label>
+                            Your Blood Type
+                        </Label>
+                        <SelectComponent options={bloodOptions} height={55}  isMulti={false} onChange={handleChangeForBlood} defaultLabel={"BloodType"} value={inputs.bloodType}/>
+                    </InputContainer>
+                    <InputContainer>
+                        <Button size='big' style={{width: '100%'}} onClick={OnSave}>
                             Update details
                         </Button>
                     </InputContainer>
+
                 </FormContainer>
 
             </SettingsFormContent>

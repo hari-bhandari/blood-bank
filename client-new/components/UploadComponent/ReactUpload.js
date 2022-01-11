@@ -20,7 +20,7 @@ const ReactImageUploadComponent = ({className, defaultImages,
                                        maxFiles,label,labelStyles,labelClass,
                                        withLabel,fileSizeError,errorStyle,errorClass,withPreview,fileTypeError,
                                        buttonStyles,buttonClassName,buttonType,style,buttonText,name}) => {
-    const [pictures, setPictures] = useState([...defaultImages])
+    const [pictures, setPictures] = useState(defaultImages)
     const [files, setFiles] = useState([])
     let inputElement = '';
 

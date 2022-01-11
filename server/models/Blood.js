@@ -1,9 +1,6 @@
 import mongoose from 'mongoose'
 import districts from "../data/districts.js";
-import slug from 'mongoose-slug-generator'
-
 //Initialize
-mongoose.plugin(slug);
 const BloodSchema = mongoose.Schema(
     {
         name: {
@@ -47,17 +44,17 @@ const BloodSchema = mongoose.Schema(
             ref: 'User',
             required: true
         },
-        expire: {
-            type: Date
+        inActiveAt: {
+            type: Date,
+            required:true
+        },
+        volume:{
+          type:Number,
+          required:true
         },
         image: {
             type:String,
-            default:'noImage.png'
-        },
-        id:{
-            type:String,
-            slug:["name","district"],
-            unique: true
+            default:null
         },
         expenses:{
             type:Boolean,

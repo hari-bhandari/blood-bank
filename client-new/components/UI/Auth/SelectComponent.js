@@ -35,7 +35,7 @@ export const UploadImagesToCloud = async (data) => {
     }
 
 }
-const SelectComponent = ({options, onChange, defaultLabel, isMulti, width,bottom,height,borderRadius}) => {
+const SelectComponent = ({options, onChange, defaultLabel, isMulti, width,bottom,height,borderRadius,value}) => {
     const customStyles = {
         container: provided => ({
             ...provided,
@@ -53,7 +53,7 @@ const SelectComponent = ({options, onChange, defaultLabel, isMulti, width,bottom
     return (
         <Select
             options={options} menuPlacement={bottom?'bottom':'top'} onChange={onChange}
-            placeholder={defaultLabel} isMulti={isMulti} width={"200px"} styles={customStyles} height={height}
+            placeholder={defaultLabel} isMulti={isMulti} width={"200px"} styles={customStyles} height={height} value={value}
         />
     );
 };

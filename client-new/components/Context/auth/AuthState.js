@@ -3,24 +3,17 @@ import axios from 'axios';
 import AuthContext from './authContext';
 import authReducer from './authReducer';
 import setAuthToken from './setAuthToken';
-import {PUBLIC_URL_API} from "../../config";
-import {
-    REGISTER_SUCCESS,
-    REGISTER_FAIL,
-    USER_LOADED,
-    LOGIN_SUCCESS,
-    LOGIN_FAIL,
-    LOGOUT,
-    CLEAR_ERRORS, AUTH_ERROR_GET_ME
-} from '../types';
 
-const AuthState = props => {
+import {AUTH} from "../types";
+import {PUBLIC_URL_API} from "../../config";
+
+const AuthState = (props) => {
     const initialState = {
-        token:null,
-        isAuthenticated: null,
-        loading: true,
+        isAuthenticated: false,
         user: null,
-        error: null
+        error: null,
+        token: null,
+        loading: false
     };
 
     const [state, dispatch] = useReducer(authReducer, initialState);
@@ -34,88 +27,56 @@ const AuthState = props => {
             try {
                 const res = await axios.get(`${PUBLIC_URL_API}/api/auth/me`);
                 dispatch({
-                    type: USER_LOADED,
+                    type: AUTH.LOAD_USER,
                     payload: {...res.data.data,token}
                 })
 
             } catch (err) {
                 dispatch({
-                    type: AUTH_ERROR_GET_ME,
+                    type: AUTH.LOAD_USER_FAIL,
                     payload: err.response.data.error
                 })
             }
         }
     };
 
-    // Register User
-    const register = async formData => {
-        const config = {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        };
+    // register a  User
+    const register = async (data) => {
+        dispatch({
+            type: AUTH.SIGN_UP,
+            payload: data,
+        });
 
-        try {
-            const res = await axios.post(`${PUBLIC_URL_API}/api/auth/register`, formData, config);
-
-            dispatch({
-                type: REGISTER_SUCCESS,
-                payload: res.data?.token
-            });
-
-            await loadUser();
-        } catch (err) {
-            dispatch({
-                type: REGISTER_FAIL,
-                payload: err.response.data.error
-            });
-        }
     };
-
     // Login User
-    const login = async formData => {
-        const config = {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        };
-        try {
-            const res = await axios.post(`${PUBLIC_URL_API}/api/auth/login`, formData, config);
+    const login = async (data) => {
+        dispatch({
+            type: AUTH.SIGN_UP,
+            payload: data,
+        });
 
-            dispatch({
-                type: LOGIN_SUCCESS,
-                payload: res.data
-            });
-
-            await loadUser();
-        } catch (err) {
-            dispatch({
-                type: LOGIN_FAIL,
-                payload: err.response.data.error
-            });
-        }
     };
-
 
     // Logout
-    const logout = () => dispatch({type: LOGOUT});
+    const logout = () => {
+        localStorage.removeItem('token')
+        dispatch({ type: AUTH.LOG_OUT });
+    }
 
     // Clear Errors
-    const clearErrors = () => dispatch({type: CLEAR_ERRORS});
 
     return (
         <AuthContext.Provider
             value={{
                 token: state.token,
                 isAuthenticated: state.isAuthenticated,
-                loading: state.loading,
                 user: state.user,
                 error: state.error,
+                loading:state.loading,
                 register,
                 loadUser,
                 login,
                 logout,
-                clearErrors
             }}
         >
             {props.children}

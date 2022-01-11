@@ -9,10 +9,13 @@ import {emptyValue} from "./helper";
 import Toast from "light-toast";
 import {useRouter} from "next/router";
 import {PhotoUploadContainer} from "../profile/ProfileSetting.css";
+import {ButtonContainer} from "../AddRequest/BasicInformation";
+import axios from "axios";
+import {JSONConfig, PUBLIC_URL_API} from "../../config";
 
 const Signup = () => {
     const authContext = useContext(AuthContext);
-    const {register, isAuthenticated} = authContext;
+    const {register, loadUser} = authContext;
     const districtOptions = turnIntoSelectFormat(districts)
     const bloodOptions = turnIntoSelectFormat(bloodType)
     const {inputs, handleInputChange, handleInputChangeManually, handleInputForCheckbox} = useLoginForm()
@@ -20,11 +23,7 @@ const Signup = () => {
     const [profile, setProfilePicture] = useState([])
     const router = useRouter()
 
-    useEffect(() => {
-        if (isAuthenticated) {
-            router.push('/').then(r => null)
-        }
-    }, [])
+
     const onRegister = async (e) => {
         e.preventDefault()
         if (step === 0) {
@@ -43,6 +42,7 @@ const Signup = () => {
             setStep(1)
 
         } else {
+            Toast.loading()
             const imageLink = await UploadImagesToCloud(profile)
             if (imageLink.success === false) {
                 return Toast.fail('Profile Picture uploading failed, Try again')
@@ -53,14 +53,25 @@ const Signup = () => {
             if (!emptyValue(inputs.bloodType)) {
                 return Toast.fail('Please re-check your value for Password')
             }
-            const {name, email, district, bloodType, phone, password, shareInformation} = inputs
-            Toast.loading()
-            await register({
-                name, email, district, bloodType, phone, password,
-                image: imageLink.images.length > 0 ? imageLink.images[0] : null, shareInformation
-            })
-            Toast.hide()
-            router.push('/').then(r => null)
+            const {name, email, district, bloodType, phone, password,age, shareInformation} = inputs
+            try {
+                const {data} = await axios.post(
+                    `${PUBLIC_URL_API}/api/auth/register`,
+                    {
+                        name, email, district, bloodType, phone, password,age,
+                        image: imageLink.images.length > 0 ? imageLink.images[0] : null, shareInformation
+                    },
+                    JSONConfig
+                )
+                register(data)
+                localStorage.setItem('token', JSON.stringify(data.token))
+                await loadUser()
+                Toast.success('Successfully logged in')
+            } catch (error) {
+                Toast.fail(error.response.data.error)
+            } finally {
+                Toast.hide()
+            }
 
         }
     }
@@ -72,7 +83,7 @@ const Signup = () => {
     };
 
     return (
-        <form className="sign-up-form" onSubmit={onRegister}>
+        <form className="sign-up-form">
             <h2 className="title">Sign up</h2>
             {step == 0 ?
                 <>
@@ -90,7 +101,7 @@ const Signup = () => {
                     </div>
                     <div className="input-field signup-input">
                         <i><FaMale/></i>
-                        <input type="number" placeholder="Age" name="age" value={inputs.age} onChange={(e) => handleInputChange(e)}/>
+                        <input type="number" placeholder="Age" name="age" value={inputs.age} onChange={handleInputChange}/>
                     </div>
                     <div className="input-field signup-input">
                         <i><FaLock/></i>
@@ -117,7 +128,10 @@ const Signup = () => {
                     <p className="signup-agreement"><input type="checkbox" value={inputs.shareInformation} name={'shareInformation'} onChange={handleInputForCheckbox}/>Please tick this box if you want to publicly share your number and help patients find you easily </p>
 
                 </>}
-            <input type="submit" className="btn" value={step == 1 ? 'Sign Up' : 'Next'}/>
+            <ButtonContainer>
+                {step == 1 && <input type="submit" onClick={()=>{setStep(step-1)}} className="btn" value={'Previous'}/>}
+                <input type="submit" onClick={onRegister} className="btn" value={step == 1 ? 'Sign Up' : 'Next'}/>
+            </ButtonContainer>
         </form>
     );
 };

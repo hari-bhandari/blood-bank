@@ -4,27 +4,16 @@ import {toast} from "react-toastify";
 import {AuthGlobal} from './AuthGlobal'
 import SignIn from "./SignIn";
 import Signup from "./Signup";
+import {useRouter} from "next/router";
 const Auth = ({login}) => {
     const authContext=useContext(AuthContext);
-    const {isAuthenticated,error,clearErrors}=authContext;
+    const {isAuthenticated}=authContext;
+    const router=useRouter()
     useEffect(()=>{
         if(isAuthenticated){
-            // props.history.push('/')
+            router.push('/')
         }
     })
-    useEffect(()=>{
-        if(error){
-            toast.error(error, {
-                position: "top-center",
-                autoClose: 8000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            })
-            clearErrors()}
-    },[error])
 
     const [Login,setLogin]=useState(login)
     const onClick=()=>{

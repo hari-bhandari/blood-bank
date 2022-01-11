@@ -5,11 +5,13 @@ import {FaUser,FaLock} from "react-icons/fa";
 import {emptyValue} from "./helper";
 import Toast from "light-toast";
 import {useRouter} from "next/router";
+import axios from "axios";
+import {JSONConfig, PUBLIC_URL_API} from "../../config";
 const SignIn = () => {
     const router = useRouter()
 
     const authContext=useContext(AuthContext);
-    const {login,isAuthenticated}=authContext;
+    const {login,isAuthenticated,loadUser}=authContext;
     const {inputs,handleInputChange}=useLoginForm()
     useEffect(()=>{
         if(isAuthenticated){
@@ -27,9 +29,20 @@ const SignIn = () => {
         if (!emptyValue(inputs.password)) {
             return Toast.fail('Please re-check your value for password')
         }
-        await login(inputs)
-        Toast.hide()
-        router.push('/').then(r => null)
+        try {
+            const {data} = await axios.post(
+                `${PUBLIC_URL_API}/api/auth/login`,
+                {email: inputs.email, password: inputs.password},
+                JSONConfig
+            )
+            login(data)
+            localStorage.setItem('token', JSON.stringify(data.token))
+            await loadUser()
+            Toast.success('Successfully logged in')
+
+        } catch (error) {
+            Toast.fail(error.response.data.error + ', Please try again')
+        }
     }
 
     return (

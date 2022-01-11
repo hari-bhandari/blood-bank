@@ -22,7 +22,7 @@ const BloodSchema = mongoose.Schema(
         phone: {
             type: String,
             match:  [
-                /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+                /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/,
                 'Please add a valid phone number'
             ],
         },

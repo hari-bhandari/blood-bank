@@ -23,7 +23,8 @@ const UserSchema = new mongoose.Schema({
     age: {
         type: Number,
         min: [17, 'You must be at least 17 years old to donate blood '],
-        max: [66, 'You can\'t donate blood if you are over 65 years old ']
+        max: [66, 'You can\'t donate blood if you are over 65 years old '],
+        required:[true,"Age filed seems empty!"]
     },
     password: {
         type: String,
@@ -35,7 +36,7 @@ const UserSchema = new mongoose.Schema({
     phone: {
         type: String,
         match:  [
-            /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+            /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/,
             'Please add a valid phone number'
         ],
     },

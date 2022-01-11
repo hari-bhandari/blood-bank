@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="sign in and signup working now">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added age while making request">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Blood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +158,7 @@
       <workItem from="1641799178864" duration="1411000" />
       <workItem from="1641805091631" duration="5790000" />
       <workItem from="1641813549498" duration="18143000" />
-      <workItem from="1641885420698" duration="24989000" />
+      <workItem from="1641885420698" duration="26779000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -433,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641920067494</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="added age while making request">
+      <created>1641921055222</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1641921055222</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added works done" />
     <MESSAGE value="fixed building error" />
     <MESSAGE value="removed svg" />
     <MESSAGE value="changed few styling" />
@@ -477,7 +483,8 @@
     <MESSAGE value="add request form has been added" />
     <MESSAGE value="added logout menu" />
     <MESSAGE value="sign in and signup working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign in and signup working now" />
+    <MESSAGE value="added age while making request" />
+    <option name="LAST_COMMIT_MESSAGE" value="added age while making request" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

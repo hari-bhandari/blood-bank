@@ -2,12 +2,14 @@ import React from 'react';
 import {CardContainer,Flex} from "./RequestCard.style";
 import {FaHospital,FaLocationArrow,FaMoneyBill,FaMailBulk} from "react-icons/fa";
 import Link from 'next/link'
+import {BloodType} from "./Donors/DonorCard.css";
+import {transformCloudinaryImage} from "./Donors/DonorCard";
 const RequestCard = ({donor,ref}) => {
     return (
         <CardContainer ref={ref}>
-            {/*<BloodType position={'10%'}>{donor?.bloodType}</BloodType>*/}
+            <BloodType position={'10%'}>{donor?.bloodType}</BloodType>
             <img
-                src={donor?.image}
+                src={transformCloudinaryImage(donor?.image,150,150,'.webp')}
                 alt="Person" className="card__image"/>
             <p className="card__name">{donor.name}</p>
             <Flex justify={"space-between"}>

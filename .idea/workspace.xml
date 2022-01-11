@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="stores whole data when offering a help to the requests">
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/request-details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AddRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AddRequest.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyOrders.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card-mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card-mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/order-card.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/order-details.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/order-details.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/request-details.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/forms/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/forms/input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/request.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +164,7 @@
       <workItem from="1641799178864" duration="1411000" />
       <workItem from="1641805091631" duration="5790000" />
       <workItem from="1641813549498" duration="18143000" />
-      <workItem from="1641885420698" duration="7878000" />
+      <workItem from="1641885420698" duration="13801000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -405,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641892263169</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="stores whole data when offering a help to the requests">
+      <created>1641895507004</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1641895507004</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -60,6 +60,10 @@ const BloodSchema = mongoose.Schema(
             type:String,
             default:null
         },
+        age:{
+            type:Number,
+            required:true
+        },
         expenses:{
             type:Boolean,
             default: false

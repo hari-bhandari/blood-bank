@@ -11,7 +11,6 @@ import Toast from "light-toast";
 import {UploadImagesToCloud} from "../Auth/SelectComponent";
 import axios from "axios";
 import {JSONConfig, PUBLIC_URL_API} from "../../config";
-import {AUTH_ERROR_GET_ME, USER_LOADED} from "../../Context/types";
 import {useRouter} from "next/router";
 export const ButtonContainer = styled.div`
   display: flex;
@@ -34,10 +33,10 @@ const AdditionalDetails = (
             return Toast.fail('Please re-check your value for District')
         }
         const image=imageLink.images.length > 0 ? imageLink.images[0]:null
-        const {name, email, district, bloodType, phone, password, runFor,volume,requestMessage,hospitalName} = inputs
+        const {name, email, district, bloodType, phone, password, age,runFor,volume,requestMessage,hospitalName} = inputs
         try {
             const res = await axios.post(`${PUBLIC_URL_API}/api/help/req`, {
-                name, email, district, bloodType, phone, password, runFor,volume,image,requestMessage,hospitalName}, JSONConfig);
+                name, email, district, bloodType, phone, password, age,runFor,volume,image,requestMessage,hospitalName}, JSONConfig);
 
             Toast.success(`A request has been created with a name of ${res.data.data.name} `)
             await router.push('/requests')

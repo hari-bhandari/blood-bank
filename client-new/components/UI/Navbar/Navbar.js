@@ -21,11 +21,15 @@ const MyProfileComponent = styled.div`
 const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
     const [isOpen, setIsOpen] = useState(false)
     const auth = useContext(authContext);
-    const {isAuthenticated} = auth;
+    const {isAuthenticated, logout} = auth;
     // Toggle drawer
     const toggleHandler = () => {
         setIsOpen(!isOpen)
     };
+    const onLogout = () => {
+        logout()
+        location.reload();
+    }
     const AuthedMenu =
         [
             <Link href={'/profile'}>
@@ -36,7 +40,10 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
             </Link>,
             <Link href={'/profile/requests'}>
                 <a>My Requests</a>
-            </Link>
+            </Link>,
+            <div onClick={onLogout}>
+                <a> Logout</a>
+            </div>
         ]
 
     return (

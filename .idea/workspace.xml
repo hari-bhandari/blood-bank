@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added request form">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="add request form has been added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AddRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AddRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Blood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +160,7 @@
       <workItem from="1641799178864" duration="1411000" />
       <workItem from="1641805091631" duration="5790000" />
       <workItem from="1641813549498" duration="18143000" />
-      <workItem from="1641885420698" duration="18723000" />
+      <workItem from="1641885420698" duration="20257000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -414,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641904843117</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add request form has been added">
+      <created>1641914526405</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1641914526405</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +440,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added navbar to the new client" />
     <MESSAGE value="adding FAQ page" />
     <MESSAGE value="added quotes" />
     <MESSAGE value="added works done" />
@@ -458,7 +464,8 @@
     <MESSAGE value="added few more pages and" />
     <MESSAGE value="stores whole data when offering a help to the requests" />
     <MESSAGE value="added request form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added request form" />
+    <MESSAGE value="add request form has been added" />
+    <option name="LAST_COMMIT_MESSAGE" value="add request form has been added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

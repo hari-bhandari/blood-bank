@@ -34,9 +34,10 @@ const UserSchema = new mongoose.Schema({
     },
     phone: {
         type: String,
-        required: [true, 'Please add a Phone Number'],
-        minLength: 8,
-        maxLength: 12,
+        match:  [
+            /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+            'Please add a valid phone number'
+        ],
     },
     image: {
         type: String,

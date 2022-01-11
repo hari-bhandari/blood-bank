@@ -21,7 +21,10 @@ const BloodSchema = mongoose.Schema(
         },
         phone: {
             type: String,
-            maxlength: [15, 'Phone number can not be longer than 15 characters']
+            match:  [
+                /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+                'Please add a valid phone number'
+            ],
         },
         email: {
             type: String,
@@ -38,6 +41,7 @@ const BloodSchema = mongoose.Schema(
         },
         hospitalName: {
             type: String,
+            required:true
         },
         user: {
             type: mongoose.Schema.ObjectId,

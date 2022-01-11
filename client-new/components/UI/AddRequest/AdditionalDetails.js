@@ -34,10 +34,10 @@ const AdditionalDetails = (
             return Toast.fail('Please re-check your value for District')
         }
         const image=imageLink.images.length > 0 ? imageLink.images[0]:null
-        const {name, email, district, bloodType, phone, password, runFor,volume,requestMessage} = inputs
+        const {name, email, district, bloodType, phone, password, runFor,volume,requestMessage,hospitalName} = inputs
         try {
             const res = await axios.post(`${PUBLIC_URL_API}/api/help/req`, {
-                name, email, district, bloodType, phone, password, runFor,volume,image,requestMessage}, JSONConfig);
+                name, email, district, bloodType, phone, password, runFor,volume,image,requestMessage,hospitalName}, JSONConfig);
 
             Toast.success(`A request has been created with a name of ${res.data.data.name} `)
             await router.push('/requests')
@@ -71,6 +71,23 @@ const AdditionalDetails = (
                     placeholder='Run this request for (in days)'
                     name='runFor'
                     value={inputs.runFor}
+                    onChange={handleInputChange}
+                    backgroundColor='#F7F7F7'
+                    height='48px'
+                    // intlInputLabelId="profileNameField"
+                />
+
+            </InputContainer>
+            <InputContainer>
+                <Label>
+                    Hospital Name
+                </Label>
+                <Input
+                    type='text'
+                    label='Hospital Name'
+                    placeholder='Hospital Name'
+                    name='hospitalName'
+                    value={inputs.hospitalName}
                     onChange={handleInputChange}
                     backgroundColor='#F7F7F7'
                     height='48px'

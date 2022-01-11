@@ -1,21 +1,14 @@
 import styled from 'styled-components';
 import {themeGet} from '@styled-system/theme-get';
 import {
-    Address as Addresses,
-    CostCalculation as CostCalculations,
-    DeliveryAddress as DeliveryAddresses,
-    DeliveryInfo as DeliveryInfos,
-    OrderTable as OrderTables,
-    Price as Prices,
-    PriceRow as PriceRows,
-    ProgressWrapper as ProgressWrappers,
-} from '../order-details/order-details.style';
+    Message as Addresses,
+    RequestMessage as DeliveryAddresses,
+    EditContainer as DeliveryInfos,
+    RequestTable as OrderTables,
+} from '../order-details/request-details.style';
 
 export const Address = styled(Addresses)``;
-export const PriceRow = styled(PriceRows)``;
-export const Price = styled(Prices)``;
 export const OrderTable = styled(OrderTables)``;
-
 export const DeliveryInfo = styled(DeliveryInfos)`
   flex-direction: column;
 `;
@@ -23,16 +16,6 @@ export const DeliveryInfo = styled(DeliveryInfos)`
 export const DeliveryAddress = styled(DeliveryAddresses)`
   border-bottom: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
   border-right: 0;
-`;
-
-export const CostCalculation = styled(CostCalculations)`
-  width: 100%;
-`;
-
-export const ProgressWrapper = styled(ProgressWrappers)`
-  @media (max-width: 767px) {
-    flex-direction: column;
-  }
 `;
 
 export const OrderListHeader = styled.div`
@@ -65,7 +48,7 @@ export const Status = styled.span`
   border-radius: ${themeGet('radii.base', '6px')};
 `;
 
-export const OrderMeta = styled.div`
+export const RequestMeta = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -97,7 +80,7 @@ export const Meta = styled.div`
 
 // for mobile
 
-export const OrderDetail = styled.div`
+export const RequestDetail = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -107,7 +90,7 @@ export const CardWrapper = styled.div`
   width: 100%;
 `;
 
-export const SingleOrderList = styled.div`
+export const SingleRequestList = styled.div`
   background-color: ${themeGet('colors.gray.200', '#f7f7f7')};
   border-radius: ${themeGet('radii.base', '6px')};
   overflow: hidden;
@@ -127,7 +110,7 @@ export const SingleOrderList = styled.div`
   }
 `;
 
-export const OrderTableMobile = styled.div`
+export const RequestTableMobile = styled.div`
   .rc-table-header,
   .rc-table-body,
   .rc-table th,

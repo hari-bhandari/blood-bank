@@ -5,26 +5,25 @@ import {
     DesktopView,
     ImageWrapper,
     ItemDetails,
-    ItemName,
-    ItemPrice,
+    RequestName,
+    RequestID,
     ItemWrapper,
     MobileView,
-    NoOrderFound,
+    NoRequestFound,
     OrderBox,
     OrderDetailsWrapper,
     OrderList,
     OrderListWrapper,
     Title,
-} from './MyOrders.css';
-import OrderDetails from './order-details/order-details';
-import OrderCard from './order-card/order-card';
-import OrderCardMobile from './order-card/order-card-mobile';
+} from './MyRequests.css';
+import RequestDetails from './order-details/request-details';
+import RequestCard from './order-card/request-card';
+import OrderCardMobile from './order-card/request-card-mobile';
 import useComponentSize from '../../../../hooks/useComponentSize';
 import {PUBLIC_URL_API} from "../../../config";
 import useFetch from "../../../../hooks/useFetch";
 
 
-const progressData = ['Order Received', 'Order On The Way', 'Order Delivered'];
 
 const orderTableColumns = [
     {
@@ -37,12 +36,12 @@ const orderTableColumns = [
             return (
                 <ItemWrapper>
                     <ImageWrapper>
-                        <img src={record.thumbImage} alt={record.name} />
+                        <img src={record.image} alt={record.name} />
                     </ImageWrapper>
 
                     <ItemDetails>
-                        <ItemName>{record.name}</ItemName>
-                        <ItemPrice>{record.price}</ItemPrice>
+                        <RequestName>{record.name}</RequestName>
+                        <RequestID>{record.bloodType}</RequestID>
                     </ItemDetails>
                 </ItemWrapper>
             );
@@ -50,23 +49,23 @@ const orderTableColumns = [
     },
     {
         title: (
-            'Quantity'        ),
-        dataIndex: 'quantity',
-        key: 'quantity',
+            'District'        ),
+        dataIndex: 'district',
+        key: 'district',
         align: 'center',
-        width: 100,
+        width: 300,
         render:(text, record) => {
-            return <p>{record.cartQuantity}</p>;
+            return <p>{record.district?.toUpperCase() }</p>;
         },
     },
     {
-        title:'Price',
+        title:'Phone Number',
         dataIndex: '',
-        key: 'price',
+        key: 'phone',
         align: 'right',
         width: 100,
         render: (text, record) => {
-            return <p>{record.price*record.cartQuantity}</p>;
+            return <p>{record.phone}</p>;
         },
     },
 ];
@@ -93,7 +92,7 @@ const OrdersContent = () => {
                                     const createdTime = dateFormat(created, "HH:MM")
                                     const createdDate=dateFormat(created,"dddd, mmmm dS, yyyy")
                                     return (
-                                    <OrderCard
+                                    <RequestCard
                                         key={current._id}
                                         orderId={current._id}
                                         className={current._id === selection?._id ? 'active' : ''}
@@ -106,9 +105,9 @@ const OrdersContent = () => {
                                     )
                                 })
                             ) : (
-                                <NoOrderFound>
+                                <NoRequestFound>
                                     No order found
-                                </NoOrderFound>
+                                </NoRequestFound>
                             )}
                         </OrderList>
                     </Scrollbar>
@@ -120,15 +119,14 @@ const OrdersContent = () => {
                             View Donors
                         </Title>
                         {selection && (
-                            <OrderDetails
+                            <RequestDetails
                                 progressStatus={selection.status}
-                                progressData={progressData}
-                                address={selection.shippingAddress}
-                                subtotal={selection.totalPrice}
+                                requestMessage={selection.requestMessage}
+                                subtotal={selection.volume}
                                 discount={selection.discount}
                                 deliveryFee={1.99}
                                 grandTotal={selection.totalPrice}
-                                tableData={selection.orderItems}
+                                tableData={selection.helpers}
                                 columns={orderTableColumns}
                             />
                         )}
@@ -141,7 +139,6 @@ const OrdersContent = () => {
                     <OrderCardMobile
                         orders={data.data}
                         // className={order && order.id === active ? 'active' : ''}
-                        progressData={progressData}
                         columns={orderTableColumns}
                         onClick={setSelection}
                     />

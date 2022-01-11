@@ -1,9 +1,9 @@
 import React from 'react';
-import {Meta, OrderListHeader, OrderMeta, SingleOrderList, Status, TrackID,} from './order-card.style';
+import {Meta, OrderListHeader, RequestMeta, SingleRequestList, Status, TrackID,} from './request-card.style';
 
 
 
-const OrderCard= ({
+const RequestCard= ({
                                                  orderId,
                                                  onClick,
                                                  className,
@@ -14,7 +14,7 @@ const OrderCard= ({
                                              }) => {
     return (
         <>
-            <SingleOrderList onClick={onClick} className={className}>
+            <SingleRequestList onClick={onClick} className={className}>
                 <OrderListHeader>
                     <TrackID>
                         Request
@@ -23,7 +23,7 @@ const OrderCard= ({
                     <Status>{succeeded?'✅':'❌'} </Status>
                 </OrderListHeader>
 
-                <OrderMeta>
+                <RequestMeta>
                     <Meta>
                         Date
                         :
@@ -37,13 +37,13 @@ const OrderCard= ({
                         Volume Needed
                         :
                         <span>
-                            {amount}L
+                            {amount}ML
             </span>
                     </Meta>
-                </OrderMeta>
-            </SingleOrderList>
+                </RequestMeta>
+            </SingleRequestList>
         </>
     );
 };
 
-export default OrderCard;
+export default RequestCard;

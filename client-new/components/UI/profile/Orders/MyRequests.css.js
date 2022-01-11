@@ -113,8 +113,8 @@ const Title = styled.h3`
 
 // Invoice Table design
 const ImageWrapper = styled.span`
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   display: flex;
   flex-shrink: 0;
 
@@ -137,7 +137,7 @@ const ItemDetails = styled.span`
   overflow: hidden;
 `;
 
-const ItemName = styled.span`
+const RequestName = styled.span`
   font-family: ${themeGet('fonts.body', 'Lato')};
   font-size: ${themeGet('fontSizes.base', '15')}px;
   font-weight: ${themeGet('fontWeights.bold', '700')};
@@ -147,28 +147,15 @@ const ItemName = styled.span`
   overflow: hidden;
   display: inline-block;
 `;
-const ItemSize = styled('span')`
-  font-family: ${themeGet('fonts.body', 'Lato')};
-  font-size: ${themeGet('fontSizes.sm', '13')}px;
-  font-weight: ${themeGet('fontWeights.regular', '400')};
-  color: ${themeGet('colors.text.regular', '#77798c')};
-  margin-bottom: 5px;
-`;
-const ItemPrice = styled('span')`
+
+const RequestID = styled('span')`
   font-family: ${themeGet('fonts.body', 'Lato')};
   font-size: ${themeGet('fontSizes.sm', '13')}px;
   font-weight: ${themeGet('fontWeights.regular', '400')};
   color: ${themeGet('colors.primary.regular', '#009e7f')};
 `;
 
-const TotalPrice = styled.span`
-  font-family: ${themeGet('fonts.body', 'Lato')};
-  font-size: ${themeGet('fontSizes.base', '15')}px;
-  font-weight: ${themeGet('fontWeights.regular', '400')};
-  color: ${themeGet('colors.text.bold', '#0D1136')};
-`;
-
-const NoOrderFound = styled.span`
+const NoRequestFound = styled.span`
   font-family: ${themeGet('fonts.body', 'Lato')};
   font-size: ${themeGet('fontSizes.base', '15')}px;
   font-weight: ${themeGet('fontWeights.regular', '400')};
@@ -190,9 +177,7 @@ export {
     ImageWrapper,
     ItemWrapper,
     ItemDetails,
-    ItemName,
-    ItemSize,
-    ItemPrice,
-    TotalPrice,
-    NoOrderFound,
+    RequestName,
+    RequestID,
+    NoRequestFound,
 };

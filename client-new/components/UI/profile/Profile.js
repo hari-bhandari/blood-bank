@@ -7,7 +7,7 @@ import OrdersIcon from "./UserIcon";
 import ReviewsIcon from "./UserIcon";
 import ProfileSetting from "../profile/ProfileSetting";
 import MyReviews from "./MyReviews";
-import MyOrders from "./Orders/MyOrders";
+import MyOrders from "./Orders/MyRequests";
 import { FcViewDetails } from "react-icons/fc";
 
 const TabListHeader=styled.p`

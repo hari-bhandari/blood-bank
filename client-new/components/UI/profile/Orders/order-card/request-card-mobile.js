@@ -4,21 +4,17 @@ import Collapse, {Panel} from 'rc-collapse';
 import {
     Address,
     CardWrapper,
-    CostCalculation,
     DeliveryAddress,
     DeliveryInfo,
     Meta,
-    OrderDetail,
+    RequestDetail,
     OrderListHeader,
-    OrderMeta,
+    RequestMeta,
     OrderTable,
-    OrderTableMobile,
-    Price,
-    PriceRow,
-    ProgressWrapper,
+    RequestTableMobile,
     Status,
     TrackID,
-} from './order-card.style';
+} from './request-card.style';
 import dateFormat from 'dateformat'
 
 
@@ -34,10 +30,7 @@ const OrderCard= ({
                                                      progressData,
                                                      orders,
                                                    }) => {
-  const statusChecker=(status)=>{
-    const list=['received', 'dispatched', 'delivered']
-    return list.findIndex(data=>data==status)+1
-  }
+
   return (
       <>
         <Collapse
@@ -60,7 +53,7 @@ const OrderCard= ({
                                     <Status>{order?.active ? '✅' : '❌'}</Status>
                                 </OrderListHeader>
 
-                                <OrderMeta>
+                                <RequestMeta>
                                     <Meta>
                                         Date: <span>{createdDate}</span>
                               </Meta>
@@ -70,68 +63,36 @@ const OrderCard= ({
                               <Meta className="price">
                                 Volume Needed:
                                 <span>
-                                  {order.volume} L
+                                  {order.volume} ML
                     </span>
                               </Meta>
-                            </OrderMeta>
+                            </RequestMeta>
                           </CardWrapper>
                         }
                         headerClass="accordion-title"
                         key={order._id}
                     >
-                      <OrderDetail>
+                      <RequestDetail>
                         <DeliveryInfo>
                           <DeliveryAddress>
                             <h3>Request Message</h3>
                             <Address>{order?.message}</Address>
-                            {/*<Address>{order.shippingAddress.address2}</Address>*/}
-                            {/*<Address><b>{order.shippingAddress.postcode}</b></Address>*/}
                           </DeliveryAddress>
 
-                          {/*<CostCalculation>*/}
-                          {/*  <PriceRow>*/}
-                          {/*    Subtotal*/}
-                          {/*    <Price>*/}
-                          {/*      £*/}
-                          {/*      {order.totalPrice}*/}
-                          {/*    </Price>*/}
-                          {/*  </PriceRow>*/}
-                          {/*  <PriceRow>*/}
-                          {/*    Discount*/}
-                          {/*    <Price>*/}
-                          {/*      £*/}
-                          {/*      {0}*/}
-                          {/*    </Price>*/}
-                          {/*  </PriceRow>*/}
-                          {/*  <PriceRow>*/}
-                          {/*    Delivery Fee*/}
-                          {/*    <Price>*/}
-                          {/*      £*/}
-                          {/*      {order.shippingPrice}*/}
-                          {/*    </Price>*/}
-                          {/*  </PriceRow>*/}
-                          {/*  <PriceRow className="grandTotal">*/}
-                          {/*    Total*/}
-                          {/*    <Price>*/}
-                          {/*      £*/}
-                          {/*      {order.totalPrice}*/}
-                          {/*    </Price>*/}
-                          {/*  </PriceRow>*/}
-                          {/*</CostCalculation>*/}
                         </DeliveryInfo>
 
 
-                        <OrderTableMobile>
+                        <RequestTableMobile>
                           <Table
                               columns={columns}
-                              data={order.orderItems}
+                              data={order.helpers}
                               rowKey={(record) => record.id}
                               components={components}
                               scroll={{ x: 450 }}
                               // scroll={{ y: 250 }}
                           />
-                        </OrderTableMobile>
-                      </OrderDetail>
+                        </RequestTableMobile>
+                      </RequestDetail>
                     </Panel>
                 )
               }

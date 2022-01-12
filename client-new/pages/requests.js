@@ -4,7 +4,7 @@ import RequestsSection from "../components/UI/Requests/Requests";
 
 const Requests = () => {
     return (
-        <Layout description={"All the requests made on blood bank "} title={"Requests | BloodBank"}>
+        <Layout description={"All the requests made on blood bank "} title={"Requests | BloodBank"}  initialShadow={true}>
             <RequestsSection/>
         </Layout>
     );

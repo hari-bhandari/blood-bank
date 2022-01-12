@@ -4,7 +4,7 @@ import DonorsSection from "../components/UI/Requests/Donors/Donors";
 
 const Donors = () => {
     return (
-        <Layout title={"Public Donors | BloodBank"} description={"Our Public donors, all at the same place"}>
+        <Layout title={"Public Donors | BloodBank"} description={"Our Public donors, all at the same place"}initialShadow={true}>
             <DonorsSection/>
         </Layout>
     );

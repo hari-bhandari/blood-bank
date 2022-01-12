@@ -4,7 +4,7 @@ import AddRequest from "../components/UI/AddRequest/AddRequest";
 
 const Request = () => {
     return (
-        <Layout title={" Request for blood"}>
+        <Layout title={" Request for blood"} initialShadow={true}>
             <AddRequest/>
         </Layout>
     );

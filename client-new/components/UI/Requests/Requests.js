@@ -44,13 +44,6 @@ const Requests = () => {
     return (
         <RequestsContainer>
             <InsiderContainer>
-                <Heading
-                    textAlign={"center"}
-                    fontSize={[`${6}`, `${8}`]}
-                    fontWeight={'400'}
-                    color='#d20d00'
-                    letterSpacing={'-0.025em'}
-                    mb={`${0}`} content="Filter Requests"/>
             <Container>
                 <Row>
                     <Col lg={6} md={6} sm={12}>

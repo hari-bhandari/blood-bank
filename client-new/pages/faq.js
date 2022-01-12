@@ -22,7 +22,7 @@ const FaqSection = ({
                         description,
                     }) => {
     return (
-       <Layout title={"FAQ | BloodBank"} description={"Most frequently asked questions at the same place"}>
+       <Layout title={"FAQ | BloodBank"} initialShadow={true} description={"Most frequently asked questions at the same place"}>
                 <Box {...sectionWrapper}>
                     <Container>
                         <Box {...secTitleWrapper}>

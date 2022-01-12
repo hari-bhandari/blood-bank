@@ -7,7 +7,7 @@ import SEO from "../SEO";
 import authContext from "../Context/auth/authContext";
 
 
-const Layout = ({children,title,description}) => {
+const Layout = ({children,title,description,initialShadow}) => {
     const auth = useContext(authContext);
     const {loadUser} = auth;
     useEffect(() => {
@@ -25,7 +25,7 @@ const Layout = ({children,title,description}) => {
 
             <ContentWrapper>
                 <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-                    <Navbar/>
+                    <Navbar initialShadow={initialShadow}/>
                 </Sticky>
                 {children}
             </ContentWrapper>

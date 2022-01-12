@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import NavbarWrapper from '../../elements/Navbar';
 import Drawer from '../../elements/Drawer';
@@ -18,8 +18,9 @@ import authContext from "../../Context/auth/authContext";
 const MyProfileComponent = styled.div`
   display: flex;
 `
-const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
+const Navbar = ({navbarStyle, logoStyle, row, menuWrapper,initialShadow}) => {
     const [isOpen, setIsOpen] = useState(false)
+
     const auth = useContext(authContext);
     const {isAuthenticated, logout} = auth;
     // Toggle drawer
@@ -47,7 +48,7 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper}) => {
         ]
 
     return (
-        <NavbarWrapper {...navbarStyle} >
+        <NavbarWrapper {...navbarStyle} initialShadow={initialShadow} >
             <Container noGutter mobileGutter width="1200px">
                 <Box {...row}>
                     <Logo

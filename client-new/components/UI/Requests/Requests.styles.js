@@ -16,5 +16,5 @@ export const RequestsContainer = styled.div`
 `
 export const InsiderContainer = styled.div`
   width: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
 `

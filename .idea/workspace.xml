@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added age while making request">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="images fixed on requests as well">
+      <change afterPath="$PROJECT_DIR$/client-new/pages/404.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/blood.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220111_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220112_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/UI/profile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -158,7 +161,8 @@
       <workItem from="1641799178864" duration="1411000" />
       <workItem from="1641805091631" duration="5790000" />
       <workItem from="1641813549498" duration="18143000" />
-      <workItem from="1641885420698" duration="26779000" />
+      <workItem from="1641885420698" duration="29364000" />
+      <workItem from="1641973374919" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -440,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641921055222</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="images fixed on requests as well">
+      <created>1641926377299</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1641926377299</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +470,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fixed building error" />
     <MESSAGE value="removed svg" />
     <MESSAGE value="changed few styling" />
     <MESSAGE value="added login and signup forms" />
@@ -484,7 +494,8 @@
     <MESSAGE value="added logout menu" />
     <MESSAGE value="sign in and signup working now" />
     <MESSAGE value="added age while making request" />
-    <option name="LAST_COMMIT_MESSAGE" value="added age while making request" />
+    <MESSAGE value="images fixed on requests as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="images fixed on requests as well" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,7 +522,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js</url>
-          <line>136</line>
+          <line>126</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

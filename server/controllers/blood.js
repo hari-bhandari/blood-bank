@@ -60,7 +60,7 @@ export const deleteRequest = asyncHandler(async (req, res, next) => {
 //@route GET
 //@access Public
 export const getBloodRequest = asyncHandler(async (req, res, next) => {
-    const blood = await Blood.findOne({id: req.params.id})
+    const blood = await Blood.findOne({_id: req.params.id})
     if (!blood) {
         return next(new ErrorResponse(`User not found with id of ${req.params.id}`, 404))
     }

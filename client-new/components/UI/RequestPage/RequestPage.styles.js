@@ -3,6 +3,8 @@ export const ProfilePageCSS=styled.div`
   * {
     list-style: none;
   }
+  font-family: 'poppins',serif;
+  margin-top: 200px;
   .wrapper {
     margin: 20px auto;
     width: 80%;
@@ -43,6 +45,12 @@ export const ProfilePageCSS=styled.div`
   }
   .wrapper .left h4 {
     margin-bottom: 10px;
+  }
+  p{
+    font-family: 'poppins',serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #919aa3;
   }
   .wrapper .left p {
     font-size: 20px;

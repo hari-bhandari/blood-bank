@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {Container, Row, Col} from 'react-grid-system';
+import React, {useEffect, useState} from 'react';
+import {Col, Container, Row} from 'react-grid-system';
 import RequestCard from "./RequestCard";
 import {bloodType, districts, turnIntoSelectFormat} from "../data";
 import SelectComponent from "../Auth/SelectComponent";
@@ -8,7 +8,7 @@ import {CentralizeDiv} from "../centerDiv";
 import {SpinnerInfinity} from "spinners-react";
 import useInfiniteQuery from './useInfinityQuery'
 import {useInView} from "react-hook-inview";
-import {RequestsContainer,InsiderContainer} from "./Requests.styles";
+import {InsiderContainer, RequestsContainer} from "./Requests.styles";
 import Heading from "../../elements/Heading";
 
 const Requests = () => {

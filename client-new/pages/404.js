@@ -4,6 +4,7 @@ import {themeGet} from "@styled-system/theme-get";
 import {Button} from "../components/UI/profile/forms/label";
 import {useRouter} from "next/router";
 import Layout from "../components/UI/layout";
+
 const Custom404Container = styled.div`
   background: white;
   height: 100%;

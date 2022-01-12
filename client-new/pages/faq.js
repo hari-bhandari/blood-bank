@@ -3,15 +3,7 @@ import PropTypes from 'prop-types';
 import Box from '../components/elements/Box';
 import Text from '../components/elements/Text';
 import Heading from '../components/elements/Heading';
-import {
-    Accordion,
-    AccordionItem,
-    AccordionTitle,
-    AccordionBody,
-    IconWrapper,
-    OpenIcon,
-    CloseIcon,
-} from '../components/Accordion';
+import {Accordion, AccordionBody, AccordionItem, AccordionTitle, CloseIcon, IconWrapper, OpenIcon,} from '../components/Accordion';
 import Container from '../components/Container';
 import {Icon} from 'react-icons-kit';
 import {plus} from 'react-icons-kit/entypo/plus';
@@ -19,6 +11,7 @@ import {minus} from 'react-icons-kit/entypo/minus';
 
 import {FAQ_DATA} from "../components/FAQ";
 import Layout from "../components/UI/layout";
+
 const FaqSection = ({
                         sectionWrapper,
                         row,

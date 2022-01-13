@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="used config url">
-      <change beforePath="$PROJECT_DIR$/client-new/components/SEO.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/SEO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/404.js" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed building errors">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,14 +161,7 @@
       <workItem from="1641977794509" duration="4240000" />
       <workItem from="1642058092408" duration="2893000" />
       <workItem from="1642061011261" duration="7373000" />
-      <workItem from="1642084363452" duration="5810000" />
-    </task>
-    <task id="LOCAL-00004" summary="added new client (improved)">
-      <created>1641202235217</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1641202235217</updated>
+      <workItem from="1642084363452" duration="7622000" />
     </task>
     <task id="LOCAL-00005" summary="added new client (improved)">
       <created>1641203387303</created>
@@ -509,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642093424368</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fixed building errors">
+      <created>1642093861983</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1642093861983</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +525,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added donors page" />
     <MESSAGE value="added route to upload images" />
     <MESSAGE value="multiple steps while signing up" />
     <MESSAGE value="signing up working now" />
@@ -553,7 +549,8 @@
     <MESSAGE value="fixed error on package.json" />
     <MESSAGE value="added production url" />
     <MESSAGE value="used config url" />
-    <option name="LAST_COMMIT_MESSAGE" value="used config url" />
+    <MESSAGE value="fixed building errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed building errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

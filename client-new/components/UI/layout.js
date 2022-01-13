@@ -16,10 +16,7 @@ const Layout = ({children,title,description,initialShadow}) => {
     return (
         <div>
             <SEO title={title} description={description} />
-            <link
-                href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Lato:300,400,700"
-                rel="stylesheet"
-            />
+
             <GlobalStyle/>
             <ResetCSS/>
 

@@ -10,6 +10,10 @@ import Head from 'next/head';
                                             image,
                                         }) => (
     <Head>
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Lato:300,400,700"
+            rel="stylesheet"
+        />
         <title>{title}</title>
         <meta name="description" content={description}/>
         <meta
@@ -23,7 +27,7 @@ import Head from 'next/head';
             property="og:description"
             content={description}
         />
-        <meta property="og:site_name" content="Wise Cart"/>
+        <meta property="og:site_name" content="Blood Bank"/>
         <meta property="og:url" content={`${canonical}`}/>
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:title" content={title}/>

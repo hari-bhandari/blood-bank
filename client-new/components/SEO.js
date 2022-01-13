@@ -28,15 +28,14 @@ import Head from 'next/head';
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:title" content={title}/>
         <meta name="twitter:description" content={description}/>
-        <meta name="twitter:site" content="@wisecart"/>
-        <meta name="twitter:creator" content="@wisecart"/>
+        <meta name="twitter:site" content="@bloodbank"/>
+        <meta name="twitter:creator" content="@bloodbank"/>
         {css && <link rel="stylesheet" href={`${css}`}/>}
         <meta property="og:image"
               content={`${image ? image : "https://res.cloudinary.com/wisecart/image/upload/v1616709850/gnfkfnm1c9rczncp5c5t.png"}`}/>
         <meta name="twitter:image"
               content={`${image ? image : "https://res.cloudinary.com/wisecart/image/upload/v1616709850/gnfkfnm1c9rczncp5c5t.png"}`}/>
         {canonical && <link rel="canonical" href={`${canonical}`}/>}
-        {js && <script type={"text/javascript"} src={`${js}`}></script>}
     </Head>
 );
  export default SEO

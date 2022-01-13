@@ -33,16 +33,16 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper,initialShadow}) => {
     }
     const AuthedMenu =
         [
-            <Link href={'/profile'}>
+            <Link href={'/profile'} key={0}>
                 <a>Profile</a>
             </Link>,
-            <Link href={'/request'}>
+            <Link href={'/request'} key={1}>
                 <a>Request For Blood</a>
             </Link>,
-            <Link href={'/profile/requests'}>
+            <Link href={'/profile/requests'} key={2}>
                 <a>My Requests</a>
             </Link>,
-            <div onClick={onLogout}>
+            <div onClick={onLogout} key={3}>
                 <a> Logout</a>
             </div>
         ]

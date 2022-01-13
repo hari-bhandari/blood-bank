@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import styled from "styled-components";
-import {useLoginForm} from "../Auth/useForm";
 import {InputContainer} from "../profile/ProfileSetting.css";
 import {Button, Label} from "../profile/forms/label";
 import {Input} from "../profile/forms/input";
@@ -116,7 +115,7 @@ const BasicInformation = ({next,inputs, handleInputChange, setDefaultValues, han
             </InputContainer>
             <InputContainer>
                 <Label>
-                    Patient's age
+                    Patient&apos;s age
                 </Label>
                 <Input
                     type='number'

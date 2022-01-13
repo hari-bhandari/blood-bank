@@ -213,7 +213,7 @@ const Custom404 = () => {
                     <Number>4</Number>
                 </Error>
 
-                <TextLost>Oops. The page you're looking for doesn't exist.</TextLost>
+                <TextLost>Oops. The page you&apos;re looking for doesn&apos;t exist.</TextLost>
                 <Button type={'button'} style={{
                     margin: '40px 0',
                     height: '50px',

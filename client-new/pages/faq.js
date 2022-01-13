@@ -25,7 +25,7 @@ const FaqSection = ({
        <Layout title={"FAQ | BloodBank"} initialShadow={true} description={"Most frequently asked questions at the same place"}>
                 <Box {...sectionWrapper}>
                     <Container>
-                        <Box {...secTitleWrapper}>
+                        <Box {...secTitleWrapper} style={{marginTop:"50px"}}>
                             <Heading {...secHeading} content="F.A.Q"/>
                         </Box>
                         <Box {...row}>

@@ -10,10 +10,10 @@ import {
     ItemWrapper,
     MobileView,
     NoRequestFound,
-    OrderBox,
-    OrderDetailsWrapper,
-    OrderList,
-    OrderListWrapper,
+    RequestBox,
+    RequestDetailsWrapper,
+    RequestList,
+    RequestListWrapper,
     Title,
 } from './MyRequests.css';
 import RequestDetails from './order-details/request-details';
@@ -70,22 +70,22 @@ const orderTableColumns = [
     },
 ];
 
-const OrdersContent = () => {
+const RequestContent = () => {
     const [targetRef, size] = useComponentSize();
     const [data, isLoading] = useFetch(`${PUBLIC_URL_API}/api/auth/getMyRequests`, true)
     const [selection, setSelection] = useState(null);
     if (!data || isLoading) return <h3>loading...</h3>;
 
     return (
-        <OrderBox>
+        <RequestBox>
             <DesktopView>
-                <OrderListWrapper style={{height: size?.height}}>
+                <RequestListWrapper style={{height: size?.height}}>
                     <Title style={{padding: '0 20px'}}>
                         My Requests
                     </Title>
 
                     <Scrollbar className='order-scrollbar'>
-                        <OrderList>
+                        <RequestList>
                             {data.data.length !== 0 ? (
                                 data.data.map((current) => {
                                     const created = new Date(current.createdAt)
@@ -109,12 +109,11 @@ const OrdersContent = () => {
                                     No Requests found
                                 </NoRequestFound>
                             )}
-                        </OrderList>
+                        </RequestList>
                     </Scrollbar>
-                </OrderListWrapper>
+                </RequestListWrapper>
                 {
-                    // @ts-ignore
-                    <OrderDetailsWrapper ref={targetRef}>
+                    <RequestDetailsWrapper ref={targetRef}>
                         <Title style={{padding: '0 20px'}}>
                             View Donors
                         </Title>
@@ -130,22 +129,22 @@ const OrdersContent = () => {
                                 columns={orderTableColumns}
                             />
                         )}
-                    </OrderDetailsWrapper>
+                    </RequestDetailsWrapper>
                 }
             </DesktopView>
 
             <MobileView>
-                <OrderList>
+                <RequestList>
                     <OrderCardMobile
                         orders={data.data}
                         // className={order && order.id === active ? 'active' : ''}
                         columns={orderTableColumns}
                         onClick={setSelection}
                     />
-                </OrderList>
+                </RequestList>
             </MobileView>
-        </OrderBox>
+        </RequestBox>
     );
 };
 
-export default OrdersContent;
+export default RequestContent;

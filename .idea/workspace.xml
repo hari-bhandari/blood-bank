@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="optimised imports">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed nav styling issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/donate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/donors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/pages/faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/blood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/blood.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220112_0001" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220113_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/UI/profile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -171,7 +161,8 @@
       <workItem from="1641813549498" duration="18143000" />
       <workItem from="1641885420698" duration="29364000" />
       <workItem from="1641973374919" duration="3973000" />
-      <workItem from="1641977794509" duration="3315000" />
+      <workItem from="1641977794509" duration="4240000" />
+      <workItem from="1642058092408" duration="524000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -474,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641976269150</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="fixed nav styling issue">
+      <created>1642019317423</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1642019317423</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +491,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added login and signup forms" />
     <MESSAGE value="added few more fields to signup form" />
     <MESSAGE value="added babel" />
     <MESSAGE value="fixed props error" />
@@ -518,7 +515,8 @@
     <MESSAGE value="images fixed on requests as well" />
     <MESSAGE value="added custom 404 page" />
     <MESSAGE value="optimised imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimised imports" />
+    <MESSAGE value="fixed nav styling issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed nav styling issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

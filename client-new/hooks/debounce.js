@@ -2,7 +2,6 @@ function debounce(func, wait, immediate) {
     let timeout;
 
     return function executedFunction(...args) {
-        // @ts-ignore
         const context= this;
         const later = function () {
             timeout = null;

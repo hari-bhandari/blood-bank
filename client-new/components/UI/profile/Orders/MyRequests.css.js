@@ -16,7 +16,7 @@ const MobileView = styled.div`
   }
 `;
 
-const OrderBox = styled.div`
+const RequestBox = styled.div`
   width: calc(100% - 330px);
   display: flex;
   align-items: flex-start;
@@ -27,7 +27,7 @@ const OrderBox = styled.div`
   }
 `;
 
-const OrderListWrapper = styled.div`
+const RequestListWrapper = styled.div`
   width: 330px;
   height: auto;
   display: flex;
@@ -48,7 +48,7 @@ const OrderListWrapper = styled.div`
   }
 `;
 
-const OrderList = styled.div`
+const RequestList = styled.div`
   width: 100%;
   padding: 0 20px 20px;
 
@@ -95,7 +95,7 @@ const OrderList = styled.div`
   }
 `;
 
-const OrderDetailsWrapper = styled.div`
+const RequestDetailsWrapper = styled.div`
   width: 100%;
   min-height: calc(100vh - 190px);
   display: flex;
@@ -169,10 +169,10 @@ const NoRequestFound = styled.span`
 export {
     DesktopView,
     MobileView,
-    OrderBox,
-    OrderListWrapper,
-    OrderList,
-    OrderDetailsWrapper,
+    RequestBox,
+    RequestListWrapper,
+    RequestList,
+    RequestDetailsWrapper,
     Title,
     ImageWrapper,
     ItemWrapper,

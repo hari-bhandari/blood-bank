@@ -55,7 +55,24 @@ export const deleteRequest = asyncHandler(async (req, res, next) => {
         data: `Succesfully removed request with the patient name of ${blood.name}`
     });
 })
-
+//@desc delete
+//@route GET
+//@access Public
+export const deleteRequest = asyncHandler(async (req, res, next) => {
+    const blood = await Blood.findOne({id: req.params.id})
+    if (!blood) {
+        return next(new ErrorResponse(`Request not found with id of ${req.params.id}`, 404))
+    }
+    console.log(blood.user.toString(), req.user.id)
+    if (blood.user.toString() !== req.user.id) {
+        return next(new ErrorResponse(`User ${req.params.id} is not authorized to delete this bootcamp`, 401));
+    }
+    blood.remove();
+    res.status(200).json({
+        success: true,
+        data: `Successfully removed request with the patient name of ${blood.name}`
+    });
+})
 //@desc Get single request
 //@route GET
 //@access Public
@@ -69,39 +86,7 @@ export const getBloodRequest = asyncHandler(async (req, res, next) => {
         data: blood
     })
 })
-//@desc upload photo for blood
-//@route PUT /api/v1/item/:id/photo
-//@access private
-export const patientPhoto = asyncHandler(async (req, res, next) => {
-    const blood = await Blood.findById(req.params.id);
-    if (!blood) {
-        return next(new ErrorResponse(`Item not found with id of ${req.params.id}`, 404))
-    }
-    if (!req.files) {
-        return next(new ErrorResponse(`Please upload a file`, 400))
-    }
-    const file = req.files.file;
-    if (!file.mimetype.startsWith('image')) {
-        return next(new ErrorResponse(`Please upload an image file`, 400))
-    }
-    if (file.size > 1000000) {
-        return next(new ErrorResponse(`Please upload an image file less than 2MB`, 400))
-    }
 
-    //create custom file name
-    file.name = `photo_${req.params.id}${path.parse(file.name).ext}`
-    file.mv(`./public/uploads/${file.name}`, async err => {
-        if (err) {
-            console.error(err)
-            return next(new ErrorResponse(`problem with file upload `, 500))
-        }
-        await Blood.findByIdAndUpdate(req.params.id, {images: file.name});
-        res.status(200).json({
-            success: true,
-            data: file.name
-        })
-    })
-})
 export const getBunchOfDonors = asyncHandler(async (req, res, next) => {
     const blood = await Blood.findById(req.params.id);
     if (!blood) {

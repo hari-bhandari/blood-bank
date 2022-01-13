@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed basic names changing">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added update details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card-mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card-mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/request-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/request-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/blood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/profile/requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/profile/requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/request.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +163,7 @@
       <workItem from="1641973374919" duration="3973000" />
       <workItem from="1641977794509" duration="4240000" />
       <workItem from="1642058092408" duration="2893000" />
-      <workItem from="1642061011261" duration="6526000" />
+      <workItem from="1642061011261" duration="6797000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -497,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642058875006</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="added update details">
+      <created>1642075540245</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1642075540245</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added babel" />
     <MESSAGE value="fixed props error" />
     <MESSAGE value="added _document.js" />
     <MESSAGE value="added donation page" />
@@ -541,7 +530,8 @@
     <MESSAGE value="optimised imports" />
     <MESSAGE value="fixed nav styling issue" />
     <MESSAGE value="fixed basic names changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed basic names changing" />
+    <MESSAGE value="added update details" />
+    <option name="LAST_COMMIT_MESSAGE" value="added update details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

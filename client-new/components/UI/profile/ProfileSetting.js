@@ -15,8 +15,10 @@ import {PUBLIC_URL_API, JSONConfig} from "../../config";
 import Toast from "light-toast";
 import authContext from "../../Context/auth/authContext";
 import PhotoUpload from "../../UploadComponent/PhotoUpload";
-import SelectComponent from "../Auth/SelectComponent";
+import SelectComponent, {UploadImagesToCloud} from "../Auth/SelectComponent";
 import {bloodType, districts, turnIntoSelectFormat} from "../data";
+import {emptyValue} from "../Auth/helper";
+import image from "../../elements/Image";
 
 
 const SettingsContent = () => {
@@ -26,10 +28,10 @@ const SettingsContent = () => {
     const {loadUser, user} = auth;
     const {inputs, handleInputChange, setDefaultValues, handleInputChangeManually} = useLoginForm();
     const handleChangeForBlood = selectedOption => {
-        handleInputChangeManually("bloodType", selectedOption.value)
+        handleInputChangeManually("bloodType",[selectedOption])
     };
     const handleChangeForDistrict = selectedOption => {
-        handleInputChangeManually("district", selectedOption.value)
+        handleInputChangeManually("district", [selectedOption])
     };
 
     const [profile, setProfile] = useState(user?.image ? [user.image] : [])
@@ -47,19 +49,46 @@ const SettingsContent = () => {
 
     }, [user])
     const OnSave = async (e) => {
+        console.log({inputs})
         e.preventDefault()
+        if (!emptyValue(inputs.name)) {
+            return Toast.fail('Please re-check your value for Name')
+        }
+        if (!emptyValue(inputs.phone)) {
+            return Toast.fail('Please re-check your value for Phone')
+        }
+        if (!emptyValue(inputs.email)) {
+            return Toast.fail('Please re-check your value for Email')
+        }
+        if (!emptyValue(inputs.district)) {
+            return Toast.fail('Please re-check your value for District')
+        }
+        if (!emptyValue(inputs.bloodType)) {
+            return Toast.fail('Please re-check your value for BloodType')
+        }
         try {
+            Toast.loading("Loading...")
+            console.log({profile})
+            let imageLink={images:[]}
+            if(profile?.length>0 || profile?.files?.length>0){
+                imageLink = await UploadImagesToCloud(profile)
+                console.log({imageLink})
+            }
+            console.log({email: inputs.email, name: inputs.name,phone:inputs.phone,district:inputs.district[0].value,
+                bloodType:inputs.bloodType[0].value,image: imageLink.images.length > 0 ? imageLink.images[0] : null})
             await axios.put(
                 `${PUBLIC_URL_API}/api/auth/updatedetails`,
-                {email: inputs.email, firstName: inputs.firstName, lastName: inputs.lastName},
+                {email: inputs.email, name: inputs.name,phone:inputs.phone,district:inputs.district[0].value,
+                    bloodType:inputs.bloodType[0].value,image: imageLink.images.length > 0 ? imageLink.images[0] : null},
                 JSONConfig
             )
             Toast.success('Successfully changed user data')
             await loadUser()
 
-
         } catch (error) {
-            Toast.fail(error.response.data.error + ', Please try again')
+            Toast.fail( + ', Please try again')
+        }finally {
+            Toast.hide()
         }
     }
 

@@ -22,7 +22,10 @@ import OrderCardMobile from './order-card/request-card-mobile';
 import useComponentSize from '../../../../hooks/useComponentSize';
 import {PUBLIC_URL_API} from "../../../config";
 import useFetch from "../../../../hooks/useFetch";
-
+import axios from "axios";
+import Toast from "light-toast";
+import {Button} from "../forms/label";
+import {useRouter} from "next/router";
 
 
 const orderTableColumns = [
@@ -36,7 +39,7 @@ const orderTableColumns = [
             return (
                 <ItemWrapper>
                     <ImageWrapper>
-                        <img src={record.image} alt={record.name} />
+                        <img src={record.image} alt={record.name}/>
                     </ImageWrapper>
 
                     <ItemDetails>
@@ -49,17 +52,17 @@ const orderTableColumns = [
     },
     {
         title: (
-            'District'        ),
+            'District'),
         dataIndex: 'district',
         key: 'district',
         align: 'center',
         width: 300,
-        render:(text, record) => {
-            return <p>{record.district?.toUpperCase() }</p>;
+        render: (text, record) => {
+            return <p>{record.district?.toUpperCase()}</p>;
         },
     },
     {
-        title:'Phone Number',
+        title: 'Phone Number',
         dataIndex: '',
         key: 'phone',
         align: 'right',
@@ -69,11 +72,24 @@ const orderTableColumns = [
         },
     },
 ];
+const deleteRequest = async (id) => {
+    try {
+        const ok = window.confirm("Do you want to delete the request you made?")
+        if (ok) {
+            const res = await axios.delete(`${PUBLIC_URL_API}/api/help/delete/${id}`);
+            Toast.success(res.data.data)
+            location.reload();
+        }
 
+    } catch (err) {
+        Toast.fail(err?.response?.data?.error)
+    }
+}
 const RequestContent = () => {
     const [targetRef, size] = useComponentSize();
     const [data, isLoading] = useFetch(`${PUBLIC_URL_API}/api/auth/getMyRequests`, true)
     const [selection, setSelection] = useState(null);
+    const router=useRouter()
     if (!data || isLoading) return <h3>loading...</h3>;
 
     return (
@@ -90,23 +106,33 @@ const RequestContent = () => {
                                 data.data.map((current) => {
                                     const created = new Date(current.createdAt)
                                     const createdTime = dateFormat(created, "HH:MM")
-                                    const createdDate=dateFormat(created,"dddd, mmmm dS, yyyy")
+                                    const createdDate = dateFormat(created, "dddd, mmmm dS, yyyy")
                                     return (
-                                    <RequestCard
-                                        key={current._id}
-                                        orderId={current._id}
-                                        className={current._id === selection?._id ? 'active' : ''}
-                                        succeeded={current?.isActive}
-                                        date={createdDate}
-                                        createdTime={createdTime}
-                                        amount={current.volume}
-                                        onClick={() => setSelection(current)}
-                                    />
+                                        <RequestCard
+                                            key={current._id}
+                                            orderId={current._id}
+                                            className={current._id === selection?._id ? 'active' : ''}
+                                            succeeded={current?.isActive}
+                                            date={createdDate}
+                                            createdTime={createdTime}
+                                            amount={current.volume}
+                                            onClick={() => setSelection(current)}
+                                        />
                                     )
                                 })
                             ) : (
                                 <NoRequestFound>
                                     No Requests found
+                                    <Button type={'button'} style={{
+                                        margin: '40px 0',
+                                        width: '100%',
+                                        fontSize: '15px',
+                                        maxWidth: "80%",
+                                        borderRadius: '10px'
+                                    }} onClick={() => {
+                                        router.push('/request')
+                                    }}
+                                    > Make a new request</Button>
                                 </NoRequestFound>
                             )}
                         </RequestList>
@@ -119,13 +145,11 @@ const RequestContent = () => {
                         </Title>
                         {selection && (
                             <RequestDetails
+                                onDelete={deleteRequest}
                                 progressStatus={selection.status}
                                 requestMessage={selection.requestMessage}
-                                subtotal={selection.volume}
-                                discount={selection.discount}
-                                deliveryFee={1.99}
-                                grandTotal={selection.totalPrice}
                                 tableData={selection.helpers}
+                                _id={selection._id}
                                 columns={orderTableColumns}
                             />
                         )}

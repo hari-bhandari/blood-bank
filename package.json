@@ -43,6 +43,7 @@
     "next-transpile-modules": "^9.0.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-scrollspy": "^3.4.3",
+    "react-share": "^4.4.0",
     "reactstrap": "^9.0.1",
     "sharp": "^0.27.0"
   }

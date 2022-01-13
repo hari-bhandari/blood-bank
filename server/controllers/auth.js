@@ -56,13 +56,14 @@ export const login=asyncHandler(async (req, res, next)=>{
 // @route     PUT /api/auth/updatedetails
 // @access    Private
 export const updateDetails = asyncHandler(async (req, res, next) => {
+
     const fieldsToUpdate = {
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
+        name: req.body.name,
         email: req.body.email,
         bloodType:req.body.bloodType,
-        phoneNumber:req.body.phoneNumber,
+        phone:req.body.phone,
         district:req.body.district,
+        image:req.body.image
     };
 
     const user = await User.findByIdAndUpdate(req.user.id, fieldsToUpdate, {
@@ -84,6 +85,10 @@ export const offerHelp=asyncHandler(async (req, res, next)=>{
         return next(new ErrorResponse(`You must be logged in to offer help`,400))
     }
     let blood=await Blood.findById(req.params.id)
+    if (blood.user ==req.user.id){
+        return next(new ErrorResponse(`You can not offer help to your own request`,400))
+
+    }
     if(!blood){
         return next(new ErrorResponse(`Please make sure you are offering help to a valid request.`,400))
     }
@@ -93,13 +98,13 @@ export const offerHelp=asyncHandler(async (req, res, next)=>{
             return next(new ErrorResponse(`You have already offered your help.`,400))
         }
     }
-    blood=await Blood.findByIdAndUpdate(req.params.id,{ $push: { helpers: user } },{
+    await Blood.findByIdAndUpdate(req.params.id,{ $push: { helpers: user } },{
         new:true,
         runValidators:true
     })
     res.status(200).json({
         success:true,
-        data:blood
+        data:"Thank you for offering you blood, Your request has been accepted"
     })
 
 })

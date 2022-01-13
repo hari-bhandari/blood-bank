@@ -10,7 +10,6 @@ import {
 import {Button} from "../../forms/label";
 
 
-
 const components = {
   table: RequestTable,
 };
@@ -18,13 +17,13 @@ const components = {
 const RequestDetails = ({
   tableData,
   columns,
-  requestMessage,
+  requestMessage,onDelete,_id
 }) => {
   return (
     <>
       <EditContainer>
         <RequestMessage>
-          <Button>Deactivate request</Button>
+          <Button onClick={()=>{onDelete(_id)}}>Delete request</Button>
           <Button style={{margin:'25px 0'}}>Edit request</Button>
           <h3>
             Request Message

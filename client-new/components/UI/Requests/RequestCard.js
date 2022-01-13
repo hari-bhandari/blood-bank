@@ -31,7 +31,7 @@ const RequestCard = ({donor,ref}) => {
 
 
             <button className="btn-request draw-border">9841921783</button>
-            <Link href={`/help/${donor.id}`}>
+            <Link href={`/requests/${donor._id}`}>
                 <button className="btn-request draw-border">Learn More</button>
             </Link>
 

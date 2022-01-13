@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed nav styling issue">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed basic names changing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card-mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card-mobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/request-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/request-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/blood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/blood.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/blood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220113_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220113_0001" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/UI/profile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -162,7 +179,8 @@
       <workItem from="1641885420698" duration="29364000" />
       <workItem from="1641973374919" duration="3973000" />
       <workItem from="1641977794509" duration="4240000" />
-      <workItem from="1642058092408" duration="524000" />
+      <workItem from="1642058092408" duration="2893000" />
+      <workItem from="1642061011261" duration="6526000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -472,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642019317423</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="fixed basic names changing">
+      <created>1642058875006</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1642058875006</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added few more fields to signup form" />
     <MESSAGE value="added babel" />
     <MESSAGE value="fixed props error" />
     <MESSAGE value="added _document.js" />
@@ -516,7 +540,8 @@
     <MESSAGE value="added custom 404 page" />
     <MESSAGE value="optimised imports" />
     <MESSAGE value="fixed nav styling issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed nav styling issue" />
+    <MESSAGE value="fixed basic names changing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed basic names changing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -543,13 +568,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js</url>
-          <line>126</line>
+          <line>104</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/Auth/helper.js</url>
           <line>7</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js</url>
+          <line>123</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

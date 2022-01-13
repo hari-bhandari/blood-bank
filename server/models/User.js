@@ -42,7 +42,7 @@ const UserSchema = new mongoose.Schema({
     },
     image: {
         type: String,
-        default: 'noProfile.png'
+        default:null
     },
     bloodType: {
         type: String,

@@ -3,8 +3,10 @@ export const ProfilePageCSS=styled.div`
   * {
     list-style: none;
   }
-  font-family: 'poppins',serif;
+
+  font-family: 'poppins', serif;
   margin-top: 200px;
+
   .wrapper {
     margin: 20px auto;
     width: 80%;
@@ -23,6 +25,7 @@ export const ProfilePageCSS=styled.div`
       width: 100%;
     }
   }
+
   .wrapper .left {
     width: 35%;
     background: linear-gradient(to right, #ac0101, #df018e);
@@ -35,6 +38,7 @@ export const ProfilePageCSS=styled.div`
       width: 100%;
     }
   }
+
   .wrapper .left img {
     width: 100%;
     border-radius: 5px;
@@ -43,18 +47,22 @@ export const ProfilePageCSS=styled.div`
       width: 60%;
     }
   }
+
   .wrapper .left h4 {
     margin-bottom: 10px;
   }
-  p{
-    font-family: 'poppins',serif;
+
+  p {
+    font-family: 'poppins', serif;
     font-size: 20px;
     margin-bottom: 10px;
-    color: #919aa3;
+    color: #000000;
   }
+
   .wrapper .left p {
     font-size: 20px;
   }
+
   .wrapper .right {
     width: 65%;
     background: #fff;
@@ -65,20 +73,23 @@ export const ProfilePageCSS=styled.div`
       width: 100%;
     }
   }
+
   .wrapper .right .info,
   .wrapper .right .projects {
     margin-bottom: 25px;
     font-size: 20px;
   }
+
   .wrapper .right .info h3,
   .wrapper .right .projects h3 {
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-bottom: 1px solid #e0e0e0;
-    color: #353c4e;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 5px;
   }
+
   .wrapper .right .info_data,
   .wrapper .right .projects_data {
     display: flex;
@@ -87,40 +98,49 @@ export const ProfilePageCSS=styled.div`
       flex-direction: column;
     }
   }
+
   .wrapper .right .info_data .data,
   .wrapper .right .projects_data .data {
     width: 100%;
   }
+
   .wrapper .right .info_data .data h4,
   .wrapper .right .projects_data .data h4 {
-    color: #353c4e;
+    color: #000000;
     margin-bottom: 5px;
   }
+
   .wrapper .right .info_data .data p,
   .wrapper .right .projects_data .data p {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #919aa3;
+    color: #000000;
   }
+
   .offer-help-container {
-    width: 100%;
-    height: 45px;
+    height: 55px;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, #01a9ac, #01dbdf);
-    margin-right: 10px;
+    background: #128489;
     border-radius: 5px;
     text-align: center;
-    line-height: 45px;
-    color: #353c4e;
+    line-height: 55px;
+    color: #ffffff;
+    font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 5px;
+
     &:hover {
       cursor: pointer;
     }
+
     svg {
       //margin-left: 30%;
-      color: #D40871;
+      color: #ffffff;
+    }
+
+    svg:hover {
+      transform: scale(1.25);
     }
   }
 `

@@ -17,11 +17,10 @@ const fetchData = (url) => axios.get(url)
         }),
     );
 
-const RequestPage = ({data, success}) => {
-    const router = useRouter()
+const RequestPage = ({data}) => {
     if (data) {
         return (
-            <Layout>
+            <Layout title={data.name+ ' | Blood Bank'} description={data.requestMessage} initialShadow={true}>
                 <RequestPageSection data={data}/>
             </Layout>)
     }

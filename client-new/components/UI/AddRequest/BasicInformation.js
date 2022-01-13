@@ -64,7 +64,7 @@ const BasicInformation = ({next,inputs, handleInputChange, setDefaultValues, han
     }
     return (
         <Container>
-            <Heading>Basic Info</Heading>
+            <Heading>Make a blood request</Heading>
             <InputContainer>
                 <Label>
                    Patient Name

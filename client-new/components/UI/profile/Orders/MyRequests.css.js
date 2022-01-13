@@ -162,6 +162,7 @@ const NoRequestFound = styled.span`
   color: ${themeGet('colors.text.regular', '#77798c')};
   padding: 50px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;

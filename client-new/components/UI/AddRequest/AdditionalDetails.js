@@ -49,7 +49,7 @@ const AdditionalDetails = (
     }
     return (
         <Container>
-            <Heading>Basic Info</Heading>
+            <Heading>Make a blood request</Heading>
             <PhotoUploadContainer background={'white'}>
                 <PhotoUpload withIcon={false}
                              withPreview={true}

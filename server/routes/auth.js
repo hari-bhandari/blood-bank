@@ -5,7 +5,7 @@ import {protect} from "../middlewares/auth.js";
 const router=express.Router();
 router.route('/register').post(register);
 router.route('/login').post(login);
-router.route('/updatedetails').put(updateDetails);
+router.route('/updatedetails').put(protect,updateDetails);
 router.route('/me').get(protect,getMe)
 router.route('/getMyRequests').get(protect,getMyRequests)
 router.route('/offer/:id').post(protect,offerHelp)

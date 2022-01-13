@@ -41,25 +41,7 @@ export const getBloodRequests = asyncHandler(async (req, res, next) => {
 //@route GET
 //@access Public
 export const deleteRequest = asyncHandler(async (req, res, next) => {
-    const blood = await Blood.findOne({id: req.params.id})
-    if (!blood) {
-        return next(new ErrorResponse(`Request not found with id of ${req.params.id}`, 404))
-    }
-    console.log(blood.user.toString(), req.user.id)
-    if (blood.user.toString() !== req.user.id) {
-        return next(new ErrorResponse(`User ${req.params.id} is not authorized to delete this bootcamp`, 401));
-    }
-    blood.remove();
-    res.status(200).json({
-        success: true,
-        data: `Succesfully removed request with the patient name of ${blood.name}`
-    });
-})
-//@desc delete
-//@route GET
-//@access Public
-export const deleteRequest = asyncHandler(async (req, res, next) => {
-    const blood = await Blood.findOne({id: req.params.id})
+    const blood = await Blood.findOne({_id: req.params.id})
     if (!blood) {
         return next(new ErrorResponse(`Request not found with id of ${req.params.id}`, 404))
     }

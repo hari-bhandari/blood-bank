@@ -16,6 +16,8 @@ import {
     TrackID,
 } from './request-card.style';
 import dateFormat from 'dateformat'
+import {Button} from "../../forms/label";
+import {Message, RequestMessage} from "../order-details/request-details.style";
 
 
 
@@ -46,6 +48,7 @@ const OrderCard= ({
                     <Panel
                         header={
                             <CardWrapper onClick={() => onClick?.(order)}>
+
                                 <OrderListHeader>
                                     <TrackID>
                                         Request <span>#{order._id.slice(0,8)}</span>
@@ -76,13 +79,17 @@ const OrderCard= ({
                         <DeliveryInfo>
                           <DeliveryAddress>
                             <h3>Request Message</h3>
-                            <Address>{order?.message}</Address>
+                            <Address>{order?.requestMessage}</Address>
                           </DeliveryAddress>
 
                         </DeliveryInfo>
 
 
                         <RequestTableMobile>
+                            <RequestMessage>
+                                <Button>Deactivate request</Button>
+                                <Button style={{margin:'25px 0'}}>Edit request</Button>
+                            </RequestMessage>
                           <Table
                               columns={columns}
                               data={order.helpers}

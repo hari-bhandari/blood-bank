@@ -3,10 +3,7 @@ import {Tab, TabList, TabPanel, Tabs} from 'react-tabs';
 import {ProfileContainer} from "../profile/Profile.styles";
 import styled from "styled-components";
 import UserIcon from "./UserIcon";
-import OrdersIcon from "./UserIcon";
-import ReviewsIcon from "./UserIcon";
 import ProfileSetting from "../profile/ProfileSetting";
-import MyReviews from "./MyReviews";
 import MyOrders from "./Orders/MyRequests";
 import { FcViewDetails } from "react-icons/fc";
 

@@ -18,7 +18,6 @@ import PhotoUpload from "../../UploadComponent/PhotoUpload";
 import SelectComponent, {UploadImagesToCloud} from "../Auth/SelectComponent";
 import {bloodType, districts, turnIntoSelectFormat} from "../data";
 import {emptyValue} from "../Auth/helper";
-import image from "../../elements/Image";
 
 
 const SettingsContent = () => {
@@ -68,14 +67,11 @@ const SettingsContent = () => {
         }
         try {
             Toast.loading("Loading...")
-            console.log({profile})
             let imageLink={images:[]}
             if(profile?.length>0 || profile?.files?.length>0){
                 imageLink = await UploadImagesToCloud(profile)
                 console.log({imageLink})
             }
-            console.log({email: inputs.email, name: inputs.name,phone:inputs.phone,district:inputs.district[0].value,
-                bloodType:inputs.bloodType[0].value,image: imageLink.images.length > 0 ? imageLink.images[0] : null})
             await axios.put(
                 `${PUBLIC_URL_API}/api/auth/updatedetails`,
                 {email: inputs.email, name: inputs.name,phone:inputs.phone,district:inputs.district[0].value,

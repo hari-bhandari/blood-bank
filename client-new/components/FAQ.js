@@ -11,7 +11,7 @@ export const FAQ_DATA = [
             'BloodBank is currently operated by Hari Bhandari and if you have any queries regarding BloodBank or anything in general please contact him on his email (2012bhandari.ha@gmail.com) or you can contact him directly from his portfolio (https://haribhandari.me)  ',
     },
     {
-        title: 'There is a bug, How i report it?',
+        title: 'There is a bug, How do i report it?',
         description:
             'Again, This project was developed by Hari Bhandari on his own and there could be many bugs that hasn\'t been encountered yet! Please report it as soon as possible on his email (2012bhandari.ha@gmail.com)\n',
     },

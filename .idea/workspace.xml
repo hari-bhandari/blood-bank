@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="changed api url for production">
-      <change afterPath="$PROJECT_DIR$/client-new/public/favicon.ico" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="cganged meta image for seo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/SEO.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/SEO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +20,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/client-new/node_modules/axios/index.d.ts" root0="SKIP_INSPECTION" />
-  </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
     <bower-package value="" />
@@ -44,9 +36,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220113_0002" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220114_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -167,13 +158,7 @@
       <workItem from="1642058092408" duration="2893000" />
       <workItem from="1642061011261" duration="7373000" />
       <workItem from="1642084363452" duration="9567000" />
-    </task>
-    <task id="LOCAL-00006" summary="added navbar to the new client">
-      <created>1641204083738</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1641204083738</updated>
+      <workItem from="1642150083922" duration="1449000" />
     </task>
     <task id="LOCAL-00007" summary="adding FAQ page">
       <created>1641288273228</created>
@@ -511,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642106843616</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="cganged meta image for seo">
+      <created>1642150332255</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1642150332255</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +522,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="multiple steps while signing up" />
     <MESSAGE value="signing up working now" />
     <MESSAGE value="on progress to add user panel" />
     <MESSAGE value="profile page added" />
@@ -555,7 +546,8 @@
     <MESSAGE value="used config url" />
     <MESSAGE value="fixed building errors" />
     <MESSAGE value="changed api url for production" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed api url for production" />
+    <MESSAGE value="cganged meta image for seo" />
+    <option name="LAST_COMMIT_MESSAGE" value="cganged meta image for seo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

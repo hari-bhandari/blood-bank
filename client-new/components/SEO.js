@@ -1,14 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
 
- const SEO = ({
-                                            title,
-                                            description,
-                                            canonical,
-                                            css,
-                                            js,
-                                            image,
-                                        }) => (
+const SEO = ({
+                 title,
+                 description,
+                 canonical,
+                 css,
+                 js,
+                 image,
+             }) => (
     <Head>
         <link
             href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Lato:300,400,700"
@@ -36,10 +36,10 @@ import Head from 'next/head';
         <meta name="twitter:creator" content="@bloodbank"/>
         {css && <link rel="stylesheet" href={`${css}`}/>}
         <meta property="og:image"
-              content={`${image ? image : "https://res.cloudinary.com/wisecart/image/upload/v1616709850/gnfkfnm1c9rczncp5c5t.png"}`}/>
+              content={`${image ? image : "https://res.cloudinary.com/wisecart/image/upload/v1642149791/download_2_zkbxei.png"}`}/>
         <meta name="twitter:image"
-              content={`${image ? image : "https://res.cloudinary.com/wisecart/image/upload/v1616709850/gnfkfnm1c9rczncp5c5t.png"}`}/>
+              content={`${image ? image : "https://res.cloudinary.com/wisecart/image/upload/v1642149791/download_2_zkbxei.png"}`}/>
         {canonical && <link rel="canonical" href={`${canonical}`}/>}
     </Head>
 );
- export default SEO
+export default SEO

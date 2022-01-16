@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed position for select">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed emailing issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/emailTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/emailTemplate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/config/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/sendEmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,14 +163,7 @@
       <workItem from="1642061011261" duration="7373000" />
       <workItem from="1642084363452" duration="9567000" />
       <workItem from="1642150083922" duration="2308000" />
-      <workItem from="1642320451112" duration="2643000" />
-    </task>
-    <task id="LOCAL-00009" summary="added works done">
-      <created>1641328821244</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1641328821244</updated>
+      <workItem from="1642320451112" duration="5258000" />
     </task>
     <task id="LOCAL-00010" summary="fixed building error">
       <created>1641368397856</created>
@@ -506,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642350091542</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="fixed emailing issue">
+      <created>1642351157220</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1642351157220</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +527,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="profile page added" />
     <MESSAGE value="added few more pages and" />
     <MESSAGE value="stores whole data when offering a help to the requests" />
     <MESSAGE value="added request form" />
@@ -550,7 +551,8 @@
     <MESSAGE value="cganged meta image for seo" />
     <MESSAGE value="added functionalty to send emails" />
     <MESSAGE value="fixed position for select" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed position for select" />
+    <MESSAGE value="fixed emailing issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed emailing issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

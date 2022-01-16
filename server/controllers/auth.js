@@ -3,6 +3,8 @@ import asyncHandler from "../middlewares/async.js";
 import ErrorResponse from "../utils/errorResponse.js";
 import Blood from "../models/Blood.js";
 import mongoose from 'mongoose'
+import sendEmail from "../config/sendEmail.js";
+import emailTemplate from "../config/emailTemplate.js";
 const ObjectId=mongoose.ObjectId
 
 //@desc register a user
@@ -13,6 +15,16 @@ export const register=asyncHandler(async (req, res, next)=>{
     const user=await User.create(
         req.body
     );
+    const confirmEmailToken = user.generateEmailConfirmToken();
+    const confirmEmailURL = `${req.protocol}://${req.get(
+        'host',
+    )}/api/auth/confirmemail?token=${confirmEmailToken}`;
+    await sendEmail({
+        email: user.email,
+        subject: `Please confirm your account with BloodBank`,
+        html: emailTemplate(`Hello ${user.name},Thank you very much for joining bloodbank!`,
+            `We can't wait to save lives with you!`," Verify",confirmEmailURL)
+    })
     //Create web token and send it
     sendTokenResponse(user,200,res)
 
@@ -75,6 +87,45 @@ export const updateDetails = asyncHandler(async (req, res, next) => {
         success: true,
         data: user,
     });
+});
+/**
+ * @desc    Confirm Email
+ * @route   GET /api/v1/auth/confirmemail
+ * @access  Public
+ */
+export const confirmEmail = asyncHandler(async (req, res, next) => {
+    // grab token from email
+    const { token } = req.query;
+
+    if (!token) {
+        return next(new ErrorResponse('Invalid Token', 400));
+    }
+
+    const splitToken = token.split('.')[0];
+    const confirmEmailToken = crypto
+        .createHash('sha256')
+        .update(splitToken)
+        .digest('hex');
+
+    // get user by token
+    const user = await User.findOne({
+        confirmEmailToken,
+        isEmailConfirmed: false,
+    });
+
+    if (!user) {
+        return next(new ErrorResponse('Invalid Token', 400));
+    }
+
+    // update confirmed to true
+    user.confirmEmailToken = undefined;
+    user.isEmailConfirmed = true;
+
+    // save
+    user.save({ validateBeforeSave: false });
+
+    // return token
+    sendTokenResponse(user, 200, res);
 });
 //@desc offer to help
 //@route post

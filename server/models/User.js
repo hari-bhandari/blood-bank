@@ -64,6 +64,11 @@ const UserSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
+    confirmEmailToken: String,
+    isEmailConfirmed: {
+        type: Boolean,
+        default: false,
+    },
 
 });
 
@@ -118,5 +123,18 @@ UserSchema.methods.getResetPasswordToken = function () {
 
     return resetToken;
 };
+// Generate email confirm token
+UserSchema.methods.generateEmailConfirmToken = function (next) {
+    // email confirmation token
+    const confirmationToken = crypto.randomBytes(20).toString('hex');
 
+    this.confirmEmailToken = crypto
+        .createHash('sha256')
+        .update(confirmationToken)
+        .digest('hex');
+
+    const confirmTokenExtend = crypto.randomBytes(100).toString('hex');
+    const confirmTokenCombined = `${confirmationToken}.${confirmTokenExtend}`;
+    return confirmTokenCombined;
+};
 export default mongoose.model('User', UserSchema)

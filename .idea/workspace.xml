@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed emailing issue">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="email needs to be validated while signing up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/emailTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/emailTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/sendEmail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,14 +160,7 @@
       <workItem from="1642061011261" duration="7373000" />
       <workItem from="1642084363452" duration="9567000" />
       <workItem from="1642150083922" duration="2308000" />
-      <workItem from="1642320451112" duration="5258000" />
-    </task>
-    <task id="LOCAL-00010" summary="fixed building error">
-      <created>1641368397856</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1641368397856</updated>
+      <workItem from="1642320451112" duration="6533000" />
     </task>
     <task id="LOCAL-00011" summary="removed svg">
       <created>1641373416273</created>
@@ -508,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642351157220</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="email needs to be validated while signing up">
+      <created>1642365955833</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1642365955833</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added few more pages and" />
     <MESSAGE value="stores whole data when offering a help to the requests" />
     <MESSAGE value="added request form" />
     <MESSAGE value="add request form has been added" />
@@ -552,7 +548,8 @@
     <MESSAGE value="added functionalty to send emails" />
     <MESSAGE value="fixed position for select" />
     <MESSAGE value="fixed emailing issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed emailing issue" />
+    <MESSAGE value="email needs to be validated while signing up" />
+    <option name="LAST_COMMIT_MESSAGE" value="email needs to be validated while signing up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

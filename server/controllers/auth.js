@@ -16,7 +16,7 @@ export const register=asyncHandler(async (req, res, next)=>{
         req.body
     );
     const confirmEmailToken = user.generateEmailConfirmToken();
-    const confirmEmailURL = `${req.protocol}://${req.get(
+    const confirmEmailURL = `https://${req.get(
         'host',
     )}/api/auth/confirmemail?token=${confirmEmailToken}`;
     await sendEmail({

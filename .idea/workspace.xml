@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added functionalty to send emails">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed position for select">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/Donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/Donors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/sendEmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/sendEmail.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,14 +161,7 @@
       <workItem from="1642061011261" duration="7373000" />
       <workItem from="1642084363452" duration="9567000" />
       <workItem from="1642150083922" duration="2308000" />
-      <workItem from="1642320451112" duration="1585000" />
-    </task>
-    <task id="LOCAL-00008" summary="added quotes">
-      <created>1641298476480</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1641298476480</updated>
+      <workItem from="1642320451112" duration="2643000" />
     </task>
     <task id="LOCAL-00009" summary="added works done">
       <created>1641328821244</created>
@@ -508,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642190215705</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="fixed position for select">
+      <created>1642350091542</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1642350091542</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +525,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="on progress to add user panel" />
     <MESSAGE value="profile page added" />
     <MESSAGE value="added few more pages and" />
     <MESSAGE value="stores whole data when offering a help to the requests" />
@@ -552,7 +549,8 @@
     <MESSAGE value="changed api url for production" />
     <MESSAGE value="cganged meta image for seo" />
     <MESSAGE value="added functionalty to send emails" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functionalty to send emails" />
+    <MESSAGE value="fixed position for select" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed position for select" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

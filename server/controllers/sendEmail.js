@@ -21,7 +21,7 @@ export const sendHelpEmail = async (district, bloodType,name,description) => {
     await sendEmail({
         email: listToString(emailList),
         subject: `${name} need your Help with ${bloodType} Blood`,
-        html: emailTemplate(`${name} need your Help with ${bloodType} Blood`,
+        html: emailTemplate(`${name} needs your Help with ${bloodType} Blood`,
             `${name} from ${district} is counting on you for ${bloodType} blood! The requester has this to say,
         "${description}"`)
     })

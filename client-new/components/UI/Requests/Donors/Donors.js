@@ -45,10 +45,10 @@ const Donors = () => {
                 <Container>
                     <Row>
                         <Col lg={6} md={6} sm={12}>
-                            <SelectComponent options={bloodOptions} isMulti={false} onChange={handleChangeForBlood} defaultLabel={"Search by blood type..."}/>
+                            <SelectComponent options={bloodOptions} isMulti={false} onChange={handleChangeForBlood} defaultLabel={"Search by blood type..."} bottom={true}/>
                         </Col>
                         <Col lg={6} md={6} sm={12}>
-                            <SelectComponent options={districtOptions} isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"Search by district..."}/>
+                            <SelectComponent options={districtOptions} isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"Search by district..."} bottom={true}/>
                         </Col>
                     </Row>
                     <EmptyMessageBox message={"We don't have any people with your criteria. Why not save a life with your blood?"} toBeShown={data?.length === 0}/>

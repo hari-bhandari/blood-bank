@@ -44,6 +44,7 @@
     "next-compose-plugins": "^2.2.1",
     "next-fonts": "^1.5.1",
     "next-transpile-modules": "^9.0.0",
+    "nodemailer": "^6.7.2",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-scrollspy": "^3.4.3",
     "react-share": "^4.4.0",

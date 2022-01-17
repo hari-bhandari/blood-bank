@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed link issue while sending email and also fixed import issue on crypto">
-      <change afterPath="$PROJECT_DIR$/client-new/pages/confirmemail/[slug].js" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added new page to confirm email">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/confirmemail/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/confirmemail/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,14 +162,7 @@
       <workItem from="1642084363452" duration="9567000" />
       <workItem from="1642150083922" duration="2308000" />
       <workItem from="1642320451112" duration="7153000" />
-      <workItem from="1642408435093" duration="8958000" />
-    </task>
-    <task id="LOCAL-00013" summary="changed few styling">
-      <created>1641379858613</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1641379858613</updated>
+      <workItem from="1642408435093" duration="9876000" />
     </task>
     <task id="LOCAL-00014" summary="added login and signup forms">
       <created>1641397488438</created>
@@ -508,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642409588997</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="added new page to confirm email">
+      <created>1642451237432</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1642451237432</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="add request form has been added" />
     <MESSAGE value="added logout menu" />
     <MESSAGE value="sign in and signup working now" />
     <MESSAGE value="added age while making request" />
@@ -552,7 +550,8 @@
     <MESSAGE value="email needs to be validated while signing up" />
     <MESSAGE value="changed it to https" />
     <MESSAGE value="fixed link issue while sending email and also fixed import issue on crypto" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed link issue while sending email and also fixed import issue on crypto" />
+    <MESSAGE value="added new page to confirm email" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new page to confirm email" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -16,9 +16,7 @@ export const register = asyncHandler(async (req, res, next) => {
     req.body.emailToken = crypto.createHash('sha256').update(confirmationToken).digest('hex');
     const confirmTokenExtend = crypto.randomBytes(100).toString('hex');
     const confirmEmailToken = `${confirmationToken}.${confirmTokenExtend}`;
-    const confirmEmailURL = `${req.protocol}://${req.get(
-        'host',
-    )}/api/auth/confirmemail?token=${confirmEmailToken}`;
+    const confirmEmailURL = `https://bloodbank-nepal.com/confirmemail/${confirmEmailToken}`;
     const user = await User.create(
         req.body
     );

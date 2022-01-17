@@ -33,7 +33,7 @@ const RequestPage = ({data}) => {
 };
 
 export async function getServerSideProps({params}) {
-    const data = await fetchData(`${PUBLIC_URL_API}api/auth/confirmemail?token=${params.slug}`).then(data => data.data
+    const data = await fetchData(`${PUBLIC_URL_API}/api/auth/confirmemail?token=${params.slug}`).then(data => data.user
     ).catch((error) => {
         return {
             props: {

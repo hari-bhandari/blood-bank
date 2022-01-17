@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="changed it to https">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed link issue while sending email and also fixed import issue on crypto">
+      <change afterPath="$PROJECT_DIR$/client-new/pages/confirmemail/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/emailTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/emailTemplate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,14 +163,7 @@
       <workItem from="1642084363452" duration="9567000" />
       <workItem from="1642150083922" duration="2308000" />
       <workItem from="1642320451112" duration="7153000" />
-      <workItem from="1642408435093" duration="824000" />
-    </task>
-    <task id="LOCAL-00012" summary="removed svg">
-      <created>1641374836336</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1641374836336</updated>
+      <workItem from="1642408435093" duration="8958000" />
     </task>
     <task id="LOCAL-00013" summary="changed few styling">
       <created>1641379858613</created>
@@ -507,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642367276443</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fixed link issue while sending email and also fixed import issue on crypto">
+      <created>1642409588996</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1642409588997</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +527,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added request form" />
     <MESSAGE value="add request form has been added" />
     <MESSAGE value="added logout menu" />
     <MESSAGE value="sign in and signup working now" />
@@ -551,7 +551,8 @@
     <MESSAGE value="fixed emailing issue" />
     <MESSAGE value="email needs to be validated while signing up" />
     <MESSAGE value="changed it to https" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed it to https" />
+    <MESSAGE value="fixed link issue while sending email and also fixed import issue on crypto" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed link issue while sending email and also fixed import issue on crypto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

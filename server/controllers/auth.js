@@ -9,58 +9,62 @@ import emailTemplate from "../config/emailTemplate.js";
 //@desc register a user
 //@route POST /api/auth/register
 //@access Public
-export const register=asyncHandler(async (req, res, next)=>{
+export const register = asyncHandler(async (req, res, next) => {
     //Create user
-    const user=await User.create(
-        req.body
-    );
-    const confirmEmailToken = user.generateEmailConfirmToken();
+
+    const confirmationToken = crypto.randomBytes(20).toString('hex');
+    req.body.emailToken = crypto.createHash('sha256').update(confirmationToken).digest('hex');
+    const confirmTokenExtend = crypto.randomBytes(100).toString('hex');
+    const confirmEmailToken = `${confirmationToken}.${confirmTokenExtend}`;
     const confirmEmailURL = `${req.protocol}://${req.get(
         'host',
     )}/api/auth/confirmemail?token=${confirmEmailToken}`;
+    const user = await User.create(
+        req.body
+    );
     await sendEmail({
         email: user.email,
         subject: `Please confirm your account with BloodBank`,
         html: emailTemplate(`Hello ${user.name},Thank you very much for joining bloodbank!`,
-            `We can't wait to save lives with you!`," Verify",confirmEmailURL)
+            `We can't wait to save lives with you!`, " Verify", confirmEmailURL)
     })
-    //Create web token and send it
-    sendTokenResponse(user,200,res)
+//Create web token and send it
+    sendTokenResponse(user, 200, res)
 
 })
 //@desc get current logged in user
 //@route GET /api/auth/me
 //@access Private
-export const getMe=asyncHandler(async (req, res, next)=>{
-    const user=await User.findById(req.user.id);
-    if(!user){
-        return next(new ErrorResponse(`User not found`,400))
+export const getMe = asyncHandler(async (req, res, next) => {
+    const user = await User.findById(req.user.id);
+    if (!user) {
+        return next(new ErrorResponse(`User not found`, 400))
     }
     res.status(200).json({
-        success:true,
-        data:user
+        success: true,
+        data: user
     })
 })
 //@desc register a user
 //@route POST /api/v1/auth/login
 //@access Public
-export const login=asyncHandler(async (req, res, next)=>{
-    const {email,password}=req.body;
+export const login = asyncHandler(async (req, res, next) => {
+    const {email, password} = req.body;
     //Validate email and password
-    if(!email||!password){
-        return next(new ErrorResponse(`Please provide user or a password`,400))
+    if (!email || !password) {
+        return next(new ErrorResponse(`Please provide user or a password`, 400))
     }
     //check for a user
-    const user=await User.findOne({email}).select('+password');
-    if(!user){
-        return next(new ErrorResponse(`Please provide valid user or a password`,401))
+    const user = await User.findOne({email}).select('+password');
+    if (!user) {
+        return next(new ErrorResponse(`Please provide valid user or a password`, 401))
     }
     //check if password matches
-    const isMatch=await user.matchPassword(password)
-    if(!isMatch){
-        return next(new ErrorResponse(`Please provide valid user or a password`,401))
+    const isMatch = await user.matchPassword(password)
+    if (!isMatch) {
+        return next(new ErrorResponse(`Please provide valid user or a password`, 401))
     }
-    sendTokenResponse(user,200,res)
+    sendTokenResponse(user, 200, res)
 
 })
 // @desc      Update user details
@@ -71,10 +75,10 @@ export const updateDetails = asyncHandler(async (req, res, next) => {
     const fieldsToUpdate = {
         name: req.body.name,
         email: req.body.email,
-        bloodType:req.body.bloodType,
-        phone:req.body.phone,
-        district:req.body.district,
-        image:req.body.image
+        bloodType: req.body.bloodType,
+        phone: req.body.phone,
+        district: req.body.district,
+        image: req.body.image
     };
 
     const user = await User.findByIdAndUpdate(req.user.id, fieldsToUpdate, {
@@ -87,28 +91,30 @@ export const updateDetails = asyncHandler(async (req, res, next) => {
         data: user,
     });
 });
+
 /**
  * @desc    Confirm Email
- * @route   GET /api/v1/auth/confirmemail
+ * @route   GET /api/auth/confirmemail
  * @access  Public
  */
+
 export const confirmEmail = asyncHandler(async (req, res, next) => {
     // grab token from email
-    const { token } = req.query;
-
+    const {token} = req.query;
+    console.log(req.query.token)
     if (!token) {
         return next(new ErrorResponse('Invalid Token', 400));
     }
 
     const splitToken = token.split('.')[0];
-    const confirmEmailToken = crypto
+    const emailToken = crypto
         .createHash('sha256')
         .update(splitToken)
         .digest('hex');
 
     // get user by token
     const user = await User.findOne({
-        confirmEmailToken,
+        emailToken,
         isEmailConfirmed: false,
     });
 
@@ -121,7 +127,7 @@ export const confirmEmail = asyncHandler(async (req, res, next) => {
     user.isEmailConfirmed = true;
 
     // save
-    user.save({ validateBeforeSave: false });
+    user.save({validateBeforeSave: false});
 
     // return token
     sendTokenResponse(user, 200, res);
@@ -129,50 +135,50 @@ export const confirmEmail = asyncHandler(async (req, res, next) => {
 //@desc offer to help
 //@route post
 //@access Public
-export const offerHelp=asyncHandler(async (req, res, next)=>{
-    const user=await User.findById(req.user.id);
-    if(!user){
-        return next(new ErrorResponse(`You must be logged in to offer help`,400))
+export const offerHelp = asyncHandler(async (req, res, next) => {
+    const user = await User.findById(req.user.id);
+    if (!user) {
+        return next(new ErrorResponse(`You must be logged in to offer help`, 400))
     }
-    let blood=await Blood.findById(req.params.id)
-    if (blood.user ==req.user.id){
-        return next(new ErrorResponse(`You can not offer help to your own request`,400))
+    let blood = await Blood.findById(req.params.id)
+    if (blood.user == req.user.id) {
+        return next(new ErrorResponse(`You can not offer help to your own request`, 400))
 
     }
-    if(!blood){
-        return next(new ErrorResponse(`Please make sure you are offering help to a valid request.`,400))
+    if (!blood) {
+        return next(new ErrorResponse(`Please make sure you are offering help to a valid request.`, 400))
     }
-    const {helpers}=blood
-    for(const value of helpers){
-        if(value._id==user._id.toHexString()){
-            return next(new ErrorResponse(`You have already offered your help.`,400))
+    const {helpers} = blood
+    for (const value of helpers) {
+        if (value._id == user._id.toHexString()) {
+            return next(new ErrorResponse(`You have already offered your help.`, 400))
         }
     }
-    await Blood.findByIdAndUpdate(req.params.id,{ $push: { helpers: user } },{
-        new:true,
-        runValidators:true
+    await Blood.findByIdAndUpdate(req.params.id, {$push: {helpers: user}}, {
+        new: true,
+        runValidators: true
     })
     res.status(200).json({
-        success:true,
-        data:"Thank you for offering you blood, Your request has been accepted"
+        success: true,
+        data: "Thank you for offering you blood, Your request has been accepted"
     })
 
 })
 
 //get token from model,create cookie and send
 // response
-const sendTokenResponse=(user,statusCode,res)=>{
+const sendTokenResponse = (user, statusCode, res) => {
     //Create web token
-    const token=user.getSignedJwtToken();
-    const options={
-        expires:new Date(Date.now()+30*24*60*60*1000),
-        httpOnly:true,
+    const token = user.getSignedJwtToken();
+    const options = {
+        expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+        httpOnly: true,
     }
-    if(process.env.NODE_ENV==='production'){
-        options.secure=true
+    if (process.env.NODE_ENV === 'production') {
+        options.secure = true
     }
-    res.status(statusCode).cookie('token',token,options).json({
-        success:true,
+    res.status(statusCode).cookie('token', token, options).json({
+        success: true,
         token,
         user
     })
@@ -180,12 +186,12 @@ const sendTokenResponse=(user,statusCode,res)=>{
 //@desc get all my requests
 //@route GET /api/auth/myrequests
 //@access Private
-export const getMyRequests=asyncHandler(async (req, res, next)=>{
-    const id=req.user._id
-    const requests=await Blood.find({user:id})
+export const getMyRequests = asyncHandler(async (req, res, next) => {
+    const id = req.user._id
+    const requests = await Blood.find({user: id})
 
     res.status(200).json({
-        success:true,
-        data:requests
+        success: true,
+        data: requests
     })
 })

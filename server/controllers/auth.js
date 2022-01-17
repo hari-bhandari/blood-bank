@@ -2,10 +2,9 @@ import User from '../models/User.js'
 import asyncHandler from "../middlewares/async.js";
 import ErrorResponse from "../utils/errorResponse.js";
 import Blood from "../models/Blood.js";
-import mongoose from 'mongoose'
+import crypto from "crypto";
 import sendEmail from "../config/sendEmail.js";
 import emailTemplate from "../config/emailTemplate.js";
-const ObjectId=mongoose.ObjectId
 
 //@desc register a user
 //@route POST /api/auth/register
@@ -16,7 +15,7 @@ export const register=asyncHandler(async (req, res, next)=>{
         req.body
     );
     const confirmEmailToken = user.generateEmailConfirmToken();
-    const confirmEmailURL = `https://${req.get(
+    const confirmEmailURL = `${req.protocol}://${req.get(
         'host',
     )}/api/auth/confirmemail?token=${confirmEmailToken}`;
     await sendEmail({
@@ -184,21 +183,7 @@ const sendTokenResponse=(user,statusCode,res)=>{
 export const getMyRequests=asyncHandler(async (req, res, next)=>{
     const id=req.user._id
     const requests=await Blood.find({user:id})
-    const reviews = await Blood.aggregate([
-        {
-            "$match":{
-                user:req.user._id
-            }
-        },
-        {
-            "$lookup": {
-                "from": "products", // collection name
-                "localField": "product",
-                "foreignField": "_id",
-                "as": "product",
-            }
-        }
-    ])
+
     res.status(200).json({
         success:true,
         data:requests

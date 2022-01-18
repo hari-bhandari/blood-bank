@@ -99,7 +99,6 @@ export const updateDetails = asyncHandler(async (req, res, next) => {
 export const confirmEmail = asyncHandler(async (req, res, next) => {
     // grab token from email
     const {token} = req.query;
-    console.log(req.query.token)
     if (!token) {
         return next(new ErrorResponse('Invalid Token', 400));
     }
@@ -121,7 +120,7 @@ export const confirmEmail = asyncHandler(async (req, res, next) => {
     }
 
     // update confirmed to true
-    user.confirmEmailToken = undefined;
+    user.emailToken = undefined;
     user.isEmailConfirmed = true;
 
     // save

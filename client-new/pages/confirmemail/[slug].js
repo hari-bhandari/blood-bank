@@ -1,19 +1,21 @@
 import React from 'react';
-import RequestPageSection from "../../components/UI/RequestPage/RequestPage";
 import Layout from "../../components/UI/layout";
 import axios from "axios";
 import {PUBLIC_URL_API} from "../../components/config";
 import Custom404 from "../404";
 
 const fetchData = (url) => axios.get(url)
-    .then(res => ({
-        error: false,
-        data: res.data.data,
-    }))
-    .catch(() => ({
+    .then(res => {
+        return {
+            error: false,
+            data: res.data,
+        }
+    })
+    .catch((e) =>{
+        return {
             error: true,
             data: null,
-        }),
+        }},
     );
 
 const RequestPage = ({data}) => {
@@ -33,7 +35,7 @@ const RequestPage = ({data}) => {
 };
 
 export async function getServerSideProps({params}) {
-    const data = await fetchData(`${PUBLIC_URL_API}/api/auth/confirmemail?token=${params.slug}`).then(data => data.user
+    const data = await fetchData(`${PUBLIC_URL_API}/api/auth/confirmemail?token=${params.slug}`).then(data => data
     ).catch((error) => {
         return {
             props: {
@@ -41,6 +43,7 @@ export async function getServerSideProps({params}) {
             }
         }
     })
+    console.log(data)
     return {
         props: {
             success: true,

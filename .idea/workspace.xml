@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="changed url">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="changed hex size">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/confirmemail/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/confirmemail/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/profile/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220117_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220118_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -161,14 +163,8 @@
       <workItem from="1642084363452" duration="9567000" />
       <workItem from="1642150083922" duration="2308000" />
       <workItem from="1642320451112" duration="7153000" />
-      <workItem from="1642408435093" duration="10616000" />
-    </task>
-    <task id="LOCAL-00015" summary="added few more fields to signup form">
-      <created>1641411597492</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1641411597492</updated>
+      <workItem from="1642408435093" duration="11235000" />
+      <workItem from="1642492207147" duration="4857000" />
     </task>
     <task id="LOCAL-00016" summary="added babel">
       <created>1641411697830</created>
@@ -506,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642452214962</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="changed hex size">
+      <created>1642453043797</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1642453043797</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +528,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="sign in and signup working now" />
     <MESSAGE value="added age while making request" />
     <MESSAGE value="images fixed on requests as well" />
     <MESSAGE value="added custom 404 page" />
@@ -550,7 +552,8 @@
     <MESSAGE value="fixed link issue while sending email and also fixed import issue on crypto" />
     <MESSAGE value="added new page to confirm email" />
     <MESSAGE value="changed url" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed url" />
+    <MESSAGE value="changed hex size" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed hex size" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

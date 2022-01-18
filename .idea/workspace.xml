@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="changed hex size">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed confirm email">
+      <change afterPath="$PROJECT_DIR$/server/middlewares/advancedResultForUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/confirmemail/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/confirmemail/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/pages/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/sendEmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/donors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.google.cloudcode.ide_session_index" value="20220118_0000" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/middlewares" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -50,11 +51,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/middlewares" />
       <recent name="$PROJECT_DIR$/client-new/public" />
       <recent name="$PROJECT_DIR$/client-new/components/UI/profile" />
       <recent name="$PROJECT_DIR$/client-new/hooks" />
       <recent name="$PROJECT_DIR$/client-new/components/UI" />
-      <recent name="$PROJECT_DIR$/client-new/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -164,14 +165,7 @@
       <workItem from="1642150083922" duration="2308000" />
       <workItem from="1642320451112" duration="7153000" />
       <workItem from="1642408435093" duration="11235000" />
-      <workItem from="1642492207147" duration="4857000" />
-    </task>
-    <task id="LOCAL-00016" summary="added babel">
-      <created>1641411697830</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1641411697830</updated>
+      <workItem from="1642492207147" duration="6248000" />
     </task>
     <task id="LOCAL-00017" summary="fixed props error">
       <created>1641412114863</created>
@@ -509,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642453043797</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="fixed confirm email">
+      <created>1642519763195</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1642519763195</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +529,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added age while making request" />
     <MESSAGE value="images fixed on requests as well" />
     <MESSAGE value="added custom 404 page" />
     <MESSAGE value="optimised imports" />
@@ -553,7 +553,8 @@
     <MESSAGE value="added new page to confirm email" />
     <MESSAGE value="changed url" />
     <MESSAGE value="changed hex size" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed hex size" />
+    <MESSAGE value="fixed confirm email" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed confirm email" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,7 +1,7 @@
 import express from "express";
 import {getDonor,getDonors} from "../controllers/donors.js";
 import User from "../models/User.js";
-import {advancedResults} from '../middlewares/advancedResult.js'
+import {advancedResults} from '../middlewares/advancedResultForUser.js'
 const router = express.Router({ mergeParams: true });
 
 router

@@ -12,17 +12,19 @@ function listToString(list) {
     return str;
 }
 export const sendHelpEmail = async (district, bloodType,name,description) => {
-    const users=await User.find({}).limit(50)
+    const users=await User.find({isEmailConfirmed:true,district,bloodType}).limit(50)
     const emailList=[]
     users.map(user=>{
         emailList.push(user.email)
     })
-    console.log(emailList)
-    await sendEmail({
-        email: listToString(emailList),
-        subject: `${name} need your Help with ${bloodType} Blood`,
-        html: emailTemplate(`${name} needs your Help with ${bloodType} Blood`,
-            `${name} from ${district} is counting on you for ${bloodType} blood! The requester has this to say,
+    if (emailList.length>0){
+        await sendEmail({
+            email: listToString(emailList),
+            subject: `${name} need your Help with ${bloodType} Blood`,
+            html: emailTemplate(`${name} needs your Help with ${bloodType} Blood`,
+                `${name} from ${district} is counting on you for ${bloodType} blood! The requester has this to say,
         "${description}"`)
-    })
+        })
+    }
+
 }

@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed confirm email">
-      <change afterPath="$PROJECT_DIR$/server/middlewares/advancedResultForUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/sendEmail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/donors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220118_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220119_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server/middlewares" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -166,6 +168,8 @@
       <workItem from="1642320451112" duration="7153000" />
       <workItem from="1642408435093" duration="11235000" />
       <workItem from="1642492207147" duration="6248000" />
+      <workItem from="1642521156673" duration="4967000" />
+      <workItem from="1642578247465" duration="8005000" />
     </task>
     <task id="LOCAL-00017" summary="fixed props error">
       <created>1641412114863</created>
@@ -593,6 +597,12 @@
           <url>file://$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js</url>
           <line>123</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

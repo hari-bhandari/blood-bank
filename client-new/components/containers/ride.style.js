@@ -23,7 +23,15 @@ export const GlobalStyle = createGlobalStyle`
     position: relative;
   }
 
-
+  .logo-alt-mobile{
+    position: absolute;
+    z-index: 100;
+    left: 40px;
+    top: 30px;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
   .drawer-content-wrapper{
     @media (max-width: 767px) {
       width: 300px!important;
@@ -153,9 +161,7 @@ export const ContentWrapper = styled.div`
         display: none;
       }
 
-      .logo-alt {
-        display: block;
-      }
+      
     }
   }
 

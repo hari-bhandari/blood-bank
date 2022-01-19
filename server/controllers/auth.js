@@ -20,6 +20,7 @@ export const register = asyncHandler(async (req, res, next) => {
     const user = await User.create(
         req.body
     );
+
     await sendEmail({
         email: user.email,
         subject: `Please confirm your account with BloodBank`,
@@ -122,6 +123,58 @@ export const confirmEmail = asyncHandler(async (req, res, next) => {
     // update confirmed to true
     user.emailToken = undefined;
     user.isEmailConfirmed = true;
+
+    // save
+    user.save({validateBeforeSave: false});
+
+    // return token
+    sendTokenResponse(user, 200, res);
+});
+export const offerHelpViaEmail = asyncHandler(async (req, res, next) => {
+    // grab token from email
+    const {token} = req.query;
+    if (!token) {
+        return next(new ErrorResponse('Invalid Token', 400));
+    }
+
+    const splitToken = token.split('.')[0];
+    const emailToken = crypto
+        .createHash('sha256')
+        .update(splitToken)
+        .digest('hex');
+    const[userID,requestID]=emailToken.split(',')
+    // get user by token
+    const user = await User.findById(userID);
+
+    if (!user) {
+        return next(new ErrorResponse('Invalid Token, Coudn\'t find any user', 400));
+    }
+    const blood = await Blood.findOne(userID);
+
+    if (!blood) {
+        return next(new ErrorResponse('Invalid Token, Coudn\'t find any Blood Request', 400));
+    }
+    if (blood.user == req.user.id) {
+        return next(new ErrorResponse(`You can not offer help to your own request`, 400))
+
+    }
+
+    const {helpers} = blood
+    for (const value of helpers) {
+        if (value._id == user._id.toHexString()) {
+            return next(new ErrorResponse(`You have already offered your help.`, 400))
+        }
+    }
+    await Blood.findByIdAndUpdate(req.params.id, {$push: {helpers: user}}, {
+        new: true,
+        runValidators: true
+    })
+    res.status(200).json({
+        success: true,
+        data: "Thank you for offering you blood, Your request has been accepted"
+    })
+
+
 
     // save
     user.save({validateBeforeSave: false});

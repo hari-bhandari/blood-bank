@@ -15,8 +15,10 @@ import {
 
 const NavbarStyle = styled.nav`
   /* Navbar default style goes here */
-
-  display: flex;
+  @media (max-width: 991px) {
+    display: none;
+  }
+    display: flex;
   align-items: center;
   min-height: 56px;
   padding: 10px 16px;

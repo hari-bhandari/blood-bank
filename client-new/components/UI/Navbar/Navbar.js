@@ -1,32 +1,27 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import PropTypes from 'prop-types';
 import NavbarWrapper from '../../elements/Navbar';
-import Drawer from '../../elements/Drawer';
 import Logo from '../../elements/UI/Logo';
 import Box from '../../elements/Box';
-import HamburgerMenu from '../../HamburgMenu';
 import Container from '../../Container';
 import ScrollSpyMenu from '../../ScrollSpyMenu';
 import LogoImage from './Ride/logo.svg';
-import {MENU_ITEMS, MENU_RIGHT_ITEMS, MENU_LEFT_ITEMS} from "../../data/Ride";
+import { MENU_RIGHT_ITEMS, MENU_LEFT_ITEMS} from "../../data/Ride";
 import Dropdown from "../../Dropdown";
 import Link from "next/link";
 import {AiFillCaretDown} from "react-icons/ai";
 import styled from "styled-components";
 import authContext from "../../Context/auth/authContext";
 
-const MyProfileComponent = styled.div`
+export const MyProfileComponent = styled.div`
   display: flex;
 `
 const Navbar = ({navbarStyle, logoStyle, row, menuWrapper,initialShadow}) => {
-    const [isOpen, setIsOpen] = useState(false)
 
     const auth = useContext(authContext);
     const {isAuthenticated, logout} = auth;
     // Toggle drawer
-    const toggleHandler = () => {
-        setIsOpen(!isOpen)
-    };
+
     const onLogout = () => {
         logout()
         location.reload();
@@ -54,17 +49,11 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper,initialShadow}) => {
                     <Logo
                         href="/"
                         logoSrc={LogoImage}
-                        title="Portfolio"
+                        title="Blood Bank"
                         logoStyle={logoStyle}
                         className="main-logo"
                     />
-                    <Logo
-                        href="/"
-                        logoSrc={LogoImage}
-                        title="Portfolio"
-                        logoStyle={logoStyle}
-                        className="logo-alt"
-                    />
+
                     <Box {...menuWrapper}>
                         <ScrollSpyMenu
                             className="main_menu menuLeft"
@@ -85,35 +74,7 @@ const Navbar = ({navbarStyle, logoStyle, row, menuWrapper,initialShadow}) => {
                         }
                     </Box>
 
-                    <Drawer
-                        width="420px"
-                        placement="right"
-                        drawerHandler={<HamburgerMenu barColor="blue"/>}
-                        open={isOpen}
-                        toggleHandler={toggleHandler}
-                    >
-                        <ScrollSpyMenu
-                            className="mobile_menu"
-                            menuItems={MENU_ITEMS}
-                            drawerClose={true}
-                            offset={-100}
-                        />
 
-
-                        {!isAuthenticated ? <ScrollSpyMenu
-                            className="mobile_menu"
-                            menuItems={MENU_RIGHT_ITEMS}
-                            drawerClose={true}
-                            offset={-100}
-                        /> : <ScrollSpyMenu
-                            className="mobile_menu"
-                            offset={-70}
-                        ><Dropdown className={""} dropdownDirection={'right'}
-                                   content={<MyProfileComponent>My Profile <AiFillCaretDown/> </MyProfileComponent>} dropdownItems={AuthedMenu}/>
-                        </ScrollSpyMenu>
-                        }
-
-                    </Drawer>
 
                 </Box>
             </Container>

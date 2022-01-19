@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed confirm email">
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added bottom navbar for mobile devices">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,14 +164,7 @@
       <workItem from="1642408435093" duration="11235000" />
       <workItem from="1642492207147" duration="6248000" />
       <workItem from="1642521156673" duration="4967000" />
-      <workItem from="1642578247465" duration="8005000" />
-    </task>
-    <task id="LOCAL-00017" summary="fixed props error">
-      <created>1641412114863</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1641412114863</updated>
+      <workItem from="1642578247465" duration="8788000" />
     </task>
     <task id="LOCAL-00018" summary="added _document.js">
       <created>1641412686797</created>
@@ -514,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642519763195</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="added bottom navbar for mobile devices">
+      <created>1642628095922</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1642628095923</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +528,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="images fixed on requests as well" />
     <MESSAGE value="added custom 404 page" />
     <MESSAGE value="optimised imports" />
     <MESSAGE value="fixed nav styling issue" />
@@ -558,7 +552,8 @@
     <MESSAGE value="changed url" />
     <MESSAGE value="changed hex size" />
     <MESSAGE value="fixed confirm email" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed confirm email" />
+    <MESSAGE value="added bottom navbar for mobile devices" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bottom navbar for mobile devices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

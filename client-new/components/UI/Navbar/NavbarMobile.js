@@ -99,12 +99,13 @@ const NavbarMobile = () => {
             <MobileNav>
                 <NavItem>
                     {isAuthenticated ?
-                        <Link href={'/profile'}>
+                        <Link href={'/profile'} key={15}>
                             <NavLink>
                                 <CgProfile/>
                                 <span>Profile</span>
-                            </NavLink> </Link> :
-                        <Link href={'/login'}>
+                            </NavLink>
+                        </Link> :
+                        <Link href={'/login'} key={16}>
                             <NavLink>
                                 <AiOutlineLogin/>
                                 <span>Login</span>
@@ -114,13 +115,13 @@ const NavbarMobile = () => {
                 </NavItem>
                 <NavItem>
                     {isAuthenticated ?
-                        <Link href={'/requests'}>
+                        <Link href={'/request'} key={12}>
                             <NavLink>
                                 <BiAddToQueue/>
                                 <span>Request</span>
                             </NavLink>
                         </Link> :
-                        <Link href={'/requests'}>
+                        <Link href={'/requests'} key={11}>
                             <NavLink>
                                 <BsCardList/>
                                 <span>Requests</span>

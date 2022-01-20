@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .logo-alt-mobile{
     position: absolute;
+    display: block;
     z-index: 100;
     left: 40px;
     top: 30px;
@@ -155,10 +156,6 @@ export const ContentWrapper = styled.div`
       padding: 15px 0;
       @media (min-width: 1440px) {
         padding: 25px 0;
-      }
-
-      .main-logo {
-        display: none;
       }
 
       

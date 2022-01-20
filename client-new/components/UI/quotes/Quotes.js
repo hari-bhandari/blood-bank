@@ -5,6 +5,7 @@ import Heading from '../../elements/Heading';
 import Button from '../../elements/Button';
 import Image from '../../elements/Image';
 import { Testimonial } from './data';
+import {FaArrowLeft,FaArrowRight} from "react-icons/fa";
 import Container from '../../Container';
 import GlideCarousel from '../../../components/GlideCarousel';
 import GlideSlide from '../../../components/GlideCarousel/glideSlide';
@@ -39,14 +40,14 @@ const Quotes = ({
                     buttonWrapperStyle={btnWrapperStyle}
                     nextButton={
                         <Button
-                            icon={<i className="flaticon-next" />}
+                            icon={<FaArrowRight color={'white'}/>}
                             variant="textButton"
                             {...btnStyle}
                         />
                     }
                     prevButton={
                         <Button
-                            icon={<i className="flaticon-left-arrow" />}
+                            icon={<FaArrowLeft color={'white'}/>}
                             variant="textButton"
                             {...btnStyle}
                         />

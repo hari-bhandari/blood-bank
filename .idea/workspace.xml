@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="added bottom navbar for mobile devices">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed bugs on frontend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/assets/css/flaticon.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/css/flaticon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220119_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220120_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server/middlewares" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -164,14 +168,8 @@
       <workItem from="1642408435093" duration="11235000" />
       <workItem from="1642492207147" duration="6248000" />
       <workItem from="1642521156673" duration="4967000" />
-      <workItem from="1642578247465" duration="8788000" />
-    </task>
-    <task id="LOCAL-00018" summary="added _document.js">
-      <created>1641412686797</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1641412686797</updated>
+      <workItem from="1642578247465" duration="9483000" />
+      <workItem from="1642677746805" duration="1001000" />
     </task>
     <task id="LOCAL-00019" summary="added donation page">
       <created>1641455149781</created>
@@ -509,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642628095923</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="fixed bugs on frontend">
+      <created>1642629016703</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1642629016703</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added custom 404 page" />
     <MESSAGE value="optimised imports" />
     <MESSAGE value="fixed nav styling issue" />
     <MESSAGE value="fixed basic names changing" />
@@ -553,7 +557,8 @@
     <MESSAGE value="changed hex size" />
     <MESSAGE value="fixed confirm email" />
     <MESSAGE value="added bottom navbar for mobile devices" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bottom navbar for mobile devices" />
+    <MESSAGE value="fixed bugs on frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs on frontend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -596,7 +601,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js</url>
           <line>34</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

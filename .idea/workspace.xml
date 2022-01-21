@@ -4,7 +4,9 @@
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed the issue of multiple logos appearing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,14 +169,7 @@
       <workItem from="1642521156673" duration="4967000" />
       <workItem from="1642578247465" duration="9483000" />
       <workItem from="1642677746805" duration="1628000" />
-      <workItem from="1642773911982" duration="1695000" />
-    </task>
-    <task id="LOCAL-00022" summary="added blank donors page">
-      <created>1641482594583</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1641482594583</updated>
+      <workItem from="1642773911982" duration="4835000" />
     </task>
     <task id="LOCAL-00023" summary="added blank donors page">
       <created>1641482601885</created>
@@ -512,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642774807475</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="fixed the issue of multiple logos appearing">
+      <created>1642776932744</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1642776932744</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

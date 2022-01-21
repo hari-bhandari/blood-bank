@@ -16,6 +16,9 @@ export const RequestsContainer = styled.div`
 `
 export const InsiderContainer = styled.div`
   width: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 100px;
+  @media (max-width: 992px) {
+    margin-top: 85px;
+  }
 `

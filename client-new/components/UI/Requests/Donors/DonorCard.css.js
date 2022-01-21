@@ -1,10 +1,11 @@
 import styled from "styled-components";
 export const Container=styled.div`
+  font-family: 'Poppins', sans-serif;
   user-select: none;
   margin: 20px auto;
   background: #231e39;
   color: #b3b8cd;
-  border-radius: 5px;
+  border-radius: 20px;
   width: 350px;
   text-align: center;
   box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .75);
@@ -14,12 +15,14 @@ export const Container=styled.div`
     margin: 27px 0 0 120px;
   }
   .about {
-    margin-top: 35px;
+    margin-left: 40px;
+    text-align: start;
     line-height: 21px;
   }
-  button {
-    margin: 10px 0 40px 10px;
+  b{
+    color: white;
   }
+
 ;
 `
 export const CoverPhoto=styled.div`
@@ -40,16 +43,19 @@ export const Profile=styled.img`
 export const Button=styled.button`
   background: #03bfbc;
   border: 1px solid #03bfbc;
-  padding: 10px 25px;
+  padding: 10px 0;
   color: #231e39;
-  border-radius: 3px;
-  font-family: Montserrat, sans-serif;
+  border-radius: 10px;
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  margin: 10px auto 5px auto;
+  outline: none;
+
   &:hover {
-    color: #231e39;
-    background: #0c40c4;
+    background: #be09f1;
     transition: .5s;
-    outline: none;
+    border: none;
   }
 `
 export const BloodType=styled.div`
@@ -71,5 +77,9 @@ export const BloodType=styled.div`
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   color: white;
-  font-family: 'Open Sans Bold';
+  font-family: 'Poppins', sans-serif;
+`
+export const ButtonContainer=styled.div`
+  display: flex;
+  flex-direction: column;
 `

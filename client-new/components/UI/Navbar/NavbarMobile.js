@@ -54,6 +54,8 @@ const LogoWrapper =styled.div`
   }
 `
 const NavLink = styled.div`
+  background: #f2eeee;
+  padding: 2px;
 
   svg {
     margin-right: 10px;

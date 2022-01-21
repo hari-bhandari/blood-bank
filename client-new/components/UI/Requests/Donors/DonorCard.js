@@ -1,5 +1,7 @@
 import React from 'react';
-import {Container,CoverPhoto,Profile,Button,BloodType} from './DonorCard.css'
+import {Container,CoverPhoto,Profile,Button,BloodType,ButtonContainer} from './DonorCard.css'
+
+
 export const transformCloudinaryImage = (url, width, height, imgFormat) => {
     if (!url){
         return 'https://res.cloudinary.com/wisecart/image/upload/v1641925984/depositphotos_247872612-stock-illustration-no-image-available-icon-vector_s4yb2t.jpg'
@@ -28,8 +30,11 @@ const DonorItem = ({donor}) => {
             />
             </CoverPhoto>
             <div className="profile-name">{donor.name}</div>
-            <p className="about">District:{donor.district.charAt(0).toUpperCase() + donor.district.slice(1)}<br/>Email:{donor.email}</p>
+            <p className="about">District: <b>{donor.district.charAt(0).toUpperCase() + donor.district.slice(1)}</b><br/>Email: <b>{donor.email}</b></p>
+            <ButtonContainer>
             <Button>{donor.phone}</Button>
+            <Button>{donor.email}</Button>
+            </ButtonContainer>
             {/*<Link href={`/user/${donor?._id}`}><Button>More Info</Button> </Link>*/}
         </Container>
     );

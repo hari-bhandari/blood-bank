@@ -4,7 +4,6 @@
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed the issue of multiple logos appearing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,14 +166,7 @@
       <workItem from="1642521156673" duration="4967000" />
       <workItem from="1642578247465" duration="9483000" />
       <workItem from="1642677746805" duration="1628000" />
-      <workItem from="1642773911982" duration="303000" />
-    </task>
-    <task id="LOCAL-00020" summary="added donation page">
-      <created>1641455543409</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1641455543409</updated>
+      <workItem from="1642773911982" duration="656000" />
     </task>
     <task id="LOCAL-00021" summary="added request page for now">
       <created>1641457935313</created>
@@ -512,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642678769095</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="fixed the issue of multiple logos appearing">
+      <created>1642774225680</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774225682</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +597,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js</url>
-          <line>34</line>
+          <line>25</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

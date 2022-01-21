@@ -15,17 +15,8 @@ import authContext from "../../Context/auth/authContext";
 import Link from "next/link";
 import {MyProfileComponent} from "./Navbar";
 
-const NavbarMobileContainer = styled.header`
-  @media (min-width: 992px) {
-    display: none;
-  }
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
-  height: auto;
-  padding: 0 2rem;
-  margin: 0 auto;
-`
-const MobileNav = styled.nav`
+
+const MobileNav = styled.div`
   display: flex;
   position: fixed;
   bottom: 0;
@@ -36,6 +27,11 @@ const MobileNav = styled.nav`
   z-index: 99;
   will-change: transform;
   transform: translateZ(0);
+  box-shadow: 0px 0px 40px 0px rgb(31 38 135 / 100%);
+  @media (min-width: 992px) {
+    display: none;
+  }
+  font-family: 'Poppins', sans-serif;
 `
 const NavItem = styled.div`
   display: flex;
@@ -94,7 +90,6 @@ const NavbarMobile = () => {
             </div>
         ]
     return (
-        <NavbarMobileContainer>
             <MobileNav>
                 <NavItem>
                     {isAuthenticated ?
@@ -162,7 +157,6 @@ const NavbarMobile = () => {
                     </NavLink>
                 </NavItem>
             </MobileNav>
-        </NavbarMobileContainer>
     );
 };
 

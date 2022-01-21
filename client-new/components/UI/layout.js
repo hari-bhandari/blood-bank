@@ -22,13 +22,7 @@ const Layout = ({children,title,description,initialShadow}) => {
 
             <GlobalStyle/>
             <ResetCSS/>
-            <Logo
-                href="/"
-                logoSrc={LogoImage}
-                title="Blood Bank"
-                logoStyle={{maxWidth:"160px"}}
-                className="logo-alt-mobile"
-            />
+
             <ContentWrapper>
                 <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
                     <Navbar initialShadow={initialShadow}/>

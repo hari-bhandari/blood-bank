@@ -14,6 +14,8 @@ import {AiFillCaretDown} from "react-icons/ai";
 import authContext from "../../Context/auth/authContext";
 import Link from "next/link";
 import {MyProfileComponent} from "./Navbar";
+import Logo from "../../elements/UI/Logo";
+import LogoImage from "./Ride/logo.svg";
 
 
 const MobileNav = styled.div`
@@ -44,6 +46,11 @@ const NavItem = styled.div`
 
   &:hover {
     cursor: pointer;
+  }
+`
+const LogoWrapper =styled.div`
+  @media (min-width: 992px) {
+    display: none;
   }
 `
 const NavLink = styled.div`
@@ -90,7 +97,18 @@ const NavbarMobile = () => {
             </div>
         ]
     return (
+        <>
+            <LogoWrapper>
+            <Logo
+                href="/"
+                logoSrc={LogoImage}
+                title="Blood Bank"
+                logoStyle={{maxWidth:"160px"}}
+                className="logo-alt-mobile"
+            />
+            </LogoWrapper>
             <MobileNav>
+
                 <NavItem>
                     {isAuthenticated ?
                         <Link href={'/profile'} key={15}>
@@ -157,6 +175,7 @@ const NavbarMobile = () => {
                     </NavLink>
                 </NavItem>
             </MobileNav>
+            </>
     );
 };
 

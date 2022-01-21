@@ -36,7 +36,6 @@ const MobileNav = styled.nav`
   z-index: 99;
   will-change: transform;
   transform: translateZ(0);
-  box-shadow: 40px 0 0 0 rgb(31 38 135 / 57%);
 `
 const NavItem = styled.div`
   display: flex;

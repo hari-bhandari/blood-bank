@@ -25,7 +25,6 @@ export const GlobalStyle = createGlobalStyle`
 
   .logo-alt-mobile{
     position: absolute;
-    display: block;
     z-index: 100;
     left: 40px;
     top: 30px;

@@ -59,25 +59,24 @@ export const Button=styled.button`
   }
 `
 export const BloodType=styled.div`
+  font-family: 'Poppins', sans-serif;
   font-size: 55px;
   width: 100px;
+  margin-top: 20px;
   height: 100px;
-  border-radius: 50%;
   text-align: center;
   vertical-align: middle;
   line-height: 90px;
   position: absolute;
   left: ${props => props.position ? props.position : '60%'};
-  color: #003e02;
   border-radius: 50%;
   background: linear-gradient(to bottom,
   rgb(255, 0, 7),
   rgb(184, 47, 150));
-  border: 5px solid #ffab00;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  -webkit-backdrop-filter: blur( 3px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 `
 export const ButtonContainer=styled.div`
   display: flex;

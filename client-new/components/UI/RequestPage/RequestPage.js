@@ -81,8 +81,8 @@ const ProfilePage = ({data}) => {
                                 <p>{data.hospitalName}</p>
                             </div>
                             <div className="data">
-                                <h4>Travel Cost</h4>
-                                <p>{data.travel?'Travel costs will be paid by requester':'Travel costs will not be paid by requester'}</p>
+                                <h4>Age</h4>
+                                <p>{data.age}</p>
                             </div>
                         </div>
                     </div>

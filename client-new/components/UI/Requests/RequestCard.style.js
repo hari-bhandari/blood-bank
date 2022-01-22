@@ -1,17 +1,23 @@
 import styled from "styled-components";
 export const CardContainer=styled.div`
+  font-family: 'Poppins', sans-serif;
   background-color: #222831;
   height: 37rem;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 0 20px;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  border-radius: 30px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   .card__name {
     margin-top: 15px;
     font-size: 1.5em;
+  }
+  p{
+    font-family: 'Poppins', sans-serif;
+
   }
   margin-top: 50px;
 
@@ -100,15 +106,21 @@ export const CardContainer=styled.div`
   
 
 `
-export const Flex = styled.div`
+export const InfoContainer=styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items:center;
-  flex-wrap: ${props => (props.nowrap ? 'no-wrap' : 'wrap')};
-  div{
-    flex: 0.5;
+  margin-bottom: 10px;
+  justify-content: space-between;
+`
+export const Info=styled.div`
+  width:${props => props.width};
+  display: flex;
+  padding-left: 10px;
+  flex-direction: column;
+  border-left:${props => props.right? "5px solid #ffffff":''};
+  overflow: hidden;
+  svg{
+    width: 20px;
+    height:20px;
   }
-`;
-
-
+`

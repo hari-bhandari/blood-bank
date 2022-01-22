@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed the issue of multiple logos appearing">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="few card changes">
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/profilecard.css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/pages/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220121_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220122_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server/middlewares" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -169,14 +174,8 @@
       <workItem from="1642521156673" duration="4967000" />
       <workItem from="1642578247465" duration="9483000" />
       <workItem from="1642677746805" duration="1628000" />
-      <workItem from="1642773911982" duration="4835000" />
-    </task>
-    <task id="LOCAL-00023" summary="added blank donors page">
-      <created>1641482601885</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1641482601885</updated>
+      <workItem from="1642773911982" duration="9227000" />
+      <workItem from="1642839182931" duration="6084000" />
     </task>
     <task id="LOCAL-00024" summary="added donors card">
       <created>1641483140642</created>
@@ -514,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642776932744</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="few card changes">
+      <created>1642780834438</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1642780834438</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +539,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fixed nav styling issue" />
     <MESSAGE value="fixed basic names changing" />
     <MESSAGE value="added update details" />
     <MESSAGE value="redirects to homepage if user is not authenticated" />
@@ -558,7 +563,8 @@
     <MESSAGE value="added bottom navbar for mobile devices" />
     <MESSAGE value="fixed bugs on frontend" />
     <MESSAGE value="fixed the issue of multiple logos appearing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the issue of multiple logos appearing" />
+    <MESSAGE value="few card changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="few card changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -602,6 +608,12 @@
           <url>file://$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js</url>
           <line>27</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.style.js</url>
+          <line>65</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

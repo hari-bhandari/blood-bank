@@ -3,7 +3,6 @@ import RequestPageSection from "../../components/UI/RequestPage/RequestPage";
 import Layout from "../../components/UI/layout";
 import axios from "axios";
 import {PUBLIC_URL_API} from "../../components/config";
-import {useRouter} from "next/router";
 import Custom404 from "../404";
 
 const fetchData = (url) => axios.get(url)

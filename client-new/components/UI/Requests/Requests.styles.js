@@ -7,10 +7,6 @@ export const RequestsContainer = styled.div`
   min-height: 100vh;
   display: flex;
   overflow: hidden;
-  //background-repeat: no-repeat;
-  //background-position: 105% center;
-  //background-size: 1020px;
-  //background-attachment: fixed;
   position: relative;
 
 `

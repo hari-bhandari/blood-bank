@@ -11,19 +11,20 @@ function listToString(list) {
     }
     return str;
 }
-export const sendHelpEmail = async (district, bloodType,name,description) => {
+export const sendHelpEmail = async (district, bloodType,name,description,_id) => {
     const users=await User.find({isEmailConfirmed:true,district,bloodType}).limit(50)
     const emailList=[]
     users.map(user=>{
         emailList.push(user.email)
     })
+    const url=`https://bloodbank-nepal.com/requests/${_id}`
     if (emailList.length>0){
         await sendEmail({
             email: listToString(emailList),
             subject: `${name} need your Help with ${bloodType} Blood`,
             html: emailTemplate(`${name} needs your Help with ${bloodType} Blood`,
                 `${name} from ${district} is counting on you for ${bloodType} blood! The requester has this to say,
-        "${description}"`)
+        "${description}"`,'Offer Help', url)
         })
     }
 

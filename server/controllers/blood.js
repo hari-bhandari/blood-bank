@@ -17,7 +17,7 @@ export const requestForDonor = asyncHandler(async (req, res, next) => {
     const expiryDate = dateNow.setDate(dateNow.getDate() + req.body.runFor);
     req.body.inActiveAt = expiryDate
     const request = await Blood.create(req.body)
-    await sendHelpEmail(request.district,request.bloodType,request.name,request.requestMessage)
+    await sendHelpEmail(request.district,request.bloodType,request.name,request.requestMessage,request._id)
     res.status(201).json({
         success: true,
         data: request

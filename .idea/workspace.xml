@@ -2,139 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="changed help email structure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Accordion/accordion.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Accordion/accordion.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Accordion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Accordion/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Container/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Container/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Context/auth/authContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Context/auth/authContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Context/auth/setAuthToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Context/auth/setAuthToken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Dropdown/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Dropdown/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/FeatureBlock/featureBlock.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/FeatureBlock/featureBlock.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/FeatureBlock/featureBlock.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/FeatureBlock/featureBlock.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/FeatureBlock/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/FeatureBlock/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/GlideCarousel/glide.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/GlideCarousel/glide.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/GlideCarousel/glideSlide.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/GlideCarousel/glideSlide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/GlideCarousel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/GlideCarousel/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/HamburgMenu/hamburgMenu.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/HamburgMenu/hamburgMenu.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/HamburgMenu/hamburgMenu.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/HamburgMenu/hamburgMenu.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/InputGroup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/InputGroup/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/List/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/List/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/RadioGroup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/RadioGroup/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Tabs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Tabs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/AdditionalDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/AddRequest/BasicInformation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/AuthGlobal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/QueryFormCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/QueryFormCss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Donate/Donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Donate/Donate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Donate/donate.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Donate/donate.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Hero/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/Donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/Donors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/useInfinityQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/useInfinityQuery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/What we do/WhatWeDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/What we do/WhatWeDo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/What we do/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/What we do/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/WorksDone/WorksDone.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/WorksDone/WorksDone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/WorksDone/WorksDone.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/WorksDone/WorksDone.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/centerDiv.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/centerDiv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/MyRequests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card-mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card-mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-card/request-card.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/request-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Orders/order-details/request-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/forms/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/forms/input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/profilecard.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/profilecard.css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/Quotes.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/quotes/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/quotes/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/css/flaticon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/css/icon-example-page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/css/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/css/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/fonts/Flaticon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/fonts/Flaticon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/fonts/Flaticon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/fonts/Flaticon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/assets/fonts/Flaticon.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/containers/ride.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/assets/css/global.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/data/Ride/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/data/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Alert/alert.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Alert/alert.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Alert/alert.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Alert/alert.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Alert/alert.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Alert/alert.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Animation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Animation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Box/box.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Box/box.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Box/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Box/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Button/button.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Button/button.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Button/button.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Button/button.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Button/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Button/button.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Button/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Card/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Checkbox/checkbox.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Checkbox/checkbox.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Checkbox/checkbox.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Checkbox/checkbox.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Checkbox/checkbox.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Checkbox/checkbox.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Checkbox/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Checkbox/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/DatePicker/datepicker.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/DatePicker/datepicker.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/DatePicker/datepicker.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/DatePicker/datepicker.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/DatePicker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/DatePicker/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/DateRangePicker/daterangepicker.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/DateRangePicker/daterangepicker.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/DateRangePicker/daterangepicker.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/DateRangePicker/daterangepicker.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/DateRangePicker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/DateRangePicker/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Drawer/drawer.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Drawer/drawer.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Drawer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Drawer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Heading/heading.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Heading/heading.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Heading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Heading/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Image/image.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Image/image.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Image/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Image/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Input/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Input/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Input/input.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Input/input.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Input/input.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Input/input.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Link/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Link/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Link/link.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Link/link.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/ListGrid/ListGrid.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/ListGrid/ListGrid.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Loader/loader.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Loader/loader.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Loader/loader.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Loader/loader.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Loader/loader.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Loader/loader.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Navbar/navbar.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Radio/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Radio/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Radio/radio.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Radio/radio.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Radio/radio.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Radio/radio.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Range/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Range/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Range/range.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Range/range.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Range/range.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Range/range.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Range/range.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Range/range.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Select/select.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Select/select.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Select/select.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Select/select.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Select/select.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Select/select.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Switch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Switch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Switch/switch.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Switch/switch.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Switch/switch.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Switch/switch.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Text/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Text/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Text/text.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Text/text.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Tooltip/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Tooltip/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Tooltip/tooltip.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Tooltip/tooltip.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/Tooltip/tooltip.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/Tooltip/tooltip.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/UI/Logo/Logo.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/UI/Logo/Logo.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/elements/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/elements/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/customVariant.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/theme/customVariant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/theme/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/theme/ride/customVariant.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/theme/ride/customVariant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/profilecard.css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/pages/test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,14 +169,7 @@
       <workItem from="1642677746805" duration="1628000" />
       <workItem from="1642773911982" duration="9227000" />
       <workItem from="1642839182931" duration="9786000" />
-      <workItem from="1642860162917" duration="979000" />
-    </task>
-    <task id="LOCAL-00027" summary="added route to upload images">
-      <created>1641555245283</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1641555245283</updated>
+      <workItem from="1642860162917" duration="1334000" />
     </task>
     <task id="LOCAL-00028" summary="multiple steps while signing up">
       <created>1641569334374</created>
@@ -644,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642855605846</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="changed help email structure">
+      <created>1642866557224</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1642866557224</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

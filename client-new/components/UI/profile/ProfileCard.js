@@ -1,5 +1,6 @@
 import React from 'react';
 import {ProfileCardContainer} from './profilecard.css'
+
 const ProfileCard = () => {
     return (
         <ProfileCardContainer>

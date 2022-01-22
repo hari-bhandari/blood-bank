@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { variant } from 'styled-system';
-import { colorStyle } from '../../theme/customVariant';
-import { AnimSpinner } from '../Animation';
-import { base } from '../base';
+import {variant} from 'styled-system';
+import {colorStyle} from '../../theme/customVariant';
+import {AnimSpinner} from '../Animation';
+import {base} from '../base';
 
 const LoaderStyle = styled.span`
   /* loader default style */

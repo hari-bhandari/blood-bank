@@ -7,6 +7,7 @@ import {ShareSocial} from 'react-share-social'
 import Toast from "light-toast";
 import AuthContext from "../../Context/auth/authContext";
 import {PUBLIC_URL_API} from "../../config";
+
 const style = {
     margin:'auto',
     width:"80%",

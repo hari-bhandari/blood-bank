@@ -1,17 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react';
-import {Label, Button} from "./forms/label";
+import {Button, Label} from "./forms/label";
 import {Input} from "./forms/input";
-import {
-    FormContainer,
-    HeadingSection,
-    InputContainer, PhotoUploadContainer,
-    SettingsForm,
-    SettingsFormContent,
-    Title
-} from './ProfileSetting.css';
+import {FormContainer, HeadingSection, InputContainer, PhotoUploadContainer, SettingsForm, SettingsFormContent, Title} from './ProfileSetting.css';
 import {useLoginForm} from "../Auth/useForm";
 import axios from "axios";
-import {PUBLIC_URL_API, JSONConfig} from "../../config";
+import {JSONConfig, PUBLIC_URL_API} from "../../config";
 import Toast from "light-toast";
 import authContext from "../../Context/auth/authContext";
 import PhotoUpload from "../../UploadComponent/PhotoUpload";

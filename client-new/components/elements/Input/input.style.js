@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
+import {themeGet} from 'styled-system';
 
 const InputField = styled.div`
   position: relative;

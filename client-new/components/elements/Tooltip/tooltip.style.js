@@ -1,18 +1,5 @@
 import styled from 'styled-components';
-import {
-  fontSize,
-  fontWeight,
-  boxShadow,
-  color,
-  space,
-  borderRadius,
-  width,
-  maxWidth,
-  minWidth,
-  height,
-  maxHeight,
-  minHeight
-} from 'styled-system';
+import {borderRadius, boxShadow, color, fontSize, fontWeight, height, maxHeight, maxWidth, minHeight, minWidth, space, width} from 'styled-system';
 
 const TooltipStyle = styled.span`
   /* Tooltip default style */

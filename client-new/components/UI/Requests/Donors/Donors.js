@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {Container, Row, Col} from 'react-grid-system';
+import React, {useEffect, useState} from 'react';
+import {Col, Container, Row} from 'react-grid-system';
 import DonorItem from "./DonorCard";
 import {bloodType, districts, turnIntoSelectFormat} from "../../data";
 import SelectComponent from "../../Auth/SelectComponent";

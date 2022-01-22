@@ -1,6 +1,6 @@
 import React from 'react';
-import { expect } from 'chai';
-import { shallow } from 'enzyme';
+import {expect} from 'chai';
+import {shallow} from 'enzyme';
 import Select from './';
 
 describe('<Select /> Component', () => {

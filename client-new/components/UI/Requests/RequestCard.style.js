@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const CardContainer=styled.div`
   font-family: 'Poppins', sans-serif;
   background-color: #222831;

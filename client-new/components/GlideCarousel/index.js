@@ -1,14 +1,8 @@
-import React, { Fragment, useEffect } from 'react';
+import React, {Fragment, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import Glide from '@glidejs/glide';
 import '@glidejs/glide/dist/css/glide.core.min.css';
-import GlideWrapper, {
-  ButtonControlWrapper,
-  ButtonWrapper,
-  BulletControlWrapper,
-  BulletButton,
-  DefaultBtn,
-} from './glide.style';
+import GlideWrapper, {BulletButton, BulletControlWrapper, ButtonControlWrapper, ButtonWrapper, DefaultBtn,} from './glide.style';
 
 const GlideCarousel = ({
   className,

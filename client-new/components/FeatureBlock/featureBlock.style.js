@@ -1,23 +1,5 @@
 import styled from 'styled-components';
-import {
-  color,
-  width,
-  height,
-  display,
-  space,
-  borders,
-  borderColor,
-  boxShadow,
-  borderRadius,
-  flexWrap,
-  alignItems,
-  justifyContent,
-  flexDirection,
-  position,
-  overflow,
-  fontSize,
-  textAlign,
-} from 'styled-system';
+import {alignItems, borderColor, borderRadius, borders, boxShadow, color, display, flexDirection, flexWrap, fontSize, height, justifyContent, overflow, position, space, textAlign, width,} from 'styled-system';
 
 // FeatureBlock wrapper style
 const FeatureBlockWrapper = styled.div`

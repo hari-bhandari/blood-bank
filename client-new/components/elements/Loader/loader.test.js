@@ -1,6 +1,6 @@
 import React from 'react';
-import { expect } from 'chai';
-import { shallow } from 'enzyme';
+import {expect} from 'chai';
+import {shallow} from 'enzyme';
 import Loader from './';
 
 describe('<Loader /> Component', () => {

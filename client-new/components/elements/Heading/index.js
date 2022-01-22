@@ -1,14 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {
-  fontFamily,
-  fontWeight,
-  textAlign,
-  lineHeight,
-  letterSpacing
-} from 'styled-system';
-import { base, themed } from '../base';
+import {fontFamily, fontWeight, letterSpacing, lineHeight, textAlign} from 'styled-system';
+import {base, themed} from '../base';
 
 const HeadingWrapper = styled('p')(
   base,

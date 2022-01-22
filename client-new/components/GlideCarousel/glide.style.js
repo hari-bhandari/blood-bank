@@ -1,22 +1,5 @@
 import styled from 'styled-components';
-import {
-  width,
-  height,
-  display,
-  space,
-  color,
-  borders,
-  boxShadow,
-  borderRadius,
-  position,
-  top,
-  left,
-  right,
-  bottom,
-  alignItems,
-  justifyContent,
-  flexWrap,
-} from 'styled-system';
+import {alignItems, borderRadius, borders, bottom, boxShadow, color, display, flexWrap, height, justifyContent, left, position, right, space, top, width,} from 'styled-system';
 
 // Glide wrapper style
 const GlideWrapper = styled.div`

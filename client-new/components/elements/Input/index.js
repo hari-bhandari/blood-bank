@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import InputField, { EyeButton } from './input.style';
+import InputField, {EyeButton} from './input.style';
+
 const Input = ({
   label,
   value,

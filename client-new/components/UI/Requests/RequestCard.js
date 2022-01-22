@@ -1,10 +1,11 @@
 import React from 'react';
-import {CardContainer, InfoContainer,Info} from "./RequestCard.style";
-import { FaMountain} from "react-icons/fa";
-import {MdPersonPinCircle,MdMarkEmailRead,MdLocationOn,MdLocalHospital} from "react-icons/md";
+import {CardContainer, Info, InfoContainer} from "./RequestCard.style";
+import {FaMountain} from "react-icons/fa";
+import {MdLocalHospital, MdLocationOn, MdMarkEmailRead, MdPersonPinCircle} from "react-icons/md";
 import Link from 'next/link'
 import {BloodType} from "./Donors/DonorCard.css";
 import {transformCloudinaryImage} from "./Donors/DonorCard";
+
 const RequestCard = ({donor, ref}) => {
     return (
         <CardContainer ref={ref}>

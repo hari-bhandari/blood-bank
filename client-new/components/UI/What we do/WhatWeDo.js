@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Box from '../../elements/Box';
 import Text from '../../elements/Text';
 import Heading from '../../elements/Heading';
-import Image from '../../elements/Image';
 import Container from '../../Container';
 import ProcessItem, {ProcessIndex} from './WhatWeDo.css';
 import {PROCESS_ITEMS} from './data'

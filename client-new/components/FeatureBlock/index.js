@@ -1,10 +1,6 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
-import FeatureBlockWrapper, {
-  IconWrapper,
-  ContentWrapper,
-  ButtonWrapper,
-} from './featureBlock.style';
+import FeatureBlockWrapper, {ButtonWrapper, ContentWrapper, IconWrapper,} from './featureBlock.style';
 
 const FeatureBlock = ({
   className,

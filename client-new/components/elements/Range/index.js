@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 import RangeBoxStyle from './range.style';
 import Rheostat from 'rheostat';

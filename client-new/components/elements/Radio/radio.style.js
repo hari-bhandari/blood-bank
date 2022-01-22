@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
-import { base } from '../base';
+import {themeGet} from 'styled-system';
+import {base} from '../base';
 
 const RadioBoxStyle = styled.div`
   display: inline-flex;

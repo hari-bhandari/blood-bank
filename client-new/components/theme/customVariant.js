@@ -1,4 +1,4 @@
-import { variant } from 'styled-system';
+import {variant} from 'styled-system';
 
 const buttonStyle = variant({
   key: 'buttonStyles'

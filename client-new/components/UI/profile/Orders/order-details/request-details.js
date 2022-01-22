@@ -1,12 +1,6 @@
 import React from 'react';
 import Table from 'rc-table';
-import {
-  Message,
-  RequestMessage,
-  EditContainer,
-  RequestTable,
-  RequestTableWrapper,
-} from './request-details.style';
+import {EditContainer, Message, RequestMessage, RequestTable, RequestTableWrapper,} from './request-details.style';
 import {Button} from "../../forms/label";
 
 

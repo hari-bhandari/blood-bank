@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
+import {themeGet} from 'styled-system';
 
 const TestimonialSectionWrapper = styled.section`
   padding: 80px 0 120px;

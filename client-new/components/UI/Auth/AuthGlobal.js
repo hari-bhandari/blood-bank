@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 export const AuthGlobal=styled.div`
   * {
     margin: 0;

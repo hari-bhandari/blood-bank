@@ -1,22 +1,5 @@
 /** this is our Base Component every components must be Extend it */
-import {
-  space,
-  borders,
-  borderColor,
-  width,
-  minWidth,
-  maxWidth,
-  height,
-  minHeight,
-  maxHeight,
-  display,
-  fontSize,
-  flex,
-  order,
-  alignSelf,
-  color,
-  compose
-} from 'styled-system';
+import {alignSelf, borderColor, borders, color, compose, display, flex, fontSize, height, maxHeight, maxWidth, minHeight, minWidth, order, space, width} from 'styled-system';
 
 export const themed = key => props => props.theme[key];
 

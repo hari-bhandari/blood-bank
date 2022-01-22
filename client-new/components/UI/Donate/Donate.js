@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Box from '../../elements/Box';
 import Container from '../../Container';
 import InputGroup from '../../InputGroup';
 import RadioGroup from '../../RadioGroup';
-import SectionWrapper, {
-    ContentArea,
-    Heading,
-    DonationForm,
-    DonateButton,
-} from './donate.style';
+import SectionWrapper, {ContentArea, DonateButton, DonationForm, Heading,} from './donate.style';
 
-import {CurrencyOptions,PaymentPolicy} from "./data";
+import {CurrencyOptions, PaymentPolicy} from "./data";
 
 const DonateSection = ({ row, col }) => {
     const [state, setState] = useState({

@@ -2,7 +2,6 @@ import React from 'react';
 import {Meta, OrderListHeader, RequestMeta, SingleRequestList, Status, TrackID,} from './request-card.style';
 
 
-
 const RequestCard= ({
                                                  orderId,
                                                  onClick,

@@ -1,9 +1,9 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {useLoginForm} from "./useForm";
-import {districts, bloodType, turnIntoSelectFormat} from "../data";
+import {bloodType, districts, turnIntoSelectFormat} from "../data";
 import SelectComponent, {UploadImagesToCloud} from "./SelectComponent";
 import AuthContext from "../../Context/auth/authContext";
-import {FaLock, FaPhone, FaUser, FaEnvelope, FaMale} from "react-icons/fa";
+import {FaEnvelope, FaLock, FaMale, FaPhone, FaUser} from "react-icons/fa";
 import PhotoUpload from "../../UploadComponent/PhotoUpload";
 import {emptyValue} from "./helper";
 import Toast from "light-toast";

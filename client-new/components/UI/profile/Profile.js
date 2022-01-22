@@ -5,7 +5,7 @@ import styled from "styled-components";
 import UserIcon from "./UserIcon";
 import ProfileSetting from "../profile/ProfileSetting";
 import MyOrders from "./Orders/MyRequests";
-import { FcViewDetails } from "react-icons/fc";
+import {FcViewDetails} from "react-icons/fc";
 
 const TabListHeader=styled.p`
   font-size: 18px;

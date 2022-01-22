@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 import {themeGet} from '@styled-system/theme-get';
-import {
-    Message as Addresses,
-    RequestMessage as DeliveryAddresses,
-    EditContainer as DeliveryInfos,
-    RequestTable as OrderTables,
-} from '../order-details/request-details.style';
+import {EditContainer as DeliveryInfos, Message as Addresses, RequestMessage as DeliveryAddresses, RequestTable as OrderTables,} from '../order-details/request-details.style';
 
 export const Address = styled(Addresses)``;
 export const OrderTable = styled(OrderTables)``;

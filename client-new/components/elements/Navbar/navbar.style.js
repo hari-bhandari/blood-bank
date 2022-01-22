@@ -1,17 +1,5 @@
 import styled from 'styled-components';
-import {
-  display,
-  alignItems,
-  justifyContent,
-  flexWrap,
-  flexDirection,
-  boxShadow,
-  color,
-  space,
-  borderRadius,
-  width,
-  height
-} from 'styled-system';
+import {alignItems, borderRadius, boxShadow, color, display, flexDirection, flexWrap, height, justifyContent, space, width} from 'styled-system';
 
 const NavbarStyle = styled.nav`
   /* Navbar default style goes here */

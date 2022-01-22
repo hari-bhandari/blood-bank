@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useToggle } from '../../hooks';
+import {useToggle} from '../../hooks';
 import RadioBoxStyle from './radio.style';
 
 const Radio = ({

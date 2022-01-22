@@ -1,10 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react';
 import AuthContext from "../../Context/auth/authContext"
-import {toast} from "react-toastify";
 import {AuthGlobal} from './AuthGlobal'
 import SignIn from "./SignIn";
 import Signup from "./Signup";
 import {useRouter} from "next/router";
+
 const Auth = ({login}) => {
     const authContext=useContext(AuthContext);
     const {isAuthenticated}=authContext;

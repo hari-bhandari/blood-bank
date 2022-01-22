@@ -12,6 +12,7 @@ import {BannerWrapper, EmailInputWrapper} from './hero.style';
 import Image from "../../elements/Image";
 import BannerApp from '../../assets/image/bannerApp.png'
 import BannerPlay from '../../assets/image/bannerPlay.png'
+
 const BannerSection = ({
                            row,
                            contentArea,

@@ -1,5 +1,6 @@
 import {MdBloodtype} from 'react-icons/md'
-import {FaHandsHelping,FaFileInvoiceDollar} from 'react-icons/fa'
+import {FaFileInvoiceDollar, FaHandsHelping} from 'react-icons/fa'
+
 export const PROCESS_ITEMS = [
     {
         Icon: MdBloodtype,

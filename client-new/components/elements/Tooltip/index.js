@@ -1,11 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import {
-  TooltipStyle,
-  TriggerStyle,
-  BubbleSize,
-  BubbleStyle
-} from './tooltip.style';
+import {BubbleSize, BubbleStyle, TooltipStyle, TriggerStyle} from './tooltip.style';
 
 const Tooltip = ({
   className,

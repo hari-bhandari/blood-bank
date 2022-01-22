@@ -2,15 +2,13 @@ import React, {useContext, useState} from 'react';
 import {CgProfile} from "react-icons/cg";
 import {BiAddToQueue} from "react-icons/bi";
 import {BsCardList} from "react-icons/bs";
-import {AiOutlineLogin} from "react-icons/ai";
+import {AiFillCaretDown, AiOutlineLogin} from "react-icons/ai";
 import styled from 'styled-components'
-import HamburgMenu from "../../HamburgMenu";
-import Drawer from "../../elements/Drawer";
 import HamburgerMenu from "../../HamburgMenu";
+import Drawer from "../../elements/Drawer";
 import ScrollSpyMenu from "../../ScrollSpyMenu";
-import {MENU_ITEMS, MENU_RIGHT_ITEMS} from "../../data/Ride";
+import {MENU_ITEMS, MENU_RIGHT_ITEMS} from "../../data";
 import Dropdown from "../../Dropdown";
-import {AiFillCaretDown} from "react-icons/ai";
 import authContext from "../../Context/auth/authContext";
 import Link from "next/link";
 import {MyProfileComponent} from "./Navbar";

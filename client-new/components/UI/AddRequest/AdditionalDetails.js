@@ -4,7 +4,6 @@ import {Button, Label} from "../profile/forms/label";
 import {Input, MessageBox} from "../profile/forms/input";
 import {Container, Heading} from "./BasicInformation";
 import styled from 'styled-components'
-import {useLoginForm} from "../Auth/useForm";
 import PhotoUpload from "../../UploadComponent/PhotoUpload";
 import {emptyValue} from "../Auth/helper";
 import Toast from "light-toast";
@@ -12,6 +11,7 @@ import {UploadImagesToCloud} from "../Auth/SelectComponent";
 import axios from "axios";
 import {JSONConfig, PUBLIC_URL_API} from "../../config";
 import {useRouter} from "next/router";
+
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;

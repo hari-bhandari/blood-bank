@@ -1,11 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import {
-  AccordionItemHeading,
-  AccordionItemButton,
-  Accordion,
-  AccordionItem,
-  AccordionItemPanel,
-} from 'react-accessible-accordion';
+import styled, {keyframes} from 'styled-components';
+import {Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel,} from 'react-accessible-accordion';
 
 const fadeIn = keyframes`
   0% {

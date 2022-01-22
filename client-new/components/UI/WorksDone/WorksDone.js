@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
 import CountUp from 'react-countup';
 import Box from '../../elements/Box';
 import Card from '../../elements/Card';
@@ -9,7 +8,7 @@ import Heading from '../../elements/Heading';
 import Button from '../../elements/Button';
 import FeatureBlock from '../../../components/FeatureBlock';
 import Container from '../../Container';
-import WorkHistoryWrapper, { CounterUpArea } from './WorksDone.style';
+import WorkHistoryWrapper, {CounterUpArea} from './WorksDone.style';
 
 const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
     return (

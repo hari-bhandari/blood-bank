@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const ProfilePageCSS=styled.div`
   * {
     list-style: none;

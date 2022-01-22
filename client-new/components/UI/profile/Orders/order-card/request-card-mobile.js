@@ -1,24 +1,10 @@
 import React from 'react';
 import Table from 'rc-table';
 import Collapse, {Panel} from 'rc-collapse';
-import {
-    Address,
-    CardWrapper,
-    DeliveryAddress,
-    DeliveryInfo,
-    Meta,
-    RequestDetail,
-    OrderListHeader,
-    RequestMeta,
-    OrderTable,
-    RequestTableMobile,
-    Status,
-    TrackID,
-} from './request-card.style';
+import {Address, CardWrapper, DeliveryAddress, DeliveryInfo, Meta, OrderListHeader, OrderTable, RequestDetail, RequestMeta, RequestTableMobile, Status, TrackID,} from './request-card.style';
 import dateFormat from 'dateformat'
 import {Button} from "../../forms/label";
-import {Message, RequestMessage} from "../order-details/request-details.style";
-
+import {RequestMessage} from "../order-details/request-details.style";
 
 
 const components = {

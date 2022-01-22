@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const QueryContainer=styled.div`
   width: 100%;
   display: flex;

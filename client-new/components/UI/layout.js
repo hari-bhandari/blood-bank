@@ -1,13 +1,11 @@
 import React, {useContext, useEffect} from 'react';
 import Sticky from 'react-stickynode';
-import {ContentWrapper, GlobalStyle} from "../containers/ride.style";
+import {ContentWrapper, GlobalStyle} from "../assets/css/global.style";
 import {ResetCSS} from "../assets/css/style";
 import Navbar from "./Navbar/Navbar";
 import SEO from "../SEO";
 import authContext from "../Context/auth/authContext";
 import NavbarMobile from "./Navbar/NavbarMobile";
-import LogoImage from "./Navbar/Ride/logo.svg";
-import Logo from "../elements/UI/Logo";
 import Footer from "./Footer";
 
 

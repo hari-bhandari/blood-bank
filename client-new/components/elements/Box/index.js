@@ -1,13 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import {
-  flexWrap,
-  flexDirection,
-  alignItems,
-  justifyContent
-} from 'styled-system';
-import { base, themed } from '../base';
+import styled, {css} from 'styled-components';
+import {alignItems, flexDirection, flexWrap, justifyContent} from 'styled-system';
+import {base, themed} from '../base';
 
 const BoxWrapper = styled('div')(
   base,

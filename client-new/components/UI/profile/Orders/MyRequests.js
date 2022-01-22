@@ -1,21 +1,7 @@
 import React, {useState} from 'react';
 import {Scrollbar} from "../Scrollbar";
 import dateFormat from 'dateformat'
-import {
-    DesktopView,
-    ImageWrapper,
-    ItemDetails,
-    RequestName,
-    RequestID,
-    ItemWrapper,
-    MobileView,
-    NoRequestFound,
-    RequestBox,
-    RequestDetailsWrapper,
-    RequestList,
-    RequestListWrapper,
-    Title,
-} from './MyRequests.css';
+import {DesktopView, ImageWrapper, ItemDetails, ItemWrapper, MobileView, NoRequestFound, RequestBox, RequestDetailsWrapper, RequestID, RequestList, RequestListWrapper, RequestName, Title,} from './MyRequests.css';
 import RequestDetails from './order-details/request-details';
 import RequestCard from './order-card/request-card';
 import OrderCardMobile from './order-card/request-card-mobile';

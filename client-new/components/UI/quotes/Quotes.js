@@ -1,20 +1,15 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 import Text from '../../elements/Text';
 import Heading from '../../elements/Heading';
 import Button from '../../elements/Button';
 import Image from '../../elements/Image';
-import { Testimonial } from './data';
-import {FaArrowLeft,FaArrowRight} from "react-icons/fa";
+import {Testimonial} from './data';
+import {FaArrowLeft, FaArrowRight} from "react-icons/fa";
 import Container from '../../Container';
 import GlideCarousel from '../../../components/GlideCarousel';
 import GlideSlide from '../../../components/GlideCarousel/glideSlide';
-import TestimonialSectionWrapper, {
-    TextWrapper,
-    ImageWrapper,
-    RoundWrapper,
-    ClientName,
-} from './Quotes.styles';
+import TestimonialSectionWrapper, {ClientName, ImageWrapper, RoundWrapper, TextWrapper,} from './Quotes.styles';
 
 const Quotes = ({
                                 sectionSubTitle,

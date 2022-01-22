@@ -6,7 +6,7 @@ import Box from '../../elements/Box';
 import Container from '../../Container';
 import ScrollSpyMenu from '../../ScrollSpyMenu';
 import LogoImage from './Ride/logo.svg';
-import { MENU_RIGHT_ITEMS, MENU_LEFT_ITEMS} from "../../data/Ride";
+import {MENU_LEFT_ITEMS, MENU_RIGHT_ITEMS} from "../../data";
 import Dropdown from "../../Dropdown";
 import Link from "next/link";
 import {AiFillCaretDown} from "react-icons/ai";

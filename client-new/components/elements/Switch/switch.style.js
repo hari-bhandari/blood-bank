@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
-import { lightenColor } from '../../theme/lightenDarken';
-import { base } from '../base';
+import {themeGet} from 'styled-system';
+import {lightenColor} from '../../theme/lightenDarken';
+import {base} from '../base';
 
 const SwitchStyle = styled.div`
   /* Switch default style */

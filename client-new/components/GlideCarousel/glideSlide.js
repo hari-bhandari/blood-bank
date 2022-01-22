@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { GlideSlideWrapper } from './glide.style';
+import {GlideSlideWrapper} from './glide.style';
 
 // Glide Slide wrapper component
 const GlideSlide = ({ children }) => {

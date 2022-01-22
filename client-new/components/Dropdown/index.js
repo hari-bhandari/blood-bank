@@ -1,9 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import {
-  DropdownMenuWrapper,
-  DropdownMenuItemsWrapper,
-  DropdownMenuItemWrapper,
-} from './dropdown.style';
+import React, {useEffect, useState} from 'react';
+import {DropdownMenuItemsWrapper, DropdownMenuItemWrapper, DropdownMenuWrapper,} from './dropdown.style';
 
 const DropdownMenu = ({ content, dropdownItems, dropdownDirection, className }) => {
   const [menuState, setMenuState] = useState({

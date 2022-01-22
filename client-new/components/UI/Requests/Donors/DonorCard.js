@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container,CoverPhoto,Profile,Button,BloodType,ButtonContainer} from './DonorCard.css'
+import {BloodType, Button, ButtonContainer, Container, CoverPhoto, Profile} from './DonorCard.css'
 
 
 export const transformCloudinaryImage = (url, width, height, imgFormat) => {

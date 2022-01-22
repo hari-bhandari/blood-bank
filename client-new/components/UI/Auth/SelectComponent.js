@@ -2,6 +2,7 @@ import React from 'react';
 import Select from "react-select";
 import axios from "axios";
 import {PUBLIC_URL_API} from "../../config";
+
 export const UploadImagesToCloud = async (data) => {
     const UploadedImages = data.pictures?.filter(item => item.startsWith('http'))
     console.log({UploadedImages})

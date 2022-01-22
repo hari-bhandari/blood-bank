@@ -1,12 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, {useRef, useState} from 'react';
 import PropTypes from 'prop-types';
 import useOnClickOutside from '../../hooks/useOnClickOutside';
-import ComponentWrapper, {
-  Input,
-  SelectWrapper,
-  CurrentOption,
-  Dropdown,
-} from './inputGroup.style';
+import ComponentWrapper, {CurrentOption, Dropdown, Input, SelectWrapper,} from './inputGroup.style';
 
 const InputGroup = ({
   className,

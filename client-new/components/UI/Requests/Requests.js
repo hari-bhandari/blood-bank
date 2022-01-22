@@ -9,7 +9,6 @@ import {SpinnerInfinity} from "spinners-react";
 import useInfiniteQuery from './useInfinityQuery'
 import {useInView} from "react-hook-inview";
 import {InsiderContainer, RequestsContainer} from "./Requests.styles";
-import Heading from "../../elements/Heading";
 
 const Requests = () => {
     const [district, setDistrict] = useState(null)

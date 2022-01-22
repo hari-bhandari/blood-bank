@@ -1,5 +1,6 @@
 import Myles from './Myles_Munroe.png'
 import Winston from './Winston-Churchill.png'
+
 export const Testimonial = [
     {
         id: 1,

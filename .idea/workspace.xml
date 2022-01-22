@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="few card changes">
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/UI/profile/profilecard.css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/pages/test.js" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed some ui and cards">
+      <change afterPath="$PROJECT_DIR$/client-new/components/UI/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Requests.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/pages/requests/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,14 +169,7 @@
       <workItem from="1642578247465" duration="9483000" />
       <workItem from="1642677746805" duration="1628000" />
       <workItem from="1642773911982" duration="9227000" />
-      <workItem from="1642839182931" duration="6084000" />
-    </task>
-    <task id="LOCAL-00024" summary="added donors card">
-      <created>1641483140642</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1641483140642</updated>
+      <workItem from="1642839182931" duration="7879000" />
     </task>
     <task id="LOCAL-00025" summary="added donors page">
       <created>1641493093425</created>
@@ -520,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642780834438</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="fixed some ui and cards">
+      <created>1642851155777</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1642851155778</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fixed basic names changing" />
     <MESSAGE value="added update details" />
     <MESSAGE value="redirects to homepage if user is not authenticated" />
     <MESSAGE value="added version on package.json" />
@@ -564,7 +557,8 @@
     <MESSAGE value="fixed bugs on frontend" />
     <MESSAGE value="fixed the issue of multiple logos appearing" />
     <MESSAGE value="few card changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="few card changes" />
+    <MESSAGE value="fixed some ui and cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some ui and cards" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -591,7 +585,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js</url>
-          <line>104</line>
+          <line>103</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

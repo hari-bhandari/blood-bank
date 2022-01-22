@@ -46,8 +46,7 @@ const ProfilePage = ({data}) => {
                 <div className="left">
                     <img onClick={()=>{}} src={transformCloudinaryImage(data.image,500,500,'.webp')}
                          alt="user" width="100"/>
-                    <h4>{data.name}
-                    </h4>
+                    <h4>{data.name}</h4>
                     <p>{data.bloodType}</p>
                 </div>
                 <div className="right">

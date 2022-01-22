@@ -8,6 +8,7 @@ import authContext from "../Context/auth/authContext";
 import NavbarMobile from "./Navbar/NavbarMobile";
 import LogoImage from "./Navbar/Ride/logo.svg";
 import Logo from "../elements/UI/Logo";
+import Footer from "./Footer";
 
 
 const Layout = ({children,title,description,initialShadow}) => {
@@ -29,7 +30,9 @@ const Layout = ({children,title,description,initialShadow}) => {
                 </Sticky>
                 <NavbarMobile/>
                 {children}
+                <Footer/>
             </ContentWrapper>
+
         </div>
 
     );

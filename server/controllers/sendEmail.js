@@ -12,7 +12,7 @@ function listToString(list) {
     return str;
 }
 export const sendHelpEmail = async (district, bloodType,name,description,_id) => {
-    const users=await User.find({isEmailConfirmed:true,district,bloodType}).limit(50)
+    const users=await User.find({isEmailConfirmed:true}).limit(50)
     const emailList=[]
     users.map(user=>{
         emailList.push(user.email)

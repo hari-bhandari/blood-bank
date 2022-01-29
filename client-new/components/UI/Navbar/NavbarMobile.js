@@ -117,10 +117,10 @@ const NavbarMobile = () => {
                                 <span>Profile</span>
                             </NavLink>
                         </Link> :
-                        <Link href={'/login'} key={16}>
+                        <Link href={'/signup'} key={16}>
                             <NavLink>
                                 <AiOutlineLogin/>
-                                <span>Login</span>
+                                <span>Signup</span>
                             </NavLink>
                         </Link>
                     }

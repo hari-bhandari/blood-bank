@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="fixed error">
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/sendEmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,29 +37,29 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220123_0000" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/middlewares" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server/middlewares" />
-      <recent name="$PROJECT_DIR$/client-new/public" />
-      <recent name="$PROJECT_DIR$/client-new/components/UI/profile" />
-      <recent name="$PROJECT_DIR$/client-new/hooks" />
-      <recent name="$PROJECT_DIR$/client-new/components/UI" />
+      <recent name="$PROJECT_DIR$/client-new/pages" />
+      <recent name="$PROJECT_DIR$/client-new/components/UI/Donate" />
+      <recent name="$PROJECT_DIR$/client-new" />
+      <recent name="$PROJECT_DIR$/client-new/components" />
+      <recent name="$PROJECT_DIR$/client-new/components/UI/Auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client-new/components/data" />
-      <recent name="$PROJECT_DIR$/client-new/components/assets/css" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/client-new/components/UI" />
       <recent name="$PROJECT_DIR$/client-new/components" />
+      <recent name="$PROJECT_DIR$/client-new/components/components" />
+      <recent name="$PROJECT_DIR$/client-new/components/containers" />
+      <recent name="$PROJECT_DIR$/client-new/components/containers/Ride" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -147,29 +147,205 @@
       <workItem from="1641326217747" duration="26174000" />
       <workItem from="1641451424352" duration="21148000" />
       <workItem from="1641541126230" duration="25256000" />
-      <workItem from="1641712936700" duration="4343000" />
-      <workItem from="1641754074264" duration="2962000" />
-      <workItem from="1641760204763" duration="653000" />
-      <workItem from="1641799178864" duration="1411000" />
-      <workItem from="1641805091631" duration="5790000" />
-      <workItem from="1641813549498" duration="18143000" />
-      <workItem from="1641885420698" duration="29364000" />
-      <workItem from="1641973374919" duration="3973000" />
-      <workItem from="1641977794509" duration="4240000" />
-      <workItem from="1642058092408" duration="2893000" />
-      <workItem from="1642061011261" duration="7373000" />
-      <workItem from="1642084363452" duration="9567000" />
-      <workItem from="1642150083922" duration="2308000" />
-      <workItem from="1642320451112" duration="7153000" />
-      <workItem from="1642408435093" duration="11235000" />
-      <workItem from="1642492207147" duration="6248000" />
-      <workItem from="1642521156673" duration="4967000" />
-      <workItem from="1642578247465" duration="9483000" />
-      <workItem from="1642677746805" duration="1628000" />
-      <workItem from="1642773911982" duration="9227000" />
-      <workItem from="1642839182931" duration="9786000" />
-      <workItem from="1642860162917" duration="1957000" />
-      <workItem from="1642925947357" duration="867000" />
+      <workItem from="1641712936700" duration="5414000" />
+      <workItem from="1643444834156" duration="65000" />
+      <workItem from="1643444900892" duration="650000" />
+    </task>
+    <task id="LOCAL-00001" summary="added .">
+      <created>1608844313894</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608844313894</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added new client (improved)">
+      <created>1641139170452</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641139170452</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added new client (improved)">
+      <created>1641147205131</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641147205131</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added new client (improved)">
+      <created>1641202235217</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641202235217</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added new client (improved)">
+      <created>1641203387303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641203387303</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added navbar to the new client">
+      <created>1641204083738</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641204083738</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding FAQ page">
+      <created>1641288273228</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641288273228</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added quotes">
+      <created>1641298476480</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641298476480</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added works done">
+      <created>1641328821244</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641328821244</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed building error">
+      <created>1641368397856</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641368397856</updated>
+    </task>
+    <task id="LOCAL-00011" summary="removed svg">
+      <created>1641373416273</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641373416273</updated>
+    </task>
+    <task id="LOCAL-00012" summary="removed svg">
+      <created>1641374836336</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1641374836336</updated>
+    </task>
+    <task id="LOCAL-00013" summary="changed few styling">
+      <created>1641379858613</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641379858613</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added login and signup forms">
+      <created>1641397488438</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1641397488439</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added few more fields to signup form">
+      <created>1641411597492</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641411597492</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added babel">
+      <created>1641411697830</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1641411697830</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixed props error">
+      <created>1641412114863</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1641412114863</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added _document.js">
+      <created>1641412686797</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1641412686797</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added donation page">
+      <created>1641455149781</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1641455149781</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added donation page">
+      <created>1641455543409</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1641455543409</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added request page for now">
+      <created>1641457935313</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1641457935313</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added blank donors page">
+      <created>1641482594583</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1641482594583</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added blank donors page">
+      <created>1641482601885</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1641482601885</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added donors card">
+      <created>1641483140642</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1641483140642</updated>
+    </task>
+    <task id="LOCAL-00025" summary="added donors page">
+      <created>1641493093425</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1641493093425</updated>
+    </task>
+    <task id="LOCAL-00026" summary="added donors page">
+      <created>1641545630676</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1641545630676</updated>
+    </task>
+    <task id="LOCAL-00027" summary="added route to upload images">
+      <created>1641555245283</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1641555245283</updated>
+    </task>
+    <task id="LOCAL-00028" summary="multiple steps while signing up">
+      <created>1641569334374</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1641569334374</updated>
     </task>
     <task id="LOCAL-00029" summary="signing up working now">
       <created>1641582743675</created>
@@ -185,336 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641727660647</updated>
     </task>
-    <task id="LOCAL-00031" summary="on progress to add user panel">
-      <created>1641807701955</created>
+    <task id="LOCAL-00031" summary="added seo">
+      <created>1641728162811</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1641807701955</updated>
+      <updated>1641728162811</updated>
     </task>
-    <task id="LOCAL-00032" summary="profile page added">
-      <created>1641823953280</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1641823953280</updated>
-    </task>
-    <task id="LOCAL-00033" summary="added few more pages and">
-      <created>1641835870635</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1641835870635</updated>
-    </task>
-    <task id="LOCAL-00034" summary="stores whole data when offering a help to the requests">
-      <created>1641892263169</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1641892263169</updated>
-    </task>
-    <task id="LOCAL-00035" summary="stores whole data when offering a help to the requests">
-      <created>1641895507004</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1641895507004</updated>
-    </task>
-    <task id="LOCAL-00036" summary="added request form">
-      <created>1641904843117</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1641904843117</updated>
-    </task>
-    <task id="LOCAL-00037" summary="add request form has been added">
-      <created>1641914526405</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1641914526405</updated>
-    </task>
-    <task id="LOCAL-00038" summary="added logout menu">
-      <created>1641916101447</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1641916101447</updated>
-    </task>
-    <task id="LOCAL-00039" summary="sign in and signup working now">
-      <created>1641920067494</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1641920067494</updated>
-    </task>
-    <task id="LOCAL-00040" summary="added age while making request">
-      <created>1641921055222</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1641921055222</updated>
-    </task>
-    <task id="LOCAL-00041" summary="images fixed on requests as well">
-      <created>1641926377299</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1641926377299</updated>
-    </task>
-    <task id="LOCAL-00042" summary="added custom 404 page">
-      <created>1641974816952</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1641974816952</updated>
-    </task>
-    <task id="LOCAL-00043" summary="optimised imports">
-      <created>1641976269150</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1641976269150</updated>
-    </task>
-    <task id="LOCAL-00044" summary="fixed nav styling issue">
-      <created>1642019317423</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1642019317423</updated>
-    </task>
-    <task id="LOCAL-00045" summary="fixed basic names changing">
-      <created>1642058875006</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1642058875006</updated>
-    </task>
-    <task id="LOCAL-00046" summary="added update details">
-      <created>1642075540245</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1642075540245</updated>
-    </task>
-    <task id="LOCAL-00047" summary="redirects to homepage if user is not authenticated">
-      <created>1642075904530</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1642075904530</updated>
-    </task>
-    <task id="LOCAL-00048" summary="added version on package.json">
-      <created>1642089409585</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1642089409585</updated>
-    </task>
-    <task id="LOCAL-00049" summary="remove heroku postbuild">
-      <created>1642089634435</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1642089634435</updated>
-    </task>
-    <task id="LOCAL-00050" summary="fixed error on package.json">
-      <created>1642089841076</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1642089841077</updated>
-    </task>
-    <task id="LOCAL-00051" summary="added production url">
-      <created>1642092512943</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1642092512943</updated>
-    </task>
-    <task id="LOCAL-00052" summary="used config url">
-      <created>1642093424368</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1642093424368</updated>
-    </task>
-    <task id="LOCAL-00053" summary="fixed building errors">
-      <created>1642093861983</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1642093861983</updated>
-    </task>
-    <task id="LOCAL-00054" summary="changed api url for production">
-      <created>1642106843616</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1642106843616</updated>
-    </task>
-    <task id="LOCAL-00055" summary="cganged meta image for seo">
-      <created>1642150332255</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1642150332255</updated>
-    </task>
-    <task id="LOCAL-00056" summary="added functionalty to send emails">
-      <created>1642190215705</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1642190215705</updated>
-    </task>
-    <task id="LOCAL-00057" summary="fixed position for select">
-      <created>1642350091542</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1642350091542</updated>
-    </task>
-    <task id="LOCAL-00058" summary="fixed emailing issue">
-      <created>1642351157220</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1642351157220</updated>
-    </task>
-    <task id="LOCAL-00059" summary="email needs to be validated while signing up">
-      <created>1642365955833</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1642365955833</updated>
-    </task>
-    <task id="LOCAL-00060" summary="changed it to https">
-      <created>1642367276443</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1642367276443</updated>
-    </task>
-    <task id="LOCAL-00061" summary="fixed link issue while sending email and also fixed import issue on crypto">
-      <created>1642409588996</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1642409588997</updated>
-    </task>
-    <task id="LOCAL-00062" summary="added new page to confirm email">
-      <created>1642451237432</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1642451237432</updated>
-    </task>
-    <task id="LOCAL-00063" summary="changed url">
-      <created>1642452214962</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1642452214962</updated>
-    </task>
-    <task id="LOCAL-00064" summary="changed hex size">
-      <created>1642453043797</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1642453043797</updated>
-    </task>
-    <task id="LOCAL-00065" summary="fixed confirm email">
-      <created>1642519763195</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1642519763195</updated>
-    </task>
-    <task id="LOCAL-00066" summary="added bottom navbar for mobile devices">
-      <created>1642628095922</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1642628095923</updated>
-    </task>
-    <task id="LOCAL-00067" summary="fixed bugs on frontend">
-      <created>1642629016703</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1642629016703</updated>
-    </task>
-    <task id="LOCAL-00068" summary="fixed the issue of multiple logos appearing">
-      <created>1642678769094</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1642678769095</updated>
-    </task>
-    <task id="LOCAL-00069" summary="fixed the issue of multiple logos appearing">
-      <created>1642774225680</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1642774225682</updated>
-    </task>
-    <task id="LOCAL-00070" summary="fixed the issue of multiple logos appearing">
-      <created>1642774807474</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1642774807475</updated>
-    </task>
-    <task id="LOCAL-00071" summary="fixed the issue of multiple logos appearing">
-      <created>1642776932744</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1642776932744</updated>
-    </task>
-    <task id="LOCAL-00072" summary="few card changes">
-      <created>1642780834438</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1642780834438</updated>
-    </task>
-    <task id="LOCAL-00073" summary="fixed some ui and cards">
-      <created>1642851155777</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1642851155778</updated>
-    </task>
-    <task id="LOCAL-00074" summary="added Footer.js">
-      <created>1642854013031</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1642854013031</updated>
-    </task>
-    <task id="LOCAL-00075" summary="changed help email structure">
-      <created>1642855605846</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1642855605846</updated>
-    </task>
-    <task id="LOCAL-00076" summary="changed help email structure">
-      <created>1642866557224</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1642866557224</updated>
-    </task>
-    <task id="LOCAL-00077" summary="fixed error">
-      <created>1642866885044</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1642866885044</updated>
-    </task>
-    <option name="localTasksCounter" value="78" />
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,32 +387,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="remove heroku postbuild" />
-    <MESSAGE value="fixed error on package.json" />
-    <MESSAGE value="added production url" />
-    <MESSAGE value="used config url" />
-    <MESSAGE value="fixed building errors" />
-    <MESSAGE value="changed api url for production" />
-    <MESSAGE value="cganged meta image for seo" />
-    <MESSAGE value="added functionalty to send emails" />
-    <MESSAGE value="fixed position for select" />
-    <MESSAGE value="fixed emailing issue" />
-    <MESSAGE value="email needs to be validated while signing up" />
-    <MESSAGE value="changed it to https" />
-    <MESSAGE value="fixed link issue while sending email and also fixed import issue on crypto" />
-    <MESSAGE value="added new page to confirm email" />
-    <MESSAGE value="changed url" />
-    <MESSAGE value="changed hex size" />
-    <MESSAGE value="fixed confirm email" />
-    <MESSAGE value="added bottom navbar for mobile devices" />
-    <MESSAGE value="fixed bugs on frontend" />
-    <MESSAGE value="fixed the issue of multiple logos appearing" />
-    <MESSAGE value="few card changes" />
-    <MESSAGE value="fixed some ui and cards" />
-    <MESSAGE value="added Footer.js" />
-    <MESSAGE value="changed help email structure" />
-    <MESSAGE value="fixed error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed error" />
+    <MESSAGE value="added ." />
+    <MESSAGE value="added new client (improved)" />
+    <MESSAGE value="added navbar to the new client" />
+    <MESSAGE value="adding FAQ page" />
+    <MESSAGE value="added quotes" />
+    <MESSAGE value="added works done" />
+    <MESSAGE value="fixed building error" />
+    <MESSAGE value="removed svg" />
+    <MESSAGE value="changed few styling" />
+    <MESSAGE value="added login and signup forms" />
+    <MESSAGE value="added few more fields to signup form" />
+    <MESSAGE value="added babel" />
+    <MESSAGE value="fixed props error" />
+    <MESSAGE value="added _document.js" />
+    <MESSAGE value="added donation page" />
+    <MESSAGE value="added request page for now" />
+    <MESSAGE value="added blank donors page" />
+    <MESSAGE value="added donors card" />
+    <MESSAGE value="added donors page" />
+    <MESSAGE value="added route to upload images" />
+    <MESSAGE value="multiple steps while signing up" />
+    <MESSAGE value="signing up working now" />
+    <MESSAGE value="added seo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added seo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -575,38 +427,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/quotes/data.js</url>
-          <line>3</line>
+          <line>2</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/What we do/WhatWeDo.js</url>
-          <line>43</line>
+          <line>44</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.js</url>
-          <line>104</line>
+          <line>136</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/components/UI/Auth/helper.js</url>
           <line>7</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/components/UI/RequestPage/RequestPage.styles.js</url>
-          <line>124</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/components/UI/Navbar/NavbarMobile.js</url>
-          <line>25</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/components/UI/Requests/RequestCard.style.js</url>
-          <line>66</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

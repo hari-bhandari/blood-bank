@@ -14,39 +14,24 @@ mongoose.connect('mongodb+srv://hari:hari@bloodback.juzpj.mongodb.net/bloodbank?
 
 // Read JSON files
 const __dirname = path.resolve();
-// const users = JSON.parse(
-//     fs.readFileSync(`${__dirname}/Content/users.json`, 'utf-8')
-// );
-// const bloods=JSON.parse(
-//     fs.readFileSync(`${__dirname}/Content/BloodRequests.json`, 'utf-8')
-//
-// )
-//
-// // Import into DB
-// const importData = async () => {
-//     try {
-//         await User.create(users);
-//         await Blood.create(bloods);
-//         console.log('Data Imported...');
-//         process.exit();
-//     } catch (err) {
-//         console.error(err);
-//     }
-// };
+const users = JSON.parse(
+    fs.readFileSync(`${__dirname}/server/Content/users.json`, 'utf-8')
+);
 
-// Delete data
-const deleteData = async () => {
+
+// Import into DB
+const importData = async () => {
     try {
-        await User.deleteMany();
-        await Blood.deleteMany();
+        await User.create(users);
+        console.log('Data Imported...');
         process.exit();
     } catch (err) {
         console.error(err);
     }
 };
 
+
+
 if (process.argv[2] === '-i') {
-    // importData();
-} else if (process.argv[2] === '-d') {
-    deleteData();
+    importData().then(r => null);
 }

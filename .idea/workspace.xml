@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/data.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +148,7 @@
       <workItem from="1641541126230" duration="25256000" />
       <workItem from="1641712936700" duration="5414000" />
       <workItem from="1643444834156" duration="65000" />
-      <workItem from="1643444900892" duration="1275000" />
+      <workItem from="1643444900892" duration="1998000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -372,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643445570133</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added quotation">
+      <created>1643447059248</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1643447059248</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +424,8 @@
     <MESSAGE value="signing up working now" />
     <MESSAGE value="added seo" />
     <MESSAGE value="renamed login to signup on mobile NavbarMobile.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed login to signup on mobile NavbarMobile.js" />
+    <MESSAGE value="added quotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added quotation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

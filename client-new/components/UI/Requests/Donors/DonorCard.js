@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {BloodType, Button, ButtonContainer, Container, CoverPhoto, Profile} from './DonorCard.css'
-
+import {SpinnerInfinity} from "spinners-react";
+import Toast from "light-toast";
+import axios from "axios";
+import {JSONConfig, PUBLIC_URL_API} from "../../../config";
 
 export const transformCloudinaryImage = (url, width, height, imgFormat) => {
-    if (!url){
+    if (!url) {
         return 'https://res.cloudinary.com/wisecart/image/upload/v1641925984/depositphotos_247872612-stock-illustration-no-image-available-icon-vector_s4yb2t.jpg'
     }
-    if (!url.includes('cloudinary')){
+    if (!url.includes('cloudinary')) {
         return url
     }
     // https://res.cloudinary.com/wisecart/image/upload/w_150,h_300,c_fill/v1617441971/re3lf0beoxdrw4hdqbeb.png
@@ -21,21 +24,92 @@ export const transformCloudinaryImage = (url, width, height, imgFormat) => {
     }
     return first + `/upload/e_trim/c_lpad,w_${width},h_${height}/` + last
 }
-const DonorItem = ({donor}) => {
+const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
+    const [email, setEmail] = useState(null)
+    const [emailLoading, setEmailLoading] = useState(false)
+    const [phone, setPhone] = useState(null)
+    const [phoneLoading, setPhoneLoading] = useState(false)
+    const getButtonText = (buttonType) => {
+        if (buttonType === 'email') {
+            if (!email && !emailLoading) {
+                return 'Tap to reveal email'
+            }
+            if (emailLoading) {
+                return ''
+            }
+            if (email) {
+                return email
+            }
+        }
+        if (buttonType === 'phone') {
+            if (!phone && !phoneLoading) {
+                return 'Tap to reveal phone'
+            }
+            if (phoneLoading) {
+                return ''
+            }
+            if (phone) {
+                return phone
+            }
+        }
+    }
+    const getEmail = async () => {
+        if (buttonClickLoading) {
+            Toast.fail('You can only view one value at a time')
+        } else {
+            setButtonClickLoading(true)
+            setEmailLoading(true)
+            setTimeout(async function () {
+                try {
+                    const {data} = await axios.get(
+                        `${PUBLIC_URL_API}/api/donors/email/${donor._id}`)
+                    setEmail(data.data)
+
+                } catch (error) {
+                    Toast.fail(error.response.data.error )
+                }
+                setEmailLoading(false)
+                setButtonClickLoading(false)
+            }, 9000);
+
+        }
+    }
+    const getPhone = async () => {
+        if (buttonClickLoading) {
+            Toast.fail('You can only view one value at a time')
+        } else {
+            setButtonClickLoading(true)
+            setPhoneLoading(true)
+            setTimeout(async function () {
+                try {
+                    const {data} = await axios.get(
+                        `${PUBLIC_URL_API}/api/donors/phone/${donor._id}`)
+                    setPhone(data.data)
+
+                } catch (error) {
+                    Toast.fail(error.response.data.error )
+                }
+                setPhoneLoading(false)
+                setButtonClickLoading(false)
+            }, 9000);
+
+        }
+    }
     return (
         <Container>
             <BloodType>{donor.bloodType}</BloodType>
             <CoverPhoto><Profile
-                src={transformCloudinaryImage(donor?.image,120,120,'.webp')}
+                src={transformCloudinaryImage(donor?.image, 120, 120, '.webp')}
             />
             </CoverPhoto>
             <div className="profile-name">{donor.name}</div>
-            <p className="about">District: <b>{donor.district.charAt(0).toUpperCase() + donor.district.slice(1)}</b><br/>Email: <b>{donor.email}</b></p>
+            <p className="about">District: <b>{donor.district.charAt(0).toUpperCase() + donor.district.slice(1)}</b></p>
             <ButtonContainer>
-            <Button>{donor.phone}</Button>
-            <Button>{donor.email}</Button>
+                <Button onClick={getPhone}>{getButtonText('phone')}
+                    {phoneLoading && <SpinnerInfinity height={'10px'}/>}</Button>
+                <Button onClick={getEmail}>{getButtonText('email')}
+                    {emailLoading && <SpinnerInfinity height={'10px'}/>}</Button>
             </ButtonContainer>
-            {/*<Link href={`/user/${donor?._id}`}><Button>More Info</Button> </Link>*/}
         </Container>
     );
 };

@@ -1,5 +1,6 @@
 import User from "../models/User.js";
 import asyncHandler from "../middlewares/async.js";
+import ErrorResponse from "../utils/errorResponse.js";
 // @desc      Get all Donors
 // @route     GET /api/v1/Donors
 // @access    public
@@ -18,7 +19,34 @@ export const getDonor = asyncHandler(async (req, res, next) => {
         data: user
     });
 });
-
+// @desc      Get single Donor
+// @route     GET /Donors/email/:id
+// @access    public
+export const getDonorEmail = asyncHandler(async (req, res, next) => {
+    const loggedInUser = await User.findById(req.user.id);
+    if (!loggedInUser) {
+        return next(new ErrorResponse(`You must be logged in to see user details!Please log in now`, 400))
+    }
+    const user = await User.findById(req.params.id);
+    res.status(200).json({
+        success: true,
+        data: user.email
+    });
+});
+// @desc      Get single Donor
+// @route     GET /Donors/email/:id
+// @access    public
+export const getDonorPhoneNumber = asyncHandler(async (req, res, next) => {
+    const loggedInUser = await User.findById(req.user.id);
+    if (!loggedInUser) {
+        return next(new ErrorResponse(`You must be logged in to see user details!Please log in now`, 400))
+    }
+    const user = await User.findById(req.params.id);
+    res.status(200).json({
+        success: true,
+        data: user.phone
+    });
+});
 // @desc      Delete user
 // @route     DELETE /api/v1/Donors/:id
 // @access    Private/Admin

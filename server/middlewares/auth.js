@@ -14,7 +14,7 @@ export const protect=asyncHandler(async (req,res,next)=>{
     // }
     //make sure token exists
     if(!token){
-        return next(new ErrorResponse('Not authorised to access this page'),401)
+        return next(new ErrorResponse('You must be logged in to access this feature'),401)
     }
     try {
         const decoded=jwt.verify(token,process.env.JWT_SECRET);

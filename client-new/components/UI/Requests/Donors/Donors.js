@@ -16,6 +16,7 @@ const Donors = () => {
     const [ref, isVisible] = useInView({
         threshold: 1,
     })
+    const [buttonClickLoading,setButtonClickLoading]=useState(false)
     const [pageNumber, setPageNumber] = useState(1)
 
     const {
@@ -55,11 +56,11 @@ const Donors = () => {
                     <Row>
                         {data?.map((donor, index) => {
                             if (data.length === index + 1) {
-                                return <Col lg={4} md={6} sm={12} ref={ref}><DonorItem donor={donor}/>
+                                return <Col lg={4} md={6} sm={12} ref={ref}><DonorItem donor={donor} buttonClickLoading={buttonClickLoading} setButtonClickLoading={setButtonClickLoading}/>
                                     <div ref={ref}></div>
                                 </Col>
                             } else {
-                                return <Col lg={4} md={6} sm={12}><DonorItem donor={donor}/></Col>
+                                return <Col lg={4} md={6} sm={12}><DonorItem donor={donor} buttonClickLoading={buttonClickLoading} setButtonClickLoading={setButtonClickLoading}/></Col>
                             }
                         })}
                     </Row>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/middlewares/advancedResultForUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middlewares/advancedResultForUser.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +151,7 @@
       <workItem from="1643444900892" duration="2611000" />
       <workItem from="1643473007837" duration="579000" />
       <workItem from="1643480467355" duration="2755000" />
-      <workItem from="1643483482263" duration="891000" />
+      <workItem from="1643483482263" duration="1111000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -399,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643483489072</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="only shows email password bloodtype when querying user">
+      <created>1643529333892</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1643529333892</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +424,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added new client (improved)" />
     <MESSAGE value="added navbar to the new client" />
     <MESSAGE value="adding FAQ page" />
     <MESSAGE value="added quotes" />
@@ -443,7 +448,8 @@
     <MESSAGE value="renamed login to signup on mobile NavbarMobile.js" />
     <MESSAGE value="added quotation" />
     <MESSAGE value="removed c and c+ blood type" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed c and c+ blood type" />
+    <MESSAGE value="only shows email password bloodtype when querying user" />
+    <option name="LAST_COMMIT_MESSAGE" value="only shows email password bloodtype when querying user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

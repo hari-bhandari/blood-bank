@@ -22,7 +22,7 @@ export const advancedResults=(model,populate)=>async (req,res,next)=>{
     //Create operators ($ge,$gte etc)
     queryStr=queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g,match=>`$${match}`);
     //FINDING RESOURCE
-    query=model.find(JSON.parse(queryStr)).select('name bloodType district email image _id');
+    query=model.find(JSON.parse(queryStr)).select('name bloodType district image _id');
     //SELECT fields
     if(req.query.select){
         const fields=req.query.select.split(',').join(' ');

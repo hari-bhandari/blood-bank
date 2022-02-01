@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {BloodType, Button, ButtonContainer, Container, CoverPhoto, Profile} from './DonorCard.css'
 import {SpinnerInfinity} from "spinners-react";
 import Toast from "light-toast";
 import axios from "axios";
-import {JSONConfig, PUBLIC_URL_API} from "../../../config";
+import {PUBLIC_URL_API} from "../../../config";
+import AuthContext from "../../../Context/auth/authContext";
 
 export const transformCloudinaryImage = (url, width, height, imgFormat) => {
     if (!url) {
@@ -25,6 +26,8 @@ export const transformCloudinaryImage = (url, width, height, imgFormat) => {
     return first + `/upload/e_trim/c_lpad,w_${width},h_${height}/` + last
 }
 const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
+    const authContext = useContext(AuthContext);
+    const {isAuthenticated} = authContext;
     const [email, setEmail] = useState(null)
     const [emailLoading, setEmailLoading] = useState(false)
     const [phone, setPhone] = useState(null)
@@ -54,45 +57,53 @@ const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
         }
     }
     const getEmail = async () => {
-        if (buttonClickLoading) {
-            Toast.fail('You can only view one value at a time')
+        if (!isAuthenticated) {
+            Toast.fail('You must be logged in to view details')
         } else {
-            setButtonClickLoading(true)
-            setEmailLoading(true)
-            setTimeout(async function () {
-                try {
-                    const {data} = await axios.get(
-                        `${PUBLIC_URL_API}/api/donors/email/${donor._id}`)
-                    setEmail(data.data)
+            if (buttonClickLoading) {
+                Toast.fail('You can only view one value at a time')
+            } else {
+                setButtonClickLoading(true)
+                setEmailLoading(true)
+                setTimeout(async function () {
+                    try {
+                        const {data} = await axios.get(
+                            `${PUBLIC_URL_API}/api/donors/email/${donor._id}`)
+                        setEmail(data.data)
 
-                } catch (error) {
-                    Toast.fail(error.response.data.error )
-                }
-                setEmailLoading(false)
-                setButtonClickLoading(false)
-            }, 9000);
+                    } catch (error) {
+                        Toast.fail(error.response.data.error)
+                    }
+                    setEmailLoading(false)
+                    setButtonClickLoading(false)
+                }, 9000);
 
+            }
         }
     }
     const getPhone = async () => {
-        if (buttonClickLoading) {
-            Toast.fail('You can only view one value at a time')
+        if (!isAuthenticated) {
+            Toast.fail('You must be logged in to view details')
         } else {
-            setButtonClickLoading(true)
-            setPhoneLoading(true)
-            setTimeout(async function () {
-                try {
-                    const {data} = await axios.get(
-                        `${PUBLIC_URL_API}/api/donors/phone/${donor._id}`)
-                    setPhone(data.data)
+            if (buttonClickLoading) {
+                Toast.fail('You can only view one value at a time')
+            } else {
+                setButtonClickLoading(true)
+                setPhoneLoading(true)
+                setTimeout(async function () {
+                    try {
+                        const {data} = await axios.get(
+                            `${PUBLIC_URL_API}/api/donors/phone/${donor._id}`)
+                        setPhone(data.data)
 
-                } catch (error) {
-                    Toast.fail(error.response.data.error )
-                }
-                setPhoneLoading(false)
-                setButtonClickLoading(false)
-            }, 9000);
+                    } catch (error) {
+                        Toast.fail(error.response.data.error)
+                    }
+                    setPhoneLoading(false)
+                    setButtonClickLoading(false)
+                }, 9000);
 
+            }
         }
     }
     return (

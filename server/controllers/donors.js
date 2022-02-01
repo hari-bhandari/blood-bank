@@ -24,10 +24,14 @@ export const getDonor = asyncHandler(async (req, res, next) => {
 // @access    public
 export const getDonorEmail = asyncHandler(async (req, res, next) => {
     const loggedInUser = await User.findById(req.user.id);
+
     if (!loggedInUser) {
         return next(new ErrorResponse(`You must be logged in to see user details!Please log in now`, 400))
     }
     const user = await User.findById(req.params.id);
+    if (loggedInUser.bloodType !== user.bloodType) {
+        return next(new ErrorResponse(`You can only view details of user of your type`, 400))
+    }
     res.status(200).json({
         success: true,
         data: user.email
@@ -42,6 +46,9 @@ export const getDonorPhoneNumber = asyncHandler(async (req, res, next) => {
         return next(new ErrorResponse(`You must be logged in to see user details!Please log in now`, 400))
     }
     const user = await User.findById(req.params.id);
+    if (loggedInUser.bloodType !== user.bloodType) {
+        return next(new ErrorResponse(`You can only view details of user of your type`, 400))
+    }
     res.status(200).json({
         success: true,
         data: user.phone

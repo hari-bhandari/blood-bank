@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="only makes an api call if user is authenticated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/donors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +154,7 @@
       <workItem from="1643473007837" duration="579000" />
       <workItem from="1643480467355" duration="2755000" />
       <workItem from="1643483482263" duration="3925000" />
-      <workItem from="1643733275516" duration="613000" />
+      <workItem from="1643733275516" duration="1294000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -421,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643531996785</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="only makes an api call if user is authenticated">
+      <created>1643733910415</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1643733910416</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +448,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added quotes" />
     <MESSAGE value="added works done" />
     <MESSAGE value="fixed building error" />
     <MESSAGE value="removed svg" />
@@ -465,7 +472,8 @@
     <MESSAGE value="only shows email password bloodtype when querying user" />
     <MESSAGE value="only shows  password bloodtype when querying user" />
     <MESSAGE value="tap to revel email/phone added" />
-    <option name="LAST_COMMIT_MESSAGE" value="tap to revel email/phone added" />
+    <MESSAGE value="only makes an api call if user is authenticated" />
+    <option name="LAST_COMMIT_MESSAGE" value="only makes an api call if user is authenticated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

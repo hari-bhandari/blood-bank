@@ -9,6 +9,7 @@ import {CentralizeDiv} from "../../centerDiv";
 import useInfiniteQuery from '../useInfinityQuery'
 import {useInView} from "react-hook-inview";
 import {InsiderContainer, RequestsContainer} from "../Requests.styles";
+import {GoogleReCaptchaProvider} from "react-google-recaptcha-v3";
 
 const Donors = () => {
     const [district, setDistrict] = useState(null)
@@ -41,6 +42,7 @@ const Donors = () => {
         setBlood(encodeURIComponent(selectedOption.value))
     };
     return (
+        <GoogleReCaptchaProvider reCaptchaKey="6LfexXofAAAAAAxy6WBvQRzz5uySf7EEgDFcO6Bd">
         <RequestsContainer>
             <InsiderContainer>
                 <Container>
@@ -71,6 +73,7 @@ const Donors = () => {
                 </Container>
             </InsiderContainer>
         </RequestsContainer>
+        </GoogleReCaptchaProvider>
     );
 };
 

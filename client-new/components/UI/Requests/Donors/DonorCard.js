@@ -1,11 +1,14 @@
-import React, {useContext, useState} from 'react';
+import React, {useCallback, useContext, useEffect, useRef, useState} from 'react';
 import {BloodType, Button, ButtonContainer, Container, CoverPhoto, Profile} from './DonorCard.css'
 import {SpinnerInfinity} from "spinners-react";
 import Toast from "light-toast";
 import axios from "axios";
 import {PUBLIC_URL_API} from "../../../config";
 import AuthContext from "../../../Context/auth/authContext";
-
+import {
+    GoogleReCaptchaProvider,
+    useGoogleReCaptcha
+} from 'react-google-recaptcha-v3';
 export const transformCloudinaryImage = (url, width, height, imgFormat) => {
     if (!url) {
         return 'https://res.cloudinary.com/wisecart/image/upload/v1641925984/depositphotos_247872612-stock-illustration-no-image-available-icon-vector_s4yb2t.jpg'
@@ -32,6 +35,19 @@ const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
     const [emailLoading, setEmailLoading] = useState(false)
     const [phone, setPhone] = useState(null)
     const [phoneLoading, setPhoneLoading] = useState(false)
+    const { executeRecaptcha } = useGoogleReCaptcha();
+    const handleReCaptchaVerify = useCallback(async () => {
+        if (!executeRecaptcha) {
+            console.log('Execute recaptcha not yet available');
+            return;
+        }
+
+        const token = await executeRecaptcha('yourAction');
+        return false;
+        // Do whatever you want with the token
+    }, []);
+
+    // You can use useEffect to trigger the verification as soon as the component being loaded
     const getButtonText = (buttonType) => {
         if (buttonType === 'email') {
             if (!email && !emailLoading) {
@@ -63,21 +79,26 @@ const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
             if (buttonClickLoading) {
                 Toast.fail('You can only view one value at a time')
             } else {
-                setButtonClickLoading(true)
-                setEmailLoading(true)
-                setTimeout(async function () {
-                    try {
-                        const {data} = await axios.get(
-                            `${PUBLIC_URL_API}/api/donors/email/${donor._id}`)
-                        setEmail(data.data)
+                if(await handleReCaptchaVerify()) {
 
-                    } catch (error) {
-                        Toast.fail(error.response.data.error)
-                    }
+                    setButtonClickLoading(true)
+                    setEmailLoading(true)
+                    setTimeout(async function () {
+                        try {
+                            const {data} = await axios.get(
+                                `${PUBLIC_URL_API}/api/donors/email/${donor._id}`)
+                            setEmail(data.data)
+
+                        } catch (error) {
+                            Toast.fail(error.response.data.error)
+                        }
+                        setEmailLoading(false)
+                        setButtonClickLoading(false)
+                    }, 20);
+                }else {
                     setEmailLoading(false)
                     setButtonClickLoading(false)
-                }, 9000);
-
+                }
             }
         }
     }

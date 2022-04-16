@@ -14,6 +14,10 @@ export const Container=styled.div`
     font-size: 25px;
     font-weight: bold;
     margin: 27px 0 0 120px;
+    white-space: nowrap;
+    overflow: clip;
+    text-overflow:ellipsis;
+    
   }
   .about {
     margin-left: 40px;

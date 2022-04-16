@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="only makes an api call if user is authenticated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/donors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/Donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/Donors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220201_0000" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/pages" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20220416_0000",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/pages" />
@@ -155,6 +155,8 @@
       <workItem from="1643480467355" duration="2755000" />
       <workItem from="1643483482263" duration="3925000" />
       <workItem from="1643733275516" duration="1294000" />
+      <workItem from="1650055735112" duration="756000" />
+      <workItem from="1650095137982" duration="3708000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>

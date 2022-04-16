@@ -42,7 +42,6 @@ const Donors = () => {
         setBlood(encodeURIComponent(selectedOption.value))
     };
     return (
-        <GoogleReCaptchaProvider reCaptchaKey="6LfexXofAAAAAAxy6WBvQRzz5uySf7EEgDFcO6Bd">
         <RequestsContainer>
             <InsiderContainer>
                 <Container>
@@ -73,7 +72,6 @@ const Donors = () => {
                 </Container>
             </InsiderContainer>
         </RequestsContainer>
-        </GoogleReCaptchaProvider>
     );
 };
 

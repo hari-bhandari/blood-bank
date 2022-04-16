@@ -9,6 +9,7 @@ import {
     GoogleReCaptchaProvider,
     useGoogleReCaptcha
 } from 'react-google-recaptcha-v3';
+
 export const transformCloudinaryImage = (url, width, height, imgFormat) => {
     if (!url) {
         return 'https://res.cloudinary.com/wisecart/image/upload/v1641925984/depositphotos_247872612-stock-illustration-no-image-available-icon-vector_s4yb2t.jpg'
@@ -28,24 +29,25 @@ export const transformCloudinaryImage = (url, width, height, imgFormat) => {
     }
     return first + `/upload/e_trim/c_lpad,w_${width},h_${height}/` + last
 }
-const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
+const DonorItemInsider = ({donor, buttonClickLoading, setButtonClickLoading}) => {
     const authContext = useContext(AuthContext);
     const {isAuthenticated} = authContext;
     const [email, setEmail] = useState(null)
     const [emailLoading, setEmailLoading] = useState(false)
     const [phone, setPhone] = useState(null)
     const [phoneLoading, setPhoneLoading] = useState(false)
-    const { executeRecaptcha } = useGoogleReCaptcha();
+    const {executeRecaptcha} = useGoogleReCaptcha();
     const handleReCaptchaVerify = useCallback(async () => {
         if (!executeRecaptcha) {
             console.log('Execute recaptcha not yet available');
             return false;
         }
 
-        const token = await executeRecaptcha('yourAction');
-        return token?true:false;
+        const token = await executeRecaptcha(donor._id);
+        console.log({token})
+        return token ? true : false;
         // Do whatever you want with the token
-    }, []);
+    }, [executeRecaptcha]);
 
     // You can use useEffect to trigger the verification as soon as the component being loaded
     const getButtonText = (buttonType) => {
@@ -79,23 +81,23 @@ const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
             if (buttonClickLoading) {
                 Toast.fail('You can only view one value at a time')
             } else {
-                if(await handleReCaptchaVerify()) {
+                if (await handleReCaptchaVerify()) {
 
                     setButtonClickLoading(true)
                     setEmailLoading(true)
-                    setTimeout(async function () {
-                        try {
-                            const {data} = await axios.get(
-                                `${PUBLIC_URL_API}/api/donors/email/${donor._id}`)
-                            setEmail(data.data)
 
-                        } catch (error) {
-                            Toast.fail(error.response.data.error)
-                        }
-                        setEmailLoading(false)
-                        setButtonClickLoading(false)
-                    }, 20);
-                }else {
+                    try {
+                        const {data} = await axios.get(
+                            `${PUBLIC_URL_API}/api/donors/email/${donor._id}`)
+                        setEmail(data.data)
+
+                    } catch (error) {
+                        Toast.fail(error.response.data.error)
+                    }
+                    setEmailLoading(false)
+                    setButtonClickLoading(false)
+
+                } else {
                     setEmailLoading(false)
                     setButtonClickLoading(false)
                 }
@@ -109,9 +111,9 @@ const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
             if (buttonClickLoading) {
                 Toast.fail('You can only view one value at a time')
             } else {
-                setButtonClickLoading(true)
-                setPhoneLoading(true)
-                setTimeout(async function () {
+                if (await handleReCaptchaVerify()) {
+                    setButtonClickLoading(true)
+                    setPhoneLoading(true)
                     try {
                         const {data} = await axios.get(
                             `${PUBLIC_URL_API}/api/donors/phone/${donor._id}`)
@@ -122,28 +124,41 @@ const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
                     }
                     setPhoneLoading(false)
                     setButtonClickLoading(false)
-                }, 9000);
 
+                }
+                else{
+                    setPhoneLoading(false)
+                    setButtonClickLoading(false)
+                }
+            }
             }
         }
-    }
-    return (
-        <Container>
-            <BloodType>{donor.bloodType}</BloodType>
-            <CoverPhoto><Profile
-                src={transformCloudinaryImage(donor?.image, 120, 120, '.webp')}
-            />
-            </CoverPhoto>
-            <div className="profile-name">{donor.name}</div>
-            <p className="about">District: <b>{donor.district.charAt(0).toUpperCase() + donor.district.slice(1)}</b></p>
-            <ButtonContainer>
-                <Button onClick={getPhone}>{getButtonText('phone')}
-                    {phoneLoading && <SpinnerInfinity height={'10px'}/>}</Button>
-                <Button onClick={getEmail}>{getButtonText('email')}
-                    {emailLoading && <SpinnerInfinity height={'10px'}/>}</Button>
-            </ButtonContainer>
-        </Container>
-    );
-};
+        return (
+            <Container>
+                <BloodType>{donor.bloodType}</BloodType>
+                <CoverPhoto><Profile
+                    src={transformCloudinaryImage(donor?.image, 120, 120, '.webp')}
+                />
+                </CoverPhoto>
+                <div className="profile-name">{donor.name}</div>
+                <p className="about">District: <b>{donor.district.charAt(0).toUpperCase() + donor.district.slice(1)}</b></p>
+                <ButtonContainer>
+                    <Button onClick={getPhone}>{getButtonText('phone')}
+                        {phoneLoading && <SpinnerInfinity height={'10px'}/>}</Button>
+                    <Button onClick={getEmail}>{getButtonText('email')}
+                        {emailLoading && <SpinnerInfinity height={'10px'}/>}</Button>
+                </ButtonContainer>
+            </Container>
 
-export default DonorItem;
+        );
+    };
+
+    const DonorCard = (props) => {
+        return (
+            <GoogleReCaptchaProvider reCaptchaKey="6LfexXofAAAAAAxy6WBvQRzz5uySf7EEgDFcO6Bd">
+                <DonorItemInsider {...props} />
+            </GoogleReCaptchaProvider>
+        );
+    };
+
+    export default DonorCard;

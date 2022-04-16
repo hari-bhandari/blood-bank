@@ -39,11 +39,11 @@ const DonorItem = ({donor, buttonClickLoading, setButtonClickLoading}) => {
     const handleReCaptchaVerify = useCallback(async () => {
         if (!executeRecaptcha) {
             console.log('Execute recaptcha not yet available');
-            return;
+            return false;
         }
 
         const token = await executeRecaptcha('yourAction');
-        return false;
+        return token?true:false;
         // Do whatever you want with the token
     }, []);
 

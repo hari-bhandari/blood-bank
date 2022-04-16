@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="only makes an api call if user is authenticated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.css.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/DonorCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/Donors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Requests/Donors/Donors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20220416_0000",
+    "com.google.cloudcode.ide_session_index": "20220416_0001",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -156,7 +151,8 @@
       <workItem from="1643483482263" duration="3925000" />
       <workItem from="1643733275516" duration="1294000" />
       <workItem from="1650055735112" duration="756000" />
-      <workItem from="1650095137982" duration="3708000" />
+      <workItem from="1650095137982" duration="4316000" />
+      <workItem from="1650129734772" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -431,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643733910416</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="only makes an api call if user is authenticated">
+      <created>1650099318266</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1650099318266</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

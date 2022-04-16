@@ -78,9 +78,9 @@ const DonorItemInsider = ({donor, buttonClickLoading, setButtonClickLoading}) =>
         if (!isAuthenticated) {
             Toast.fail('You must be logged in to view details')
         } else {
-            if (buttonClickLoading) {
-                Toast.fail('You can only view one value at a time')
-            } else {
+            // if (buttonClickLoading) {
+            //     Toast.fail('You can only view one value at a time')
+            // } else {
                 if (await handleReCaptchaVerify()) {
 
                     setButtonClickLoading(true)
@@ -101,16 +101,16 @@ const DonorItemInsider = ({donor, buttonClickLoading, setButtonClickLoading}) =>
                     setEmailLoading(false)
                     setButtonClickLoading(false)
                 }
-            }
+            // }
         }
     }
     const getPhone = async () => {
         if (!isAuthenticated) {
             Toast.fail('You must be logged in to view details')
         } else {
-            if (buttonClickLoading) {
-                Toast.fail('You can only view one value at a time')
-            } else {
+            // if (buttonClickLoading) {
+            //     Toast.fail('You can only view one value at a time')
+            // } else {
                 if (await handleReCaptchaVerify()) {
                     setButtonClickLoading(true)
                     setPhoneLoading(true)
@@ -131,7 +131,7 @@ const DonorItemInsider = ({donor, buttonClickLoading, setButtonClickLoading}) =>
                     setButtonClickLoading(false)
                 }
             }
-            }
+            // }
         }
         return (
             <Container>

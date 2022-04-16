@@ -14,11 +14,9 @@ const app=express()
 import {cloudinaryConfig} from "./config/cloudinary.js";
 import {multerUploads} from "./config/dURIFormatter.js";
 import uploadRoute from './routes/upload.js'
-import sendEmail from "./config/sendEmail.js";
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const PORT= process.env.PORT||5000
-import emailTemplate from "./config/emailTemplate.js";
 connectDB()
 ////////////////////////////////
 //config

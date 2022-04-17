@@ -20,7 +20,7 @@ const SettingsContent = () => {
     const {loadUser, user} = auth;
     const {inputs, handleInputChange, setDefaultValues, handleInputChangeManually} = useLoginForm();
     const handleChangeForBlood = selectedOption => {
-        handleInputChangeManually("bloodType",[selectedOption])
+        handleInputChangeManually("bloodType", [selectedOption])
     };
     const handleChangeForDistrict = selectedOption => {
         handleInputChangeManually("district", [selectedOption])
@@ -33,15 +33,14 @@ const SettingsContent = () => {
                 name: user?.name,
                 phone: user?.phone,
                 email: user?.email,
-                district:districtOptions.filter(option=>option.value==user?.district),
-                bloodType:bloodOptions.filter(option=>option.value==user?.bloodType)
+                district: districtOptions.filter(option => option.value === user?.district),
+                bloodType: bloodOptions.filter(option => option.value === user?.bloodType)
             })
             setProfile([user.image])
         }
 
     }, [user])
     const OnSave = async (e) => {
-        console.log({inputs})
         e.preventDefault()
         if (!emptyValue(inputs.name)) {
             return Toast.fail('Please re-check your value for Name')
@@ -60,23 +59,34 @@ const SettingsContent = () => {
         }
         try {
             Toast.loading("Loading...")
-            let imageLink={images:[]}
-            if(profile?.length>0 || profile?.files?.length>0){
-                imageLink = await UploadImagesToCloud(profile)
-                console.log({imageLink})
+            let imageLink = {images: []}
+            if (profile?.length > 0 || profile?.files?.length > 0) {
+                if(Array.isArray(profile)) {
+                    const UploadedImages = profile?.filter(item => item.startsWith('http'))
+                    if(UploadedImages.length>0){
+                        imageLink = {images: UploadedImages}
+                    }
+                }
+                else {
+                    imageLink = await UploadImagesToCloud(profile)
+                }
+
             }
             await axios.put(
                 `${PUBLIC_URL_API}/api/auth/updatedetails`,
-                {email: inputs.email, name: inputs.name,phone:inputs.phone,district:inputs.district[0].value,
-                    bloodType:inputs.bloodType[0].value,image: imageLink.images.length > 0 ? imageLink.images[0] : null},
+                {
+                    email: inputs.email, name: inputs.name, phone: inputs.phone, district: inputs.district[0].value,
+                    bloodType: inputs.bloodType[0].value, image: imageLink.images.length > 0 ? imageLink.images[0] : null
+                },
                 JSONConfig
             )
             Toast.success('Successfully changed user data')
             await loadUser()
 
         } catch (error) {
-            Toast.fail( + ', Please try again')
-        }finally {
+            console.log(error)
+            Toast.fail('Please try again')
+        } finally {
             Toast.hide()
         }
     }
@@ -148,13 +158,13 @@ const SettingsContent = () => {
                         <Label>
                             Your District
                         </Label>
-                        <SelectComponent options={districtOptions} height={55}  isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"District"} value={inputs.district}/>
+                        <SelectComponent options={districtOptions} height={55} isMulti={false} onChange={handleChangeForDistrict} defaultLabel={"District"} value={inputs.district}/>
                     </InputContainer>
                     <InputContainer>
                         <Label>
                             Your Blood Type
                         </Label>
-                        <SelectComponent options={bloodOptions} height={55}  isMulti={false} onChange={handleChangeForBlood} defaultLabel={"BloodType"} value={inputs.bloodType}/>
+                        <SelectComponent options={bloodOptions} height={55} isMulti={false} onChange={handleChangeForBlood} defaultLabel={"BloodType"} value={inputs.bloodType}/>
                     </InputContainer>
                     <InputContainer>
                         <Button size='big' style={{width: '100%'}} onClick={OnSave}>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="tried to add recapcha">
-      <change beforePath="$PROJECT_DIR$/client-new/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.env.production" afterDir="false" />
+    <list default="true" id="aa682ba1-bd18-4183-83ab-e12e0e4673b7" name="Default Changelist" comment="changed public api url">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/Auth/SelectComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/UI/profile/ProfileSetting.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +154,7 @@
       <workItem from="1650055735112" duration="756000" />
       <workItem from="1650095137982" duration="4316000" />
       <workItem from="1650129734772" duration="4470000" />
-      <workItem from="1650180076235" duration="688000" />
+      <workItem from="1650180076235" duration="6536000" />
     </task>
     <task id="LOCAL-00001" summary="added .">
       <created>1608844313894</created>
@@ -455,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650133744819</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="changed public api url">
+      <created>1650180773796</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1650180773796</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +483,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fixed building error" />
     <MESSAGE value="removed svg" />
     <MESSAGE value="changed few styling" />
     <MESSAGE value="added login and signup forms" />
@@ -499,7 +507,8 @@
     <MESSAGE value="tap to revel email/phone added" />
     <MESSAGE value="only makes an api call if user is authenticated" />
     <MESSAGE value="tried to add recapcha" />
-    <option name="LAST_COMMIT_MESSAGE" value="tried to add recapcha" />
+    <MESSAGE value="changed public api url" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed public api url" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

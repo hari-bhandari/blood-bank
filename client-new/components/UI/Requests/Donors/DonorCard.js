@@ -44,7 +44,6 @@ const DonorItemInsider = ({donor, buttonClickLoading, setButtonClickLoading}) =>
         }
 
         const token = await executeRecaptcha(donor._id);
-        console.log({token})
         return token ? true : false;
         // Do whatever you want with the token
     }, [executeRecaptcha]);
@@ -75,9 +74,10 @@ const DonorItemInsider = ({donor, buttonClickLoading, setButtonClickLoading}) =>
         }
     }
     const getEmail = async () => {
-        if (!isAuthenticated) {
-            Toast.fail('You must be logged in to view details')
-        } else {
+        if (!email) {
+            if (!isAuthenticated) {
+                Toast.fail('You must be logged in to view details')
+            } else {
 
                 if (await handleReCaptchaVerify()) {
 
@@ -99,12 +99,15 @@ const DonorItemInsider = ({donor, buttonClickLoading, setButtonClickLoading}) =>
                     setEmailLoading(false)
                     setButtonClickLoading(false)
                 }
+            }
         }
     }
     const getPhone = async () => {
-        if (!isAuthenticated) {
-            Toast.fail('You must be logged in to view details')
-        } else {
+        if (!phone) {
+
+            if (!isAuthenticated) {
+                Toast.fail('You must be logged in to view details')
+            } else {
 
                 if (await handleReCaptchaVerify()) {
                     setButtonClickLoading(true)
@@ -120,39 +123,39 @@ const DonorItemInsider = ({donor, buttonClickLoading, setButtonClickLoading}) =>
                     setPhoneLoading(false)
                     setButtonClickLoading(false)
 
-                }
-                else{
+                } else {
                     setPhoneLoading(false)
                     setButtonClickLoading(false)
                 }
             }
         }
-        return (
-            <Container>
-                <BloodType>{donor.bloodType}</BloodType>
-                <CoverPhoto><Profile
-                    src={transformCloudinaryImage(donor?.image, 120, 120, '.webp')}
-                />
-                </CoverPhoto>
-                <div className="profile-name">{donor.name}</div>
-                <p className="about">District: <b>{donor.district.charAt(0).toUpperCase() + donor.district.slice(1)}</b></p>
-                <ButtonContainer>
-                    <Button onClick={getPhone}>{getButtonText('phone')}
-                        {phoneLoading && <SpinnerInfinity height={'10px'}/>}</Button>
-                    <Button onClick={getEmail}>{getButtonText('email')}
-                        {emailLoading && <SpinnerInfinity height={'10px'}/>}</Button>
-                </ButtonContainer>
-            </Container>
+    }
+    return (
+        <Container>
+            <BloodType>{donor.bloodType}</BloodType>
+            <CoverPhoto><Profile
+                src={transformCloudinaryImage(donor?.image, 120, 120, '.webp')}
+            />
+            </CoverPhoto>
+            <div className="profile-name">{donor.name}</div>
+            <p className="about">District: <b>{donor.district.charAt(0).toUpperCase() + donor.district.slice(1)}</b></p>
+            <ButtonContainer>
+                <Button onClick={getPhone}>{getButtonText('phone')}
+                    {phoneLoading && <SpinnerInfinity height={'10px'}/>}</Button>
+                <Button onClick={getEmail}>{getButtonText('email')}
+                    {emailLoading && <SpinnerInfinity height={'10px'}/>}</Button>
+            </ButtonContainer>
+        </Container>
 
-        );
-    };
+    );
+};
 
-    const DonorCard = (props) => {
-        return (
-            <GoogleReCaptchaProvider reCaptchaKey="6LfexXofAAAAAAxy6WBvQRzz5uySf7EEgDFcO6Bd">
-                <DonorItemInsider {...props} />
-            </GoogleReCaptchaProvider>
-        );
-    };
+const DonorCard = (props) => {
+    return (
+        <GoogleReCaptchaProvider reCaptchaKey="6LfexXofAAAAAAxy6WBvQRzz5uySf7EEgDFcO6Bd">
+            <DonorItemInsider {...props} />
+        </GoogleReCaptchaProvider>
+    );
+};
 
-    export default DonorCard;
+export default DonorCard;
